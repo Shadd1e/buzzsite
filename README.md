@@ -1,24 +1,14 @@
-# Buzz website
+# Buzz website (frontend only)
 
-Public site, forms and admin view in one small project. No dependencies, Node 18+.
+Static site: `index.html` is the whole thing. Pages switch by URL hash (`/#riders`).
 
-## Run it
-```
-ADMIN_PASSWORD="choose-a-long-password" node server.js
-```
-Open http://localhost:3000. Team login is the "Team login" link in the footer (`/#admin`).
+## Deploy on Vercel
+1. Push this folder to GitHub (or run `npx vercel` inside it).
+2. In Vercel: Add New > Project > import it. Framework preset: **Other**. No build command, no output directory.
+3. Deploy.
 
-## What is in it
-- `index.html`: every page (home, features, safety, Buzz Pro, waitlist, riders, feedback, careers, about, privacy summary, admin). Pages switch by URL hash, e.g. `/#riders`.
-- `server.js`: saves form submissions to `data/db.json`, serves open jobs, and protects the admin view with a password.
-- Without the server (for example opened as a plain file or a preview), the site switches to preview mode: forms save in that browser only and the admin password is `demo`.
-- Orders for "Track my product" are created in the admin Orders tab (the app checkout is not connected to the site yet). Lost-phone requests appear in the admin "Lost phones" tab and are reviewed by a person; nothing is suspended automatically. To automate verification and suspension, connect `POST /api/submit/suspend` to your Buzz account backend and an OTP/face-verification provider.
+## Current behaviour (no database yet)
+Forms, order tracking, careers and the admin view run in "preview mode": data is saved only in the visitor's own browser, and the admin password is `demo`. Nothing reaches your team yet.
 
-## Deploying
-Host it anywhere that runs Node (Render, Railway, Fly.io, a VPS). Set `ADMIN_PASSWORD`, serve over HTTPS, and keep the `data/` folder on a persistent disk and back it up. Set `DATA_DIR` to change where data lives.
-
-## Before launch
-- Replace the privacy and terms summary with your lawyer-approved text.
-- Replace the placeholder "B" mark when you have a logo.
-- Point the waitlist copy at store links when the app is live.
-# buzzsite
+## Later
+`_later-backend/server.js` is the original Node server (not used by Vercel). When you are ready for a database, the site already calls `/api/submit/*`, `/api/jobs`, `/api/track` and `/api/admin/*`, so you can add Vercel functions in an `/api` folder backed by a database and the frontend will switch to live mode automatically.
