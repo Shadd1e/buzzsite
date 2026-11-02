@@ -3,102 +3,277 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231C1F26'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='20' fill='%23F2F1ED' text-anchor='middle'%3Eb%3C/text%3E%3C/svg%3E">
-<title>Buzz</title>
-<meta name="description" content="A secure messenger with your needs built in.">
+<title>Buzz: Chat. Trade. Pay. All in one app.</title>
+<meta name="description" content="Connect with people, grow your business, and make secure payments, effortlessly.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231250E8'/%3E%3Cpath d='M12 9l11 7-11 7z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1B4D;--deep:#091640;--blue:#1250E8;--blue2:#1B63F5;--mut:#4B5A84;--line:#DDE3F2;--f:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--navy);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:3px solid #7FA6FF;outline-offset:3px}
+.w{max-width:1160px;margin:0 auto;padding:0 max(24px,env(safe-area-inset-left,0px)) 0 max(24px,env(safe-area-inset-right,0px))}
+.btn{display:inline-flex;align-items:center;gap:14px;font:600 17px var(--f);background:linear-gradient(180deg,#1B63F5,#1049D8);color:#fff;border:0;border-radius:999px;padding:18px 28px;cursor:pointer;box-shadow:0 12px 26px -10px rgba(18,80,232,.7);transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn .i{width:18px;height:18px;stroke-width:2.2}
+.ghost{background:none;box-shadow:none;border:1.5px solid rgba(255,255,255,.55);padding:13px 22px;font-size:15px;gap:30px}
+/* header */
+header{border-bottom:1px solid rgba(18,80,232,.08)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:86px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:36px;letter-spacing:-.045em;color:var(--navy)}
+.logo svg{width:40px;height:46px}
+nav{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500}
+nav .pill{border:1.5px solid #B9C6EA;border-radius:999px;padding:9px 18px;background:rgba(255,255,255,.7)}
+nav .i{width:18px;height:18px}
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(60% 70% at 78% 40%,#CFE0FF 0,rgba(207,224,255,0) 70%),linear-gradient(180deg,#fff,#F4F8FF 80%,#fff)}
+.hero::before{content:"";position:absolute;right:-8%;top:34%;width:78%;height:46%;border-radius:50%;background:radial-gradient(closest-side,rgba(18,80,232,.55),rgba(18,80,232,0));filter:blur(18px);transform:rotate(-12deg)}
+.hero .w{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:520px;gap:20px;padding-top:30px;padding-bottom:30px}
+h1{margin:0;font-size:clamp(2.5rem,5.6vw,4.6rem);line-height:1.02;letter-spacing:-.045em;font-weight:800}
+h1 b{color:var(--blue);display:block}
+.hero p{color:var(--mut);font-size:1.28rem;line-height:1.5;margin:26px 0 38px;max-width:21em}
+.cta{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.demo{display:flex;align-items:center;gap:14px;font-weight:600;font-size:16px;background:none;border:0;cursor:pointer;color:var(--navy);font-family:var(--f)}
+.demo i{width:54px;height:54px;border-radius:50%;border:2px solid #C3D0F0;background:#fff;display:grid;place-items:center;font-style:normal}
+.demo .i{width:18px;height:18px;fill:var(--navy);stroke:none}
+.stage{position:relative;height:560px}
+/* phones */
+.ph{position:absolute;width:268px;height:548px;background:linear-gradient(160deg,#1c2b5c,#06102e);border-radius:44px;padding:9px;box-shadow:0 40px 70px -26px rgba(8,22,70,.7),inset 0 0 0 2px #3A4A80}
+.ph::before{content:"";position:absolute;top:18px;left:50%;width:84px;height:24px;margin-left:-42px;background:#050A1E;border-radius:99px;z-index:3}
+.sc{height:100%;background:#fff;border-radius:36px;padding:44px 14px 12px;overflow:hidden;position:relative}
+.st{position:absolute;top:19px;left:28px;font-size:11.5px;font-weight:700}
+.bar{display:flex;align-items:center;justify-content:space-between}
+.bar .logo{font-size:23px;gap:6px}.bar .logo svg{width:20px;height:23px}
+.bar span{display:flex;gap:8px;font-size:15px}
+.tb{display:flex;gap:6px;margin:12px 0 8px;font-size:10.5px;font-weight:600}
+.tb em{font-style:normal;padding:5px 10px;border-radius:99px;color:var(--mut);background:#F0F4FC}
+.tb em:first-child{background:var(--blue);color:#fff}
+.row{display:flex;align-items:center;gap:10px;padding:10px 0;position:relative}
+.av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px}
+.row b{display:block;font-size:13px;line-height:1.2}
+.row small{display:block;color:var(--mut);font-size:11px}
+.row time{margin-left:auto;font-size:10.5px;color:var(--mut)}
+.row u{position:absolute;right:0;top:30px;width:15px;height:15px;border-radius:50%;background:var(--blue);color:#fff;font:700 9px/15px var(--f);text-align:center;text-decoration:none}
+.nv{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:10px 8px 14px;font-size:9.5px;color:#8A96B8;border-top:1px solid #EEF1F9;background:#fff}
+.nv span{text-align:center}.nv span:first-child{color:var(--blue);font-weight:600}
+.p1{left:50%;margin-left:-190px;top:-6px;transform:rotate(13deg)}
+.card{position:absolute;right:0;top:140px;width:196px;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:26px;padding:22px 16px;text-align:center;font-weight:700;font-size:17px;line-height:1.2;box-shadow:0 24px 50px -20px rgba(18,80,232,.5);transform:rotate(8deg);z-index:2}
+.card .i.sh{width:40px;height:40px;color:var(--blue);margin:0 auto 10px;stroke-width:2}
+.pay{display:flex;justify-content:center;gap:7px;margin-top:14px;align-items:center}
+.pay i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 13px var(--f);font-style:normal}
+.visa{width:auto!important;border-radius:5px!important;background:#fff;color:#1A1F71!important;padding:0 5px;font-size:11px!important;font-style:italic!important;box-shadow:0 0 0 1px #E2E7F5}
+/* features */
+.feat{display:grid;grid-template-columns:repeat(4,1fr);padding:30px 0 48px}
+.feat div{text-align:center;padding:4px 14px;border-left:1px solid var(--line)}
+.feat div:first-child{border:0}
+.feat .i{width:34px;height:34px;color:var(--blue);margin:0 auto 12px}
+.feat b{display:block;font-size:15.5px}
+.feat span{color:var(--mut);font-size:14px}
+/* panels */
+.panel{margin:0 16px;border-radius:32px;background:radial-gradient(70% 90% at 80% 100%,#16409E 0,rgba(22,64,158,0) 70%),linear-gradient(135deg,#0B1B4D,#07123A);color:#fff;position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-60%;height:100%;border-radius:50%;border-top:2px solid rgba(80,140,255,.55);pointer-events:none}
+.pro{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:30px;padding:48px 56px;max-width:1160px;margin:0 auto;position:relative}
+.panel h2,.real h2{margin:0;font-size:clamp(2rem,4.2vw,3rem);line-height:1.1;letter-spacing:-.035em;font-weight:700}
+.panel h2 b,.real h2 b{display:block;color:#3E86FF;font-weight:700}
+.rule{width:38px;height:3px;background:var(--blue2);margin-bottom:26px;border-radius:2px}
+.panel p{color:#D5DEF7;font-size:1.1rem;max-width:17em;margin:18px 0 26px}
+.mix{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px;align-items:center;position:relative}
+.store{background:#fff;color:var(--navy);border-radius:26px;padding:20px 18px 18px;position:relative;box-shadow:0 30px 50px -20px rgba(0,0,0,.6);width:100%;max-width:220px;margin:0 auto}
+.store::before{content:"";position:absolute;left:100%;top:22px;bottom:-10px;width:30px;background:rgba(255,255,255,.18);border-radius:0 22px 22px 0;z-index:-1}
+.store h3{margin:0 0 12px;font-size:15px;display:flex;gap:9px;align-items:center}
+.store h3 .i{width:22px;height:22px;color:var(--blue)}
+.shoe{background:#ECEFF5;border-radius:14px;height:98px;display:grid;place-items:center;margin-bottom:12px}
+.store b{display:block;font-size:14px}
+.store .btn{width:100%;justify-content:center;gap:10px;padding:12px;font-size:14px;margin-top:12px;border-radius:12px;box-shadow:none}
+.store .btn .i{width:14px;height:14px}
+.glass{border:1px solid rgba(140,175,255,.4);background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border-radius:24px;padding:30px 24px;transform:rotate(-3deg);text-align:center;box-shadow:0 24px 60px -20px rgba(0,0,0,.5)}
+.glass .i.sh{width:42px;height:42px;color:#4F94FF;margin:0 auto 10px;stroke-width:2}
+.glass b{font-size:20px;display:block;line-height:1.2;margin-bottom:8px}
+.glass small{display:block;color:#C3D0F0;font-size:13px}
+.coins{display:flex;justify-content:center;gap:16px;margin-top:18px}
+.coins i{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font:700 20px var(--f);font-style:normal;box-shadow:0 0 0 3px rgba(255,255,255,.9)}
+/* real */
+.real{position:relative;overflow:hidden;margin-top:30px;padding:56px 0 0;min-height:430px}
+.real .w{position:relative;z-index:2}
+.real .rule{margin-bottom:24px}
+.real p{font-size:1.15rem;color:var(--mut);max-width:19em;margin:20px 0 26px}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;max-width:520px}
+.chips span{display:flex;align-items:center;gap:9px;border:1.5px solid var(--line);border-radius:99px;padding:10px 16px;font-size:13.5px;font-weight:500;background:#fff;box-shadow:0 6px 14px -8px rgba(18,80,232,.3)}
+.chips .i{width:18px;height:18px;color:var(--blue)}
+.city{position:absolute;right:0;bottom:0;width:62%;height:100%;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.p2{right:12%;top:44px;transform:rotate(-13deg);z-index:2}
+.p2 .sc{padding-top:50px}
+.p2 h4{margin:0 0 12px;font-size:21px;letter-spacing:-.02em}
+.srch{background:#F0F4FC;border-radius:14px;padding:11px 14px;font-size:12px;color:var(--mut);margin-bottom:6px}
+.join{margin-left:auto;background:var(--blue);color:#fff;border-radius:99px;padding:5px 13px;font-size:11px;font-weight:600}
+/* cta */
+.final{margin:0 16px;padding:42px 0}
+.final .w{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;z-index:1;padding:0 40px}
+.final h2{margin:0 0 6px;font-size:2rem;letter-spacing:-.03em}
+.final p{margin:0;font-size:1.05rem;max-width:none}
+footer{padding:28px 0 36px;margin-top:44px;border-top:1px solid #E7ECF6}
+footer .w{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .logo{font-size:32px}
+footer nav{gap:0;font-size:13px;font-weight:600}
+footer nav a{padding:0 16px;border-left:1.5px solid var(--navy);line-height:1}
+footer nav a:first-child{border:0}
+.soc{display:flex;gap:22px}.soc .i{width:24px;height:24px;fill:none}
+/* dialog */
+dialog{border:0;border-radius:24px;padding:30px;width:min(440px,92vw);color:var(--navy);box-shadow:0 40px 90px -20px rgba(8,22,70,.6)}
+dialog::backdrop{background:rgba(7,18,58,.6)}
+dialog h3{margin:0 0 4px;font-size:1.5rem;letter-spacing:-.02em}
+dialog form{display:grid;gap:14px;margin-top:18px}
+dialog label{display:grid;gap:5px;font-weight:600;font-size:13.5px}
+dialog input{font:inherit;font-size:15px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+dialog .ck{display:flex;gap:10px;font-weight:400;color:var(--mut);align-items:flex-start;font-size:13px}
+dialog .ck input{width:auto;margin-top:3px}
+.msg{margin:0;min-height:20px;font-size:13.5px;font-weight:500;color:#B3261E}.msg.ok{color:#1F8A5B}
+.x{position:absolute;right:16px;top:14px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--mut)}
+@media(max-width:900px){
+header .w{height:72px}.logo{font-size:30px}nav a:not(.pill):not(.arr){display:none}
+.hero .w{grid-template-columns:1fr;min-height:0;padding-top:34px}
+.stage{height:520px}.card{right:0}
+.feat{grid-template-columns:1fr 1fr;gap:26px 0}.feat div:nth-child(3){border-left:0}
+.pro{grid-template-columns:1fr;padding:40px 26px}.mix{grid-template-columns:1fr}
+.real{min-height:0}.real .w{padding-bottom:30px}.chips{margin-bottom:20px}.city{width:100%;opacity:.55}
+.p2{position:relative;right:auto;top:auto;margin:10px auto -150px;transform:rotate(-8deg)}
+.final .w{padding:0 24px}
+footer .w{justify-content:center}footer nav{flex-wrap:wrap;justify-content:center;row-gap:10px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
 </head>
 <body>
-<header><div class="w"><a class="brand" href="#home">buzz</a><a class="btn" href="#riderhub">Rider Hub</a></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M4 12a8 7 0 0 1 8-7 8 7 0 0 1 8 7 8 7 0 0 1-8 7H5l1.5-3A7 7 0 0 1 4 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
+<symbol id="store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9c0 1.7 1.3 2.5 2.7 2.5S9.3 10.700 9.300 9c0 1.700 1.100 2.500 2.700 2.500s2.700-.8 2.700-2.500c0 1.700 1.100 2.500 2.600 2.500S20 10.700 20 9M5.500 11.500V20h13v-8.500M10 20v-4.500h4V20"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.500c0 4.500-3 8-7 9.500-4-1.500-7-5-7-9.500V6z" /><path d="M8.800 12l2.400 2.400 4.200-4.600"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="12" cy="7" r="2.800"/><circle cx="5.500" cy="9.500" r="2.200"/><circle cx="18.500" cy="9.500" r="2.200"/><path d="M7 19c0-3 2.200-5 5-5s5 2 5 5M1.500 17c0-2.200 1.600-3.800 4-3.800M22.500 17c0-2.200-1.600-3.800-4-3.800"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.500 2h-15zM10 21h4"/></symbol>
+<symbol id="wrench" viewBox="0 0 24 24"><path d="M14.500 6.500a4 4 0 0 0 5 5l-9 9a2.100 2.100 0 0 1-3-3l9-9a4 4 0 0 1-2-2z"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="mark" viewBox="0 0 40 46"><rect x="3" y="0" width="11" height="40" rx="5.500" fill="#0B1B4D"/><circle cx="23" cy="28" r="15" fill="#1250E8"/><circle cx="23" cy="28" r="15" fill="none" stroke="#0B1B4D" stroke-width="3.500"/><path d="M19 21.500l9.500 6.500-9.500 6.500z" fill="#fff"/></symbol>
+</defs></svg>
 
-<main class="w">
+<header><div class="w">
+  <a class="logo" href="#top" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
+  <nav><a class="pill" href="ride.html">Ride with Buzz</a><a href="careers.html">Careers</a><a href="/about">About</a><a class="arr" href="#top" aria-label="Back to top"><svg class="i"><path d="M7 17L17 7M8 7h9v9"/></svg></a></nav>
+</div></header>
 
-<section id="home" class="pg">
-  <h1>A secure messenger with your needs built in.</h1>
-  <p class="lede">Chat with your people, get local alerts, and find sellers, homes and lawyers who have been verified, all in one app.</p>
-  <p><a class="btn" href="#waitlist">Join the waitlist</a></p>
-
-  <div id="safety" class="blk"><h2>Safety</h2>
-    <p class="lede">Safety tools sit in their own area, apart from your everyday profile, so they stay private and are hard to trigger by accident.</p>
-    <div class="grid" data-g="safe"></div>
-    <h3 style="margin:26px 0 10px">How a report is verified</h3>
-    <div class="box"><ol><li>Submitted <span>by someone nearby</span></li><li>AI Verified <span>by automated checks</span></li><li>Community Confirmed <span>by people around</span></li><li>Moderator Reviewed <span>by our team</span></li><li>Agency Verified <span>by the relevant agency</span></li></ol></div>
-    <p class="notice" style="margin-top:14px">In an emergency, contact emergency services first. In Nigeria, call 112. Lost your phone? <a href="#suspend">Request a suspension</a>.</p>
+<main id="top">
+<section class="hero"><div class="w">
+  <div>
+    <h1>Chat. Trade. Pay.<b>All in one app.</b></h1>
+    <p>Connect with people, grow your business, and make secure payments, effortlessly.</p>
+    <div class="cta">
+      <button class="btn" data-join>Join the Waitlist <svg class="i"><use href="#arrow"/></svg></button>
+      <button class="demo" type="button"><i><svg class="i"><path d="M7 4.500l12 7.500-12 7.500z"/></svg></i>Watch Demo</button>
+    </div>
   </div>
-
-  <div id="pro" class="blk"><h2>Buzz Pro</h2>
-    <p class="lede">For people who sell, rent, advise or run a business. Your everyday Buzz stays the same, you can switch Pro off any time, and there is no subscription. Payments are handled by SunPay.</p>
-    <div class="grid" data-g="pro"></div>
-    <div class="box"><ol><li>Read and accept the terms</li><li>Choose what to run: Marketplace, Housing, Lawyers, or more than one</li><li>Add your details and complete verification where it’s required</li></ol></div>
+  <div class="stage" aria-hidden="true">
+    <div class="ph p1"><div class="sc">
+      <span class="st">9:41</span>
+      <div class="bar"><span class="logo"><svg><use href="#mark"/></svg>buzz</span><span><svg class="i"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg><svg class="i" style="background:var(--blue);color:#fff;border-radius:6px;padding:2px"><use href="#plus"/></svg></span></div>
+      <div class="tb"><em>Chats</em><em>Communities</em><em>Marketplace</em></div>
+      <div class="row"><span class="av" style="background:#4F7DE8"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Neighbourhood Circle</b><small>Great deals nearby!</small></div><time>2m</time><u>3</u></div>
+      <div class="row"><span class="av" style="background:linear-gradient(135deg,#F2B68E,#B5683F)">A</span><div><b>Ada</b><small>See you soon!</small></div><time>8m</time></div>
+      <div class="row"><span class="av" style="background:#1B2A5E"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Business Hub</b><small>New offer available 🎁</small></div><time>12m</time></div>
+      <div class="row"><span class="av" style="background:linear-gradient(135deg,#7A5A44,#3B2A20)">M</span><div><b>Marcus</b><small>Sounds good 👍</small></div><time>18m</time></div>
+      <div class="row"><span class="av" style="background:#49B38A"><svg class="i" style="width:20px;height:20px"><use href="#shield"/></svg></span><div><b>Local Services</b><small>Verified service nearby.</small></div><time>1h</time></div>
+      <div class="nv"><span>Chats</span><span>Discover</span><span>Pay</span><span>Profile</span></div>
+    </div></div>
+    <div class="card"><svg class="i sh"><use href="#shield"/></svg>Secure Payments with SunPay
+      <div class="pay"><i class="visa">VISA</i><i style="background:#EB001B;box-shadow:10px 0 0 -2px #F79E1B"></i><i style="background:#F7931A;margin-left:8px">₿</i><i style="background:#26A17B">T</i></div>
+    </div>
   </div>
+</div></section>
 
-  <div id="features" class="blk"><h2>Features</h2><div class="grid" data-g="feat"></div></div>
+<div class="w"><div class="feat">
+  <div><svg class="i"><use href="#chat"/></svg><b>Private Messaging</b><span>with end-to-end security</span></div>
+  <div><svg class="i"><use href="#store"/></svg><b>Sell &amp; Buy Locally</b><span>with trusted sellers</span></div>
+  <div><svg class="i"><use href="#shield"/></svg><b>Secure Payments</b><span>Fiat • Stablecoins • Crypto</span></div>
+  <div><svg class="i"><use href="#users"/></svg><b>Local Communities</b><span>for what matters</span></div>
+</div></div>
 
-  <div id="about" class="blk"><h2>About</h2>
-    <p class="lede">Buzz is built by Aether Jade Innovations Limited. We think a messenger should also help you stay informed, stay safe and find people you can trust close to home.</p>
-    <details><summary>Is Buzz available yet?</summary><p>Not publicly. Join the waitlist and we’ll tell you when it opens in your area.</p></details>
-    <details><summary>Do I need Pro Mode?</summary><p>No. Chats, communities and safety tools work without it.</p></details>
-    <details><summary>Do people see my phone number?</summary><p>You choose who can. With BuzzDrop you can exchange your Buzz identity with someone nearby without sharing your number.</p></details>
-    <details><summary>How do I become a verified seller, landlord or lawyer?</summary><p>Turn on Pro Mode in the app, accept the terms, choose what to run and complete verification. Housing and Lawyers require verification before you start.</p></details>
-    <details><summary>Where does Buzz work?</summary><p>We’re starting in Nigeria and opening area by area.</p></details>
+<section class="panel" id="pro"><div class="pro">
+  <div><div class="rule"></div><h2>More than a chat app.<b>A complete platform.</b></h2><p>Start a business, reach more customers, and get paid securely with SunPay.</p>
+    <a class="btn ghost" href="#pro">Explore Pro Features <svg class="i"><use href="#arrow"/></svg></a></div>
+  <div class="mix">
+    <div class="store"><h3><svg class="i"><use href="#store"/></svg>Your Store</h3>
+      <div class="shoe"><svg viewBox="0 0 120 60" width="120" height="60"><path d="M6 40c0-6 4-8 10-9l14-3c4-1 6-4 9-8 2-3 5-3 7-1l8 9c3 3 7 5 12 6l30 6c8 2 14 5 14 10v4H6z" fill="#2B3042"/><path d="M6 46h110v6c0 2-2 4-4 4H10c-2 0-4-2-4-4z" fill="#F4F6FA"/><path d="M40 28l12 10M52 24l12 10M64 29l10 8" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/><path d="M30 44c20-4 50-2 80 2" stroke="#fff" stroke-width="3" fill="none" opacity=".8"/></svg></div>
+      <b>Sneakers</b><b style="font-weight:600;margin-top:2px">₦45,000</b>
+      <button class="btn" type="button" data-join><svg class="i"><use href="#plus"/></svg>Buy Now</button></div>
+    <div class="glass"><svg class="i sh"><use href="#shield"/></svg><b>Pay Securely with SunPay</b><small>Local Currency • Stablecoins • Crypto</small>
+      <div class="coins"><i style="background:#0F9D58;color:#fff">₦</i><i style="background:#1A73E8;color:#fff">$</i><i style="background:#F7931A;color:#fff">₿</i><i style="background:#fff;color:#627EEA">Ξ</i></div></div>
   </div>
+</div></section>
 
-  <div id="waitlist" class="blk"><h2>Join the waitlist</h2>
-    <p class="lede">Tell us where you are and we’ll contact you when Buzz is ready near you.</p>
-    <form data-f="waitlist"></form>
-  </div>
+<section class="real" id="about">
+  <svg class="city" viewBox="0 0 640 380" preserveAspectRatio="xMaxYMax slice" aria-hidden="true"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2FF"/><stop offset="1" stop-color="#F9FBFF"/></linearGradient><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9DAF5"/><stop offset="1" stop-color="#8FB0E4"/></linearGradient><linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD6F4"/><stop offset="1" stop-color="#8DB1E6"/></linearGradient></defs>
+    <rect width="640" height="380" fill="url(#sk)"/>
+    <g fill="url(#bd)"><rect x="120" y="170" width="34" height="140"/><rect x="160" y="130" width="40" height="180"/><rect x="214" y="190" width="30" height="120"/><rect x="440" y="140" width="30" height="170"/><rect x="480" y="40" width="44" height="270"/><rect x="536" y="110" width="40" height="200"/><rect x="584" y="80" width="56" height="230"/><rect x="400" y="190" width="34" height="120"/></g>
+    <path d="M0 300c80-30 170-20 250-8s180-12 250-4 100 6 140-4v96H0z" fill="#7FA66B"/><g fill="#5E9360"><circle cx="40" cy="290" r="26"/><circle cx="96" cy="300" r="22"/><circle cx="580" cy="290" r="28"/><circle cx="620" cy="296" r="20"/></g>
+    <rect y="318" width="640" height="62" fill="url(#wt)"/></svg>
+  <div class="w"><div class="rule"></div><h2>Real connections.<br>Real value.</h2>
+    <p>Join vibrant communities, get local alerts, and discover trusted services near you.</p>
+    <div class="chips"><span><svg class="i"><use href="#bell"/></svg>Local Alerts</span><span><svg class="i"><use href="#store"/></svg>Marketplace</span><span><svg class="i"><use href="#wrench"/></svg>Services</span><span><svg class="i"><use href="#users"/></svg>Communities</span></div></div>
+  <div class="ph p2" aria-hidden="true"><div class="sc"><span class="st">9:41</span><h4>Communities</h4><div class="srch">🔍 Search communities...</div>
+    <div class="row"><span class="av" style="background:#49B38A"><svg class="i" style="width:20px;height:20px"><use href="#shield"/></svg></span><div><b>Neighbourhood Watch</b><small>12.5k members</small></div><span class="join">Join</span></div>
+    <div class="row"><span class="av" style="background:#F5A25A"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Business Connect</b><small>8.2k members</small></div><span class="join">Join</span></div>
+    <div class="row"><span class="av" style="background:#1B2A5E"><svg class="i" style="width:20px;height:20px"><use href="#users"/></svg></span><div><b>Tech &amp; Innovation</b><small>6.1k members</small></div><span class="join">Join</span></div>
+  </div></div>
 </section>
 
-<section id="riderhub" class="pg" hidden>
-  <h1 style="margin-top:36px">Rider Hub</h1>
-  <p class="lede">Sign up to deliver for Buzz sellers, or track goods you’ve ordered.</p>
-  <div class="tabs" role="tablist"><button class="tab" role="tab" data-tab="join" aria-selected="true">Become a rider</button><button class="tab" role="tab" data-tab="track" aria-selected="false">Track goods</button></div>
-  <div id="tab-join"><div id="wiz" class="box wiz"></div></div>
-  <div id="tab-track" hidden><p class="lede">Enter the tracking code from your order (it starts with BZ-) and the phone number the order was placed with.</p><form data-f="track"></form></div>
-</section>
-
-<section id="report" class="pg" hidden>
-  <h1 style="margin-top:36px">Report or contact</h1>
-  <p class="lede">Suggestions, complaints, reports about a user, seller or rider, or a general question. You don’t need the app to write to us. In danger right now? Call 112.</p>
-  <form data-f="report"></form>
-</section>
-
-<section id="careers" class="pg" hidden>
-  <h1 style="margin-top:36px">Careers</h1>
-  <p class="lede">We’re a small team building messaging, safety and a trusted marketplace for Nigeria. No roles are listed yet, but you can send a general application.</p>
-  <form data-f="careers"></form>
-</section>
-
-<section id="suspend" class="pg" hidden>
-  <h1 style="margin-top:36px">Lost your phone?</h1>
-  <p class="lede">Do these now, whatever happens with the form below.</p>
-  <div class="box" style="margin-bottom:22px"><ol><li>Call your mobile network and have your SIM blocked.</li><li>Change the passwords on your email and banking apps.</li><li>Never share a code or PIN with anyone, even if they say they’re from Buzz.</li></ol></div>
-  <p class="lede">Then request a suspension. A team member reviews it and calls the other contact you give before suspending anything.</p>
-  <form data-f="suspend"></form>
-</section>
-
-<section id="legal" class="pg" hidden>
-  <h1 style="margin-top:36px">Privacy and terms</h1>
-  <p class="lede">A plain summary for visitors to this website. The full Terms and Privacy Policy apply to the app.</p>
-  <h3 style="margin-top:26px">What we collect</h3><p>Only what you type into a form: name, contact details, area, and your message or answers. We don’t ask for ID numbers or payment details here.</p>
-  <h3>What we use it for</h3><p>To contact you about access, verify riders, reply to messages and consider applications.</p>
-  <h3>Who sees it</h3><p>Only the Buzz team members who handle that request.</p>
-  <h3>Your choices</h3><p>You can ask us to correct or delete what you submitted through Report or contact.</p>
-  <h3>Company</h3><p>Aether Jade Innovations Limited.</p>
-</section>
-
+<section class="panel final"><div class="w">
+  <div><h2>Be part of what’s next.</h2><p>Join the Buzz waitlist today and be the first to get access.</p></div>
+  <button class="btn" data-join>Join the Waitlist <svg class="i"><use href="#arrow"/></svg></button>
+</div></section>
 </main>
 
-<div class="bar" id="bar" hidden><div class="in2"><div class="segs" id="segs"></div><p id="praise" aria-live="polite"></p></div></div>
-
 <footer><div class="w">
-  <nav aria-label="Footer"><a href="#features">Features</a><a href="#safety">Safety</a><a href="#pro">Pro</a><a href="#about">About</a><a href="#riderhub">Rider Hub</a><a href="#careers">Careers</a><a href="#report">Report or contact</a><a href="#suspend">I lost my phone</a><a href="#legal">Privacy and terms</a></nav>
-  © 2026 Aether Jade Innovations Limited
+  <a class="logo" href="#top" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
+  <nav aria-label="Footer"><a href="ride.html">Ride with Buzz</a><a href="careers.html">Careers</a><a href="/about">About</a><a href="help.html">Help</a><a href="privacy.html">Privacy</a></nav>
+  <div class="soc"><a href="#top" aria-label="X"><svg class="i" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><path d="M17.800 3h3.100l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.200-8.300L1.900 3h6.400l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></svg></a><a href="#top" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.500 6.500h.01"/></svg></a><a href="#top" aria-label="YouTube"><svg class="i" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a></div>
 </div></footer>
 
-<script src="app.js"></script>
+<dialog id="dlg"><button class="x" type="button" aria-label="Close" data-close>&times;</button>
+  <h3>Join the waitlist</h3><p style="margin:0;color:var(--mut);font-size:14.5px">Tell us where you are and we’ll contact you when Buzz is ready near you.</p>
+  <form novalidate>
+    <label>Full name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" inputmode="tel" required autocomplete="tel"></label>
+    <label>City or area<input name="city" required></label>
+    <label class="ck"><input type="checkbox" required><span>Buzz may contact me about access.</span></label>
+    <p class="msg" aria-live="polite"></p>
+    <button class="btn" type="submit" style="justify-content:center">Join the Waitlist</button>
+  </form></dialog>
+
+<script>
+(function(){
+"use strict";
+var d=document.getElementById("dlg"),f=d.querySelector("form"),m=f.querySelector(".msg");
+function $$(s){return [].slice.call(document.querySelectorAll(s))}
+$$("[data-join]").forEach(function(b){b.addEventListener("click",function(){m.textContent="";if(d.showModal)d.showModal();else d.setAttribute("open","")})});
+d.querySelector("[data-close]").addEventListener("click",function(){d.close?d.close():d.removeAttribute("open")});
+d.addEventListener("click",function(e){if(e.target===d&&d.close)d.close()});
+/* Preview only: validates, confirms on the page, sends and saves nothing. */
+f.addEventListener("submit",function(e){
+  e.preventDefault();m.className="msg";m.textContent="";
+  var bad=null,why="",els=[].slice.call(f.querySelectorAll("[required]"));
+  els.forEach(function(el){if(bad)return;
+    var v=el.type==="checkbox"?el.checked:el.value.trim();
+    if(!v){bad=el;why=el.type==="checkbox"?"Please tick the box to continue.":"Please fill in the required fields."}
+    else if(el.type==="tel"&&el.value.replace(/\D/g,"").length<7){bad=el;why="Enter a phone number we can reach."}});
+  if(bad){m.textContent=why;bad.focus();return}
+  m.className="msg ok";m.textContent="Thanks, you’re on the list. (Preview: nothing was sent or saved.)";f.reset();
+});
+})();
+</script>
 </body>
 </html>

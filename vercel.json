@@ -1,5 +1,7 @@
 {
-  "cleanUrls": true,
+  "redirects": [
+    { "source": "/about", "destination": "https://aetherjade.space", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",

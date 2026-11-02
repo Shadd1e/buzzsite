@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ride with Buzz</title>
+<meta name="description" content="Deliver for Buzz sellers. Seven short questions, one at a time.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231250E8'/%3E%3Cpath d='M12 9l11 7-11 7z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1B4D;--blue:#1250E8;--blue2:#1B63F5;--mut:#4B5A84;--line:#DDE3F2;--warm:#FFB86B;--f:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{height:100%}
+body{margin:0;min-height:100%;display:flex;flex-direction:column;color:var(--navy);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;
+background:radial-gradient(45% 40% at 85% 12%,rgba(255,184,107,.35),rgba(255,184,107,0) 70%),radial-gradient(60% 55% at 15% 85%,#D6E4FF,rgba(214,228,255,0) 70%),linear-gradient(180deg,#fff,#F3F7FF);
+padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:3px solid #7FA6FF;outline-offset:3px}
+.w{max-width:1160px;margin:0 auto;width:100%;padding:0 max(24px,env(safe-area-inset-left,0px)) 0 max(24px,env(safe-area-inset-right,0px))}
+header .w{display:flex;align-items:center;justify-content:space-between;height:86px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:36px;letter-spacing:-.045em}
+.logo svg{width:40px;height:46px}
+.back{font-size:14.5px;font-weight:500;border:1.5px solid #B9C6EA;border-radius:999px;padding:9px 18px;background:rgba(255,255,255,.7)}
+main{flex:1;display:grid;place-items:center;padding:20px 0 56px}
+.card{width:min(560px,calc(100% - 32px));background:#fff;border-radius:32px;padding:38px 40px 34px;box-shadow:0 40px 80px -36px rgba(18,80,232,.45),0 0 0 1px rgba(18,80,232,.06)}
+.segs{display:flex;gap:6px;margin-bottom:26px}
+.segs i{flex:1;height:5px;border-radius:3px;background:#E6ECF9;position:relative;overflow:hidden}
+.segs i.on{background:linear-gradient(90deg,var(--blue),var(--blue2))}
+.say{min-height:24px;margin:0 0 14px;color:var(--blue);font-weight:600;font-size:15px}
+.cnt{color:var(--mut);font-size:13.5px;font-weight:500}
+h1{margin:6px 0 10px;font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.12;letter-spacing:-.035em;font-weight:800}
+.why{color:var(--mut);font-size:16px;margin:0 0 26px}
+.step{animation:in .35s cubic-bezier(.2,.7,.2,1)}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+input,textarea{font:inherit;font-size:18px;width:100%;color:var(--navy);background:#F4F7FD;border:2px solid transparent;border-radius:16px;padding:16px 18px}
+textarea{min-height:104px;resize:vertical}
+input:focus,textarea:focus{outline:0;border-color:var(--blue2);background:#fff}
+.opts{display:grid;gap:12px}
+.opt{font:600 17px var(--f);text-align:left;color:var(--navy);background:#F4F7FD;border:2px solid transparent;border-radius:16px;padding:17px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:border-color .15s,background .15s,transform .1s}
+.opt:hover{border-color:#BFD0F5;background:#fff}.opt:active{transform:scale(.985)}
+.opt.sel{border-color:var(--blue);background:#EAF1FF}
+.opt .i{width:20px;height:20px;color:var(--blue);opacity:0}.opt.sel .i{opacity:1}
+.row{display:flex;align-items:center;gap:18px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:14px;font:600 17px var(--f);background:linear-gradient(180deg,#1B63F5,#1049D8);color:#fff;border:0;border-radius:999px;padding:16px 28px;cursor:pointer;box-shadow:0 12px 26px -10px rgba(18,80,232,.7);transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn .i{width:18px;height:18px}
+.lnk{font:600 15px var(--f);background:none;border:0;color:var(--mut);cursor:pointer;padding:10px 4px;text-decoration:underline;text-underline-offset:3px}
+.msg{min-height:22px;margin:12px 0 0;font-size:14.5px;font-weight:500;color:#B3261E}
+.hi{display:grid;place-items:center;width:64px;height:64px;border-radius:20px;background:linear-gradient(135deg,#FFD9A8,var(--warm));font-size:32px;margin-bottom:18px}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:10px 20px;background:#F4F7FD;border-radius:18px;padding:18px 20px;margin:22px 0 0;font-size:15px}
+.dl dt{color:var(--mut)}.dl dd{margin:0;font-weight:600;overflow-wrap:anywhere}
+.fine{color:var(--mut);font-size:13.5px;margin:18px 0 0}
+@media(max-width:600px){header .w{height:72px}.logo{font-size:30px}.card{padding:28px 22px 26px;border-radius:26px}}
+@media(prefers-reduced-motion:reduce){.step{animation:none}.opt,.btn{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="mark" viewBox="0 0 40 46"><rect x="3" y="0" width="11" height="40" rx="5.500" fill="#0B1B4D"/><circle cx="23" cy="28" r="15" fill="#1250E8"/><circle cx="23" cy="28" r="15" fill="none" stroke="#0B1B4D" stroke-width="3.500"/><path d="M19 21.500l9.500 6.500-9.500 6.500z" fill="#fff"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+</defs></svg>
+
+<header><div class="w">
+  <a class="logo" href="index.html" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
+  <a class="back" href="index.html">Back to home</a>
+</div></header>
+
+<main><div class="card">
+  <div class="segs" id="segs" aria-hidden="true"></div>
+  <p class="say" id="say" aria-live="polite"></p>
+  <div id="stage"></div>
+</div></main>
+
+<script>
+(function(){
+"use strict";
+/* Preview only: answers stay on this page. Nothing is sent or saved. */
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+var S=[
+{k:"name",q:"What should we call you?",n:"So we know who we’re talking to.",t:"text",ph:"Your first name is fine",ack:function(v){return "Nice to meet you, "+v.split(" ")[0]+"."}},
+{k:"phone",q:"What’s your phone number?",n:"It’s how we’ll reach you, by call or WhatsApp.",t:"tel",ph:"0803 000 0000",ack:"Great, now we know how to reach you."},
+{k:"area",q:"Which area can you ride in?",n:"We start where Buzz sellers are busiest.",t:"text",ph:"e.g. Yaba, Lagos",ack:"Good. That tells us where to look first."},
+{k:"vehicle",q:"What will you ride or drive?",n:"Bigger orders need bigger vehicles, so this helps us match you.",o:["Bicycle","Motorbike","Car","Van"],ack:"That helps a lot."},
+{k:"time",q:"When can you ride?",n:"So we never call you for work you can’t do.",o:["Full time","Part time","Weekends only","Evenings only"],ack:"Noted. Nearly there."},
+{k:"exp",q:"Have you delivered before?",n:"Optional. It’s a bonus, not a requirement.",t:"area",opt:1,ph:"One line is plenty, or skip this",ack:"Thanks. That’s every detail."},
+{k:"ok",q:"Last one: is it OK if we contact you?",n:"We check your ID with you before your first delivery. Please don’t type any ID numbers here.",o:["Yes, that’s fine"],ack:"All done. Well finished."}];
+var stage=document.getElementById("stage"),segs=document.getElementById("segs"),say=document.getElementById("say"),ix=-1,D={};
+segs.innerHTML=S.map(function(){return "<i></i>"}).join("");
+function prog(n){[].slice.call(segs.children).forEach(function(s,i){s.classList.toggle("on",i<n)})}
+function render(){
+  var h="";
+  if(ix<0){
+    prog(0);say.textContent="";
+    h='<div class="step"><div class="hi" aria-hidden="true">👋</div><h1>Ride with Buzz</h1><p class="why">Buzz sellers need people to carry orders to buyers. Sign up and we’ll contact you when riders are needed in your area.</p><p class="why" style="margin-bottom:0">Seven short questions, one at a time. About two minutes.</p><div class="row"><button class="btn" id="go" type="button">Start <svg class="i"><use href="#arrow"/></svg></button></div></div>'
+  }else if(ix<S.length){
+    var s=S[ix];prog(ix);
+    h='<form class="step" id="wf" novalidate><span class="cnt">Question '+(ix+1)+' of '+S.length+'</span><h1>'+s.q+'</h1><p class="why">'+s.n+'</p>';
+    if(s.o)h+='<div class="opts">'+s.o.map(function(o){return '<button type="button" class="opt'+(D[s.k]===o?" sel":"")+'" data-v="'+esc(o)+'">'+esc(o)+'<svg class="i"><use href="#check"/></svg></button>'}).join("")+'</div>';
+    else if(s.t==="area")h+='<textarea name="v" maxlength="400" placeholder="'+esc(s.ph)+'" aria-label="'+esc(s.q)+'">'+esc(D[s.k]||"")+'</textarea>';
+    else h+='<input name="v" type="'+s.t+'" maxlength="120" placeholder="'+esc(s.ph)+'" value="'+esc(D[s.k]||"")+'" aria-label="'+esc(s.q)+'"'+(s.t==="tel"?' inputmode="tel" autocomplete="tel"':s.k==="name"?' autocomplete="name"':"")+'>';
+    h+='<p class="msg" id="wm" aria-live="polite"></p><div class="row">'+(s.o?"":'<button class="btn" type="submit">'+(s.opt&&!D[s.k]?"Skip":"Continue")+' <svg class="i"><use href="#arrow"/></svg></button>')+(ix>0?'<button class="lnk" type="button" id="back">Back</button>':"")+'</div></form>'
+  }else{
+    prog(S.length);say.textContent="";
+    var first=esc((D.name||"").split(" ")[0]);
+    h='<div class="step"><div class="hi" aria-hidden="true">🎉</div><h1>You’re all set, '+first+'.</h1><p class="why">We’ll contact you on <b>'+esc(D.phone)+'</b> when riders are needed in '+esc(D.area)+'. Keep your phone nearby.</p><dl class="dl"><dt>Area</dt><dd>'+esc(D.area)+'</dd><dt>Vehicle</dt><dd>'+esc(D.vehicle)+'</dd><dt>Availability</dt><dd>'+esc(D.time)+'</dd>'+(D.exp?'<dt>Experience</dt><dd>'+esc(D.exp)+'</dd>':"")+'</dl><p class="fine">Preview: your answers stay on this page. Nothing was sent or saved.</p><div class="row"><a class="btn" href="index.html">Back to home <svg class="i"><use href="#arrow"/></svg></a><button class="lnk" type="button" id="again">Start again</button></div></div>'
+  }
+  stage.innerHTML=h;
+  var f=stage.querySelector("input,textarea");if(f)f.focus({preventScroll:true});
+  else{var b=stage.querySelector("#go");if(b)b.focus({preventScroll:true})}
+}
+function advance(v){var s=S[ix];D[s.k]=v;say.textContent=typeof s.ack==="function"?s.ack(v):s.ack;ix++;render();if(ix>=S.length)say.textContent=""}
+stage.addEventListener("click",function(e){
+  var t=e.target.closest("button");if(!t)return;
+  if(t.id==="go"){ix=0;render()}
+  else if(t.id==="back"){ix--;say.textContent="Take your time.";render()}
+  else if(t.id==="again"){D={};ix=-1;render()}
+  else if(t.dataset.v){[].slice.call(stage.querySelectorAll(".opt")).forEach(function(o){o.classList.toggle("sel",o===t)});var v=t.dataset.v;setTimeout(function(){advance(v)},240)}
+});
+stage.addEventListener("submit",function(e){
+  e.preventDefault();var s=S[ix],v=stage.querySelector("[name=v]").value.trim(),m=document.getElementById("wm");
+  if(!v&&!s.opt){m.textContent="Please fill this in to continue.";return}
+  if(s.t==="tel"&&v.replace(/\D/g,"").length<7){m.textContent="That number looks too short. Check it and try again.";return}
+  advance(v)});
+render();
+})();
+</script>
+</body>
+</html>
