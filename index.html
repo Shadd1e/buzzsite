@@ -4,275 +4,204 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Buzz: Chat. Trade. Pay. All in one app.</title>
-<meta name="description" content="Connect with people, grow your business, and make secure payments, effortlessly.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231250E8'/%3E%3Cpath d='M12 9l11 7-11 7z' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="description" content="Chat privately, get local alerts, and buy and sell with trusted people, all in one app.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231C7BEA'/%3E%3Cpath d='M12 9l11 7-11 7z' fill='%23D2FF4D'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0B1B4D;--deep:#091640;--blue:#1250E8;--blue2:#1B63F5;--mut:#4B5A84;--line:#DDE3F2;--f:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;color-scheme:light}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--navy);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-a{color:inherit;text-decoration:none}
-svg{display:block}
-.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-:focus-visible{outline:3px solid #7FA6FF;outline-offset:3px}
-.w{max-width:1160px;margin:0 auto;padding:0 max(24px,env(safe-area-inset-left,0px)) 0 max(24px,env(safe-area-inset-right,0px))}
-.btn{display:inline-flex;align-items:center;gap:14px;font:600 17px var(--f);background:linear-gradient(180deg,#1B63F5,#1049D8);color:#fff;border:0;border-radius:999px;padding:18px 28px;cursor:pointer;box-shadow:0 12px 26px -10px rgba(18,80,232,.7);transition:transform .15s}
-.btn:active{transform:scale(.97)}
-.btn .i{width:18px;height:18px;stroke-width:2.2}
-.ghost{background:none;box-shadow:none;border:1.5px solid rgba(255,255,255,.55);padding:13px 22px;font-size:15px;gap:30px}
-/* header */
-header{border-bottom:1px solid rgba(18,80,232,.08)}
-header .w{display:flex;align-items:center;justify-content:space-between;height:86px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:36px;letter-spacing:-.045em;color:var(--navy)}
-.logo svg{width:40px;height:46px}
-nav{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:500}
-nav .pill{border:1.5px solid #B9C6EA;border-radius:999px;padding:9px 18px;background:rgba(255,255,255,.7)}
-nav .i{width:18px;height:18px}
+:root{--sky:#1C7BEA;--lime:#D2FF4D;--ink:#0A0A0A;--gr:#F1F1F1;--mut:#8B8B8B;--f:"Inter Tight","Helvetica Neue",Arial,system-ui,sans-serif;--m:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:#fff;color:var(--ink);font:400 17px/1.5 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration:none}svg{display:block}button{font-family:inherit}
+.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.a{fill:var(--ac,#1C7BEA);stroke:none}.as{fill:var(--ac,#1C7BEA)}.c{fill:none;stroke:#fff;stroke-width:1.9}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:8px}
+.mono{font:500 12px/1 var(--m);letter-spacing:.12em;text-transform:uppercase}
+.w{max-width:1180px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left,0px)) 0 max(22px,env(safe-area-inset-right,0px))}
+.sky{background:radial-gradient(34% 14% at 8% 86%,#fff 0,rgba(255,255,255,0) 72%),radial-gradient(30% 13% at 92% 78%,#fff 0,rgba(255,255,255,0) 72%),radial-gradient(40% 12% at 50% 104%,#fff 0,rgba(255,255,255,0) 72%),radial-gradient(18% 8% at 70% 90%,rgba(255,255,255,.9) 0,rgba(255,255,255,0) 72%),linear-gradient(180deg,#0E6CE0 0,#2A8DEF 42%,#79BCF6 76%,#C4E2FB 100%)}
 /* hero */
-.hero{position:relative;overflow:hidden;background:radial-gradient(60% 70% at 78% 40%,#CFE0FF 0,rgba(207,224,255,0) 70%),linear-gradient(180deg,#fff,#F4F8FF 80%,#fff)}
-.hero::before{content:"";position:absolute;right:-8%;top:34%;width:78%;height:46%;border-radius:50%;background:radial-gradient(closest-side,rgba(18,80,232,.55),rgba(18,80,232,0));filter:blur(18px);transform:rotate(-12deg)}
-.hero .w{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:520px;gap:20px;padding-top:30px;padding-bottom:30px}
-h1{margin:0;font-size:clamp(2.5rem,5.6vw,4.6rem);line-height:1.02;letter-spacing:-.045em;font-weight:800}
-h1 b{color:var(--blue);display:block}
-.hero p{color:var(--mut);font-size:1.28rem;line-height:1.5;margin:26px 0 38px;max-width:21em}
-.cta{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
-.demo{display:flex;align-items:center;gap:14px;font-weight:600;font-size:16px;background:none;border:0;cursor:pointer;color:var(--navy);font-family:var(--f)}
-.demo i{width:54px;height:54px;border-radius:50%;border:2px solid #C3D0F0;background:#fff;display:grid;place-items:center;font-style:normal}
-.demo .i{width:18px;height:18px;fill:var(--navy);stroke:none}
-.stage{position:relative;height:560px}
-/* phones */
-.ph{position:absolute;width:268px;height:548px;background:linear-gradient(160deg,#1c2b5c,#06102e);border-radius:44px;padding:9px;box-shadow:0 40px 70px -26px rgba(8,22,70,.7),inset 0 0 0 2px #3A4A80}
-.ph::before{content:"";position:absolute;top:18px;left:50%;width:84px;height:24px;margin-left:-42px;background:#050A1E;border-radius:99px;z-index:3}
-.sc{height:100%;background:#fff;border-radius:36px;padding:44px 14px 12px;overflow:hidden;position:relative}
-.st{position:absolute;top:19px;left:28px;font-size:11.5px;font-weight:700}
-.bar{display:flex;align-items:center;justify-content:space-between}
-.bar .logo{font-size:23px;gap:6px}.bar .logo svg{width:20px;height:23px}
-.bar span{display:flex;gap:8px;font-size:15px}
-.tb{display:flex;gap:6px;margin:12px 0 8px;font-size:10.5px;font-weight:600}
-.tb em{font-style:normal;padding:5px 10px;border-radius:99px;color:var(--mut);background:#F0F4FC}
-.tb em:first-child{background:var(--blue);color:#fff}
-.row{display:flex;align-items:center;gap:10px;padding:10px 0;position:relative}
-.av{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px}
-.row b{display:block;font-size:13px;line-height:1.2}
-.row small{display:block;color:var(--mut);font-size:11px}
-.row time{margin-left:auto;font-size:10.5px;color:var(--mut)}
-.row u{position:absolute;right:0;top:30px;width:15px;height:15px;border-radius:50%;background:var(--blue);color:#fff;font:700 9px/15px var(--f);text-align:center;text-decoration:none}
-.nv{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:10px 8px 14px;font-size:9.5px;color:#8A96B8;border-top:1px solid #EEF1F9;background:#fff}
-.nv span{text-align:center}.nv span:first-child{color:var(--blue);font-weight:600}
-.p1{left:50%;margin-left:-190px;top:-6px;transform:rotate(13deg)}
-.card{position:absolute;right:0;top:140px;width:196px;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:26px;padding:22px 16px;text-align:center;font-weight:700;font-size:17px;line-height:1.2;box-shadow:0 24px 50px -20px rgba(18,80,232,.5);transform:rotate(8deg);z-index:2}
-.card .i.sh{width:40px;height:40px;color:var(--blue);margin:0 auto 10px;stroke-width:2}
-.pay{display:flex;justify-content:center;gap:7px;margin-top:14px;align-items:center}
-.pay i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font:700 13px var(--f);font-style:normal}
-.visa{width:auto!important;border-radius:5px!important;background:#fff;color:#1A1F71!important;padding:0 5px;font-size:11px!important;font-style:italic!important;box-shadow:0 0 0 1px #E2E7F5}
+.hero{margin:8px;border-radius:30px;color:#fff;position:relative;overflow:hidden;padding-bottom:70px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 26px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:600;font-size:28px;letter-spacing:-.05em;color:#fff;--ac:#1C7BEA}.logo svg{width:28px;height:32px}
+.links{display:flex;gap:34px}.links a{opacity:.92}.links a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.pill{display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:var(--ink);border:0;border-radius:999px;padding:13px 22px;cursor:pointer}
+.pill .dot{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;margin:-8px -14px -8px 0}
+.pill .dot .i{width:14px;height:14px;stroke-width:2.2}
+.pill.sm{padding:12px 20px}
+.dk{display:inline-flex;align-items:center;background:rgba(6,40,96,.55);color:#fff;border:0;border-radius:999px;padding:15px 24px;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.hc{text-align:center;padding:64px 22px 0;max-width:860px;margin:0 auto;position:relative}
+h1{margin:0;font-weight:500;font-size:clamp(2.8rem,7.4vw,5.6rem);line-height:1;letter-spacing:-.055em}
+h1 span{display:block;color:rgba(255,255,255,.62)}
+.hc p{margin:24px auto 30px;max-width:30em;color:rgba(255,255,255,.88);font-size:clamp(1rem,2vw,1.2rem)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.rail{display:flex;justify-content:center;align-items:center;gap:12px;perspective:1500px;margin:64px 0 0;padding:0 10px}
+.k{flex:none;width:138px;height:176px;border-radius:16px;background:#fff;color:var(--ink);padding:12px;box-shadow:0 24px 40px -18px rgba(5,35,90,.55);transform:rotateY(var(--r)) scale(var(--s));font-size:10px;line-height:1.3;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.k:nth-child(1){--r:42deg;--s:.74}.k:nth-child(2){--r:30deg;--s:.84}.k:nth-child(3){--r:16deg;--s:.94}.k:nth-child(4){--r:0deg;--s:1.14;margin:0 10px}.k:nth-child(5){--r:-16deg;--s:.94}.k:nth-child(6){--r:-30deg;--s:.84}.k:nth-child(7){--r:-42deg;--s:.74}
+.k b{font-weight:600;font-size:11px;display:block}.k small{color:var(--mut);font-size:9px}
+.k .n{font-size:22px;font-weight:500;letter-spacing:-.04em;line-height:1}
+.ln{display:flex;align-items:center;gap:6px;margin:5px 0}.ln i{width:16px;height:16px;border-radius:50%;flex:none}.ln u{flex:1;height:5px;border-radius:3px;background:#E4E4E4;text-decoration:none}.ln u+u{display:none}
+.bar{height:5px;border-radius:3px;background:#E8E8E8;margin:4px 0;position:relative}.bar::after{content:"";position:absolute;inset:0;width:var(--p);border-radius:3px;background:var(--sky)}
+.k.dk2{background:#0A0A0A;color:#fff}.k.dk2 small{color:#aaa}
+.k.gl{background:linear-gradient(160deg,#5BB4FA,#1C7BEA);color:#fff;align-items:center;justify-content:center;text-align:center;gap:8px}
+.k.gl .pl{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--sky);display:grid;place-items:center}.k.gl .pl .i{width:16px;height:16px;stroke-width:2.4}
+.k.ph{background:linear-gradient(160deg,#F6A23B,#2CA561);justify-content:flex-end;padding:0}
+.k.ph .av{position:absolute}
+.k.ph .t{background:#fff;margin:8px;border-radius:10px;padding:8px}
+.k.ph .big{flex:1;display:grid;place-items:center}.k.ph .big span{width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.35);display:grid;place-items:center;font-size:26px;font-weight:600;color:#fff}
+.where{text-align:center;margin-top:34px;color:rgba(255,255,255,.9)}
+/* marquee */
+.mq{overflow:hidden;padding:46px 0 10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.tr{display:flex;gap:64px;width:max-content;animation:mq 70s linear infinite}
+.tr span{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:600;letter-spacing:-.03em;color:#7C7C7C;white-space:nowrap}.tr .i{width:26px;height:26px;color:#7C7C7C;--ac:#BDBDBD}
+@keyframes mq{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+/* about */
+.ab{padding:90px 0 40px;text-align:center}
+.eb{display:inline-flex;align-items:center;gap:9px;color:var(--ink)}.eb::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--ink)}
+h2{margin:22px auto 0;max-width:880px;font-weight:500;font-size:clamp(2.1rem,5.2vw,3.9rem);line-height:1.05;letter-spacing:-.055em}
+h2 em{font-style:normal;color:#9A9A9A}
+.ch{display:inline-grid;place-items:center;width:.86em;height:.86em;border-radius:50%;vertical-align:-.08em;margin:0 .1em}.ch .i{width:.48em;height:.48em;stroke-width:2.2}
+.bento{display:grid;grid-template-columns:1.05fr 1fr 1fr;grid-template-rows:auto auto;gap:14px;margin-top:64px;text-align:left}
+.bc{border-radius:26px;padding:22px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:200px}
+.bA{grid-row:1/3;min-height:480px;color:#fff}
+.bA .in{background:#fff;color:var(--ink);border-radius:18px;padding:20px;position:relative}
+.bB{grid-row:1/3;background:var(--gr)}
+.bC{background:var(--lime)}.bD{background:var(--ink);color:#fff;flex-direction:row;align-items:center;min-height:120px}
+.big{font-size:clamp(2.6rem,5vw,4rem);font-weight:400;letter-spacing:-.06em;line-height:1}
+.lab{font-size:15px;color:inherit;opacity:.85}.cap{font-size:15px;max-width:19em}
+.av3{display:flex}.av3 i{width:34px;height:34px;border-radius:50%;border:2px solid var(--gr);margin-right:-8px;display:grid;place-items:center;font:600 13px var(--f);font-style:normal;color:#fff}
 /* features */
-.feat{display:grid;grid-template-columns:repeat(4,1fr);padding:30px 0 48px}
-.feat div{text-align:center;padding:4px 14px;border-left:1px solid var(--line)}
-.feat div:first-child{border:0}
-.feat .i{width:34px;height:34px;color:var(--blue);margin:0 auto 12px}
-.feat b{display:block;font-size:15.5px}
-.feat span{color:var(--mut);font-size:14px}
-/* panels */
-.panel{margin:0 16px;border-radius:32px;background:radial-gradient(70% 90% at 80% 100%,#16409E 0,rgba(22,64,158,0) 70%),linear-gradient(135deg,#0B1B4D,#07123A);color:#fff;position:relative;overflow:hidden}
-.panel::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-60%;height:100%;border-radius:50%;border-top:2px solid rgba(80,140,255,.55);pointer-events:none}
-.pro{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:30px;padding:48px 56px;max-width:1160px;margin:0 auto;position:relative}
-.panel h2,.real h2{margin:0;font-size:clamp(2rem,4.2vw,3rem);line-height:1.1;letter-spacing:-.035em;font-weight:700}
-.panel h2 b,.real h2 b{display:block;color:#3E86FF;font-weight:700}
-.rule{width:38px;height:3px;background:var(--blue2);margin-bottom:26px;border-radius:2px}
-.panel p{color:#D5DEF7;font-size:1.1rem;max-width:17em;margin:18px 0 26px}
-.mix{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px;align-items:center;position:relative}
-.store{background:#fff;color:var(--navy);border-radius:26px;padding:20px 18px 18px;position:relative;box-shadow:0 30px 50px -20px rgba(0,0,0,.6);width:100%;max-width:220px;margin:0 auto}
-.store::before{content:"";position:absolute;left:100%;top:22px;bottom:-10px;width:30px;background:rgba(255,255,255,.18);border-radius:0 22px 22px 0;z-index:-1}
-.store h3{margin:0 0 12px;font-size:15px;display:flex;gap:9px;align-items:center}
-.store h3 .i{width:22px;height:22px;color:var(--blue)}
-.shoe{background:#ECEFF5;border-radius:14px;height:98px;display:grid;place-items:center;margin-bottom:12px}
-.store b{display:block;font-size:14px}
-.store .btn{width:100%;justify-content:center;gap:10px;padding:12px;font-size:14px;margin-top:12px;border-radius:12px;box-shadow:none}
-.store .btn .i{width:14px;height:14px}
-.glass{border:1px solid rgba(140,175,255,.4);background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border-radius:24px;padding:30px 24px;transform:rotate(-3deg);text-align:center;box-shadow:0 24px 60px -20px rgba(0,0,0,.5)}
-.glass .i.sh{width:42px;height:42px;color:#4F94FF;margin:0 auto 10px;stroke-width:2}
-.glass b{font-size:20px;display:block;line-height:1.2;margin-bottom:8px}
-.glass small{display:block;color:#C3D0F0;font-size:13px}
-.coins{display:flex;justify-content:center;gap:16px;margin-top:18px}
-.coins i{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font:700 20px var(--f);font-style:normal;box-shadow:0 0 0 3px rgba(255,255,255,.9)}
-/* real */
-.real{position:relative;overflow:hidden;margin-top:30px;padding:56px 0 0;min-height:430px}
-.real .w{position:relative;z-index:2}
-.real .rule{margin-bottom:24px}
-.real p{font-size:1.15rem;color:var(--mut);max-width:19em;margin:20px 0 26px}
-.chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;max-width:520px}
-.chips span{display:flex;align-items:center;gap:9px;border:1.5px solid var(--line);border-radius:99px;padding:10px 16px;font-size:13.5px;font-weight:500;background:#fff;box-shadow:0 6px 14px -8px rgba(18,80,232,.3)}
-.chips .i{width:18px;height:18px;color:var(--blue)}
-.city{position:absolute;right:0;bottom:0;width:62%;height:100%;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
-.p2{right:12%;top:44px;transform:rotate(-13deg);z-index:2}
-.p2 .sc{padding-top:50px}
-.p2 h4{margin:0 0 12px;font-size:21px;letter-spacing:-.02em}
-.srch{background:#F0F4FC;border-radius:14px;padding:11px 14px;font-size:12px;color:var(--mut);margin-bottom:6px}
-.join{margin-left:auto;background:var(--blue);color:#fff;border-radius:99px;padding:5px 13px;font-size:11px;font-weight:600}
+.fs{padding:70px 0 90px;text-align:center}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px;text-align:left}
+.f{background:var(--gr);border-radius:26px;padding:24px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s}
+.f:hover{transform:translateY(-4px)}
+.f .ic{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--ink)}.f .ic .i{width:26px;height:26px}
+.f h3{margin:0 0 6px;font-weight:500;font-size:1.6rem;letter-spacing:-.04em}.f p{margin:0;font-size:15.5px;opacity:.75;max-width:22em}
+.f:nth-child(2){background:var(--lime)}.f:nth-child(5){background:var(--sky);color:#fff;--ac:#D2FF4D}.f:nth-child(5) .ic{color:var(--ink);--ac:#1C7BEA}
 /* cta */
-.final{margin:0 16px;padding:42px 0}
-.final .w{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;z-index:1;padding:0 40px}
-.final h2{margin:0 0 6px;font-size:2rem;letter-spacing:-.03em}
-.final p{margin:0;font-size:1.05rem;max-width:none}
-footer{padding:28px 0 36px;margin-top:44px;border-top:1px solid #E7ECF6}
-footer .w{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-footer .logo{font-size:32px}
-footer nav{gap:0;font-size:13px;font-weight:600}
-footer nav a{padding:0 16px;border-left:1.5px solid var(--navy);line-height:1}
-footer nav a:first-child{border:0}
-.soc{display:flex;gap:22px}.soc .i{width:24px;height:24px;fill:none}
-/* dialog */
-dialog{border:0;border-radius:24px;padding:30px;width:min(440px,92vw);color:var(--navy);box-shadow:0 40px 90px -20px rgba(8,22,70,.6)}
-dialog::backdrop{background:rgba(7,18,58,.6)}
-dialog h3{margin:0 0 4px;font-size:1.5rem;letter-spacing:-.02em}
-dialog form{display:grid;gap:14px;margin-top:18px}
-dialog label{display:grid;gap:5px;font-weight:600;font-size:13.5px}
-dialog input{font:inherit;font-size:15px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
-dialog .ck{display:flex;gap:10px;font-weight:400;color:var(--mut);align-items:flex-start;font-size:13px}
-dialog .ck input{width:auto;margin-top:3px}
+.cta{margin:8px;border-radius:30px;color:#fff;text-align:center;padding:96px 22px 110px}
+.cta h2{color:#fff;margin-bottom:30px}.cta h2 em{color:rgba(255,255,255,.62)}
+footer{padding:30px 0 40px}footer .w{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer .logo{color:var(--ink)}footer nav{display:flex;gap:28px}footer small{color:var(--mut)}
+dialog{border:0;border-radius:26px;padding:30px;width:min(440px,92vw);color:var(--ink);box-shadow:0 40px 90px -20px rgba(5,35,90,.6)}
+dialog::backdrop{background:rgba(5,20,50,.6)}
+dialog h3{margin:0 0 4px;font-size:1.7rem;font-weight:500;letter-spacing:-.04em}
+dialog form{display:grid;gap:14px;margin-top:18px}dialog label{display:grid;gap:5px;font-weight:500;font-size:14px}
+dialog input{font:inherit;font-size:16px;border:0;background:var(--gr);border-radius:14px;padding:14px 16px;width:100%}dialog input:focus{outline:2px solid var(--sky)}
+dialog .ck{display:flex;gap:10px;font-weight:400;color:#666;align-items:flex-start;font-size:13px}dialog .ck input{width:auto;margin-top:3px}
 .msg{margin:0;min-height:20px;font-size:13.5px;font-weight:500;color:#B3261E}.msg.ok{color:#1F8A5B}
-.x{position:absolute;right:16px;top:14px;background:none;border:0;font-size:26px;cursor:pointer;color:var(--mut)}
-@media(max-width:900px){
-header .w{height:72px}.logo{font-size:30px}nav a:not(.pill):not(.arr){display:none}
-.hero .w{grid-template-columns:1fr;min-height:0;padding-top:34px}
-.stage{height:520px}.card{right:0}
-.feat{grid-template-columns:1fr 1fr;gap:26px 0}.feat div:nth-child(3){border-left:0}
-.pro{grid-template-columns:1fr;padding:40px 26px}.mix{grid-template-columns:1fr}
-.real{min-height:0}.real .w{padding-bottom:30px}.chips{margin-bottom:20px}.city{width:100%;opacity:.55}
-.p2{position:relative;right:auto;top:auto;margin:10px auto -150px;transform:rotate(-8deg)}
-.final .w{padding:0 24px}
-footer .w{justify-content:center}footer nav{flex-wrap:wrap;justify-content:center;row-gap:10px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+.x{position:absolute;right:16px;top:12px;background:none;border:0;font-size:28px;cursor:pointer;color:#777}
+@media(max-width:1100px){.k:nth-child(1),.k:nth-child(7){display:none}}
+@media(max-width:860px){.links{display:none}.k:nth-child(2),.k:nth-child(6){display:none}.bento{grid-template-columns:1fr}.bA,.bB{grid-row:auto;min-height:320px}.fg{grid-template-columns:1fr 1fr}.nav{padding:18px}}
+@media(max-width:560px){.k:nth-child(3),.k:nth-child(5){display:none}.fg{grid-template-columns:1fr}.hero{padding-bottom:50px}.hc{padding-top:44px}.bD{flex-direction:column;align-items:flex-start;gap:14px}}
+@media(prefers-reduced-motion:reduce){.tr{animation:none}html{scroll-behavior:auto}.f{transition:none}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="chat" viewBox="0 0 24 24"><path d="M4 12a8 7 0 0 1 8-7 8 7 0 0 1 8 7 8 7 0 0 1-8 7H5l1.5-3A7 7 0 0 1 4 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
-<symbol id="store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9c0 1.7 1.3 2.5 2.7 2.5S9.3 10.700 9.300 9c0 1.700 1.100 2.500 2.700 2.500s2.700-.8 2.700-2.500c0 1.700 1.100 2.500 2.600 2.500S20 10.700 20 9M5.500 11.500V20h13v-8.500M10 20v-4.500h4V20"/></symbol>
-<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.500c0 4.500-3 8-7 9.500-4-1.500-7-5-7-9.500V6z" /><path d="M8.800 12l2.400 2.400 4.200-4.600"/></symbol>
-<symbol id="users" viewBox="0 0 24 24"><circle cx="12" cy="7" r="2.800"/><circle cx="5.500" cy="9.500" r="2.200"/><circle cx="18.500" cy="9.500" r="2.200"/><path d="M7 19c0-3 2.200-5 5-5s5 2 5 5M1.500 17c0-2.200 1.600-3.800 4-3.800M22.500 17c0-2.200-1.600-3.800-4-3.800"/></symbol>
-<symbol id="bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l1.500 2h-15zM10 21h4"/></symbol>
-<symbol id="wrench" viewBox="0 0 24 24"><path d="M14.500 6.500a4 4 0 0 0 5 5l-9 9a2.100 2.100 0 0 1-3-3l9-9a4 4 0 0 1-2-2z"/></symbol>
-<symbol id="arrow" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="mark" viewBox="0 0 40 46"><rect x="3" y="0" width="11" height="40" rx="5.500" fill="currentColor"/><circle cx="23" cy="28" r="15" style="fill:var(--ac,#1C7BEA)"/><circle cx="23" cy="28" r="15" fill="none" stroke="currentColor" stroke-width="3.500"/><path d="M19 21.500l9.500 6.500-9.500 6.500z" fill="#fff"/></symbol>
+<symbol id="chat" viewBox="0 0 24 24"><path d="M4 10.500C4 7.400 6.600 5 9.800 5h4.400C17.400 5 20 7.400 20 10.500S17.400 16 14.200 16H9.500L5.500 19.500V15.200C4.600 14.200 4 12.500 4 10.500z"/><circle class="a" cx="9" cy="10.500" r="1.300"/><circle class="a" cx="12" cy="10.500" r="1.300"/><circle class="a" cx="15" cy="10.500" r="1.300"/></symbol>
+<symbol id="store" viewBox="0 0 24 24"><path class="as" d="M3.500 9.500L5 4.500h14l1.500 5c0 1.500-1.200 2.500-2.500 2.500s-2.500-1-2.500-2.500c0 1.500-1.200 2.500-2.500 2.500S9.500 11 9.500 9.500C9.500 11 8.300 12 7 12S3.500 11 3.500 9.500z"/><path d="M5.500 12v7.500h13V12M10 19.500v-4h4v4"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l7.500 3v5.500c0 4.500-3.200 7.800-7.500 9.500-4.300-1.700-7.500-5-7.500-9.500V6z"/><path class="a" d="M12 6.300l4.700 1.900v3.400c0 2.800-2 5-4.700 6.100-2.700-1.100-4.700-3.300-4.700-6.100V8.200z"/><path class="c" d="M9.800 12l1.700 1.700 3-3.200"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle class="as" cx="12" cy="8.500" r="2.800"/><path d="M7.500 19c0-2.800 2-4.800 4.500-4.800s4.500 2 4.500 4.800"/><circle cx="5" cy="10.200" r="2"/><circle cx="19" cy="10.200" r="2"/><path d="M1.800 18c0-2 1.400-3.500 3.200-3.500M22.200 18c0-2-1.400-3.500-3.200-3.500"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M6.500 16.500V11a5.500 5.500 0 0 1 11 0v5.500l1.500 1.500H5z"/><path d="M12 3.500v2"/><circle class="a" cx="12" cy="20.700" r="1.700"/></symbol>
+<symbol id="wrench" viewBox="0 0 24 24"><path d="M14.500 6.500a4 4 0 0 0 5 5l-9 9a2.100 2.100 0 0 1-3-3l9-9a4 4 0 0 1-2-2z"/><circle class="a" cx="8.800" cy="18.200" r="1.200"/></symbol>
+<symbol id="drop" viewBox="0 0 24 24"><circle cx="8" cy="12" r="3.500"/><circle class="a" cx="16.500" cy="12" r="3.500"/><path d="M12 6v-2M12 20v-2"/></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path class="as" d="M4 11l8-6.500 8 6.500v8.500H4z"/><path d="M10 19.500v-5h4v5"/></symbol>
+<symbol id="law" viewBox="0 0 24 24"><path d="M12 4v16M6 20h12M5 7h14"/><path d="M5 7l-2.500 6a3 3 0 0 0 5 0zM19 7l-2.500 6a3 3 0 0 0 5 0z"/><circle class="a" cx="12" cy="4" r="1.500"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
 <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-<symbol id="mark" viewBox="0 0 40 46"><rect x="3" y="0" width="11" height="40" rx="5.500" fill="#0B1B4D"/><circle cx="23" cy="28" r="15" fill="#1250E8"/><circle cx="23" cy="28" r="15" fill="none" stroke="#0B1B4D" stroke-width="3.500"/><path d="M19 21.500l9.500 6.500-9.500 6.500z" fill="#fff"/></symbol>
 </defs></svg>
 
-<header><div class="w">
-  <a class="logo" href="#top" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
-  <nav><a class="pill" href="ride.html">Ride with Buzz</a><a href="careers.html">Careers</a><a href="/about">About</a><a class="arr" href="#top" aria-label="Back to top"><svg class="i"><path d="M7 17L17 7M8 7h9v9"/></svg></a></nav>
-</div></header>
-
-<main id="top">
-<section class="hero"><div class="w">
-  <div>
-    <h1>Chat. Trade. Pay.<b>All in one app.</b></h1>
+<section class="hero sky" id="top">
+  <div class="nav">
+    <a class="logo" href="#top" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
+    <nav class="links mono"><a href="#why">Why Buzz</a><a href="#features">Features</a><a href="help.html">Help</a></nav>
+    <a class="pill sm mono" href="ride.html">Ride with Buzz</a>
+  </div>
+  <div class="hc">
+    <h1>Chat. Trade. Pay.<span>All in one app.</span></h1>
     <p>Connect with people, grow your business, and make secure payments, effortlessly.</p>
-    <div class="cta">
-      <button class="btn" data-join>Join the Waitlist <svg class="i"><use href="#arrow"/></svg></button>
-      <button class="demo" type="button"><i><svg class="i"><path d="M7 4.500l12 7.500-12 7.500z"/></svg></i>Watch Demo</button>
-    </div>
+    <div class="btns"><a class="dk mono" href="#features">Explore</a><button class="pill mono" data-join>Get started <span class="dot"><svg class="i"><use href="#arrow"/></svg></span></button></div>
   </div>
-  <div class="stage" aria-hidden="true">
-    <div class="ph p1"><div class="sc">
-      <span class="st">9:41</span>
-      <div class="bar"><span class="logo"><svg><use href="#mark"/></svg>buzz</span><span><svg class="i"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg><svg class="i" style="background:var(--blue);color:#fff;border-radius:6px;padding:2px"><use href="#plus"/></svg></span></div>
-      <div class="tb"><em>Chats</em><em>Communities</em><em>Marketplace</em></div>
-      <div class="row"><span class="av" style="background:#4F7DE8"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Neighbourhood Circle</b><small>Great deals nearby!</small></div><time>2m</time><u>3</u></div>
-      <div class="row"><span class="av" style="background:linear-gradient(135deg,#F2B68E,#B5683F)">A</span><div><b>Ada</b><small>See you soon!</small></div><time>8m</time></div>
-      <div class="row"><span class="av" style="background:#1B2A5E"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Business Hub</b><small>New offer available 🎁</small></div><time>12m</time></div>
-      <div class="row"><span class="av" style="background:linear-gradient(135deg,#7A5A44,#3B2A20)">M</span><div><b>Marcus</b><small>Sounds good 👍</small></div><time>18m</time></div>
-      <div class="row"><span class="av" style="background:#49B38A"><svg class="i" style="width:20px;height:20px"><use href="#shield"/></svg></span><div><b>Local Services</b><small>Verified service nearby.</small></div><time>1h</time></div>
-      <div class="nv"><span>Chats</span><span>Discover</span><span>Pay</span><span>Profile</span></div>
-    </div></div>
-    <div class="card"><svg class="i sh"><use href="#shield"/></svg>Secure Payments with SunPay
-      <div class="pay"><i class="visa">VISA</i><i style="background:#EB001B;box-shadow:10px 0 0 -2px #F79E1B"></i><i style="background:#F7931A;margin-left:8px">₿</i><i style="background:#26A17B">T</i></div>
-    </div>
+  <div class="rail" aria-hidden="true">
+    <div class="k"><b>Chats</b><div><div class="ln"><i style="background:#4F7DE8"></i><u></u></div><div class="ln"><i style="background:#F2A65A"></i><u></u></div><div class="ln"><i style="background:#49B38A"></i><u></u></div><div class="ln"><i style="background:#1A1A1A"></i><u></u></div></div><small>Private by default</small></div>
+    <div class="k"><small>Pay with SunPay</small><div><div class="n">₦45,000</div><div class="bar" style="--p:72%"></div><small>Sneakers · Lagos</small></div><small>Fiat · Stablecoins · Crypto</small></div>
+    <div class="k ph"><div class="big"><span>A</span></div><div class="t"><b>Ada</b><small>See you soon!</small></div></div>
+    <div class="k"><b>Alerts near you</b><div><small>National</small><div class="bar" style="--p:30%"></div><small>Regional</small><div class="bar" style="--p:46%"></div><small>Local</small><div class="bar" style="--p:88%"></div><small>Personal</small><div class="bar" style="--p:60%"></div></div><small>Buzz Alert</small></div>
+    <div class="k dk2"><b>Safety that stays out of the way.</b><small>Rescue Mode, trusted contacts and Security Live.</small><span style="width:10px;height:10px;border-radius:50%;background:var(--lime)"></span></div>
+    <div class="k gl"><span class="pl"><svg class="i"><use href="#plus"/></svg></span><b>Join a community</b><small style="color:#fff;opacity:.8">Near you</small></div>
+    <div class="k"><small>Verification</small><div class="n" style="font-size:34px">5 steps</div><small>from submitted to agency verified</small></div>
   </div>
-</div></section>
-
-<div class="w"><div class="feat">
-  <div><svg class="i"><use href="#chat"/></svg><b>Private Messaging</b><span>with end-to-end security</span></div>
-  <div><svg class="i"><use href="#store"/></svg><b>Sell &amp; Buy Locally</b><span>with trusted sellers</span></div>
-  <div><svg class="i"><use href="#shield"/></svg><b>Secure Payments</b><span>Fiat • Stablecoins • Crypto</span></div>
-  <div><svg class="i"><use href="#users"/></svg><b>Local Communities</b><span>for what matters</span></div>
-</div></div>
-
-<section class="panel" id="pro"><div class="pro">
-  <div><div class="rule"></div><h2>More than a chat app.<b>A complete platform.</b></h2><p>Start a business, reach more customers, and get paid securely with SunPay.</p>
-    <a class="btn ghost" href="#pro">Explore Pro Features <svg class="i"><use href="#arrow"/></svg></a></div>
-  <div class="mix">
-    <div class="store"><h3><svg class="i"><use href="#store"/></svg>Your Store</h3>
-      <div class="shoe"><svg viewBox="0 0 120 60" width="120" height="60"><path d="M6 40c0-6 4-8 10-9l14-3c4-1 6-4 9-8 2-3 5-3 7-1l8 9c3 3 7 5 12 6l30 6c8 2 14 5 14 10v4H6z" fill="#2B3042"/><path d="M6 46h110v6c0 2-2 4-4 4H10c-2 0-4-2-4-4z" fill="#F4F6FA"/><path d="M40 28l12 10M52 24l12 10M64 29l10 8" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/><path d="M30 44c20-4 50-2 80 2" stroke="#fff" stroke-width="3" fill="none" opacity=".8"/></svg></div>
-      <b>Sneakers</b><b style="font-weight:600;margin-top:2px">₦45,000</b>
-      <button class="btn" type="button" data-join><svg class="i"><use href="#plus"/></svg>Buy Now</button></div>
-    <div class="glass"><svg class="i sh"><use href="#shield"/></svg><b>Pay Securely with SunPay</b><small>Local Currency • Stablecoins • Crypto</small>
-      <div class="coins"><i style="background:#0F9D58;color:#fff">₦</i><i style="background:#1A73E8;color:#fff">$</i><i style="background:#F7931A;color:#fff">₿</i><i style="background:#fff;color:#627EEA">Ξ</i></div></div>
-  </div>
-</div></section>
-
-<section class="real" id="about">
-  <svg class="city" viewBox="0 0 640 380" preserveAspectRatio="xMaxYMax slice" aria-hidden="true"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2FF"/><stop offset="1" stop-color="#F9FBFF"/></linearGradient><linearGradient id="bd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9DAF5"/><stop offset="1" stop-color="#8FB0E4"/></linearGradient><linearGradient id="wt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD6F4"/><stop offset="1" stop-color="#8DB1E6"/></linearGradient></defs>
-    <rect width="640" height="380" fill="url(#sk)"/>
-    <g fill="url(#bd)"><rect x="120" y="170" width="34" height="140"/><rect x="160" y="130" width="40" height="180"/><rect x="214" y="190" width="30" height="120"/><rect x="440" y="140" width="30" height="170"/><rect x="480" y="40" width="44" height="270"/><rect x="536" y="110" width="40" height="200"/><rect x="584" y="80" width="56" height="230"/><rect x="400" y="190" width="34" height="120"/></g>
-    <path d="M0 300c80-30 170-20 250-8s180-12 250-4 100 6 140-4v96H0z" fill="#7FA66B"/><g fill="#5E9360"><circle cx="40" cy="290" r="26"/><circle cx="96" cy="300" r="22"/><circle cx="580" cy="290" r="28"/><circle cx="620" cy="296" r="20"/></g>
-    <rect y="318" width="640" height="62" fill="url(#wt)"/></svg>
-  <div class="w"><div class="rule"></div><h2>Real connections.<br>Real value.</h2>
-    <p>Join vibrant communities, get local alerts, and discover trusted services near you.</p>
-    <div class="chips"><span><svg class="i"><use href="#bell"/></svg>Local Alerts</span><span><svg class="i"><use href="#store"/></svg>Marketplace</span><span><svg class="i"><use href="#wrench"/></svg>Services</span><span><svg class="i"><use href="#users"/></svg>Communities</span></div></div>
-  <div class="ph p2" aria-hidden="true"><div class="sc"><span class="st">9:41</span><h4>Communities</h4><div class="srch">🔍 Search communities...</div>
-    <div class="row"><span class="av" style="background:#49B38A"><svg class="i" style="width:20px;height:20px"><use href="#shield"/></svg></span><div><b>Neighbourhood Watch</b><small>12.5k members</small></div><span class="join">Join</span></div>
-    <div class="row"><span class="av" style="background:#F5A25A"><svg class="i" style="width:20px;height:20px"><use href="#store"/></svg></span><div><b>Business Connect</b><small>8.2k members</small></div><span class="join">Join</span></div>
-    <div class="row"><span class="av" style="background:#1B2A5E"><svg class="i" style="width:20px;height:20px"><use href="#users"/></svg></span><div><b>Tech &amp; Innovation</b><small>6.1k members</small></div><span class="join">Join</span></div>
-  </div></div>
+  <p class="where mono">Starting in Nigeria · opening area by area</p>
 </section>
 
-<section class="panel final"><div class="w">
-  <div><h2>Be part of what’s next.</h2><p>Join the Buzz waitlist today and be the first to get access.</p></div>
-  <button class="btn" data-join>Join the Waitlist <svg class="i"><use href="#arrow"/></svg></button>
+<div class="mq" aria-hidden="true"><div class="tr">
+<span><svg class="i"><use href="#chat"/></svg>Private chats</span><span><svg class="i"><use href="#users"/></svg>Communities</span><span><svg class="i"><use href="#store"/></svg>Marketplace</span><span><svg class="i"><use href="#wrench"/></svg>Services</span><span><svg class="i"><use href="#bell"/></svg>Buzz Alert</span><span><svg class="i"><use href="#shield"/></svg>SunPay</span>
+<span><svg class="i"><use href="#chat"/></svg>Private chats</span><span><svg class="i"><use href="#users"/></svg>Communities</span><span><svg class="i"><use href="#store"/></svg>Marketplace</span><span><svg class="i"><use href="#wrench"/></svg>Services</span><span><svg class="i"><use href="#bell"/></svg>Buzz Alert</span><span><svg class="i"><use href="#shield"/></svg>SunPay</span>
+</div></div>
+
+<section class="ab" id="why"><div class="w">
+  <span class="eb mono">Why Buzz</span>
+  <h2>A secure messenger built for <span class="ch" style="background:#38B6F5;color:#fff;--ac:rgba(255,255,255,.45)"><svg class="i"><use href="#chat"/></svg></span> everyday life, <em>with local alerts <span class="ch" style="background:var(--lime);color:var(--ink);--ac:var(--ink)"><svg class="i"><use href="#bell"/></svg></span> and trusted sellers.</em></h2>
+  <div class="bento">
+    <div class="bc bA sky"><div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:24px;letter-spacing:-.05em;font-style:italic">buzz alert</b><span style="width:36px;height:36px;border-radius:10px;background:#fff;color:var(--ink);display:grid;place-items:center"><svg class="i" style="width:20px;height:20px"><use href="#bell"/></svg></span></div>
+      <div class="in"><div class="big">4</div><p class="cap" style="margin:10px 0 0">Alert levels: national, regional, local and personal.</p></div></div>
+    <div class="bc bB"><div class="lab">Chats and BuzzDrop</div><div><div class="big" style="font-size:clamp(2.2rem,4vw,3.2rem)">Your number stays yours.</div><p class="cap" style="margin:16px 0 22px;color:#444">Swap Buzz identities with someone nearby by scanning, without sharing your phone number.</p><div class="av3"><i style="background:#4F7DE8">A</i><i style="background:#F2A65A">K</i><i style="background:#49B38A">T</i><i style="background:#1A1A1A">M</i></div></div></div>
+    <div class="bc bC"><div class="lab">Report verification</div><div><div class="big">5 steps</div><p class="cap" style="margin:8px 0 0">From submitted to agency verified, so you know what to trust.</p></div></div>
+    <div class="bc bD"><span class="lab">Payments with</span><span class="big" style="font-size:clamp(2rem,3.4vw,2.8rem);margin-left:auto">SunPay</span></div>
+  </div>
 </div></section>
-</main>
+
+<section class="fs" id="features"><div class="w">
+  <span class="eb mono">Everything close to home</span>
+  <h2>One app, six ways to get things done.</h2>
+  <div class="fg">
+    <div class="f"><span class="ic"><svg class="i"><use href="#chat"/></svg></span><div><h3>Private chats</h3><p>Photos, videos, files, stickers and voice notes, kept private.</p></div></div>
+    <div class="f"><span class="ic"><svg class="i"><use href="#users"/></svg></span><div><h3>Communities</h3><p>Groups around a place or purpose, like your street or estate.</p></div></div>
+    <div class="f"><span class="ic"><svg class="i"><use href="#drop"/></svg></span><div><h3>BuzzDrop</h3><p>Swap Buzz identities with someone nearby, no number needed.</p></div></div>
+    <div class="f"><span class="ic"><svg class="i"><use href="#store"/></svg></span><div><h3>Marketplace</h3><p>Local sellers, plus Depot for wholesale and bulk. Prices in naira.</p></div></div>
+    <div class="f"><span class="ic"><svg class="i"><use href="#home"/></svg></span><div><h3>Housing</h3><p>Homes, rentals and short stays, with the person managing the property.</p></div></div>
+    <div class="f"><span class="ic"><svg class="i"><use href="#law"/></svg></span><div><h3>Lawyers</h3><p>Verified lawyers by practice area, location, language and availability.</p></div></div>
+  </div>
+</div></section>
+
+<section class="cta sky"><span class="eb mono" style="color:#fff"><style>.cta .eb::before{background:#fff}</style>Be first in line</span>
+  <h2>Be part of <em>what’s next.</em></h2>
+  <button class="pill mono" data-join>Join the waitlist <span class="dot"><svg class="i"><use href="#arrow"/></svg></span></button>
+</section>
 
 <footer><div class="w">
-  <a class="logo" href="#top" aria-label="Buzz home"><svg><use href="#mark"/></svg>buzz</a>
-  <nav aria-label="Footer"><a href="ride.html">Ride with Buzz</a><a href="careers.html">Careers</a><a href="/about">About</a><a href="help.html">Help</a><a href="privacy.html">Privacy</a></nav>
-  <div class="soc"><a href="#top" aria-label="X"><svg class="i" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><path d="M17.800 3h3.100l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.200-8.300L1.900 3h6.400l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></svg></a><a href="#top" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.500 6.500h.01"/></svg></a><a href="#top" aria-label="YouTube"><svg class="i" style="fill:currentColor;stroke:none" viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a></div>
+  <a class="logo" href="#top" aria-label="Buzz home" style="--ac:#1C7BEA"><svg><use href="#mark"/></svg>buzz</a>
+  <nav class="mono"><a href="ride.html">Ride with Buzz</a><a href="help.html">Help</a><a href="privacy.html">Privacy</a></nav>
+  <small>© 2026 Aether Jade Innovations Limited</small>
 </div></footer>
 
 <dialog id="dlg"><button class="x" type="button" aria-label="Close" data-close>&times;</button>
-  <h3>Join the waitlist</h3><p style="margin:0;color:var(--mut);font-size:14.5px">Tell us where you are and we’ll contact you when Buzz is ready near you.</p>
+  <h3>Join the waitlist</h3><p style="margin:0;color:#666;font-size:15px">Tell us where you are and we’ll contact you when Buzz is ready near you.</p>
   <form novalidate>
     <label>Full name<input name="name" required autocomplete="name"></label>
     <label>Phone number<input name="phone" type="tel" inputmode="tel" required autocomplete="tel"></label>
     <label>City or area<input name="city" required></label>
     <label class="ck"><input type="checkbox" required><span>Buzz may contact me about access.</span></label>
     <p class="msg" aria-live="polite"></p>
-    <button class="btn" type="submit" style="justify-content:center">Join the Waitlist</button>
+    <button class="pill mono" type="submit" style="justify-content:center;padding:16px">Join the waitlist</button>
   </form></dialog>
 
 <script>
-(function(){
-"use strict";
+(function(){"use strict";
+var tr=document.querySelector(".tr");if(tr){var h=tr.innerHTML;tr.innerHTML=h+h}
 var d=document.getElementById("dlg"),f=d.querySelector("form"),m=f.querySelector(".msg");
-function $$(s){return [].slice.call(document.querySelectorAll(s))}
-$$("[data-join]").forEach(function(b){b.addEventListener("click",function(){m.textContent="";if(d.showModal)d.showModal();else d.setAttribute("open","")})});
+[].forEach.call(document.querySelectorAll("[data-join]"),function(b){b.addEventListener("click",function(){m.textContent="";if(d.showModal)d.showModal();else d.setAttribute("open","")})});
 d.querySelector("[data-close]").addEventListener("click",function(){d.close?d.close():d.removeAttribute("open")});
 d.addEventListener("click",function(e){if(e.target===d&&d.close)d.close()});
 /* Preview only: validates, confirms on the page, sends and saves nothing. */
-f.addEventListener("submit",function(e){
-  e.preventDefault();m.className="msg";m.textContent="";
-  var bad=null,why="",els=[].slice.call(f.querySelectorAll("[required]"));
-  els.forEach(function(el){if(bad)return;
-    var v=el.type==="checkbox"?el.checked:el.value.trim();
-    if(!v){bad=el;why=el.type==="checkbox"?"Please tick the box to continue.":"Please fill in the required fields."}
-    else if(el.type==="tel"&&el.value.replace(/\D/g,"").length<7){bad=el;why="Enter a phone number we can reach."}});
-  if(bad){m.textContent=why;bad.focus();return}
-  m.className="msg ok";m.textContent="Thanks, you’re on the list. (Preview: nothing was sent or saved.)";f.reset();
-});
+f.addEventListener("submit",function(e){e.preventDefault();m.className="msg";m.textContent="";
+var bad=null,why="";[].forEach.call(f.querySelectorAll("[required]"),function(el){if(bad)return;var v=el.type==="checkbox"?el.checked:el.value.trim();
+if(!v){bad=el;why=el.type==="checkbox"?"Please tick the box to continue.":"Please fill in the required fields."}
+else if(el.type==="tel"&&el.value.replace(/\D/g,"").length<7){bad=el;why="Enter a phone number we can reach."}});
+if(bad){m.textContent=why;bad.focus();return}
+m.className="msg ok";m.textContent="Thanks, you’re on the list. (Preview: nothing was sent or saved.)";f.reset()});
 })();
 </script>
 </body>
