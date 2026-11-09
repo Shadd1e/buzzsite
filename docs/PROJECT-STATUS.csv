@@ -1,0 +1,28 @@
+route,page,implementation_status,backend_or_approval_status
+/,Homepage,Implemented,No external backend required for current content
+/app,The Buzz App,Implemented,App screenshots and official download URLs still needed
+/buzz-pro,Buzz Pro,Implemented,Live publishing and Pro backend not connected
+/marketplace,Marketplace,Implemented,Live catalog and seller services not connected
+/payments,Payments,Implemented,SunPay operational roles and integration require confirmation
+/safety,Safety,Implemented,Operational safety services and policy require confirmation
+/about,About,Implemented,Company facts and expansion statements require owner approval
+/careers,Careers,Implemented,No verified vacancies or application endpoint supplied
+/contact,Contact,Implemented UI,Email/CRM destination not connected
+/waitlist,Waitlist,Implemented UI,Waitlist endpoint/CRM not connected
+/logistics,Buzz Logistics,Implemented,Provider contracts and operational scope require confirmation
+/logistics/how-it-works,How it works,Implemented,Actual provider workflow requires confirmation
+/track-my-package,Track My Package,Implemented UI,Live tracking API not connected
+/logistics/coverage,Coverage,Implemented,Confirmed cities/states/countries not supplied
+/logistics/partners,Partners,Implemented,Eligibility and assessment process require confirmation
+/logistics/partners/apply,Partner application,Implemented nine-step UI,Secure submission/document storage/review workflow not connected
+/logistics/partner-login,Partner login,Implemented UI,Authentication and recovery not connected
+/logistics/partner-dashboard,Partner dashboard,Protected-state UI,Partner auth/permissions/delivery/staff APIs not connected
+/help,Help Centre,Implemented searchable 119-FAQ inventory,Answers requiring policy/service confirmation are explicitly qualified
+/privacy-policy,Privacy Policy,Draft page,Approved privacy policy required before publication
+/terms,Terms,Draft page,Approved terms required before publication
+/community-guidelines,Community Guidelines,Draft page,Approved moderation policy required before publication
+/safety-guidelines,Safety Guidelines,Draft page,Approved safety policy required before publication
+/marketplace-terms,Marketplace Terms,Draft page,Approved marketplace terms required before publication
+/logistics-terms,Logistics Terms,Draft page,Provider contracts and approved logistics terms required
+/payment-terms,Payment Terms,Draft page,SunPay/legal approval required
+/cookie-policy,Cookie Policy,Draft page,Actual cookies/analytics consent inventory and approval required

@@ -1,0 +1,28 @@
+route,section,page,required_scope,pass,status
+/,Core,Homepage,"Hero exact headline; connected overview; communication; marketplace; Pro/Showcase/Creator Tools; payments/logistics; safety; waitlist CTA",2,Not started
+/app,Core,The Buzz App,"Messaging; media/voice; groups; Buzz IDs; QR; BuzzDrop; Updates; privacy/account; real screenshots; download CTA",3,Not started
+/buzz-pro,Core,Buzz Pro,"Optional same-app mode; profiles; products/services; customer communication; verified orders/bookings; Showcase; Creator Tools; analytics",3,Not started
+/marketplace,Core,Marketplace,"Products; property; services; merchants/professionals; discovery; listing details; seller connection; property roles",3,Not started
+/payments,Core,Payments,"Buzz-SunPay relationship; verified payment/escrow roles, methods, currencies, custody, release, disputes",3,Not started
+/safety,Core,Safety,"EMBA; Security Updates; location alerts; incident reporting/evidence; confirmed community/agency workflows",3,Not started
+/about,Company,About,"Origin; problem; mission; vision; values; company; African context and expansion ambition",5,Not started
+/careers,Company,Careers,"Culture; open roles; role details; application route; talent contact",5,Not started
+/contact,Company,Contact,"General; support; business/partnership; logistics; media; careers routing",5,Not started
+/waitlist,Company,Waitlist,"Registration; consent; validation; honest success/error; approved destination",5,Not started
+/logistics,Logistics,Buzz Logistics,"Goods bought through Buzz; independent providers; verified scope; process; tracking; partner CTAs",4,Not started
+/logistics/how-it-works,Logistics,How it works,"Purchase; delivery arrangement; provider assignment; pickup; transit; tracking; completion",4,Not started
+/track-my-package,Logistics,Track My Package,"Reference validation; real result/timeline; last update; ETA only if API; empty/error states",4,Not started
+/logistics/coverage,Logistics,Coverage,"Intrastate/interstate/international explanation; confirmed locations only",4,Not started
+/logistics/partners,Logistics,Partners,"Proposition; eligibility; requirements; assessment; services; operating expectations; integration enquiry",4,Not started
+/logistics/partners/apply,Logistics,Partner application,"Nine-step enterprise application; validation; review; backend-dependent submission",4,Not started
+/logistics/partner-login,Logistics,Partner login,"Secure login; recovery; access denied; authentication dependency",4,Not started
+/logistics/partner-dashboard,Logistics,Partner dashboard,"Protected deliveries; reference codes; timelines; employees; partner integration",4,Not started
+/help,Support,Help Centre,"Searchable categories; full FAQ inventory; accordions; related articles; contact route",5,Not started
+/privacy-policy,Legal,Privacy Policy,"Approved collection, use, sharing, retention and user rights",5,Not started
+/terms,Legal,Terms,"Terms matching actual product and platform responsibilities",5,Not started
+/community-guidelines,Legal,Community Guidelines,"Content, conduct, reporting, moderation and enforcement",5,Not started
+/safety-guidelines,Legal,Safety Guidelines,"Safety limitations; reporting; emergency-services disclaimer",5,Not started
+/marketplace-terms,Legal,Marketplace Terms,"Buyer/seller/listing duties; prohibited goods; transaction boundaries; disputes",5,Not started
+/logistics-terms,Legal,Logistics Terms,"Buzz/provider duties; delivery scope; prohibited goods; claims; customs; fees",5,Not started
+/payment-terms,Legal,Payment Terms,"SunPay relationship; processor/custody; escrow; releases; refunds; disputes",5,Not started
+/cookie-policy,Legal,Cookie Policy,"Actual cookies, analytics and consent practices",5,Not started
