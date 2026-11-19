@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   outputFileTracingRoot: repoRoot,
+  images: {
+    // Editorial stock listed in assets/IMAGE-CREDITS.md (licence check pending)
+    remotePatterns: [{ protocol: "https", hostname: "images.pexels.com", pathname: "/photos/**" }],
+  },
   turbopack: {
     root: repoRoot,
     rules: {
