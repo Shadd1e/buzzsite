@@ -107,3 +107,27 @@ Added page by page below. P0 and P1 issues were fixed before each page was commi
 - **[P3] No waitlist in the body:** apart from the nav and footer there's no waitlist path. The mobile H1 is 36px, against the 48–64px spec.
 - **[P3] Founder note:** a visible "[founder note pending]" slot might persuade press and investors more than a fifth belief row.
 - **Shared, fixed during About:** `cn()` doesn't merge Tailwind classes, so `className` overrides of a Button variant are unreliable. The fix was the new `outlineOnBlue` variant. Avoid colour overrides on Button; add variants instead, or adopt tailwind-merge in Phase G.
+
+### Help Centre `/help` (critique 28/40 · audit 18/20)
+- **[P2] Topic cards:** each card promises a topic but opens one article, and the breadcrumb topic isn't a link. Add topic list pages, or label each card with its article.
+- **[P2] Search keyboard:** Enter does nothing and you can't arrow through results. Enter should open the first result, and Up/Down should move through the list.
+- **[P3] Orphaned card:** at 1440 the 7th topic card sits alone on the last row.
+- **[P2] Branded 404:** there's no `not-found.tsx`, so unknown pages show Next's stock 404 without the Buzz header and footer. Add a branded one with links to Help and Home.
+
+### Contact `/contact` (critique 26/40 · audit 17/20)
+- **[P2] No hero convo:** §1 says every marketing hero gets one. Add a short one that routes to a topic.
+- **[P2] Form position on phones:** the six topic cards stack into one column and push the form below the first screen (about 1000px). Use compact two-column topic chips on mobile.
+
+### Waitlist `/waitlist` (critique 22/36 · audit 17/20)
+- **[P2] CTA position:** at 1440 the submit button sits just below the fold. Tighten the card spacing, or put name and contact on one row at desktop. The phone's chat area has a large empty middle.
+- **[P3] City chips:** they're toggle buttons for a choose-one question. A radio group would fit better; it's labelled and grouped correctly.
+- **[P3] Share feedback:** the share button gives no "Shared" feedback when the native share sheet is used ("Link copied" only shows on the clipboard fallback).
+
+### Careers `/careers` (critique 22/32 · audit 18/20)
+- **[P2] Team chips:** they change only the empty-state wording while there are no roles. Hide them until roles exist.
+- **[P3] Email fallback:** the mailto CTA needs a mail app. Also show the address as copyable text.
+
+### Legal `/legal/[doc]` (critique 21/32 · audit 17/20)
+- **[P2] Draft notes:** they're written for the team ("must not be published as the operative privacy notice"). Use a reader-facing line ("This policy is a draft and isn't in force yet") and keep the internal detail in comments.
+- **[P2] Pill row on phones:** the active pill can sit off-screen in the scrolling row. Scroll it into view on load and fade the edge.
+- **[P3] Section highlight:** the contents list doesn't show the current section. Add a scroll-spy highlight with no motion.
