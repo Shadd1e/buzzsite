@@ -1,0 +1,26 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "a1",
+      "name": "Ifeoma Okafor",
+      "role": "super_admin"
+    },
+    {
+      "id": "a2",
+      "name": "Dapo Fashola",
+      "role": "partner_manager"
+    },
+    {
+      "id": "a3",
+      "name": "Halima Sule",
+      "role": "support"
+    },
+    {
+      "id": "a4",
+      "name": "Victor Edet",
+      "role": "finance"
+    }
+  ]
+}

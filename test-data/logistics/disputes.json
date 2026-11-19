@@ -1,0 +1,191 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "DSP-3068",
+      "trackingId": "BZT-WSBF-QBTC",
+      "orderId": "DPT-528184",
+      "partnerId": "p3",
+      "reason": "Item not as described",
+      "openedAt": "2026-11-16T11:00:00+01:00",
+      "windowEndsAt": "2026-11-21T11:00:00+01:00",
+      "status": "open",
+      "amount": 31000,
+      "faultAssigned": null,
+      "decision": null,
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Ifeanyi N.",
+            "text": "The colour is completely different from the photo",
+            "at": "2026-11-16T11:00:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Carry Co.",
+            "text": "It's the same fabric, the light in the photo is different",
+            "at": "2026-11-16T13:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-16T13:05:00+01:00"
+          }
+        ],
+        "photos": 2,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "id": "DSP-2633",
+      "trackingId": "BZT-U3C7-FWSW",
+      "orderId": "DPT-563513",
+      "partnerId": "p1",
+      "reason": "Item damaged on arrival",
+      "openedAt": "2026-11-18T22:00:00+01:00",
+      "windowEndsAt": "2026-11-23T22:00:00+01:00",
+      "status": "open",
+      "amount": 85000,
+      "faultAssigned": null,
+      "decision": null,
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Gbenga T.",
+            "text": "The blender jar was cracked when I opened it",
+            "at": "2026-11-18T22:00:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Iseyin Looms",
+            "text": "It left us sealed and fine",
+            "at": "2026-11-19T00:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-19T00:05:00+01:00"
+          }
+        ],
+        "photos": 3,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "id": "DSP-3529",
+      "trackingId": "BZT-59B2-X3L7",
+      "orderId": "DPT-372793",
+      "partnerId": "p3",
+      "reason": "Wrong size sent",
+      "openedAt": "2026-11-17T23:00:00+01:00",
+      "windowEndsAt": "2026-11-22T23:00:00+01:00",
+      "status": "awaiting_partner",
+      "amount": 55000,
+      "faultAssigned": null,
+      "decision": null,
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Hauwa B.",
+            "text": "I ordered 42, this is 40",
+            "at": "2026-11-17T23:00:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Stitch by Tobi",
+            "text": "Abeg, I'll send the right one",
+            "at": "2026-11-18T01:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-18T01:05:00+01:00"
+          }
+        ],
+        "photos": 0,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "id": "DSP-7512",
+      "trackingId": "BZT-G5Z7-K5MT",
+      "orderId": "DPT-886931",
+      "partnerId": "p1",
+      "reason": "Parcel marked delivered but not received",
+      "openedAt": "2026-11-17T02:00:00+01:00",
+      "windowEndsAt": "2026-11-22T02:00:00+01:00",
+      "status": "awaiting_seller",
+      "amount": 28500,
+      "faultAssigned": null,
+      "decision": null,
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Kemi D.",
+            "text": "Rider marked it delivered but I didn't get anything",
+            "at": "2026-11-17T02:00:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Ada's Fabrics",
+            "text": "My side shows it was collected",
+            "at": "2026-11-17T04:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-17T04:05:00+01:00"
+          }
+        ],
+        "photos": 0,
+        "deliveryCodeVerified": false
+      }
+    },
+    {
+      "id": "DSP-7226",
+      "trackingId": "BZT-UGNU-QZMV",
+      "orderId": "DPT-112861",
+      "partnerId": "p2",
+      "reason": "Missing item from order",
+      "openedAt": "2026-11-16T19:00:00+01:00",
+      "windowEndsAt": "2026-11-21T19:00:00+01:00",
+      "status": "resolved",
+      "amount": 31000,
+      "faultAssigned": "partner",
+      "decision": "partial_refund",
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Zainab Y.",
+            "text": "Only one of the two items came",
+            "at": "2026-11-16T19:00:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Carry Co.",
+            "text": "Second item was sent separately",
+            "at": "2026-11-16T21:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-16T21:05:00+01:00"
+          }
+        ],
+        "photos": 2,
+        "deliveryCodeVerified": true
+      }
+    }
+  ]
+}

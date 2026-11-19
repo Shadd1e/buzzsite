@@ -1,0 +1,110 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "MQ-9K68Y",
+      "partnerId": "p1",
+      "riderId": "r3",
+      "route": [
+        "Lagos (Ikeja)",
+        "Benin City",
+        "Abuja"
+      ],
+      "autoLinked": true,
+      "status": "in_transit",
+      "lastScan": {
+        "city": "Benin City",
+        "at": "2026-11-19T04:00:00+01:00"
+      },
+      "children": [
+        {
+          "trackingId": "BZT-J5MT-7RE6",
+          "status": "picked_up",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-V7WE-A7GE",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-AXJS-L65A",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-SCG5-YW5H",
+          "status": "at_pickup_point",
+          "unlinkedAt": "Ibadan"
+        }
+      ]
+    },
+    {
+      "id": "MQ-27WNR",
+      "partnerId": "p1",
+      "riderId": "r4",
+      "route": [
+        "Lagos (Ikeja)",
+        "Benin City",
+        "Onitsha"
+      ],
+      "autoLinked": true,
+      "status": "in_transit",
+      "lastScan": {
+        "city": "Benin City",
+        "at": "2026-11-19T09:00:00+01:00"
+      },
+      "children": [
+        {
+          "trackingId": "BZT-L2A2-S7U5",
+          "status": "picked_up",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-LDFM-EER3",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-AVGJ-SHGK",
+          "status": "in_transit",
+          "unlinkedAt": null
+        }
+      ]
+    },
+    {
+      "id": "MQ-4CW82",
+      "partnerId": "p3",
+      "riderId": "r14",
+      "route": [
+        "Lagos (Ikeja)",
+        "Seme border",
+        "Accra (Ghana)"
+      ],
+      "autoLinked": true,
+      "status": "at_checkpoint",
+      "lastScan": {
+        "city": "Seme border",
+        "at": "2026-11-19T10:00:00+01:00"
+      },
+      "children": [
+        {
+          "trackingId": "BZT-RGY4-KRLM",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-2C8Q-N7YV",
+          "status": "at_pickup_point",
+          "unlinkedAt": "Accra (Ghana)"
+        },
+        {
+          "trackingId": "BZT-WHVV-4W3U",
+          "status": "at_pickup_point",
+          "unlinkedAt": "Accra (Ghana)"
+        }
+      ]
+    }
+  ]
+}

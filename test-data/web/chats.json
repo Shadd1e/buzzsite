@@ -1,0 +1,307 @@
+{
+  "isTestData": true,
+  "me": {
+    "name": "Adaeze Okeke",
+    "buzzId": "@adaeze.buzz",
+    "avatar": null
+  },
+  "chats": [
+    {
+      "id": "c1",
+      "type": "direct",
+      "name": "Mum",
+      "buzzId": "@mama.okeke",
+      "unread": 2,
+      "pinned": true,
+      "messages": [
+        {
+          "from": "them",
+          "text": "Have you eaten?",
+          "at": "2026-11-19T11:25:00+01:00"
+        },
+        {
+          "from": "me",
+          "text": "Yes ma, I made jollof",
+          "at": "2026-11-19T11:30:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "them",
+          "text": "Voice note",
+          "at": "2026-11-19T12:20:00+01:00",
+          "kind": "voice",
+          "duration": "0:38"
+        },
+        {
+          "from": "them",
+          "text": "Call me when you're free",
+          "at": "2026-11-19T12:22:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "group",
+      "name": "Okeke Family",
+      "members": 14,
+      "unread": 5,
+      "messages": [
+        {
+          "from": "Chidi",
+          "text": "Who's coming for Christmas?",
+          "at": "2026-11-19T08:00:00+01:00"
+        },
+        {
+          "from": "Auntie Rose",
+          "text": "We'll be there by the 23rd",
+          "at": "2026-11-19T08:20:00+01:00"
+        },
+        {
+          "from": "me",
+          "text": "I'll be there on the 22nd",
+          "at": "2026-11-19T08:30:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "Uncle Ben",
+          "text": "Sticker",
+          "at": "2026-11-19T12:30:00+01:00",
+          "kind": "sticker"
+        },
+        {
+          "from": "Chidi",
+          "text": "Don't forget the rice o",
+          "at": "2026-11-19T12:48:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "direct",
+      "name": "Ada's Fabrics",
+      "pro": true,
+      "buzzId": "PRO-31877",
+      "unread": 1,
+      "messages": [
+        {
+          "from": "me",
+          "text": "Abeg, is the ankara two-piece still available in blue?",
+          "at": "2026-11-18T03:40:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "them",
+          "text": "Yes, size M and L",
+          "at": "2026-11-18T03:50:00+01:00"
+        },
+        {
+          "from": "me",
+          "text": "I'll take M",
+          "at": "2026-11-18T03:55:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "them",
+          "text": "Order",
+          "at": "2026-11-19T12:00:00+01:00",
+          "kind": "order",
+          "trackingId": "BZT-N293-RKAG",
+          "orderId": "DPT-239816",
+          "item": "Perfume oil set",
+          "orderStatus": "out_for_delivery"
+        },
+        {
+          "from": "them",
+          "text": "Your rider is on the way. Have your delivery code ready",
+          "at": "2026-11-19T12:02:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "type": "group",
+      "name": "Estate Residents (Block C)",
+      "members": 48,
+      "unread": 12,
+      "messages": [
+        {
+          "from": "Funmi",
+          "text": "Light don come back?",
+          "at": "2026-11-19T10:00:00+01:00"
+        },
+        {
+          "from": "me",
+          "text": "Yes o, since 6",
+          "at": "2026-11-19T10:02:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "Mr Bello",
+          "text": "Who's going out this evening?",
+          "at": "2026-11-19T10:30:00+01:00"
+        },
+        {
+          "from": "Funmi",
+          "text": "Check the alert first",
+          "at": "2026-11-19T10:31:00+01:00"
+        },
+        {
+          "from": "Kemi",
+          "text": "Seen it. Everyone stay indoors for now",
+          "at": "2026-11-19T10:40:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "type": "direct",
+      "name": "Emeka Fix-It",
+      "pro": true,
+      "buzzId": "PRO-48213",
+      "unread": 0,
+      "messages": [
+        {
+          "from": "me",
+          "text": "Good afternoon. Are you free to check a faulty socket tomorrow?",
+          "at": "2026-11-18T12:00:00+01:00",
+          "status": "read"
+        },
+        {
+          "from": "them",
+          "text": "Yes, 10am works. Booking sent",
+          "at": "2026-11-18T12:10:00+01:00"
+        },
+        {
+          "from": "them",
+          "text": "Booking",
+          "at": "2026-11-18T12:11:00+01:00",
+          "kind": "booking",
+          "when": "Tomorrow, 10:00"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "type": "direct",
+      "name": "Tobi",
+      "buzzId": "@tobi.o",
+      "unread": 0,
+      "messages": [
+        {
+          "from": "them",
+          "text": "I don land for Abuja",
+          "at": "2026-11-17T11:00:00+01:00"
+        },
+        {
+          "from": "me",
+          "text": "Thank God. Call me when you settle",
+          "at": "2026-11-17T11:05:00+01:00",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "type": "direct",
+      "name": "Naturally Kemi",
+      "pro": true,
+      "buzzId": "PRO-20455",
+      "unread": 0,
+      "messages": [
+        {
+          "from": "them",
+          "text": "Order",
+          "at": "2026-11-16T13:20:00+01:00",
+          "kind": "order",
+          "trackingId": "BZT-2C8Q-N7YV",
+          "orderId": "DPT-812526",
+          "item": "Bead necklace set",
+          "orderStatus": "at_pickup_point"
+        },
+        {
+          "from": "them",
+          "text": "It's at the pickup point. You can send someone too, just add their name in the app",
+          "at": "2026-11-16T13:30:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "type": "group",
+      "name": "UNILAG Class of '24",
+      "members": 112,
+      "unread": 0,
+      "muted": true,
+      "messages": [
+        {
+          "from": "Zainab",
+          "text": "Anyone has the past questions?",
+          "at": "2026-11-15T09:00:00+01:00"
+        },
+        {
+          "from": "Gbenga",
+          "text": "Check the drive",
+          "at": "2026-11-15T09:10:00+01:00"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "priority": true,
+      "kind": "delivery",
+      "title": "Out for delivery",
+      "body": "Perfume oil set is on its way. Your delivery code is ready in the Buzz app.",
+      "trackingId": "BZT-N293-RKAG",
+      "at": "2026-11-19T12:02:00+01:00",
+      "read": false
+    },
+    {
+      "id": "n2",
+      "priority": true,
+      "kind": "delivery",
+      "title": "Ready for pickup",
+      "body": "Bead necklace set is at the pickup point. Free for 5 days.",
+      "trackingId": "BZT-2C8Q-N7YV",
+      "at": "2026-11-19T06:00:00+01:00",
+      "read": false
+    },
+    {
+      "id": "n3",
+      "priority": false,
+      "kind": "escrow",
+      "title": "Payment held in escrow",
+      "body": "₦28,500 is held by SunPay until you confirm delivery.",
+      "at": "2026-11-18T13:00:00+01:00",
+      "read": true
+    },
+    {
+      "id": "n4",
+      "priority": false,
+      "kind": "mention",
+      "title": "Chidi mentioned you",
+      "body": "Okeke Family",
+      "at": "2026-11-19T12:48:00+01:00",
+      "read": false
+    }
+  ],
+  "updates": [
+    {
+      "id": "u1",
+      "kind": "security",
+      "verified": true,
+      "source": "[Verified agency]",
+      "text": "Road blocked at [location]. Avoid the area and use an alternative route.",
+      "area": "Within [radius] of [location]",
+      "at": "2026-11-19T10:30:00+01:00"
+    },
+    {
+      "id": "u2",
+      "kind": "status",
+      "name": "Tobi",
+      "text": "Abuja sunsets",
+      "at": "2026-11-19T08:00:00+01:00"
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "r1",
+      "partnerId": "p1",
+      "name": "Tunde Bakare",
+      "riderCode": "R-QJGF-85",
+      "phone": "+234 800 000 7912",
+      "vehicle": "Motorbike",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 3,
+      "rating": 4.0,
+      "joined": "2026-10-17"
+    },
+    {
+      "id": "r2",
+      "partnerId": "p1",
+      "name": "Musa Abdullahi",
+      "riderCode": "R-BN4Q-67",
+      "phone": "+234 800 000 5557",
+      "vehicle": "Motorbike",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 27,
+      "rating": 4.7,
+      "joined": "2026-11-11"
+    },
+    {
+      "id": "r3",
+      "partnerId": "p1",
+      "name": "Emeka Okoro",
+      "riderCode": "R-TKPX-23",
+      "phone": "+234 800 000 2519",
+      "vehicle": "Car",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 6,
+      "rating": 4.3,
+      "joined": "2026-11-09"
+    },
+    {
+      "id": "r4",
+      "partnerId": "p1",
+      "name": "Sani Danjuma",
+      "riderCode": "R-C7H2-20",
+      "phone": "+234 800 000 5803",
+      "vehicle": "Truck",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 14,
+      "rating": 4.5,
+      "joined": "2026-10-02"
+    },
+    {
+      "id": "r5",
+      "partnerId": "p1",
+      "name": "Kelechi Nnaji",
+      "riderCode": "R-QUFQ-22",
+      "phone": "+234 800 000 7227",
+      "vehicle": "Van",
+      "status": "pending_verification",
+      "verification": {
+        "confirmedByCompany": false,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": false
+          },
+          {
+            "label": "Guarantor form",
+            "done": false
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": false,
+      "scansToday": 0,
+      "rating": null,
+      "joined": "2026-11-12"
+    },
+    {
+      "id": "r6",
+      "partnerId": "p1",
+      "name": "Yusuf Lawal",
+      "riderCode": "R-LZYP-95",
+      "phone": "+234 800 000 5374",
+      "vehicle": "Motorbike",
+      "status": "deactivated",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": false,
+      "scansToday": 0,
+      "rating": 4.5,
+      "joined": "2026-10-18",
+      "deactivatedAt": "2026-11-12",
+      "deactivatedReason": "Left the company"
+    },
+    {
+      "id": "r7",
+      "partnerId": "p2",
+      "name": "Segun Ogunleye",
+      "riderCode": "R-RL72-44",
+      "phone": "+234 800 000 4598",
+      "vehicle": "Van",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 27,
+      "rating": 4.7,
+      "joined": "2026-10-02"
+    },
+    {
+      "id": "r8",
+      "partnerId": "p2",
+      "name": "Ibrahim Garba",
+      "riderCode": "R-W3TE-37",
+      "phone": "+234 800 000 6155",
+      "vehicle": "Motorbike",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 23,
+      "rating": 4.4,
+      "joined": "2026-11-05"
+    },
+    {
+      "id": "r9",
+      "partnerId": "p2",
+      "name": "Chidi Obi",
+      "riderCode": "R-SJRS-84",
+      "phone": "+234 800 000 8019",
+      "vehicle": "Truck",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 15,
+      "rating": 4.3,
+      "joined": "2026-10-17"
+    },
+    {
+      "id": "r10",
+      "partnerId": "p2",
+      "name": "Femi Adebayo",
+      "riderCode": "R-9FDH-29",
+      "phone": "+234 800 000 3621",
+      "vehicle": "Car",
+      "status": "pending_verification",
+      "verification": {
+        "confirmedByCompany": false,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": false
+          },
+          {
+            "label": "Guarantor form",
+            "done": false
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": false,
+      "scansToday": 0,
+      "rating": null,
+      "joined": "2026-10-13"
+    },
+    {
+      "id": "r11",
+      "partnerId": "p3",
+      "name": "Bashir Usman",
+      "riderCode": "R-27SA-97",
+      "phone": "+234 800 000 2876",
+      "vehicle": "Truck",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 27,
+      "rating": 4.2,
+      "joined": "2026-11-04"
+    },
+    {
+      "id": "r12",
+      "partnerId": "p3",
+      "name": "Uche Ike",
+      "riderCode": "R-U5L7-10",
+      "phone": "+234 800 000 5315",
+      "vehicle": "Truck",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 27,
+      "rating": 4.1,
+      "joined": "2026-10-10"
+    },
+    {
+      "id": "r13",
+      "partnerId": "p3",
+      "name": "Kofi Asante",
+      "riderCode": "R-NKZL-79",
+      "phone": "+234 800 000 9689",
+      "vehicle": "Motorbike",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 22,
+      "rating": 4.2,
+      "joined": "2026-10-04"
+    },
+    {
+      "id": "r14",
+      "partnerId": "p3",
+      "name": "Daniel Peters",
+      "riderCode": "R-ZVRD-40",
+      "phone": "+234 800 000 2290",
+      "vehicle": "Motorbike",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 26,
+      "rating": 4.4,
+      "joined": "2026-10-18"
+    },
+    {
+      "id": "r15",
+      "partnerId": "p4",
+      "name": "Ahmed Bello",
+      "riderCode": "R-JJ8L-43",
+      "phone": "+234 800 000 9645",
+      "vehicle": "Truck",
+      "status": "frozen",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": false,
+      "scansToday": 0,
+      "rating": 4.3,
+      "joined": "2026-10-18",
+      "frozenBy": "Buzz admin (emergency freeze)",
+      "frozenReason": "Scans from a device linked to another company"
+    },
+    {
+      "id": "r16",
+      "partnerId": "p4",
+      "name": "Joseph Etim",
+      "riderCode": "R-NV3Z-66",
+      "phone": "+234 800 000 9479",
+      "vehicle": "Car",
+      "status": "active",
+      "verification": {
+        "confirmedByCompany": true,
+        "companyChecks": [
+          {
+            "label": "Government ID seen",
+            "done": true
+          },
+          {
+            "label": "Guarantor form",
+            "done": true
+          },
+          {
+            "label": "Rider's licence",
+            "done": true
+          }
+        ]
+      },
+      "appSignedIn": true,
+      "scansToday": 6,
+      "rating": 4.1,
+      "joined": "2026-10-11"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "partnerId": "p1",
+      "date": "2026-11-19",
+      "deliveries": 15,
+      "partnerEarnings": 65445,
+      "partnerPaid": "immediate",
+      "buzzShare": 1963,
+      "buzzSettlement": "T+2",
+      "buzzSettled": false
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-18",
+      "deliveries": 8,
+      "partnerEarnings": 48440,
+      "partnerPaid": "immediate",
+      "buzzShare": 1453,
+      "buzzSettlement": "T+2",
+      "buzzSettled": false
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-17",
+      "deliveries": 9,
+      "partnerEarnings": 78552,
+      "partnerPaid": "immediate",
+      "buzzShare": 2357,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-16",
+      "deliveries": 9,
+      "partnerEarnings": 55206,
+      "partnerPaid": "immediate",
+      "buzzShare": 1656,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-15",
+      "deliveries": 11,
+      "partnerEarnings": 90035,
+      "partnerPaid": "immediate",
+      "buzzShare": 2701,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-14",
+      "deliveries": 15,
+      "partnerEarnings": 41055,
+      "partnerPaid": "immediate",
+      "buzzShare": 1232,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-13",
+      "deliveries": 7,
+      "partnerEarnings": 36099,
+      "partnerPaid": "immediate",
+      "buzzShare": 1083,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-12",
+      "deliveries": 7,
+      "partnerEarnings": 34321,
+      "partnerPaid": "immediate",
+      "buzzShare": 1030,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-11",
+      "deliveries": 17,
+      "partnerEarnings": 94690,
+      "partnerPaid": "immediate",
+      "buzzShare": 2841,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-10",
+      "deliveries": 19,
+      "partnerEarnings": 70148,
+      "partnerPaid": "immediate",
+      "buzzShare": 2104,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-09",
+      "deliveries": 13,
+      "partnerEarnings": 89063,
+      "partnerPaid": "immediate",
+      "buzzShare": 2672,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-08",
+      "deliveries": 19,
+      "partnerEarnings": 135584,
+      "partnerPaid": "immediate",
+      "buzzShare": 4068,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-07",
+      "deliveries": 11,
+      "partnerEarnings": 42812,
+      "partnerPaid": "immediate",
+      "buzzShare": 1284,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    },
+    {
+      "partnerId": "p1",
+      "date": "2026-11-06",
+      "deliveries": 11,
+      "partnerEarnings": 34606,
+      "partnerPaid": "immediate",
+      "buzzShare": 1038,
+      "buzzSettlement": "T+2",
+      "buzzSettled": true
+    }
+  ]
+}

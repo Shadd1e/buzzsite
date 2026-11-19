@@ -1,0 +1,144 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "p1",
+      "name": "Swiftline Logistics",
+      "companyCode": "BZL-C-1042",
+      "status": "active",
+      "services": [
+        "intrastate",
+        "interstate"
+      ],
+      "states": [
+        "Lagos",
+        "Ogun",
+        "Oyo",
+        "Edo",
+        "Anambra",
+        "FCT"
+      ],
+      "baseRatePerKm": 180,
+      "buzzPercent": 3.0,
+      "modifiers": {
+        "fragile": 15,
+        "highValueOver500k": 10,
+        "oversize": 20
+      },
+      "inspectionScore": 86,
+      "rating": 4.6,
+      "riders": 6,
+      "joined": "2026-10-02",
+      "contact": {
+        "name": "Babatunde Adeyemi",
+        "email": "ops@swiftline.test",
+        "phone": "+234 800 000 2824"
+      },
+      "payoutBank": "Test Bank •••• 4410",
+      "settlement": "T+2"
+    },
+    {
+      "id": "p2",
+      "name": "KwikHaul Couriers",
+      "companyCode": "BZL-C-1043",
+      "status": "active",
+      "services": [
+        "intrastate"
+      ],
+      "states": [
+        "Lagos"
+      ],
+      "baseRatePerKm": 150,
+      "buzzPercent": 2.5,
+      "modifiers": {
+        "fragile": 10,
+        "highValueOver500k": 10,
+        "oversize": 15
+      },
+      "inspectionScore": 78,
+      "rating": 4.3,
+      "riders": 4,
+      "joined": "2026-10-11",
+      "contact": {
+        "name": "Chiamaka Eze",
+        "email": "hello@kwikhaul.test",
+        "phone": "+234 800 000 1409"
+      },
+      "payoutBank": "Test Bank •••• 0927",
+      "settlement": "immediate"
+    },
+    {
+      "id": "p3",
+      "name": "PanAfrica Express",
+      "companyCode": "BZL-C-1051",
+      "status": "active",
+      "services": [
+        "interstate",
+        "international"
+      ],
+      "states": [
+        "Lagos",
+        "FCT",
+        "Rivers",
+        "Kano"
+      ],
+      "countries": [
+        "Benin Republic",
+        "Ghana",
+        "Togo"
+      ],
+      "baseRatePerKm": 220,
+      "buzzPercent": 3.0,
+      "modifiers": {
+        "fragile": 20,
+        "highValueOver500k": 15,
+        "oversize": 25
+      },
+      "inspectionScore": 91,
+      "rating": 4.8,
+      "riders": 4,
+      "joined": "2026-10-20",
+      "contact": {
+        "name": "Kwame Mensah",
+        "email": "partners@panafrica.test",
+        "phone": "+234 800 000 5506"
+      },
+      "payoutBank": "Test Bank •••• 7731",
+      "settlement": "T+2"
+    },
+    {
+      "id": "p4",
+      "name": "Eastgate Dispatch",
+      "companyCode": "BZL-C-1047",
+      "status": "suspended",
+      "suspendedReason": "Score fell below 60 after repeated failed deliveries (review open)",
+      "services": [
+        "intrastate",
+        "interstate"
+      ],
+      "states": [
+        "Anambra",
+        "Enugu"
+      ],
+      "baseRatePerKm": 140,
+      "buzzPercent": 3.0,
+      "modifiers": {
+        "fragile": 10,
+        "highValueOver500k": 5,
+        "oversize": 10
+      },
+      "inspectionScore": 57,
+      "rating": 3.4,
+      "riders": 2,
+      "joined": "2026-10-08",
+      "contact": {
+        "name": "Obinna Nwosu",
+        "email": "info@eastgate.test",
+        "phone": "+234 800 000 5012"
+      },
+      "payoutBank": "Test Bank •••• 3388",
+      "settlement": "T+2"
+    }
+  ]
+}

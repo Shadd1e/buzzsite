@@ -1,0 +1,86 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "h1",
+      "partnerId": "p1",
+      "name": "Swiftline Ikeja Hub",
+      "city": "Lagos (Ikeja)",
+      "address": "12 Test Close, Ikeja, Lagos",
+      "hours": "Mon–Sat 8:00–19:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 500
+    },
+    {
+      "id": "h2",
+      "partnerId": "p1",
+      "name": "Swiftline Benin Hub",
+      "city": "Benin City",
+      "address": "4 Sample Road, Benin City",
+      "hours": "Mon–Sat 8:00–18:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 400
+    },
+    {
+      "id": "h3",
+      "partnerId": "p1",
+      "name": "Swiftline Abuja Hub",
+      "city": "Abuja",
+      "address": "Plot 9 Demo Avenue, Wuse, Abuja",
+      "hours": "Mon–Sat 8:00–19:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 600
+    },
+    {
+      "id": "h4",
+      "partnerId": "p2",
+      "name": "KwikHaul Yaba",
+      "city": "Lagos (Yaba)",
+      "address": "22 Placeholder Street, Yaba, Lagos",
+      "hours": "Mon–Sun 9:00–20:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 300
+    },
+    {
+      "id": "h5",
+      "partnerId": "p2",
+      "name": "KwikHaul Lekki",
+      "city": "Lagos (Lekki)",
+      "address": "7 Example Way, Lekki Phase 1",
+      "hours": "Mon–Sun 9:00–20:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 300
+    },
+    {
+      "id": "h6",
+      "partnerId": "p3",
+      "name": "PanAfrica Lagos Gateway",
+      "city": "Lagos (Ikeja)",
+      "address": "Cargo Terminal Test Shed 3, Ikeja",
+      "hours": "Mon–Fri 8:00–18:00",
+      "pickupPoint": false,
+      "storageFeePerDayAfterFree": 0
+    },
+    {
+      "id": "h7",
+      "partnerId": "p3",
+      "name": "PanAfrica Accra",
+      "city": "Accra (Ghana)",
+      "address": "15 Demo Lane, Osu, Accra",
+      "hours": "Mon–Fri 8:00–17:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 0
+    },
+    {
+      "id": "h8",
+      "partnerId": "p3",
+      "name": "PanAfrica Port Harcourt",
+      "city": "Port Harcourt",
+      "address": "3 Trial Road, GRA, Port Harcourt",
+      "hours": "Mon–Sat 8:00–18:00",
+      "pickupPoint": true,
+      "storageFeePerDayAfterFree": 500
+    }
+  ]
+}

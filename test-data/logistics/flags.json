@@ -1,0 +1,66 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "FLG-200",
+      "type": "off_route",
+      "label": "Scan 140 km off the expected route",
+      "trackingId": "BZT-UGNU-QZMV",
+      "partnerId": "p2",
+      "riderId": "r7",
+      "raisedAt": "2026-11-17T15:00:00+01:00",
+      "status": "open"
+    },
+    {
+      "id": "FLG-201",
+      "type": "other_company_scan",
+      "label": "Scanned by a rider from another company",
+      "trackingId": "BZT-WSBF-QBTC",
+      "partnerId": "p3",
+      "riderId": "r12",
+      "raisedAt": "2026-11-18T05:00:00+01:00",
+      "status": "open"
+    },
+    {
+      "id": "FLG-202",
+      "type": "silent_48h",
+      "label": "No scan for 48 hours while in transit",
+      "trackingId": "BZT-88R7-K2NJ",
+      "partnerId": "p2",
+      "riderId": "r7",
+      "raisedAt": "2026-11-18T02:00:00+01:00",
+      "status": "open"
+    },
+    {
+      "id": "FLG-203",
+      "type": "no_delivery_code",
+      "label": "Marked delivered without delivery code (photo + GPS fallback)",
+      "trackingId": "BZT-L2A2-S7U5",
+      "partnerId": "p1",
+      "riderId": "r14",
+      "raisedAt": "2026-11-17T21:00:00+01:00",
+      "status": "open"
+    },
+    {
+      "id": "FLG-204",
+      "type": "manual_entry",
+      "label": "Tracking ID typed manually 3 times today",
+      "trackingId": "BZT-LDFM-EER3",
+      "partnerId": "p1",
+      "riderId": "r7",
+      "raisedAt": "2026-11-18T21:00:00+01:00",
+      "status": "reviewed"
+    },
+    {
+      "id": "FLG-205",
+      "type": "off_route",
+      "label": "Checkpoint scan outside the batch route",
+      "trackingId": "BZT-UGNU-QZMV",
+      "partnerId": "p2",
+      "riderId": "r7",
+      "raisedAt": "2026-11-17T17:00:00+01:00",
+      "status": "reviewed"
+    }
+  ]
+}

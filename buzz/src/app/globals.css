@@ -1,0 +1,475 @@
+@import "tailwindcss";
+
+/* Interaction variants that can also be forced with data-force="hover focus
+   active", so /dev/components can show every state without a pointer.
+   Real pages never set data-force, so behaviour there is unchanged. */
+@custom-variant hover {
+  @media (hover: hover) {
+    &:hover {
+      @slot;
+    }
+  }
+  &[data-force~="hover"] {
+    @slot;
+  }
+}
+@custom-variant active {
+  &:active {
+    @slot;
+  }
+  &[data-force~="active"] {
+    @slot;
+  }
+}
+@custom-variant focus {
+  &:focus {
+    @slot;
+  }
+  &[data-force~="focus"] {
+    @slot;
+  }
+}
+
+/* ==========================================================================
+   Buzz tokens: DESIGN.md §2–§6. This file is the only place hex values live.
+   Components use the utilities these generate (bg-blue-600, rounded-panel,
+   shadow-float, ease-out …) or var(--…), never raw hex.
+   ========================================================================== */
+
+@theme {
+  /* Clear Tailwind's default palettes so nothing off-system can be used. */
+  --color-*: initial;
+  --radius-*: initial;
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --ease-*: initial;
+  --font-*: initial;
+
+  /* §2.1 Brand blues */
+  --color-blue-600: #096df9; /* primary: buttons, links, outgoing bubbles */
+  --color-blue-700: #0050c8; /* hover / pressed */
+  --color-blue-500: #487df0; /* the blue band */
+  --color-sky-400: #38b6ff; /* hero CTA on photos, focus ring */
+  --color-blue-100: #dce8ff; /* selected rows, quiet fills */
+  --color-blue-50: #e9f1ff; /* tinted panels, convo backgrounds */
+
+  /* §2.1 Ink (tinted toward blue, never pure black or grey) */
+  --color-ink-900: #0e1526;
+  --color-ink-700: #3a4256;
+  --color-ink-500: #5a6378;
+  --color-ink-300: #9aa6c2; /* text on navy only */
+  --color-line: #dde3ee;
+  --color-line-strong: #cbd3e1; /* input borders */
+  --color-mist: #f4f6fa;
+  --color-white: #ffffff;
+  --color-navy: #080c15;
+  --color-navy-800: #121a2e;
+  --color-navy-700: #26304a;
+
+  /* §2.1 Signals: only for their meaning */
+  --color-alert-600: #d92d20;
+  --color-alert-700: #b42318;
+  --color-alert-50: #fff1ef;
+  --color-ok-600: #12b76a;
+  --color-ok-700: #067647; /* ok text on light: ok-600 fails 4.5:1 for small text */
+  --color-ok-50: #ecfdf3;
+  --color-tick: #7cf5a8;
+  --color-warn-700: #7a4b00;
+  --color-warn-50: #fff6e5;
+
+  /* §2.2 Dark theme (Buzz Web only) */
+  --color-dark-bg: #0b1220;
+  --color-dark-surface: #121a2e;
+  --color-dark-raised: #1a2440;
+  --color-dark-text: #e7ecf6;
+  --color-dark-meta: #9aa6c2;
+  --color-dark-bubble-in: #1e2a47;
+
+  /* §5.1 Avatar initials colours (picked from the person's name).
+     No red or green: those mean safety and success. Ink initials pass on all. */
+  --color-avatar-1: #f79009; /* amber */
+  --color-avatar-2: #0ba5ec; /* sky */
+  --color-avatar-3: #ee46bc; /* pink */
+  --color-avatar-4: #15b79e; /* teal */
+  --color-avatar-5: #6172f3; /* indigo */
+  --color-avatar-6: #dd6b20; /* burnt orange */
+
+  /* §7 Placeholder wordmark on navy */
+  --color-logo-on-navy: #3d8bff;
+
+  /* §6.3 Live gradient blobs */
+  --color-aurora-a: #6fa4ff;
+  --color-aurora-b: #5fd4f5;
+  --color-aurora-navy-a: #1f5bd8;
+  --color-aurora-navy-b: #38b6ff;
+
+  /* §3.1 One family: system stack (SF Pro on Apple, Roboto on Android) */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  /* Code only (dev captions, snippets), never as a "technical" costume */
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  /* §3.2 Brand scale (marketing and logistics public) */
+  --text-display: clamp(44px, 5.6vw, 76px);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 300;
+  --text-h1: clamp(40px, 4.4vw, 60px);
+  --text-h1--line-height: 1.05;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h1--font-weight: 300;
+  --text-h2: clamp(34px, 3.8vw, 52px);
+  --text-h2--line-height: 1.06;
+  --text-h2--letter-spacing: -0.03em;
+  --text-h2--font-weight: 300;
+  --text-h3: 22px;
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.01em;
+  --text-h3--font-weight: 500;
+  --text-lede: 19px;
+  --text-lede--line-height: 1.55;
+  --text-body: clamp(16px, 15.4px + 0.15vw, 17px);
+  --text-body--line-height: 1.6;
+  --text-small: 13px;
+  --text-small--line-height: 1.5;
+  --text-micro: 11px; /* timestamps only */
+  --text-micro--line-height: 1.3;
+  --text-micro--font-weight: 500;
+
+  /* §3.3 Product scale (portal, admin, web) */
+  --text-page-title: 28px;
+  --text-page-title--line-height: 1.2;
+  --text-page-title--font-weight: 500;
+  --text-section-title: 18px;
+  --text-section-title--line-height: 1.35;
+  --text-section-title--font-weight: 600;
+  --text-ui: 15px;
+  --text-ui--line-height: 1.5;
+  --text-label: 13px;
+  --text-label--line-height: 1.4;
+  --text-label--font-weight: 500;
+  --text-meta: 12px;
+  --text-meta--line-height: 1.4;
+  --text-stat: 32px;
+  --text-stat--line-height: 1.1;
+  --text-stat--font-weight: 300;
+
+  /* §5.1 Bubble text */
+  --text-bubble: 16px;
+  --text-bubble--line-height: 1.4;
+
+  /* §4 Space: the scale is 4px steps (p-1 = 4px … p-30 = 120px) */
+  --spacing: 4px;
+  --spacing-section: 104px;
+  --spacing-section-sm: 72px;
+  --spacing-gutter: 40px;
+  --spacing-gutter-sm: 20px;
+  --container-page: 1240px;
+  --container-prose: 36em;
+
+  /* §4 Radius encodes hierarchy */
+  --radius-tag: 6px; /* bubble tail corner, tags inside cards */
+  --radius-tile: 10px; /* table row hover, small icon tiles */
+  --radius-field: 14px; /* inputs, selects, small cards in product UI */
+  --radius-card: 20px; /* photos, listing cards, chat bubbles */
+  --radius-panel: 28px; /* hero photo, feature panels, product cards */
+  --radius-convo: 32px; /* convo panels, forms */
+  --radius-screen: 37px; /* phone screen */
+  --radius-footer: 40px; /* footer top corners */
+  --radius-phone: 46px; /* phone outer */
+
+  /* §4 Depth: tinted ink, only for things that float */
+  --shadow-float: 0 12px 30px rgb(14 21 38 / 0.14);
+  --shadow-hair: 0 1px 0 rgb(14 21 38 / 0.06);
+
+  /* §6.1 Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* default for everything */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* looping / ambient only */
+  --dur-1: 160ms; /* hover, press */
+  --dur-2: 240ms; /* toggles, tabs, chips */
+  --dur-3: 400ms; /* drawers, menus, modals */
+  --dur-4: 550ms; /* bubble pop */
+  --dur-5: 900ms; /* hero text rise, image reveals */
+
+  --animate-typing: typing-dot 1.2s var(--ease-in-out) infinite;
+  --animate-live-dot: live-dot 1.6s var(--ease-in-out) infinite;
+
+  @keyframes typing-dot {
+    0%,
+    60%,
+    100% {
+      opacity: 0.35;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(-3px);
+    }
+  }
+
+  --animate-toast-in: toast-in var(--dur-3) var(--ease-out);
+  --animate-toast-out: toast-out var(--dur-2) var(--ease-out) forwards;
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.96);
+    }
+  }
+
+  @keyframes toast-out {
+    to {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  --animate-overlay-in: overlay-in var(--dur-3) var(--ease-out);
+  --animate-drawer-right: drawer-right var(--dur-3) var(--ease-out);
+  --animate-drawer-up: drawer-up var(--dur-3) var(--ease-out);
+  --animate-dialog-in: dialog-in var(--dur-3) var(--ease-out);
+  --animate-skeleton: skeleton 1.6s var(--ease-in-out) infinite;
+
+  @keyframes overlay-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes drawer-right {
+    from {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes drawer-up {
+    from {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes dialog-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+  }
+
+  @keyframes skeleton {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.55;
+    }
+  }
+
+  @keyframes sheet-in {
+    from {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes live-dot {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-white);
+    color: var(--color-ink-700);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink-900);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* DESIGN.md §12: 3px --sky-400 ring, offset 3px, on every focusable thing */
+  :focus-visible,
+  [data-force~="focus"] {
+    outline: 3px solid var(--color-sky-400);
+    outline-offset: 3px;
+  }
+
+  /* Browser surfaces carry the palette too */
+  html {
+    accent-color: var(--color-blue-600);
+    caret-color: var(--color-blue-600);
+    scrollbar-color: var(--color-line-strong) transparent;
+  }
+
+  a {
+    text-underline-offset: 0.2em;
+  }
+
+  ::selection {
+    background: var(--color-blue-100);
+    color: var(--color-ink-900);
+  }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* §4 Container: 1240px, 40px padding (20px mobile) */
+@utility container-page {
+  width: 100%;
+  max-width: var(--container-page);
+  margin-inline: auto;
+  padding-inline: var(--spacing-gutter-sm);
+  @media (width >= 48rem) {
+    padding-inline: var(--spacing-gutter);
+  }
+}
+
+/* §4 Section rhythm: 104px desktop, 72px mobile */
+@utility section-y {
+  padding-block: var(--spacing-section-sm);
+  @media (width >= 48rem) {
+    padding-block: var(--spacing-section);
+  }
+}
+
+/* §4 Glass: incoming bubbles over images, sticky nav, notification banners */
+@utility glass {
+  background: rgb(255 255 255 / 0.82);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+/* §3.4 Codes: tabular nums, 600, slightly tracked */
+@utility code-text {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* §7 Text over photos */
+@utility scrim {
+  background-image: linear-gradient(20deg, rgb(10 14 24 / 0.55), transparent 52%);
+}
+
+/* ==========================================================================
+   §6.3 Live gradient background (brand surfaces only, never purple,
+   never in portal/admin tables). Put .aurora on a plain section; add
+   .aurora-navy on navy sections.
+   ========================================================================== */
+
+.aurora {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.aurora::before,
+.aurora::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.9;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Blob A: top-left, 18s drift */
+.aurora::before {
+  top: -30vmax;
+  left: -24vmax;
+  background: radial-gradient(circle, var(--color-aurora-a), transparent 64%);
+  animation: aurora-drift-a 18s var(--ease-in-out) infinite alternate;
+}
+
+/* Blob B: bottom-right, 22s drift */
+.aurora::after {
+  right: -24vmax;
+  bottom: -30vmax;
+  background: radial-gradient(circle, var(--color-aurora-b), transparent 62%);
+  animation: aurora-drift-b 22s var(--ease-in-out) infinite alternate;
+}
+
+.aurora-navy::before {
+  background: radial-gradient(circle, var(--color-aurora-navy-a), transparent 64%);
+  opacity: 0.5;
+}
+
+.aurora-navy::after {
+  background: radial-gradient(circle, var(--color-aurora-navy-b), transparent 62%);
+  opacity: 0.22;
+}
+
+@keyframes aurora-drift-a {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(8vmax, 6vmax, 0) scale(1.08);
+  }
+}
+
+@keyframes aurora-drift-b {
+  from {
+    transform: translate3d(0, 0, 0) scale(1.04);
+  }
+  to {
+    transform: translate3d(-9vmax, -5vmax, 0) scale(0.96);
+  }
+}
+
+/* ==========================================================================
+   §6.2 rule 5: reduced motion turns off all non-essential animation.
+   Content is always fully visible without it.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .aurora::before,
+  .aurora::after {
+    animation: none !important;
+  }
+}

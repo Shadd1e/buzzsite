@@ -1,0 +1,31 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "at": "2026-11-19T12:00:00+01:00",
+      "admin": "Dapo Fashola",
+      "action": "Booked meeting for APP-295"
+    },
+    {
+      "at": "2026-11-19T10:00:00+01:00",
+      "admin": "Halima Sule",
+      "action": "Opened dispute DSP case review"
+    },
+    {
+      "at": "2026-11-19T07:00:00+01:00",
+      "admin": "Ifeoma Okafor",
+      "action": "Froze rider code on Eastgate Dispatch"
+    },
+    {
+      "at": "2026-11-18T17:00:00+01:00",
+      "admin": "Victor Edet",
+      "action": "Exported payouts statement for Oct"
+    },
+    {
+      "at": "2026-11-18T11:00:00+01:00",
+      "admin": "Dapo Fashola",
+      "action": "Changed Buzz % for KwikHaul Couriers 3.0 → 2.5 (deal)"
+    }
+  ]
+}

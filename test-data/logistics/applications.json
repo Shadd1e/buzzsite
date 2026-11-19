@@ -1,0 +1,165 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "items": [
+    {
+      "id": "APP-301",
+      "company": "Northstar Movers Ltd",
+      "stage": "new",
+      "cac": "RC-TEST-00321",
+      "services": [
+        "interstate"
+      ],
+      "states": [
+        "Kaduna",
+        "Kano",
+        "FCT"
+      ],
+      "submittedAt": "2026-11-19T08:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "missing",
+        "dataProtection": "missing",
+        "riderDeclaration": "missing"
+      },
+      "meeting": null,
+      "inspectionScore": null
+    },
+    {
+      "id": "APP-298",
+      "company": "Coastline Couriers",
+      "stage": "documents_received",
+      "cac": "RC-TEST-00298",
+      "services": [
+        "intrastate"
+      ],
+      "states": [
+        "Rivers"
+      ],
+      "submittedAt": "2026-11-17T13:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "uploaded",
+        "dataProtection": "uploaded",
+        "riderDeclaration": "rejected",
+        "rejectionReason": "Unsigned page 2"
+      },
+      "meeting": null,
+      "inspectionScore": null
+    },
+    {
+      "id": "APP-295",
+      "company": "Greenline Dispatch",
+      "stage": "meeting_booked",
+      "cac": "RC-TEST-00295",
+      "services": [
+        "intrastate",
+        "interstate"
+      ],
+      "states": [
+        "Oyo",
+        "Ogun",
+        "Lagos"
+      ],
+      "submittedAt": "2026-11-15T13:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "approved",
+        "dataProtection": "approved",
+        "riderDeclaration": "approved"
+      },
+      "meeting": {
+        "at": "2026-11-20T11:00:00+01:00",
+        "timezone": "WAT",
+        "link": "[meeting link]"
+      },
+      "inspectionScore": null
+    },
+    {
+      "id": "APP-290",
+      "company": "Sahel Freight",
+      "stage": "inspection",
+      "cac": "RC-TEST-00290",
+      "services": [
+        "interstate",
+        "international"
+      ],
+      "states": [
+        "Kano",
+        "Sokoto"
+      ],
+      "countries": [
+        "Niger"
+      ],
+      "submittedAt": "2026-11-12T13:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "approved",
+        "dataProtection": "approved",
+        "riderDeclaration": "approved"
+      },
+      "meeting": {
+        "at": "2026-11-17T13:00:00+01:00",
+        "timezone": "WAT"
+      },
+      "inspectionScore": {
+        "draft": 72,
+        "criteria": {
+          "vehicles": 16,
+          "hubs": 14,
+          "tracking": 12,
+          "staffVerification": 15,
+          "insurance": 15
+        }
+      }
+    },
+    {
+      "id": "APP-287",
+      "company": "Delta Swift Logistics",
+      "stage": "approved",
+      "cac": "RC-TEST-00287",
+      "services": [
+        "intrastate"
+      ],
+      "states": [
+        "Delta"
+      ],
+      "submittedAt": "2026-11-09T13:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "approved",
+        "dataProtection": "approved",
+        "riderDeclaration": "approved"
+      },
+      "meeting": {
+        "at": "2026-11-13T13:00:00+01:00",
+        "timezone": "WAT"
+      },
+      "inspectionScore": {
+        "final": 81
+      },
+      "companyCodeIssued": "BZL-C-1055"
+    },
+    {
+      "id": "APP-284",
+      "company": "QuickBox NG",
+      "stage": "rejected",
+      "cac": "RC-TEST-00284",
+      "services": [
+        "intrastate"
+      ],
+      "states": [
+        "Lagos"
+      ],
+      "submittedAt": "2026-11-07T13:00:00+01:00",
+      "documents": {
+        "partnerAgreement": "approved",
+        "dataProtection": "approved",
+        "riderDeclaration": "approved"
+      },
+      "meeting": {
+        "at": "2026-11-11T13:00:00+01:00",
+        "timezone": "WAT"
+      },
+      "inspectionScore": {
+        "final": 48
+      },
+      "rejectionReason": "No rider verification process in place"
+    }
+  ]
+}
