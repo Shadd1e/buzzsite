@@ -36,10 +36,9 @@ export function CtaBand({
           {secondary && (
             <ButtonLink
               href={secondary.href}
-              variant="outline"
+              variant="outlineOnBlue"
               size="lg"
               external={secondary.external}
-              className="border-white/70 bg-transparent text-white hover:border-white hover:bg-white/10"
             >
               {secondary.label}
             </ButtonLink>

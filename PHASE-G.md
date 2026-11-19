@@ -92,3 +92,18 @@ Added page by page below. P0 and P1 issues were fixed before each page was commi
 - **[P3] Escrow wording:** "escrow" is never glossed. Add a short definition the first time it appears.
 - **[P3] Fees row:** "[Fees and supported currencies]" is the first question for a Lagos buyer. Move it higher once the content exists.
 - **Open fact:** when the 5 days start (from payment or from delivery) is unconfirmed. It's shown as a visible placeholder on the rail note.
+
+### Safety `/safety` (critique 21/28 · audit 18/20)
+- **[P2] Map on phones:** at 390 the 800×480 SVG shrinks to about 335×200 and the phones become specks. Crop the viewBox to the ring area on small screens, or enlarge the phones.
+- **[P3] Gradient edge:** the live-gradient hero ends in a hard horizontal line at the section bottom (also on About). Mask the blob's fade-out, or let it bleed under the next section.
+- **[P3] Empty column:** the left column of "How alerts work" sits empty at desktop. Make the H2 sticky, or run the rows full width.
+- **[P3] "Call 112" on desktop:** `tel:112` does nothing on a computer. Consider showing the number as plain text there.
+- **[P3] EMBA explained:** "EMBA" is never explained on the page.
+
+### About `/about` (critique 18/28 · audit 16/20)
+- **[P2] Problem/answer cards:** three identical two-tone slabs with a repeated "The problem" label. Give each answer half a mini vignette (Buzz ID pill vs struck-through number, ₦ token held by SunPay, EMBA alert chip), or drop the label repetition.
+- **[P2] Repeated problems:** the three problems are stated three times (H1, lede, then the pairs H2 with the cards). Reword the pairs H2 so the cards follow straight on from the hero.
+- **[P3] Belief rows:** five rows (over the four-item guideline). "Truth before polish" reads as an internal note to the team, not something visitors care about.
+- **[P3] No waitlist in the body:** apart from the nav and footer there's no waitlist path. The mobile H1 is 36px, against the 48–64px spec.
+- **[P3] Founder note:** a visible "[founder note pending]" slot might persuade press and investors more than a fifth belief row.
+- **Shared, fixed during About:** `cn()` doesn't merge Tailwind classes, so `className` overrides of a Button variant are unreliable. The fix was the new `outlineOnBlue` variant. Avoid colour overrides on Button; add variants instead, or adopt tailwind-merge in Phase G.

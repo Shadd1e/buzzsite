@@ -7,13 +7,15 @@ import { cn } from "@/lib/cn";
  * DESIGN.md §8.1: pill, min-height 44px (56px for the main form CTA),
  * 14–16px weight 600. "↗" only on links that leave the current area.
  */
-export type ButtonVariant = "solid" | "outline" | "light" | "sky" | "danger" | "ghost";
+export type ButtonVariant = "solid" | "outline" | "outlineOnBlue" | "light" | "sky" | "danger" | "ghost";
 export type ButtonSize = "md" | "lg" | "sm";
 
 const variantClass: Record<ButtonVariant, string> = {
   solid: "bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-700",
   outline:
     "border-[1.5px] border-line-strong bg-white text-ink-900 hover:border-ink-900 active:bg-mist",
+  // secondary action on a blue band: white outline, white text
+  outlineOnBlue: "border-[1.5px] border-white/70 bg-transparent text-white hover:border-white hover:bg-white/10 active:bg-white/15",
   // white on the blue band
   light: "bg-white text-blue-600 hover:bg-blue-50 active:bg-blue-100",
   // on photos; ink text on sky for contrast (§2.2)
