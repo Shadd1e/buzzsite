@@ -507,6 +507,25 @@
   }
 }
 
+/* Safety map: one echo ring and the alert badges (§9.6) */
+@keyframes map-echo {
+  from {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes badge-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
 /* Depot masonry assembles column by column on load (§9.4) */
 .assemble {
   animation: rise var(--dur-4) var(--ease-out) backwards;
