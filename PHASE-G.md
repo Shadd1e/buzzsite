@@ -71,3 +71,24 @@ Added page by page below. P0 and P1 issues were fixed before each page was commi
 - **[P3] Avatar clustering:** colours cluster on indigo in the Chats list (T, AF, EC, EF). Improve the hash spread.
 - **[P3] Feature title size:** feature titles are H3 tags styled at h2 size, so they look like section headings.
 - **[P3] Hero convo panel:** it ends well above the bottom of the hero, leaving empty space bottom-right.
+
+### Buzz Pro `/pro` (critique 15/20 · audit 18/20)
+- **[P2] Switcher layout:** at 1440, "Tailor" used to wrap alone. The switcher now stacks its chips above a full-width preview. Re-check at 1024.
+- **[P3] Product vignettes:** the Storefront shows four identical shopping-bag icons, and the Business Centre sample "Hair growth oil (3…" truncates. Pick sample items whose names fit, and vary the icons.
+- **[P3] Tool explanations:** "Showcase and Creator Toolbox" and "Business Centre" get one line each. A short "what you can do" link per tool would help.
+- **Decision needed (spec vs PRODUCT.md):** the §9.3 hero shows a booking convo and the Showcase card shows short videos with Shop now, but PRODUCT.md doesn't list bookings or video selling as confirmed features. They're kept because the spec asks for them. Confirm, or replace them with placeholders.
+
+### Depot `/marketplace` (critique 19/32 · audit 17/20)
+- **[P2] Inactive controls that look clickable:** listing cards and the "Shop now" pill look tappable but do nothing. Render "Shop now" as a label, or open a small "sample listing" sheet.
+- **[P3] Filter feedback:** on phones the listings start about 680px down, so typing gives no visible change. Add a visible "Showing 2 sample listings" line under the chips.
+- **[P3] Location and price chips:** §9.4 lists them, and they're currently a text note. Add them as chips when the filters have real data.
+- **[P3] Duplicate layouts:** the masonry renders 2-, 3- and 4-column layouts, two of them hidden, which triples the node count. Consider one layout with a measured column count.
+- **[P3] Product tile image:** it's hotlinked from images.pexels.com. Download it, process it to a local file, and credit it in IMAGE-CREDITS.md. A dev-only warning also flags it as a lazy-loaded LCP image when scrolled into view.
+- **Decision needed (spec vs PRODUCT.md):** the "Live" badge (live selling) and video listings with Shop now come from §9.4, but PRODUCT.md doesn't list them. They're kept per spec; confirm or replace with placeholders.
+
+### Payments `/payments` (critique 22/28 · audit 18/20)
+- **[P2] Escrow token:** the token hides behind marker 1 at the start and marker 4 at the end, so the money never visibly "lands". Show it beside marker 4 at the end, or swap marker 4's numeral for ₦ once it's lit.
+- **[P3] Token overlap on phones:** the 36px token overlaps the 40px markers on the vertical rail. Shrink it to 28px on phones or add more gap.
+- **[P3] Escrow wording:** "escrow" is never glossed. Add a short definition the first time it appears.
+- **[P3] Fees row:** "[Fees and supported currencies]" is the first question for a Lagos buyer. Move it higher once the content exists.
+- **Open fact:** when the 5 days start (from payment or from delivery) is unconfirmed. It's shown as a visible placeholder on the rail note.
