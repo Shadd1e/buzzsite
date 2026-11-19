@@ -38,6 +38,7 @@ export function avatarColour(name: string): string {
 
 export function initials(name: string): string {
   const words = name
+    .replace(/\(.*?\)/g, "") // drop roles like "(buyer)"
     .replace(/[^\p{L}\p{N}\s'-]/gu, "")
     .trim()
     .split(/\s+/)
