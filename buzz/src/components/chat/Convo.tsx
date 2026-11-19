@@ -41,6 +41,7 @@ export function Convo({
   glass = false,
   label = "Example conversation",
   theme = "light",
+  delay = 150,
   className,
 }: {
   messages: ConvoMessage[];
@@ -53,6 +54,8 @@ export function Convo({
   label?: string;
   /** Buzz Web dark theme (§2.2) */
   theme?: ChatTheme;
+  /** ms before the first bubble, e.g. to follow a hero headline rise */
+  delay?: number;
   className?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -76,7 +79,7 @@ export function Convo({
     const set = (i: number, p: Phase) =>
       setPhases((prev) => prev.map((old, j) => (j === i ? p : old)));
 
-    let t = 150;
+    let t = delay;
     messages.forEach((m, i) => {
       if (m.typingFirst && m.variant !== "out" && m.sender) {
         timers.push(setTimeout(() => set(i, "typing"), t));
@@ -86,7 +89,7 @@ export function Convo({
       t += STAGGER_MS;
     });
     return () => timers.forEach(clearTimeout);
-  }, [go, reduce, messages]);
+  }, [go, reduce, messages, delay]);
 
   const onTint = panel && !glass && theme !== "dark";
 

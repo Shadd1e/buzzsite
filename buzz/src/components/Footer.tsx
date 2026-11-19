@@ -53,7 +53,7 @@ const legal: FooterLink[] = [
 ];
 
 const linkClass =
-  "inline-flex min-h-11 items-center gap-1 text-[15px] text-ink-300 transition-colors duration-(--dur-1) ease-out hover:text-white";
+  "inline-flex min-h-11 min-w-11 items-center gap-1 text-[15px] text-ink-300 transition-colors duration-(--dur-1) ease-out hover:text-white";
 
 export function Footer() {
   return (

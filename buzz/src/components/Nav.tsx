@@ -59,7 +59,7 @@ export function Nav({
       )}
     >
       <nav aria-label={label} className="container-page flex h-[72px] items-center gap-4 xl:gap-6">
-        <Link href="/" aria-label="Buzz home" className="-m-2 shrink-0 rounded-tile p-2">
+        <Link href="/" aria-label="Buzz home" className="-mx-2 flex min-h-11 shrink-0 items-center rounded-tile px-2">
           <Logo size="sm" />
         </Link>
 

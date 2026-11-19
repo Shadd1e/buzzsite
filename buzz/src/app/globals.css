@@ -454,6 +454,104 @@
 }
 
 /* ==========================================================================
+   Page motion. Elements are visible by default; animations only add the
+   entrance, so content shows with motion off or unsupported.
+   ========================================================================== */
+
+/* Hero text rise (§6.1 --dur-5). fill-mode backwards: hidden only while it waits. */
+.rise {
+  animation: rise var(--dur-5) var(--ease-out) backwards;
+  animation-delay: var(--rise-delay, 0ms);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}
+
+/* Scroll-linked (§6.2 rule 3): CSS view timelines, static fallback. */
+@supports (animation-timeline: view()) {
+  .scroll-from-right,
+  .scroll-from-left,
+  .scroll-rise {
+    animation-duration: 1ms; /* required, ignored by view timelines */
+    animation-timing-function: var(--ease-out);
+    animation-fill-mode: both;
+    animation-timeline: view();
+  }
+  .scroll-from-right {
+    animation-name: from-right;
+    animation-range: entry 15% cover 50%;
+  }
+  .scroll-from-left {
+    animation-name: from-left;
+    animation-range: entry 15% cover 50%;
+  }
+  .scroll-rise {
+    animation-name: rise;
+    animation-range: entry 20% cover 45%;
+  }
+}
+
+@keyframes from-right {
+  from {
+    transform: translateX(55%);
+  }
+}
+
+@keyframes from-left {
+  from {
+    transform: translateX(-55%);
+  }
+}
+
+/* Depot masonry assembles column by column on load (§9.4) */
+.assemble {
+  animation: rise var(--dur-4) var(--ease-out) backwards;
+  animation-delay: calc(var(--col, 0) * 160ms + 150ms);
+}
+
+/* EMBA alert drops in from the top and loops, with a long rest (§9.1). */
+/* Drops in 3 times, then drops in once more and stays (WCAG 2.2.2: motion
+   stops within the loop budget instead of running forever). */
+.alert-drop {
+  animation:
+    alert-drop 7s var(--ease-out) 3,
+    alert-rest var(--dur-4) var(--ease-out) 21s forwards;
+}
+
+@keyframes alert-rest {
+  from {
+    opacity: 0;
+    transform: translateY(-130%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes alert-drop {
+  0%,
+  6% {
+    opacity: 0;
+    transform: translateY(-130%);
+  }
+  14%,
+  82% {
+    opacity: 1;
+    transform: none;
+  }
+  92%,
+  100% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+}
+
+/* ==========================================================================
    §6.2 rule 5: reduced motion turns off all non-essential animation.
    Content is always fully visible without it.
    ========================================================================== */
@@ -469,7 +567,13 @@
   }
 
   .aurora::before,
-  .aurora::after {
+  .aurora::after,
+  .rise,
+  .scroll-from-right,
+  .scroll-from-left,
+  .scroll-rise,
+  .alert-drop,
+  .assemble {
     animation: none !important;
   }
 }

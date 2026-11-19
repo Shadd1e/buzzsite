@@ -43,4 +43,31 @@ Not yet done. The order is the one agreed after the critique: component bugs, th
 
 ## Marketing pages (Phase B)
 
-Added page by page below.
+Added page by page below. P0 and P1 issues were fixed before each page was committed. These are the P2 and P3 issues the critiques and audits found.
+
+### Home `/` (critique 23/32 · audit 17/20)
+- **[P2] Hero asterisk:** "…in one app.*" points to a data-charges note it doesn't qualify (the template's "free*" was removed). Drop the asterisk, or reword it as "Buzz uses mobile data. Data charges may apply."
+- **[P2] Message balance:** "no phone number / Buzz ID" is told four times (hero bubbles, Connect, feature row 1, flowers band), while chat to checkout (Depot → SunPay → Logistics) gets one line. Rewrite the flowers body around noise and control, and turn Connections into a chat → pay → deliver story (PRODUCT.md principle 1).
+- **[P2] Connections:** the placeholder slots outweigh the two real partners, and on phones they stack into three rows. The bordered name tiles aren't actionable, so §8.2 says list rows. Show SunPay and Buzz Logistics as two richer rows and collapse the pending partners into one dashed strip. The SunPay note repeats the tile.
+- **[P2] Waitlist promise:** the page never says what joining the waitlist gets you (e.g. "we'll tell you when Buzz is in the Play Store").
+- **[P2] Low-end Android cost:** effects that never stop: two 60vmax blur(70px) gradient blobs, the glass nav's backdrop-filter, and the alert loop (now capped at 3 runs). Consider pausing the gradient when it's off-screen and checking the served size of `hands-give.png` (1 MB source).
+- **[P3] Hands scene:** about 810px tall at 1440. Cap it at about 600px, and fade the giver's crop edge, which shows as a dark strip against the blue band.
+- **[P3] Buzz ID link:** "How Buzz ID works" lands at the top of /app. Point it at the Buzz ID section.
+- **[P3] Safety placeholder:** `[Safety headline: to be written]` at 52px looks unfinished. Keep the placeholder (it's required) but consider showing it smaller until the copy arrives.
+- **[P3] Hero subline orphan:** at 1440 the subline wraps to an orphan ("in / one app.*").
+- **[P3] Focus ring:** the critique measured 2.4px with no offset on one element. Verify against §12 (3px sky, 3px offset).
+- **[P3] Top bar options:** 8 options (6 links and 2 pills), over the ≤5 guideline. It's per §8.1, so it's a spec question.
+
+### The App `/app` (critique 22/32 · audit 16/20)
+- **[P2] Bento mini-UIs:**
+  - Status needs the "24h ring" from §9.2.
+  - Groups has a large empty middle (try a two-bubble group snippet with a voice note).
+  - Encryption is a lone lock tile (try the in-chat system notice as a system bubble).
+  - Buzz Web is a generic laptop icon (try a small laptop frame mirroring the chat list).
+- **[P2] Phone stacking:** below 1024px the feature stage shows four full-size phones (about 2,300px). Use a single phone with a tab or swipe switcher, or cropped screens at about 60%.
+- **[P2] Repetition:** the stage and the bento both cover Status, and Buzz ID appears in four places. Consider moving Groups, Encryption and Stickers into the stage and dropping the bento's repeats.
+- **[P2] Launch platforms:** the page never says when or where the app arrives. Add a visible placeholder, "[Android and iOS: launch platforms to be confirmed]".
+- **[P3] Status naming:** the copy says "Status" while the phone header says "Updates". Pick one, per PRODUCT.md terminology ("Status / Updates").
+- **[P3] Avatar clustering:** colours cluster on indigo in the Chats list (T, AF, EC, EF). Improve the hash spread.
+- **[P3] Feature title size:** feature titles are H3 tags styled at h2 size, so they look like section headings.
+- **[P3] Hero convo panel:** it ends well above the bottom of the hero, leaving empty space bottom-right.
