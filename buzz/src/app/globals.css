@@ -526,6 +526,18 @@
   }
 }
 
+/* Waitlist: the "Buzz is live" notification drops in once (§9.10) */
+.notify-drop {
+  animation: notify-drop var(--dur-4) var(--ease-out) 700ms backwards;
+}
+
+@keyframes notify-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+}
+
 /* Depot masonry assembles column by column on load (§9.4) */
 .assemble {
   animation: rise var(--dur-4) var(--ease-out) backwards;
@@ -592,7 +604,8 @@
   .scroll-from-left,
   .scroll-rise,
   .alert-drop,
-  .assemble {
+  .assemble,
+  .notify-drop {
     animation: none !important;
   }
 }

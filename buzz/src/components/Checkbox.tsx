@@ -19,10 +19,13 @@ export function Checkbox({
   onCheckedChange,
   disabled,
   invalid,
+  errorId,
   className,
 }: {
   label: ReactNode;
   description?: ReactNode;
+  /** id of an error message to link via aria-describedby */
+  errorId?: string;
   checked?: boolean | "indeterminate";
   defaultChecked?: boolean;
   onCheckedChange?: (checked: boolean | "indeterminate") => void;
@@ -40,7 +43,7 @@ export function Checkbox({
         onCheckedChange={onCheckedChange}
         disabled={disabled}
         aria-invalid={invalid || undefined}
-        aria-describedby={description ? `${id}-d` : undefined}
+        aria-describedby={[description ? `${id}-d` : "", errorId ?? ""].filter(Boolean).join(" ") || undefined}
         className={cn(
           "grid size-5 shrink-0 place-items-center rounded-tag border-[1.5px] bg-white",
           "transition-colors duration-(--dur-1) ease-out",
