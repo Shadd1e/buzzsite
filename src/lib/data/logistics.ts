@@ -103,8 +103,19 @@ export async function getPublicTracking(trackingId: string): Promise<PublicParce
     nextStep: p.nextStep,
     proof: p.proof,
     storage: p.storage,
+    pickupPoint: findPickupPoint(p),
   };
   return respond(view);
+}
+
+/** The partner's pickup point in the city of the latest "at pickup point" scan. */
+function findPickupPoint(p: Parcel): PublicParcel["pickupPoint"] {
+  const scan = p.timeline.findLast((t) => t.status === "at_pickup_point");
+  if (!scan) return null;
+  const hub =
+    db.hubs.find((h) => h.partnerId === p.partnerId && h.pickupPoint && h.city === scan.city) ??
+    db.hubs.find((h) => h.partnerId === p.partnerId && h.pickupPoint && h.city.split(" (")[0] === scan.city.split(" (")[0]);
+  return hub ? { name: hub.name, address: hub.address, hours: hub.hours, city: hub.city } : null;
 }
 
 /* ---------- Riders ---------- */

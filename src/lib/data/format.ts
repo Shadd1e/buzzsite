@@ -42,6 +42,14 @@ export function formatDate(iso: string): string {
   return datePart.format(new Date(iso));
 }
 
+const dayPart = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", timeZone: TZ });
+
+/** "19 Nov, 14:05" for timelines */
+export function formatDayTime(iso: string): string {
+  const d = new Date(iso);
+  return `${dayPart.format(d)}, ${timePart.format(d)}`;
+}
+
 /** "14:05" for chat bubbles and timelines */
 export function formatTime(iso: string): string {
   return timePart.format(new Date(iso));

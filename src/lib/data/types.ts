@@ -78,6 +78,8 @@ export interface PublicParcel {
   nextStep?: string;
   proof?: { photo: boolean; deliveryCodeVerified: boolean };
   storage?: Parcel["storage"];
+  /** Where to collect it, when it's waiting at a pickup point (a hub, never a rider) */
+  pickupPoint?: { name: string; address: string; hours: string; city: string } | null;
 }
 
 export type PartnerStatus = "active" | "suspended";

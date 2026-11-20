@@ -203,3 +203,104 @@ export const logisticsPartners = {
     secondary: { label: "Partner sign in", href: "/logistics/portal/login" },
   },
 } as const;
+
+/**
+ * Track copy (DESIGN.md §10.1). Public tracking shows status, scan cities and
+ * times, and the partner name: never a rider's name, phone or live location,
+ * and never the receiver's details or codes (PRODUCT.md privacy rule).
+ * Confirmed rules used in the state notes: 4-digit delivery code; one-time
+ * pickup code for someone else; 5 free storage days, then a partner-set
+ * daily fee, return to seller after 10 days; up to 2 delivery attempts;
+ * refused parcels: 5 days to dispute, otherwise refund minus delivery cost;
+ * SunPay releases payment on confirmation or after 5 days.
+ */
+export const logisticsTrack = {
+  meta: {
+    title: "Track a parcel",
+    description: "Enter your tracking ID to see where your Depot parcel is. No app needed.",
+  },
+  hero: {
+    title: "Track a parcel",
+    lede: "Enter the tracking ID from your Depot order. You'll see each scan on the way, the city and the time.",
+  },
+  where: {
+    title: "Where to find your tracking ID",
+    rows: [
+      { title: "In your Depot order", body: "Open the order in the Buzz app. The tracking ID is under the delivery details." },
+      { title: "On the parcel label", body: "The QR label on the parcel shows the tracking ID. On a phone, tap Scan QR to read it with your camera." },
+      { title: "From the seller", body: "Sellers can see the tracking ID for every order they send." },
+    ],
+  },
+  privacy: "We show the city and time of each scan. We never show who's carrying your parcel or where they are right now.",
+
+  result: {
+    another: "Track another parcel",
+    labels: {
+      trackingId: "Tracking ID",
+      partner: "Delivered by",
+      type: "Delivery",
+      lastScan: "Last scan",
+    },
+    deliveryType: { home: "Home delivery", pickup: "Pickup" },
+    timelineTitle: "Updates",
+    batchTag: "Batch scan",
+    batchHelp: "Updated when the partner scanned the batch this parcel travels in.",
+    routeTitle: "Route",
+    routeCaption: "Cities where it's been scanned. Not a live location.",
+    actionsTitle: "What you can do",
+    actions: {
+      choose: { title: "Choose home delivery or pickup", body: "Pick how you want to receive it in the Buzz app, under your Depot order." },
+      someone: { title: "Send someone to collect", body: "Add their name in the app to get a one-time pickup code for them. They'll need ID that matches the name." },
+      help: { title: "Questions about this delivery?", body: "Contact customer care in the Buzz app. Have your tracking ID ready.", link: { label: "Help with delivery", href: "/help" } },
+    },
+  },
+
+  notFound: {
+    title: "We couldn't find that parcel",
+    body: "Check the tracking ID against your Depot order and try again. It's BZT, then two groups of four letters or numbers, like BZT-7Q4K-19XM.",
+    badFormat: "That doesn't look like a tracking ID.",
+  },
+};
+
+/**
+ * Partner sign in copy (DESIGN.md §10.1): email + password + 2FA code, with
+ * a side note that riders sign in in the Buzz app. Front end only: there is
+ * no auth service yet, so sign-in is simulated and says so.
+ */
+export const logisticsLogin = {
+  meta: {
+    title: "Partner sign in",
+    description: "Sign in to the Buzz Logistics partner portal to manage riders, parcels, batches and payouts.",
+  },
+  title: "Partner sign in",
+  lede: "For approved logistics partners. Manage your riders, parcels, batches and payouts.",
+  fields: {
+    email: { label: "Work email", placeholder: "you@company.com" },
+    password: { label: "Password" },
+    code: { label: "6-digit code", help: "From your authenticator app." },
+  },
+  steps: {
+    signIn: "Continue",
+    verify: "Sign in",
+    back: "Use a different email",
+    codeIntro: "Enter the 6-digit code from your authenticator app for",
+  },
+  errors: {
+    email: "Enter your work email, like you@company.com.",
+    password: "Enter your password.",
+    code: "Enter the 6 digits from your authenticator app. Codes change every 30 seconds.",
+  },
+  forgot: { label: "Forgot your password?", href: "/contact" },
+  test: "Test build: there's no sign-in service yet. Any email and password work, and the code is 123456.",
+  wrongCode: "That code didn't work. Check your authenticator app and enter the newest code.",
+  success: {
+    title: "You're signed in",
+    body: "The partner portal is still being built. When it's ready, you'll land on your overview here.",
+    action: { label: "Back to Buzz Logistics", href: "/logistics" },
+  },
+  riders: {
+    title: "Are you a rider?",
+    body: "Riders sign in in the Buzz app with their company code and rider code: open Buzz, go to Me, then Logistics partners.",
+  },
+  apply: { text: "Not a partner yet?", label: "See how to become a partner", href: "/logistics/partners" },
+};
