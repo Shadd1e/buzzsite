@@ -18,6 +18,20 @@
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // Bring the illustrative chat bubbles in as the conversation enters view.
+  const chatScene = document.querySelector('.bh-chat');
+  if (chatScene) {
+    if ('IntersectionObserver' in window) {
+      const chatObserver = new IntersectionObserver(entries => {
+        if (entries.some(entry => entry.isIntersecting)) {
+          chatScene.classList.add('is-visible');
+          chatObserver.disconnect();
+        }
+      }, { threshold: 0.28 });
+      chatObserver.observe(chatScene);
+    } else { chatScene.classList.add('is-visible'); }
+  }
+
   // The homepage is authored directly in index.html. Inner routes are rendered by the dedicated page modules below.
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
   if (path !== '/') {

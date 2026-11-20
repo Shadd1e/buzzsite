@@ -69,6 +69,18 @@ export const contactPage = {
     title: "Your message",
     sent: "Thanks. This is a test build, so your message wasn't sent. Please email hello@aetherjade.space instead.",
   },
+  // Faster routes than a message, for the most common reasons people write
+  shortcuts: {
+    title: "You might not need to write",
+    lede: "These questions have quicker answers.",
+    rows: [
+      { title: "Something isn't working in the app", body: "Step-by-step help for your account, chats, Depot, payments and alerts.", link: { label: "Open the Help Centre", href: "/help" } },
+      { title: "Where is my parcel?", body: "Enter your tracking ID to see the latest scan, city and time. No app needed.", link: { label: "Track a parcel", href: "/logistics" } },
+      { title: "A problem with an order or payment", body: "Your money stays with SunPay while a dispute is open. Open the dispute from the order in the app.", link: { label: "How disputes work", href: "/payments" } },
+      { title: "You run a logistics company", body: "Apply to deliver Depot orders as a Buzz Logistics partner.", link: { label: "Become a partner", href: "/logistics" } },
+      { title: "When can I download Buzz?", body: "Buzz isn't in the app stores yet. Join the waitlist and we'll tell you when it is.", link: { label: "Join the waitlist", href: "/waitlist" } },
+    ],
+  },
   channels: {
     title: "Other ways to reach us",
     rows: [

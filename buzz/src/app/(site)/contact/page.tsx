@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LinkRows } from "@/components/site/LinkRows";
 import { ContactForm } from "@/components/site/ContactForm";
 import { contactPage } from "@/content/contact";
 
@@ -9,10 +10,11 @@ export const metadata: Metadata = {
 
 /**
  * Contact (DESIGN.md §9.9). The orchestrated moment: the form panel slides to
- * the chosen topic. Form card + direct channels list.
+ * the chosen topic. Form card, quicker routes for common questions, then the
+ * direct channels list.
  */
 export default function ContactPage() {
-  const { hero, topics, form, channels } = contactPage;
+  const { hero, topics, form, shortcuts, channels } = contactPage;
   return (
     <>
       <section aria-labelledby="page-title" className="aurora bg-white pt-12 pb-10 md:pt-16 md:pb-14">
@@ -28,7 +30,19 @@ export default function ContactPage() {
         <ContactForm topics={topics} title={form.title} sent={form.sent} />
       </section>
 
-      <section aria-labelledby="channels-title" className="border-t border-line">
+      <section aria-labelledby="shortcuts-title" className="aurora bg-mist section-y">
+        <div className="container-page grid gap-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-16">
+          <div>
+            <h2 id="shortcuts-title" className="max-w-[11em] text-h2">
+              {shortcuts.title}
+            </h2>
+            <p className="mt-5 text-lede text-ink-700">{shortcuts.lede}</p>
+          </div>
+          <LinkRows rows={shortcuts.rows} />
+        </div>
+      </section>
+
+      <section aria-labelledby="channels-title">
         <div className="container-page grid gap-8 py-14 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-16 md:py-18">
           <h2 id="channels-title" className="text-[clamp(28px,3vw,38px)] leading-[1.12] font-light tracking-[-0.025em]">
             {channels.title}

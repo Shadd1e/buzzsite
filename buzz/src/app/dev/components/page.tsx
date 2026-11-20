@@ -264,7 +264,7 @@ export default async function ComponentsPage() {
   const buzzLogistics: Sender = { name: "Buzz Logistics", system: "buzz" };
 
   const landedConvo: ConvoMessage[] = [
-    { variant: "in", sender: tobi, content: "Mummy, I don land for Abuja", time: "12:27" },
+    { variant: "in", sender: tobi, content: "Mum, I've landed in Abuja", time: "12:27" },
     { variant: "out", content: "Thank God! How was the flight?", time: "12:28", status: "read" },
     { variant: "in", sender: tobi, content: <VoiceNote duration="0:21" />, time: "12:29" },
     { variant: "in", sender: tobi, typingFirst: true, content: "Driver don come. I go call you when I reach", time: "12:30" },
@@ -776,7 +776,7 @@ export default async function ComponentsPage() {
               <Row label="Variants and receipts" note="Receipts differ by shape: one tick, two ticks, then two ticks on a filled badge." className="block">
                 <div className="flex max-w-[560px] flex-col gap-4 rounded-convo bg-blue-50 p-4 sm:p-6">
                   <Spec code='variant="in" onTint' className="w-full items-stretch">
-                    <Bubble variant="in" sender={adaeze} onTint time="12:27">Abeg, is the green one still available?</Bubble>
+                    <Bubble variant="in" sender={adaeze} onTint time="12:27">Hi, is the green one still available?</Bubble>
                   </Spec>
                   <Spec code='variant="out" status="sent"' className="w-full items-end">
                     <Bubble variant="out" time="12:28" status="sent">Yes o. Size 42 is left.</Bubble>

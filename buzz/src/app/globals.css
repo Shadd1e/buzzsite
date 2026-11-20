@@ -609,3 +609,62 @@
     animation: none !important;
   }
 }
+
+/* ==========================================================================
+   Buzz Web theme (DESIGN.md §2.2 dark theme, §11). The shell sets
+   data-theme="light|dark"; everything inside uses the web-* utilities, which
+   point at these variables, so one class works in both themes. Portalled
+   menus add .web-shell and data-theme themselves.
+   ========================================================================== */
+
+@theme inline {
+  --color-web-bg: var(--w-bg);
+  --color-web-surface: var(--w-surface);
+  --color-web-raised: var(--w-raised);
+  --color-web-convo: var(--w-convo);
+  --color-web-text: var(--w-text);
+  --color-web-meta: var(--w-meta);
+  --color-web-line: var(--w-line);
+  --color-web-hover: var(--w-hover);
+  --color-web-selected: var(--w-selected);
+}
+
+.web-shell {
+  --w-bg: var(--color-mist);
+  --w-surface: var(--color-white);
+  --w-raised: var(--color-mist);
+  --w-convo: var(--color-blue-50);
+  --w-text: var(--color-ink-900);
+  --w-meta: var(--color-ink-500);
+  --w-line: var(--color-line);
+  --w-hover: var(--color-mist);
+  --w-selected: var(--color-blue-100);
+  color-scheme: light;
+  /* No background/colour here: unlayered CSS would beat the bg-web-* utilities
+     on portalled menus that reuse this class for the variables. */
+}
+
+.web-shell[data-theme="dark"] {
+  --w-bg: var(--color-dark-bg);
+  --w-surface: var(--color-dark-surface);
+  --w-raised: var(--color-dark-raised);
+  --w-convo: var(--color-dark-bg);
+  --w-text: var(--color-dark-text);
+  --w-meta: var(--color-dark-meta);
+  --w-line: var(--color-dark-raised);
+  --w-hover: var(--color-dark-raised);
+  --w-selected: #22305a; /* raised, nudged toward blue so selection reads */
+  color-scheme: dark;
+}
+
+/* Headings follow the web theme (base layer, so utilities still win) */
+@layer base {
+  .web-shell :is(h1, h2, h3, h4) {
+    color: inherit;
+  }
+}
+
+/* The QR countdown ring drains linearly: it's a clock, not an ease. */
+.qr-ring {
+  transition: stroke-dashoffset 1s linear;
+}

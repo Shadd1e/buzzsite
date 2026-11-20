@@ -37,7 +37,7 @@ export const depotPage = {
       label: "A buyer asks a landlord about a flat on Depot",
       landlord: { name: "Mrs Adebayo" },
       messages: [
-        { variant: "out", text: "Abeg, is the 2-bedroom in Lekki still available?", time: "09:12", status: "read" },
+        { variant: "out", text: "Hi, is the 2-bedroom in Lekki still available?", time: "09:12", status: "read" },
         { variant: "in", text: "Yes o. You fit come see am on Saturday", time: "09:14" },
         { variant: "out", text: "Saturday works. I'll message you that morning", time: "09:15", status: "delivered" },
       ],

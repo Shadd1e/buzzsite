@@ -70,7 +70,7 @@
         },
         {
           "from": "Chidi",
-          "text": "Don't forget the rice o",
+          "text": "Don't forget the rice",
           "at": "2026-11-19T12:48:00+01:00"
         }
       ]
@@ -85,7 +85,7 @@
       "messages": [
         {
           "from": "me",
-          "text": "Abeg, is the ankara two-piece still available in blue?",
+          "text": "Hi, is the ankara two-piece still available in blue?",
           "at": "2026-11-18T03:40:00+01:00",
           "status": "read"
         },
@@ -126,12 +126,12 @@
       "messages": [
         {
           "from": "Funmi",
-          "text": "Light don come back?",
+          "text": "Is the power back?",
           "at": "2026-11-19T10:00:00+01:00"
         },
         {
           "from": "me",
-          "text": "Yes o, since 6",
+          "text": "Yes, since 6",
           "at": "2026-11-19T10:02:00+01:00",
           "status": "read"
         },
@@ -189,12 +189,12 @@
       "messages": [
         {
           "from": "them",
-          "text": "I don land for Abuja",
+          "text": "I've landed in Abuja",
           "at": "2026-11-17T11:00:00+01:00"
         },
         {
           "from": "me",
-          "text": "Thank God. Call me when you settle",
+          "text": "Thank God. Call me when you've settled in",
           "at": "2026-11-17T11:05:00+01:00",
           "status": "read"
         }

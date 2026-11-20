@@ -1,0 +1,233 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f2e3]:
+    - navigation "Main" [ref=f2e4]:
+      - link "Buzz home" [ref=f2e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f2e6]
+      - list [ref=f2e7]:
+        - listitem [ref=f2e8]:
+          - link "The App" [ref=f2e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f2e10]:
+          - link "Buzz Pro" [ref=f2e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=f2e12]:
+          - link "Depot" [ref=f2e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=f2e14]:
+          - link "Payments" [ref=f2e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=f2e16]:
+          - link "Safety" [ref=f2e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=f2e18]:
+          - link "About" [ref=f2e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f2e20]:
+        - link "Buzz Web" [ref=f2e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=f2e23]: ↗
+        - link "Join the waitlist" [ref=f2e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=f2e26]:
+    - region "Your money waits until you're happy." [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - generic [ref=f2e29]:
+          - heading "Your money waits until you're happy." [level=1] [ref=f2e30]
+          - paragraph [ref=f2e31]: When you buy on Depot, SunPay holds your payment in escrow. The seller is paid when you confirm the order arrived.
+          - link "Join the waitlist" [ref=f2e33] [cursor=pointer]:
+            - /url: /waitlist
+        - log "A buyer pays for a bag and SunPay holds the money" [ref=f2e36]:
+          - generic [ref=f2e40]:
+            - generic [ref=f2e41]: "You:"
+            - generic [ref=f2e42]: I'll take the brown laptop bag
+            - paragraph [ref=f2e43]:
+              - time [ref=f2e44]: 10:14
+              - generic [ref=f2e49]: Read
+          - generic [ref=f2e52]:
+            - generic [aria-hidden] [ref=f2e53]: CC
+            - generic [ref=f2e54]:
+              - generic [ref=f2e55]: "Carry Co.:"
+              - generic [ref=f2e56]: Great choice! Pay on Depot and I'll send it today
+              - paragraph [ref=f2e57]:
+                - time [ref=f2e58]: 10:15
+          - generic [ref=f2e66]:
+            - paragraph [ref=f2e67]: SunPay
+            - generic [ref=f2e68]: ₦[AMOUNT] is held in escrow. Carry Co. is paid when you confirm the bag arrived.
+            - paragraph [ref=f2e69]:
+              - time [ref=f2e70]: 10:18
+          - generic [ref=f2e74]:
+            - generic [ref=f2e75]: "You:"
+            - generic [ref=f2e76]: Paid. Thank you!
+            - paragraph [ref=f2e77]:
+              - time [ref=f2e78]: 10:18
+              - generic [ref=f2e82]: Delivered
+    - region "How escrow works" [ref=f2e83]:
+      - heading "How escrow works" [level=2] [ref=f2e84]
+      - generic [ref=f2e85]:
+        - generic [ref=f2e86]:
+          - generic [ref=f2e88]: ₦
+          - list [ref=f2e89]:
+            - listitem [ref=f2e90]:
+              - generic [ref=f2e91]: "1"
+              - generic [ref=f2e92]:
+                - heading "You pay" [level=3] [ref=f2e93]
+                - paragraph [ref=f2e94]: Pay for your Depot order in the app.
+            - listitem [ref=f2e95]:
+              - generic [ref=f2e96]: "2"
+              - generic [ref=f2e97]:
+                - heading "SunPay holds it" [level=3] [ref=f2e98]
+                - paragraph [ref=f2e99]: The money waits in escrow. The seller can see it's there.
+            - listitem [ref=f2e100]:
+              - generic [ref=f2e101]: "3"
+              - generic [ref=f2e102]:
+                - heading "You confirm" [level=3] [ref=f2e103]
+                - paragraph [ref=f2e104]: When your order arrives, confirm it in the chat.
+            - listitem [ref=f2e105]:
+              - generic [ref=f2e106]: "4"
+              - generic [ref=f2e107]:
+                - heading "Seller is paid" [level=3] [ref=f2e108]
+                - paragraph [ref=f2e109]: SunPay releases the money to the seller.
+        - paragraph [ref=f2e110]: Released automatically after 5 days unless a dispute is opened.
+    - region "If something goes wrong" [ref=f2e111]:
+      - generic [ref=f2e112]:
+        - generic [ref=f2e113]:
+          - heading "If something goes wrong" [level=2] [ref=f2e114]
+          - list [ref=f2e115]:
+            - listitem [ref=f2e116]:
+              - heading "Open a dispute within 5 days" [level=3] [ref=f2e117]
+              - paragraph [ref=f2e118]: If the item is wrong, damaged or didn't arrive, open a dispute before the 5 days are up. The money stays in escrow.
+            - listitem [ref=f2e119]:
+              - heading "Show what happened" [level=3] [ref=f2e120]
+              - paragraph [ref=f2e121]: Your chat with the seller and any photos you add help settle it.
+            - listitem [ref=f2e122]:
+              - heading "Buzz reviews the case" [level=3] [ref=f2e123]
+              - paragraph [ref=f2e124]: "Buzz staff look at what both sides shared. [Dispute review steps and timings: to be confirmed]"
+        - log "Example dispute chat between a buyer and a seller" [ref=f2e126]:
+          - generic [ref=f2e129]:
+            - generic [aria-hidden] [ref=f2e130]: IN
+            - generic [ref=f2e131]:
+              - paragraph [ref=f2e132]: Ifeanyi N. (buyer)
+              - generic [ref=f2e133]: The colour is completely different from the photo
+              - paragraph [ref=f2e134]:
+                - time [ref=f2e135]: 11:00
+          - generic [ref=f2e138]:
+            - generic [aria-hidden] [ref=f2e139]: CC
+            - generic [ref=f2e140]:
+              - paragraph [ref=f2e141]: Carry Co. (seller)
+              - generic [ref=f2e142]: It's the same fabric, the light in the photo is different
+              - paragraph [ref=f2e143]:
+                - time [ref=f2e144]: 13:00
+          - generic [ref=f2e152]:
+            - paragraph [ref=f2e153]: SunPay
+            - generic [ref=f2e154]: Payment is held while this dispute is reviewed.
+            - paragraph [ref=f2e155]:
+              - time [ref=f2e156]: 13:05
+    - region "Fees and currencies" [ref=f2e157]:
+      - generic [ref=f2e158]:
+        - heading "Fees and currencies" [level=2] [ref=f2e159]
+        - paragraph [ref=f2e160]: "[Fees and supported currencies: to be confirmed]"
+    - region "Pay safely from day one." [ref=f2e161]:
+      - generic [ref=f2e162]:
+        - generic [ref=f2e163]:
+          - heading "Pay safely from day one." [level=2] [ref=f2e164]
+          - paragraph [ref=f2e165]: Join the waitlist and we'll tell you when Buzz and SunPay are live.
+        - link "Join the waitlist" [ref=f2e167] [cursor=pointer]:
+          - /url: /waitlist
+  - contentinfo [ref=f2e169]:
+    - generic [ref=f2e170]:
+      - generic [ref=f2e171]:
+        - generic [ref=f2e172]:
+          - img "Buzz" [ref=f2e173]
+          - paragraph [ref=f2e174]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f2e175] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f2e177]:
+          - navigation "Product" [ref=f2e178]:
+            - heading "Product" [level=2] [ref=f2e179]
+            - list [ref=f2e180]:
+              - listitem [ref=f2e181]:
+                - link "The App" [ref=f2e182] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f2e183]:
+                - link "Buzz Pro" [ref=f2e184] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f2e185]:
+                - link "Depot" [ref=f2e186] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f2e187]:
+                - link "Payments" [ref=f2e188] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f2e189]:
+                - link "Safety" [ref=f2e190] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f2e191]:
+            - heading "Company" [level=2] [ref=f2e192]
+            - list [ref=f2e193]:
+              - listitem [ref=f2e194]:
+                - link "About" [ref=f2e195] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f2e196]:
+                - link "Careers" [ref=f2e197] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f2e198]:
+                - link "Contact" [ref=f2e199] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f2e200]:
+            - heading "Help" [level=2] [ref=f2e201]
+            - list [ref=f2e202]:
+              - listitem [ref=f2e203]:
+                - link "Help Centre" [ref=f2e204] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f2e205]:
+                - link "Community guidelines" [ref=f2e206] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f2e207]:
+                - link "Safety guidelines" [ref=f2e208] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f2e209]:
+            - heading "Also from Buzz" [level=2] [ref=f2e210]
+            - list [ref=f2e211]:
+              - listitem [ref=f2e212]:
+                - link "Buzz Web" [ref=f2e213] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f2e214]: ↗
+              - listitem [ref=f2e215]:
+                - link "Buzz Logistics" [ref=f2e216] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f2e217]: ↗
+              - listitem [ref=f2e218]:
+                - link "Track a package" [ref=f2e219] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f2e220]: ↗
+      - generic [ref=f2e221]:
+        - paragraph [ref=f2e222]: © 2026 Aether Jade Innovation
+        - list [ref=f2e223]:
+          - listitem [ref=f2e224]:
+            - link "Privacy" [ref=f2e225] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f2e226]:
+            - link "Terms" [ref=f2e227] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f2e228]:
+            - link "Cookie policy" [ref=f2e229] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f2e230]:
+          - listitem "Social account to be confirmed" [ref=f2e231]:
+            - generic [aria-hidden] [ref=f2e232]: "[ ]"
+            - generic [ref=f2e233]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f2e234]:
+            - generic [aria-hidden] [ref=f2e235]: "[ ]"
+            - generic [ref=f2e236]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f2e237]:
+            - generic [aria-hidden] [ref=f2e238]: "[ ]"
+            - generic [ref=f2e239]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f2e245] [cursor=pointer]
+  - alert [ref=f2e249]

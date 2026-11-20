@@ -1,19 +1,19 @@
 /**
  * Homepage copy (DESIGN.md §9.1). Facts come from PRODUCT.md only.
  * Anything unconfirmed is a visible [placeholder]. Voice: plain, warm,
- * direct; Pidgin only inside chat bubbles.
+ * direct; plain English everywhere, including chat bubbles.
  */
 
 export const home = {
   meta: {
     title: "Buzz: One HUB that plugs you to everything",
     description:
-      "Chat, share your Buzz ID instead of your number, buy on Depot with SunPay escrow, and get safety alerts from verified agencies. Join the waitlist.",
+      "Chat, buy and sell on Depot, pay safely with SunPay escrow, get your order delivered and receive safety alerts from verified agencies, all in one app. Join the waitlist.",
   },
 
   hero: {
     title: "One HUB that plugs you to everything.",
-    subline: "Chats, a marketplace, safe payments and safety alerts, in one app.",
+    subline: "Chat, shop, pay safely, get it delivered and stay alert, in one app.",
     cta: { label: "Join the waitlist", href: "/waitlist" },
     image: {
       src: "/images/home/hero-phone.jpg",
@@ -21,14 +21,16 @@ export const home = {
       width: 1325,
       height: 829,
     },
-    // Hero bubbles: outgoing / incoming with photo avatar / outgoing (§9.1)
+    // Hero bubbles: outgoing / incoming with photo avatar / outgoing (§9.1).
+    // Tells the chat-to-checkout story; on phones the third bubble is hidden,
+    // so the second one has to finish the thought on its own.
     convo: {
-      label: "Two friends swapping Buzz IDs instead of phone numbers",
+      label: "Two friends chatting about a bag one of them bought on Depot",
       contact: { name: "Amaka", src: "/images/avatar-chat-sample.png" },
       messages: [
-        { variant: "out", text: "Abeg send me your number", time: "12:26", status: "read" },
-        { variant: "in", text: "Just add @amaka.buzz. No need for my number", time: "12:27" },
-        { variant: "out", text: "Done! See you at the market", time: "12:28", status: "delivered" },
+        { variant: "out", text: "Where did you get that bag?", time: "12:26", status: "read" },
+        { variant: "in", text: "Depot. SunPay held my money until it arrived", time: "12:27" },
+        { variant: "out", text: "Send me the link, please!", time: "12:28", status: "delivered" },
       ],
     },
   },
@@ -37,7 +39,7 @@ export const home = {
 
   connect: {
     title: "Connect with people and businesses with ease.",
-    body: "Swap contacts in person with BuzzDrop, then find products, homes and services on Depot. Nobody needs your phone number.",
+    body: "Find products, homes and services on Depot, ask the seller questions in chat, pay with SunPay escrow and track delivery with Buzz Logistics. It all happens where you already talk.",
     imageAlt: "One hand passes parcels to another person's open hands",
   },
 
@@ -50,13 +52,13 @@ export const home = {
     {
       id: "buzz-id",
       title: "You control what you share.",
-      body: "Give people your Buzz ID, like @adaeze.buzz, instead of your phone number. Chats are end-to-end encrypted, and you decide who can reach you.",
+      body: "Give people your Buzz ID, like @adaeze.buzz, instead of your phone number, or swap contacts in person with BuzzDrop. Chats are end-to-end encrypted, and you decide who can reach you.",
       link: { label: "How Buzz ID works", href: "/app" },
       image: { src: "/images/home/lock.jpg", alt: "", width: 365, height: 340 },
     },
     {
       id: "safety",
-      title: "[Safety headline: to be written]",
+      title: "Know what's happening on your street.",
       body: "Buzz works with verified police and security agencies, and with people near you, to send safety alerts for your area. Alerts are opt-in, and security updates have their own colour so they're hard to miss.",
       link: { label: "How safety alerts work", href: "/safety" },
     },
@@ -81,7 +83,7 @@ export const home = {
 
   quiet: {
     title: "More people. Even less noise.",
-    body: "Share your Buzz ID instead of your number, and choose who can reach you.",
+    body: "Your chats, orders, payments and alerts sit in one app, instead of five apps competing for your attention.",
     image: {
       src: "/images/home/flowers.jpg",
       alt: "A smiling woman lying in a bed of flowers",

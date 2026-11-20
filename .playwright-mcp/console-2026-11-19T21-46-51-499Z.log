@@ -1,0 +1,103 @@
+[     466ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[     501ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   53260ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   54024ms] [LOG] [Fast Refresh] done in 866ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   74627ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   74649ms] [LOG] [Fast Refresh] done in 125ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   86733ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   87043ms] [LOG] [Fast Refresh] done in 383ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   89327ms] [LOG] [Fast Refresh] done in 383ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   89516ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   90394ms] [LOG] [Fast Refresh] done in 977ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   90396ms] [LOG] [Fast Refresh] done in 977ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   91411ms] [LOG] [Fast Refresh] done in 977ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   91716ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   91981ms] [LOG] [Fast Refresh] done in 367ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  110005ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  110096ms] [LOG] [Fast Refresh] done in 195ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  110322ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  111012ms] [LOG] [Fast Refresh] done in 799ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  114484ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  114574ms] [LOG] [Fast Refresh] done in 203ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  115387ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  116637ms] [LOG] [Fast Refresh] done in 1367ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  135741ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  135742ms] [LOG] [Fast Refresh] done in 109ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  220387ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  224108ms] [LOG] [Fast Refresh] done in 3824ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  224431ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  224516ms] [LOG] [Fast Refresh] done in 186ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  241839ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  242132ms] [LOG] [Fast Refresh] done in 375ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  242520ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  243022ms] [LOG] [Fast Refresh] done in 608ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  248430ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  249177ms] [LOG] [Fast Refresh] done in 848ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  284618ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  284653ms] [LOG] [Fast Refresh] done in 140ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  329062ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  329150ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  352343ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  352988ms] [LOG] [Fast Refresh] done in 743ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  353225ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  353459ms] [LOG] [Fast Refresh] done in 350ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  353758ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  353921ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  354286ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  354610ms] [LOG] [Fast Refresh] done in 435ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  355367ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  355403ms] [LOG] [Fast Refresh] done in 143ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  414048ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  416515ms] [LOG] [Fast Refresh] done in 2583ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  416914ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  417076ms] [LOG] [Fast Refresh] done in 273ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  451218ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  451431ms] [LOG] [Fast Refresh] done in 324ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  461794ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  461937ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  462021ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  483872ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  484349ms] TypeError: Cannot read properties of undefined (reading 'storefront')
+    at eval (http://localhost:3100/_next/static/chunks/buzz_src_0v_vkcfsv2mpk._.js?id=%255Bproject%255D/buzz/src/components/site/ProParts.tsx+%255Bapp-client%255D+(ecmascript):399:76)
+    at Array.map (<anonymous>)
+    at ProfessionSwitcher (http://localhost:3100/_next/static/chunks/buzz_src_0v_vkcfsv2mpk._.js?id=%255Bproject%255D/buzz/src/components/site/ProParts.tsx+%255Bapp-client%255D+(ecmascript):386:65)
+    at Object.react_stack_bottom_frame (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:15013:24)
+    at renderWithHooks (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:4451:24)
+    at updateFunctionComponent (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:5923:21)
+    at beginWork (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:6549:24)
+    at runWithFiberInDEV (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:777:74)
+    at performUnitOfWork (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:9440:97)
+    at workLoopSync (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:9334:40)
+    at renderRootSync (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:9318:13)
+    at performWorkOnRoot (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:8984:47)
+    at performSyncWorkOnRoot (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:10148:9)
+    at flushSyncWorkAcrossRoots_impl (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:10064:316)
+    at flushSyncWork$1 (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:9118:86)
+    at Object.scheduleRefresh (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_react-dom_cjs_react-dom-client_development_0cpocb7v70miu.js:82:13)
+    at http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_21b7pm97hba1i._.js:589:33
+    at Set.forEach (<anonymous>)
+    at Object.performReactRefresh (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_21b7pm97hba1i._.js:582:38)
+    at applyUpdate (http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_21b7pm97hba1i._.js:137:31)
+    at http://localhost:3100/_next/static/chunks/0bbx_next_dist_compiled_21b7pm97hba1i._.js:145:13
+[  484381ms] [LOG] [Fast Refresh] done in 606ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  484972ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  485661ms] [LOG] [Fast Refresh] done in 800ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  487255ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  487374ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  487904ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  487959ms] [LOG] [Fast Refresh] done in 171ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  533949ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  533998ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  534047ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  534252ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  534300ms] [LOG] [Fast Refresh] done in 149ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  548779ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  549645ms] [LOG] [Fast Refresh] done in 952ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  549789ms] [LOG] [Fast Refresh] done in 952ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  550102ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  550610ms] [LOG] [Fast Refresh] done in 619ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  610401ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  610680ms] [LOG] [Fast Refresh] done in 384ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  610732ms] [LOG] [Fast Refresh] done in 384ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  610952ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  611011ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761

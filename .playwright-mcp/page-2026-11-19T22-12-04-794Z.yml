@@ -1,0 +1,204 @@
+- generic [active] [ref=f25e1]:
+  - link "Skip to content" [ref=f25e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f25e3]:
+    - navigation "Main" [ref=f25e4]:
+      - link "Buzz home" [ref=f25e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f25e6]
+      - list [ref=f25e7]:
+        - listitem [ref=f25e8]:
+          - link "The App" [ref=f25e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f25e10]:
+          - link "Buzz Pro" [ref=f25e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=f25e12]:
+          - link "Depot" [ref=f25e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=f25e14]:
+          - link "Payments" [ref=f25e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=f25e16]:
+          - link "Safety" [ref=f25e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=f25e18]:
+          - link "About" [ref=f25e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f25e20]:
+        - link "Buzz Web" [ref=f25e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=f25e23]: ↗
+        - link "Join the waitlist" [ref=f25e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=f25e26]:
+    - region "Talk to the Buzz team." [ref=f25e27]:
+      - generic [ref=f25e28]:
+        - heading "Talk to the Buzz team." [level=1] [ref=f25e29]
+        - paragraph [ref=f25e30]: Pick what your message is about and we'll make sure it reaches the right people.
+    - region "Contact form" [ref=f25e31]:
+      - generic [ref=f25e32]:
+        - group "What's it about?" [ref=f25e33]:
+          - generic [ref=f25e35]:
+            - generic [ref=f25e36] [cursor=pointer]:
+              - radio "General Anything else about Buzz." [checked] [ref=f25e37]
+              - generic [ref=f25e41]:
+                - generic [ref=f25e42]: General
+                - generic [ref=f25e43]: Anything else about Buzz.
+            - generic [ref=f25e44] [cursor=pointer]:
+              - radio "Help with the app Accounts, chats, payments or alerts." [ref=f25e45]
+              - generic [ref=f25e54]:
+                - generic [ref=f25e55]: Help with the app
+                - generic [ref=f25e56]: Accounts, chats, payments or alerts.
+            - generic [ref=f25e57] [cursor=pointer]:
+              - radio "Business and partnerships Working with Buzz, Pro and Depot." [ref=f25e58]
+              - generic [ref=f25e65]:
+                - generic [ref=f25e66]: Business and partnerships
+                - generic [ref=f25e67]: Working with Buzz, Pro and Depot.
+            - generic [ref=f25e68] [cursor=pointer]:
+              - radio "Logistics partners Delivering Depot orders with Buzz Logistics." [ref=f25e69]
+              - generic [ref=f25e76]:
+                - generic [ref=f25e77]: Logistics partners
+                - generic [ref=f25e78]: Delivering Depot orders with Buzz Logistics.
+            - generic [ref=f25e79] [cursor=pointer]:
+              - radio "Media and press Interviews, stories and assets." [ref=f25e80]
+              - generic [ref=f25e85]:
+                - generic [ref=f25e86]: Media and press
+                - generic [ref=f25e87]: Interviews, stories and assets.
+            - generic [ref=f25e88] [cursor=pointer]:
+              - radio "Careers Working at Aether Jade Innovation." [ref=f25e89]
+              - generic [ref=f25e94]:
+                - generic [ref=f25e95]: Careers
+                - generic [ref=f25e96]: Working at Aether Jade Innovation.
+        - generic [ref=f25e99]:
+          - generic [ref=f25e100]:
+            - heading "Your message" [level=2] [ref=f25e101]
+            - paragraph [ref=f25e102]:
+              - generic [ref=f25e103]: "Subject: General question."
+              - text: Tell us what's on your mind.
+          - generic [ref=f25e104]:
+            - generic [ref=f25e105]: Your name
+            - textbox "Your name" [ref=f25e106]
+          - generic [ref=f25e107]:
+            - generic [ref=f25e108]: Email or phone number
+            - textbox "Email or phone number" [ref=f25e109]
+            - paragraph [ref=f25e110]: We only use this to reply to you.
+          - generic [ref=f25e111]:
+            - generic [ref=f25e112]: Message
+            - textbox "Message" [ref=f25e113]
+          - button "Send message" [ref=f25e114]
+    - region "Other ways to reach us" [ref=f25e116]:
+      - generic [ref=f25e117]:
+        - heading "Other ways to reach us" [level=2] [ref=f25e118]
+        - generic [ref=f25e119]:
+          - generic [ref=f25e120]:
+            - generic [ref=f25e121]:
+              - term [ref=f25e122]: Email
+              - definition [ref=f25e123]:
+                - link "hello@aetherjade.space" [ref=f25e124] [cursor=pointer]:
+                  - /url: mailto:hello@aetherjade.space
+            - generic [ref=f25e125]:
+              - term [ref=f25e126]: Phone
+              - definition [ref=f25e127]: "[Phone line: to be confirmed]"
+            - generic [ref=f25e128]:
+              - term [ref=f25e129]: Office
+              - definition [ref=f25e130]: "[Office address: to be confirmed]"
+            - generic [ref=f25e131]:
+              - term [ref=f25e132]: Social
+              - definition [ref=f25e133]: "[Social accounts: to be confirmed]"
+          - paragraph [ref=f25e134]: In an emergency, call 112. Buzz is not an emergency service.
+  - contentinfo [ref=f25e135]:
+    - generic [ref=f25e136]:
+      - generic [ref=f25e137]:
+        - generic [ref=f25e138]:
+          - img "Buzz" [ref=f25e139]
+          - paragraph [ref=f25e140]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f25e141] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f25e143]:
+          - navigation "Product" [ref=f25e144]:
+            - heading "Product" [level=2] [ref=f25e145]
+            - list [ref=f25e146]:
+              - listitem [ref=f25e147]:
+                - link "The App" [ref=f25e148] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f25e149]:
+                - link "Buzz Pro" [ref=f25e150] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f25e151]:
+                - link "Depot" [ref=f25e152] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f25e153]:
+                - link "Payments" [ref=f25e154] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f25e155]:
+                - link "Safety" [ref=f25e156] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f25e157]:
+            - heading "Company" [level=2] [ref=f25e158]
+            - list [ref=f25e159]:
+              - listitem [ref=f25e160]:
+                - link "About" [ref=f25e161] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f25e162]:
+                - link "Careers" [ref=f25e163] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f25e164]:
+                - link "Contact" [ref=f25e165] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f25e166]:
+            - heading "Help" [level=2] [ref=f25e167]
+            - list [ref=f25e168]:
+              - listitem [ref=f25e169]:
+                - link "Help Centre" [ref=f25e170] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f25e171]:
+                - link "Community guidelines" [ref=f25e172] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f25e173]:
+                - link "Safety guidelines" [ref=f25e174] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f25e175]:
+            - heading "Also from Buzz" [level=2] [ref=f25e176]
+            - list [ref=f25e177]:
+              - listitem [ref=f25e178]:
+                - link "Buzz Web" [ref=f25e179] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f25e180]: ↗
+              - listitem [ref=f25e181]:
+                - link "Buzz Logistics" [ref=f25e182] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f25e183]: ↗
+              - listitem [ref=f25e184]:
+                - link "Track a package" [ref=f25e185] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f25e186]: ↗
+      - generic [ref=f25e187]:
+        - paragraph [ref=f25e188]: © 2026 Aether Jade Innovation
+        - list [ref=f25e189]:
+          - listitem [ref=f25e190]:
+            - link "Privacy" [ref=f25e191] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f25e192]:
+            - link "Terms" [ref=f25e193] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f25e194]:
+            - link "Cookie policy" [ref=f25e195] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f25e196]:
+          - listitem "Social account to be confirmed" [ref=f25e197]:
+            - generic [aria-hidden] [ref=f25e198]: "[ ]"
+            - generic [ref=f25e199]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f25e200]:
+            - generic [aria-hidden] [ref=f25e201]: "[ ]"
+            - generic [ref=f25e202]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f25e203]:
+            - generic [aria-hidden] [ref=f25e204]: "[ ]"
+            - generic [ref=f25e205]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f25e211] [cursor=pointer]
+  - alert [ref=f25e215]

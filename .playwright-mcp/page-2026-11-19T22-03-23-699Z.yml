@@ -1,0 +1,173 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f3e3]:
+    - navigation "Main" [ref=f3e4]:
+      - link "Buzz home" [ref=f3e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f3e6]
+      - button "Open menu" [ref=f3e7]
+  - main [ref=f3e9]:
+    - region "Your number was everywhere. Paying a stranger was a gamble. Safety news came too late." [ref=f3e10]:
+      - generic [ref=f3e11]:
+        - heading "Your number was everywhere. Paying a stranger was a gamble. Safety news came too late." [level=1] [ref=f3e12]
+        - paragraph [ref=f3e13]: Buzz is made by Aether Jade Innovation to fix those three things, in one app.
+    - region "Three problems, three answers" [ref=f3e14]:
+      - heading "Three problems, three answers" [level=2] [ref=f3e15]
+      - list [ref=f3e16]:
+        - listitem [ref=f3e17]:
+          - generic [ref=f3e18]:
+            - paragraph [ref=f3e19]: The problem
+            - paragraph [ref=f3e20]: To chat with anyone, you had to hand over your phone number.
+          - generic [ref=f3e21]:
+            - paragraph [ref=f3e22]: Buzz ID and encryption
+            - paragraph [ref=f3e23]: Buzz ID lets people reach you without it, and every chat is end-to-end encrypted.
+        - listitem [ref=f3e24]:
+          - generic [ref=f3e25]:
+            - paragraph [ref=f3e26]: The problem
+            - paragraph [ref=f3e27]: Paying a seller you'd never met meant hoping they'd deliver.
+          - generic [ref=f3e28]:
+            - paragraph [ref=f3e29]: Escrow
+            - paragraph [ref=f3e30]: SunPay holds your money in escrow until you confirm the order arrived.
+        - listitem [ref=f3e31]:
+          - generic [ref=f3e32]:
+            - paragraph [ref=f3e33]: The problem
+            - paragraph [ref=f3e34]: News of danger nearby reached you late, if at all.
+          - generic [ref=f3e35]:
+            - paragraph [ref=f3e36]: EMBA alerts
+            - paragraph [ref=f3e37]: EMBA alerts come from verified agencies and people near you, for the areas you choose.
+    - region "What we believe" [ref=f3e38]:
+      - generic [ref=f3e39]:
+        - heading "What we believe" [level=2] [ref=f3e40]
+        - list [ref=f3e41]:
+          - listitem [ref=f3e42]:
+            - heading "One hub, not a pile of apps" [level=3] [ref=f3e43]
+            - paragraph [ref=f3e44]: Chats, a marketplace, payments and safety work better when they're connected.
+          - listitem [ref=f3e45]:
+            - heading "Your number stays yours" [level=3] [ref=f3e46]
+            - paragraph [ref=f3e47]: Privacy is the default. People reach you through your Buzz ID, not your phone number.
+          - listitem [ref=f3e48]:
+            - heading "Truth before polish" [level=3] [ref=f3e49]
+            - paragraph [ref=f3e50]: We'd rather show a clear placeholder than make a claim we can't stand behind.
+          - listitem [ref=f3e51]:
+            - heading "Light enough for every phone" [level=3] [ref=f3e52]
+            - paragraph [ref=f3e53]: Buzz should work well on a mid-range Android, on a slow or metered connection.
+          - listitem [ref=f3e54]:
+            - heading "Safety is a team effort" [level=3] [ref=f3e55]
+            - paragraph [ref=f3e56]: "We work with verified agencies. Buzz is not an emergency service: in an emergency, call 112."
+    - region "The team" [ref=f3e57]:
+      - generic [ref=f3e58]:
+        - heading "The team" [level=2] [ref=f3e59]
+        - paragraph [ref=f3e60]: "[Team photos and bios: pending]"
+      - list "Team photos, pending" [ref=f3e61]:
+        - listitem [ref=f3e62]:
+          - generic [ref=f3e63]: "[photo pending]"
+        - listitem [ref=f3e67]:
+          - generic [ref=f3e68]: "[photo pending]"
+        - listitem [ref=f3e72]:
+          - generic [ref=f3e73]: "[photo pending]"
+        - listitem [ref=f3e77]:
+          - generic [ref=f3e78]: "[photo pending]"
+    - region "Want to talk, or work with us?" [ref=f3e82]:
+      - generic [ref=f3e83]:
+        - heading "Want to talk, or work with us?" [level=2] [ref=f3e84]
+        - generic [ref=f3e85]:
+          - link "Contact us" [ref=f3e86] [cursor=pointer]:
+            - /url: /contact
+          - link "See careers" [ref=f3e88] [cursor=pointer]:
+            - /url: /careers
+  - contentinfo [ref=f3e90]:
+    - generic [ref=f3e91]:
+      - generic [ref=f3e92]:
+        - generic [ref=f3e93]:
+          - img "Buzz" [ref=f3e94]
+          - paragraph [ref=f3e95]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f3e96] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f3e98]:
+          - navigation "Product" [ref=f3e99]:
+            - heading "Product" [level=2] [ref=f3e100]
+            - list [ref=f3e101]:
+              - listitem [ref=f3e102]:
+                - link "The App" [ref=f3e103] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f3e104]:
+                - link "Buzz Pro" [ref=f3e105] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f3e106]:
+                - link "Depot" [ref=f3e107] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f3e108]:
+                - link "Payments" [ref=f3e109] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f3e110]:
+                - link "Safety" [ref=f3e111] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f3e112]:
+            - heading "Company" [level=2] [ref=f3e113]
+            - list [ref=f3e114]:
+              - listitem [ref=f3e115]:
+                - link "About" [ref=f3e116] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f3e117]:
+                - link "Careers" [ref=f3e118] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f3e119]:
+                - link "Contact" [ref=f3e120] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f3e121]:
+            - heading "Help" [level=2] [ref=f3e122]
+            - list [ref=f3e123]:
+              - listitem [ref=f3e124]:
+                - link "Help Centre" [ref=f3e125] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f3e126]:
+                - link "Community guidelines" [ref=f3e127] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f3e128]:
+                - link "Safety guidelines" [ref=f3e129] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f3e130]:
+            - heading "Also from Buzz" [level=2] [ref=f3e131]
+            - list [ref=f3e132]:
+              - listitem [ref=f3e133]:
+                - link "Buzz Web" [ref=f3e134] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f3e135]: ↗
+              - listitem [ref=f3e136]:
+                - link "Buzz Logistics" [ref=f3e137] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f3e138]: ↗
+              - listitem [ref=f3e139]:
+                - link "Track a package" [ref=f3e140] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f3e141]: ↗
+      - generic [ref=f3e142]:
+        - paragraph [ref=f3e143]: © 2026 Aether Jade Innovation
+        - list [ref=f3e144]:
+          - listitem [ref=f3e145]:
+            - link "Privacy" [ref=f3e146] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f3e147]:
+            - link "Terms" [ref=f3e148] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f3e149]:
+            - link "Cookie policy" [ref=f3e150] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f3e151]:
+          - listitem "Social account to be confirmed" [ref=f3e152]:
+            - generic [aria-hidden] [ref=f3e153]: "[ ]"
+            - generic [ref=f3e154]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f3e155]:
+            - generic [aria-hidden] [ref=f3e156]: "[ ]"
+            - generic [ref=f3e157]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f3e158]:
+            - generic [aria-hidden] [ref=f3e159]: "[ ]"
+            - generic [ref=f3e160]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f3e166] [cursor=pointer]
+  - alert [ref=f3e170]

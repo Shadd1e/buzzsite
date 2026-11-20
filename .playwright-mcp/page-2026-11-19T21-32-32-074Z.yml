@@ -1,0 +1,231 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - navigation "Main" [ref=f1e4]:
+      - link "Buzz home" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f1e6]
+      - button "Open menu" [ref=f1e7]
+  - main [ref=f1e9]:
+    - region "Your business, on the app your customers already use." [ref=f1e10]:
+      - generic [ref=f1e11]:
+        - generic [ref=f1e12]:
+          - heading "Your business, on the app your customers already use." [level=1] [ref=f1e13]
+          - paragraph [ref=f1e14]: Switch on Pro Mode and your business gets its own Pro ID, a Storefront and a Business Centre. Customers find you, book you and pay you without ever needing your personal number.
+          - link "Join the waitlist" [ref=f1e16] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f1e19]:
+          - 'article "Pro ID card: Emeka Fix-It" [ref=f1e20]':
+            - generic [ref=f1e21]:
+              - generic [aria-hidden] [ref=f1e22]: EF
+              - generic [ref=f1e23]:
+                - paragraph [ref=f1e24]:
+                  - text: Emeka Fix-It
+                  - img "Pro" [ref=f1e25]
+                - paragraph [ref=f1e28]: Electrician, Surulere
+            - generic [ref=f1e29]:
+              - paragraph [ref=f1e30]: "@emekafixit.buzz"
+              - paragraph [ref=f1e31]: Sample Pro ID
+          - log "A customer books an electrician through his Pro ID" [ref=f1e32]:
+            - generic [ref=f1e36]:
+              - generic [ref=f1e37]: "You:"
+              - generic [ref=f1e38]: Good afternoon. My kitchen sockets stopped working
+              - paragraph [ref=f1e39]:
+                - time [ref=f1e40]: 14:02
+                - generic [ref=f1e45]: Read
+            - generic [ref=f1e48]:
+              - generic [aria-hidden] [ref=f1e49]: EF
+              - generic [ref=f1e50]:
+                - generic [ref=f1e51]: "Emeka Fix-It:"
+                - generic [ref=f1e52]: Sorry about that ma. I can come tomorrow by 10
+                - paragraph [ref=f1e53]:
+                  - time [ref=f1e54]: 14:05
+            - generic [ref=f1e57]:
+              - generic [aria-hidden] [ref=f1e58]: EF
+              - generic [ref=f1e59]:
+                - generic [ref=f1e60]: "Emeka Fix-It:"
+                - generic [ref=f1e67]:
+                  - generic [ref=f1e68]: Booking
+                  - generic [ref=f1e69]: Tomorrow, 10:00
+                - paragraph [ref=f1e70]:
+                  - time [ref=f1e71]: 14:05
+            - generic [ref=f1e75]:
+              - generic [ref=f1e76]: "You:"
+              - generic [ref=f1e77]: Perfect, see you then
+              - paragraph [ref=f1e78]:
+                - time [ref=f1e79]: 14:06
+                - generic [ref=f1e83]: Delivered
+    - region "Pro works the way your trade works" [ref=f1e84]:
+      - heading "Pro works the way your trade works" [level=2] [ref=f1e85]
+      - paragraph [ref=f1e86]: Pick a profession to see the tools it uses.
+      - generic [ref=f1e87]:
+        - radiogroup "Profession" [ref=f1e88]:
+          - radio "Merchant" [checked] [ref=f1e89]
+          - radio "Landlord" [ref=f1e90]
+          - radio "Lawyer" [ref=f1e91]
+          - radio "Handyman" [ref=f1e92]
+          - radio "Creator" [ref=f1e93]
+          - radio "Tailor" [ref=f1e94]
+        - article [ref=f1e96]:
+          - heading "Merchant" [level=3] [ref=f1e97]
+          - paragraph [ref=f1e98]: Sell products from your Storefront and track every order.
+          - list [ref=f1e99]:
+            - listitem [ref=f1e100]: Storefront
+            - listitem [ref=f1e101]: Business Centre
+            - listitem [ref=f1e102]: Pro ID
+          - paragraph [ref=f1e103]: "[Profession-specific tools: to be confirmed]"
+    - region "Three tools that come with Pro" [ref=f1e104]:
+      - heading "Three tools that come with Pro" [level=2] [ref=f1e105]
+      - generic [ref=f1e106]:
+        - article [ref=f1e107]:
+          - list "Sample Storefront items" [ref=f1e109]:
+            - listitem [ref=f1e110]:
+              - paragraph [ref=f1e115]: Ankara fabric, 6 yards
+              - paragraph [ref=f1e116]: ₦18,500
+            - listitem [ref=f1e117]:
+              - paragraph [ref=f1e122]: Aso oke set
+              - paragraph [ref=f1e123]: ₦42,000
+            - listitem [ref=f1e124]:
+              - paragraph [ref=f1e129]: Adire scarf
+              - paragraph [ref=f1e130]: ₦7,500
+            - listitem [ref=f1e131]:
+              - paragraph [ref=f1e136]: Lace, 5 yards
+              - paragraph [ref=f1e137]: ₦26,000
+          - generic [ref=f1e138]:
+            - heading "Storefront" [level=3] [ref=f1e139]
+            - paragraph [ref=f1e140]: Your products and services in one place, with prices customers can see before they message you.
+        - article [ref=f1e141]:
+          - list "Sample orders" [ref=f1e143]:
+            - listitem [ref=f1e144]:
+              - generic [ref=f1e145]:
+                - paragraph [ref=f1e146]: Perfume oil set
+                - paragraph [ref=f1e147]: DPT-872840
+              - generic [ref=f1e148]: At pickup point
+            - listitem [ref=f1e153]:
+              - generic [ref=f1e154]:
+                - paragraph [ref=f1e155]: Hair growth oil (3 pack)
+                - paragraph [ref=f1e156]: DPT-468845
+              - generic [ref=f1e157]: Out for delivery
+            - listitem [ref=f1e163]:
+              - generic [ref=f1e164]:
+                - paragraph [ref=f1e165]: Hand-woven aso-oke
+                - paragraph [ref=f1e166]: DPT-596564
+              - generic [ref=f1e167]: Delivered
+          - generic [ref=f1e171]:
+            - heading "Business Centre" [level=3] [ref=f1e172]
+            - paragraph [ref=f1e173]: Orders, bookings and payments in one list, so nothing gets lost in your chats.
+        - article [ref=f1e174]:
+          - generic [ref=f1e176]:
+            - paragraph [ref=f1e181]: "[Video placeholder]"
+            - paragraph [ref=f1e182]: Adire scarf
+            - generic [ref=f1e183]: Shop now
+          - generic [ref=f1e184]:
+            - heading "Showcase and Creator Toolbox" [level=3] [ref=f1e185]
+            - paragraph [ref=f1e186]: Short videos of your work, with a Shop now button that takes customers straight to the item.
+    - region "Pause or switch off Pro any time." [ref=f1e187]:
+      - generic [ref=f1e188]:
+        - heading "Pause or switch off Pro any time." [level=2] [ref=f1e189]
+        - paragraph [ref=f1e190]: Taking a break or closing for the season? Pause Pro, or switch it off and go back to your personal Buzz. You can turn it on again when you're ready.
+    - region "Get your business ready for Buzz." [ref=f1e191]:
+      - generic [ref=f1e192]:
+        - generic [ref=f1e193]:
+          - heading "Get your business ready for Buzz." [level=2] [ref=f1e194]
+          - paragraph [ref=f1e195]: Join the waitlist and be among the first to switch on Pro Mode.
+        - link "Join the waitlist" [ref=f1e197] [cursor=pointer]:
+          - /url: /waitlist
+  - contentinfo [ref=f1e199]:
+    - generic [ref=f1e200]:
+      - generic [ref=f1e201]:
+        - generic [ref=f1e202]:
+          - img "Buzz" [ref=f1e203]
+          - paragraph [ref=f1e204]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f1e205] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f1e207]:
+          - navigation "Product" [ref=f1e208]:
+            - heading "Product" [level=2] [ref=f1e209]
+            - list [ref=f1e210]:
+              - listitem [ref=f1e211]:
+                - link "The App" [ref=f1e212] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f1e213]:
+                - link "Buzz Pro" [ref=f1e214] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f1e215]:
+                - link "Depot" [ref=f1e216] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f1e217]:
+                - link "Payments" [ref=f1e218] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f1e219]:
+                - link "Safety" [ref=f1e220] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f1e221]:
+            - heading "Company" [level=2] [ref=f1e222]
+            - list [ref=f1e223]:
+              - listitem [ref=f1e224]:
+                - link "About" [ref=f1e225] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f1e226]:
+                - link "Careers" [ref=f1e227] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f1e228]:
+                - link "Contact" [ref=f1e229] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f1e230]:
+            - heading "Help" [level=2] [ref=f1e231]
+            - list [ref=f1e232]:
+              - listitem [ref=f1e233]:
+                - link "Help Centre" [ref=f1e234] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f1e235]:
+                - link "Community guidelines" [ref=f1e236] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f1e237]:
+                - link "Safety guidelines" [ref=f1e238] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f1e239]:
+            - heading "Also from Buzz" [level=2] [ref=f1e240]
+            - list [ref=f1e241]:
+              - listitem [ref=f1e242]:
+                - link "Buzz Web" [ref=f1e243] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f1e244]: ↗
+              - listitem [ref=f1e245]:
+                - link "Buzz Logistics" [ref=f1e246] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f1e247]: ↗
+              - listitem [ref=f1e248]:
+                - link "Track a package" [ref=f1e249] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f1e250]: ↗
+      - generic [ref=f1e251]:
+        - paragraph [ref=f1e252]: © 2026 Aether Jade Innovation
+        - list [ref=f1e253]:
+          - listitem [ref=f1e254]:
+            - link "Privacy" [ref=f1e255] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f1e256]:
+            - link "Terms" [ref=f1e257] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f1e258]:
+            - link "Cookie policy" [ref=f1e259] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f1e260]:
+          - listitem "Social account to be confirmed" [ref=f1e261]:
+            - generic [aria-hidden] [ref=f1e262]: "[ ]"
+            - generic [ref=f1e263]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f1e264]:
+            - generic [aria-hidden] [ref=f1e265]: "[ ]"
+            - generic [ref=f1e266]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f1e267]:
+            - generic [aria-hidden] [ref=f1e268]: "[ ]"
+            - generic [ref=f1e269]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f1e275] [cursor=pointer]
+  - alert [ref=f1e279]

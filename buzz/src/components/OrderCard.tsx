@@ -1,7 +1,7 @@
 import { Package } from "lucide-react";
 import type { ParcelStatus } from "@/lib/data/types";
 import { cn } from "@/lib/cn";
-import { ButtonLink } from "./Button";
+import { Button, ButtonLink } from "./Button";
 import { StatusPill } from "./StatusPill";
 
 /**
@@ -14,6 +14,7 @@ export function OrderCard({
   trackingId,
   thumbnail,
   href,
+  onTrack,
   theme = "light",
   className,
 }: {
@@ -22,7 +23,9 @@ export function OrderCard({
   trackingId: string;
   /** Product photo URL; a neutral tile is shown until there is one */
   thumbnail?: string;
-  href: string;
+  /** Where "Track" goes. Pass onTrack instead inside an app (Buzz Web panel). */
+  href?: string;
+  onTrack?: () => void;
   theme?: "light" | "dark";
   className?: string;
 }) {
@@ -59,9 +62,15 @@ export function OrderCard({
           <StatusPill status={status} size="sm" theme={theme} className="mt-1.5" />
         </div>
       </div>
-      <ButtonLink href={href} variant={dark ? "light" : "outline"} size="sm" className="w-full">
-        Track
-      </ButtonLink>
+      {onTrack ? (
+        <Button onClick={onTrack} variant={dark ? "light" : "outline"} size="sm" className="w-full">
+          Track
+        </Button>
+      ) : (
+        <ButtonLink href={href ?? "#"} variant={dark ? "light" : "outline"} size="sm" className="w-full">
+          Track
+        </ButtonLink>
+      )}
     </article>
   );
 }

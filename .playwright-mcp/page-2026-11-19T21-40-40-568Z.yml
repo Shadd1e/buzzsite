@@ -1,0 +1,198 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main" [ref=e4]:
+      - link "Buzz home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=e6]
+      - button "Open menu" [ref=e7]
+  - main [ref=e9]:
+    - region "One HUB that plugs you to everything." [ref=e10]:
+      - generic [ref=e11]:
+        - img "A woman smiling at her phone while holding a cup of tea" [ref=e12]
+        - log "Two friends swapping Buzz IDs instead of phone numbers" [ref=e16]:
+          - generic [ref=e20]:
+            - generic [ref=e21]: "You:"
+            - generic [ref=e22]: Abeg send me your number
+            - paragraph [ref=e23]:
+              - time [ref=e24]: 12:26
+              - generic [ref=e29]: Read
+          - generic [ref=e34]:
+            - generic [ref=e35]: "Amaka:"
+            - generic [ref=e36]: Just add @amaka.buzz. No need for my number
+            - paragraph [ref=e37]:
+              - time [ref=e38]: 12:27
+        - generic [ref=e39]:
+          - heading "One HUB that plugs you to everything." [level=1] [ref=e40]
+          - paragraph [ref=e41]: Chats, a marketplace, safe payments and safety alerts, in one app.*
+          - link "Join the waitlist" [ref=e43] [cursor=pointer]:
+            - /url: /waitlist
+      - paragraph [ref=e45]: "* Data charges may apply. Check with your network provider for details."
+    - region "Connect with people and businesses with ease." [ref=e46]:
+      - generic [ref=e47]:
+        - heading "Connect with people and businesses with ease." [level=2] [ref=e48]
+        - paragraph [ref=e49]: Swap contacts in person with BuzzDrop, then find products, homes and services on Depot. Nobody needs your phone number.
+      - img "One hand passes parcels to another person's open hands" [ref=e51]
+    - region "Finding professionals and handymen hasn't been any easier." [ref=e54]:
+      - generic [ref=e55]:
+        - heading "Finding professionals and handymen hasn't been any easier." [level=2] [ref=e56]
+        - link "Explore Pro Mode" [ref=e57] [cursor=pointer]:
+          - /url: /pro
+    - region "What Buzz does" [ref=e59]:
+      - article [ref=e60]:
+        - generic [ref=e62]:
+          - heading "You control what you share." [level=2] [ref=e63]
+          - paragraph [ref=e64]: Give people your Buzz ID, like @adaeze.buzz, instead of your phone number. Chats are end-to-end encrypted, and you decide who can reach you.
+          - link "How Buzz ID works" [ref=e65] [cursor=pointer]:
+            - /url: /app
+      - article [ref=e66]:
+        - figure "Estate Residents (Block C) chat, with a security update arriving" [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [aria-hidden] [ref=e71]: ER
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: Estate Residents (Block C)
+                - paragraph [ref=e74]: "[members] members"
+            - generic [ref=e75]:
+              - alert [ref=e77]:
+                - generic [ref=e81]:
+                  - paragraph [ref=e82]: Security update
+                  - paragraph [ref=e83]: Road blocked at [location]. Avoid the area.
+              - generic [ref=e84]:
+                - generic [aria-hidden] [ref=e85]: MB
+                - generic [ref=e86]:
+                  - paragraph [ref=e87]: Mr Bello
+                  - generic [ref=e88]: Morning all. Gate code changes on Monday
+                  - paragraph [ref=e89]:
+                    - time [ref=e90]: 09:58
+              - generic [ref=e91]:
+                - generic [aria-hidden] [ref=e92]: MO
+                - generic [ref=e93]:
+                  - paragraph [ref=e94]: Mrs Okafor
+                  - generic [ref=e95]: Thank you sir. Who has the new code?
+                  - paragraph [ref=e96]:
+                    - time [ref=e97]: 10:02
+              - generic [ref=e99]:
+                - generic [ref=e100]: "You:"
+                - generic [ref=e101]: I'll share it here once I get it
+                - paragraph [ref=e102]:
+                  - time [ref=e103]: 10:05
+                  - generic [ref=e108]: Read
+        - generic [ref=e109]:
+          - 'heading "[Safety headline: to be written]" [level=2] [ref=e110]'
+          - paragraph [ref=e111]: Buzz works with verified police and security agencies, and with people near you, to send safety alerts for your area. Alerts are opt-in, and security updates have their own colour so they're hard to miss.
+          - link "How safety alerts work" [ref=e112] [cursor=pointer]:
+            - /url: /safety
+    - region "More people. Even less noise." [ref=e113]:
+      - img "A smiling woman lying in a bed of flowers" [ref=e114]
+      - generic [ref=e117]:
+        - heading "More people. Even less noise." [level=2] [ref=e118]
+        - paragraph [ref=e119]: Share your Buzz ID instead of your number, and choose who can reach you.
+    - region "All the right connections, from payments to delivery." [ref=e120]:
+      - heading "All the right connections, from payments to delivery." [level=2] [ref=e121]
+      - list [ref=e122]:
+        - listitem [ref=e123]:
+          - generic [ref=e124]: SunPay
+          - generic [ref=e125]: Payments and escrow
+        - listitem [ref=e126]:
+          - generic [ref=e127]: Buzz Logistics
+          - generic [ref=e128]: Delivery for Depot orders
+        - listitem [ref=e129]: "[Partner logo pending]"
+        - listitem [ref=e130]: "[Partner logo pending]"
+        - listitem [ref=e131]: "[Partner logo pending]"
+      - paragraph [ref=e132]: Payments on Buzz are handled by SunPay.
+  - contentinfo [ref=e133]:
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - img "Buzz" [ref=e137]
+          - paragraph [ref=e138]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=e139] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=e141]:
+          - navigation "Product" [ref=e142]:
+            - heading "Product" [level=2] [ref=e143]
+            - list [ref=e144]:
+              - listitem [ref=e145]:
+                - link "The App" [ref=e146] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=e147]:
+                - link "Buzz Pro" [ref=e148] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=e149]:
+                - link "Depot" [ref=e150] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=e151]:
+                - link "Payments" [ref=e152] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=e153]:
+                - link "Safety" [ref=e154] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=e155]:
+            - heading "Company" [level=2] [ref=e156]
+            - list [ref=e157]:
+              - listitem [ref=e158]:
+                - link "About" [ref=e159] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e160]:
+                - link "Careers" [ref=e161] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e162]:
+                - link "Contact" [ref=e163] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=e164]:
+            - heading "Help" [level=2] [ref=e165]
+            - list [ref=e166]:
+              - listitem [ref=e167]:
+                - link "Help Centre" [ref=e168] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=e169]:
+                - link "Community guidelines" [ref=e170] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=e171]:
+                - link "Safety guidelines" [ref=e172] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=e173]:
+            - heading "Also from Buzz" [level=2] [ref=e174]
+            - list [ref=e175]:
+              - listitem [ref=e176]:
+                - link "Buzz Web" [ref=e177] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=e178]: ↗
+              - listitem [ref=e179]:
+                - link "Buzz Logistics" [ref=e180] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=e181]: ↗
+              - listitem [ref=e182]:
+                - link "Track a package" [ref=e183] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=e184]: ↗
+      - generic [ref=e185]:
+        - paragraph [ref=e186]: © 2026 Aether Jade Innovation
+        - list [ref=e187]:
+          - listitem [ref=e188]:
+            - link "Privacy" [ref=e189] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=e190]:
+            - link "Terms" [ref=e191] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=e192]:
+            - link "Cookie policy" [ref=e193] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=e194]:
+          - listitem "Social account to be confirmed" [ref=e195]:
+            - generic [aria-hidden] [ref=e196]: "[ ]"
+            - generic [ref=e197]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=e198]:
+            - generic [aria-hidden] [ref=e199]: "[ ]"
+            - generic [ref=e200]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=e201]:
+            - generic [aria-hidden] [ref=e202]: "[ ]"
+            - generic [ref=e203]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=e204]

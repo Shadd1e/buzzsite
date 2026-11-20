@@ -77,7 +77,7 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 ## Voice
 
 - **Plain, warm, direct.** Short sentences. Active voice. Sentence case everywhere.
-- **Nigerian, not stereotyped.** Light Pidgin is welcome **inside chat-bubble examples only** ("Abeg, is it still available?"). Interface copy and body text stay in clear English.
+- **Nigerian, not stereotyped.** No Pidgin anywhere, chat bubbles included. Bubbles sound like real people texting in everyday English ("Hi, is it still available?"), with Nigerian names, places and context.
 - **Describe, don't sell.** "SunPay holds the money until you confirm" beats "Revolutionary secure payments."
 - Buttons say exactly what happens: "Join the waitlist", "Track parcel", "Add rider", "Deactivate rider". The confirmation reuses the verb ("Rider deactivated").
 - Errors explain what happened and what to do next. No apologies, no vagueness.
@@ -112,7 +112,7 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 
 - **WCAG 2.2 AA** on every surface: contrast, full keyboard use, screen-reader labels, visible focus and `prefers-reduced-motion` respected.
 - **Data budget:** pages must work well on mid-range Android over 3G. Use system fonts, small and properly sized images, and no heavy assets on the critical path.
-- Interface copy is clear English that's easy to read for second-language readers. Pidgin appears only inside chat-bubble examples.
+- Interface copy is clear English that's easy to read for second-language readers. Chat-bubble examples use plain English too (no Pidgin).
 
 ## Anti-references (what Buzz must NOT look like)
 

@@ -1,6 +1,6 @@
 /**
  * The App page copy (DESIGN.md §9.2). Facts from PRODUCT.md only; unconfirmed
- * details are visible [placeholders]. Pidgin only inside chat bubbles.
+ * details are visible [placeholders]. Plain English everywhere, including chat bubbles.
  */
 
 export const appPage = {
@@ -18,7 +18,7 @@ export const appPage = {
       label: "Tobi tells his mum he has landed in Abuja",
       tobi: { name: "Tobi" },
       messages: [
-        { variant: "in", text: "Mummy, I don land for Abuja", time: "18:42" },
+        { variant: "in", text: "Mum, I've landed in Abuja", time: "18:42" },
         { variant: "out", text: "Thank God! Did you eat on the flight?", time: "18:43", status: "read" },
         { variant: "in", voice: "0:14", time: "18:44" },
         { variant: "in", typingFirst: true, text: "Driver is here. I'll call you when I reach", time: "18:45" },

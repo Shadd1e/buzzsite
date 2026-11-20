@@ -21,6 +21,17 @@ export const careersPage = {
       ],
     },
   },
+  // What you'd be working on (PRODUCT.md positioning, no invented numbers)
+  building: {
+    title: "What you'd be working on",
+    lede: "Buzz puts chats, a marketplace, payments, delivery and safety alerts in one app. Most of the hard work sits where those pieces meet.",
+    rows: [
+      { title: "Identity without a phone number", body: "Buzz ID, BuzzDrop and Pro ID let people deal with friends, buyers and sellers without handing out their number." },
+      { title: "From chat to checkout", body: "Finding something on Depot, paying through SunPay escrow and tracking delivery, all inside the chat where people already talk." },
+      { title: "Trust between strangers", body: "Escrow, verified sellers and logistics partners, and safety alerts from verified agencies, so a first deal feels safe." },
+    ],
+    note: "Built for everyday Nigerians on Android phones, often on slow or metered data. Light and fast matters as much as clever.",
+  },
   steps: {
     title: "How we hire",
     note: "[Hiring steps: to be confirmed]",
@@ -39,5 +50,11 @@ export const careersPage = {
       body: "Tell us what you'd like to work on, and send a link to your work.",
       email: "hello@aetherjade.space",
     },
+  },
+  cta: {
+    title: "Don't see your role? Write to us anyway.",
+    body: "Tell us what you'd like to work on and send a link to your work.",
+    action: { label: "Email hello@aetherjade.space", href: "mailto:hello@aetherjade.space" },
+    secondary: { label: "About Buzz", href: "/about" },
   },
 } as const;

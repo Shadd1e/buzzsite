@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Briefcase, MessagesSquare, ShieldAlert, Sparkles, Store, Truck, Wallet, type LucideIcon } from "lucide-react";
 import { ButtonLink } from "@/components/Button";
 import { Faq, HelpSearch } from "@/components/site/HelpParts";
+import { LinkRows } from "@/components/site/LinkRows";
 import { helpArticles, helpPage, helpTopics } from "@/content/help";
 
 export const metadata: Metadata = {
@@ -14,11 +15,12 @@ const icons: Record<string, LucideIcon> = { Sparkles, MessagesSquare, Store, Wal
 
 /**
  * Help Centre (DESIGN.md §9.11): search over the live gradient, topic cards
- * (cards allowed: separate actionable objects, §8.2), common questions and a
+ * (cards allowed: separate actionable objects, §8.2), staying-safe rows,
+ * common questions and a
  * "Still stuck?" card. Read mode: no orchestrated moment beyond the search.
  */
 export default function HelpPage() {
-  const { hero, topicsTitle, faq, stuck } = helpPage;
+  const { hero, topicsTitle, safe, faq, stuck } = helpPage;
   const topicTitle = Object.fromEntries(helpTopics.map((t) => [t.id, t.title]));
 
   return (
@@ -71,7 +73,19 @@ export default function HelpPage() {
         </ul>
       </section>
 
-      <section aria-labelledby="faq-title" className="container-page pb-18 md:pb-26">
+      <section aria-labelledby="safe-title" className="aurora bg-mist section-y">
+        <div className="container-page grid gap-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-16">
+          <div>
+            <h2 id="safe-title" className="max-w-[11em] text-h2">
+              {safe.title}
+            </h2>
+            <p className="mt-5 text-lede text-ink-700">{safe.lede}</p>
+          </div>
+          <LinkRows rows={safe.rows} />
+        </div>
+      </section>
+
+      <section aria-labelledby="faq-title" className="container-page section-y">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] lg:gap-16">
           <div>
             <h2 id="faq-title" className="mb-6 text-h2">

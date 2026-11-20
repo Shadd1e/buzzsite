@@ -1,0 +1,278 @@
+- generic [active] [ref=f7e1]:
+  - link "Skip to content" [ref=f7e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f7e3]:
+    - navigation "Main" [ref=f7e4]:
+      - link "Buzz home" [ref=f7e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f7e6]
+      - list [ref=f7e7]:
+        - listitem [ref=f7e8]:
+          - link "The App" [ref=f7e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f7e10]:
+          - link "Buzz Pro" [ref=f7e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=f7e12]:
+          - link "Depot" [ref=f7e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=f7e14]:
+          - link "Payments" [ref=f7e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=f7e16]:
+          - link "Safety" [ref=f7e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=f7e18]:
+          - link "About" [ref=f7e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f7e20]:
+        - link "Buzz Web" [ref=f7e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=f7e23]: ↗
+        - link "Join the waitlist" [ref=f7e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=f7e26]:
+    - region "Buy, rent or hire, from people you can actually reach." [ref=f7e27]:
+      - generic [ref=f7e28]:
+        - heading "Buy, rent or hire, from people you can actually reach." [level=1] [ref=f7e29]
+        - paragraph [ref=f7e30]: Depot is where merchants sell, landlords list homes and handymen offer their services. Every listing comes with a chat, so you can ask before you pay.
+        - generic [ref=f7e31]:
+          - search [ref=f7e32]:
+            - generic [ref=f7e33]: Search sample listings
+            - searchbox "Search sample listings" [ref=f7e34]
+          - radiogroup "Category" [ref=f7e35]:
+            - radio "All" [checked] [ref=f7e36]
+            - radio "Products" [ref=f7e37]
+            - radio "Housing" [ref=f7e38]
+            - radio "Handymen" [ref=f7e39]
+          - paragraph [ref=f7e40]: On Depot you can also filter by location and price.
+    - region "Sample listings" [ref=f7e41]:
+      - generic [ref=f7e42]:
+        - heading "Sample listings" [level=2] [ref=f7e43]
+        - paragraph [ref=f7e44]: For illustration only. Real listings arrive when Depot launches.
+      - generic [ref=f7e45]:
+        - status [ref=f7e46]: 10 sample listings shown
+        - generic [ref=f7e47]:
+          - generic [ref=f7e48]:
+            - article [ref=f7e49]:
+              - generic [ref=f7e50]:
+                - generic [ref=f7e51]: "[photo]"
+                - generic [ref=f7e56]: Live
+              - generic [ref=f7e58]:
+                - paragraph [ref=f7e59]: ₦18,500
+                - heading "Ankara fabric, 6 yards" [level=3] [ref=f7e60]
+                - paragraph [ref=f7e61]:
+                  - generic [ref=f7e65]: Ada's Fabrics, Yaba
+            - article [ref=f7e66]:
+              - generic [ref=f7e67]: "[photo]"
+              - generic [ref=f7e73]:
+                - paragraph [ref=f7e74]: ₦12,000per visit
+                - heading "Plumbing and leak repairs" [level=3] [ref=f7e75]
+                - paragraph [ref=f7e76]:
+                  - generic [ref=f7e80]: Sule Plumbing, Gbagada
+            - article [ref=f7e81]:
+              - generic [ref=f7e82]: "[photo]"
+              - generic [ref=f7e88]:
+                - paragraph [ref=f7e89]: ₦10,000per visit
+                - heading "Generator servicing" [level=3] [ref=f7e90]
+                - paragraph [ref=f7e91]:
+                  - generic [ref=f7e95]: PowerFix, Ikorodu
+          - generic [ref=f7e96]:
+            - article [ref=f7e97]:
+              - generic [ref=f7e98]: "[photo]"
+              - generic [ref=f7e104]:
+                - paragraph [ref=f7e105]: ₦2,400,000per year
+                - heading "2-bedroom flat" [level=3] [ref=f7e106]
+                - paragraph [ref=f7e107]:
+                  - generic [ref=f7e111]: Landlord, Lekki Phase 1
+            - article [ref=f7e112]:
+              - generic [ref=f7e113]: "[photo]"
+              - generic [ref=f7e119]:
+                - paragraph [ref=f7e120]: ₦650,000per year
+                - heading "Self-contained room" [level=3] [ref=f7e121]
+                - paragraph [ref=f7e122]:
+                  - generic [ref=f7e126]: Landlord, Akoka
+            - article [ref=f7e127]:
+              - generic [ref=f7e128]: "[photo]"
+              - generic [ref=f7e134]:
+                - paragraph [ref=f7e135]: ₦31,000
+                - heading "Laptop bag" [level=3] [ref=f7e136]
+                - paragraph [ref=f7e137]:
+                  - generic [ref=f7e141]: Carry Co., Ikeja
+          - generic [ref=f7e142]:
+            - article [ref=f7e143]:
+              - generic [ref=f7e144]: "[photo]"
+              - generic [ref=f7e150]:
+                - paragraph [ref=f7e151]: ₦15,000per visit
+                - heading "Electrical repairs" [level=3] [ref=f7e152]
+                - paragraph [ref=f7e153]:
+                  - generic [ref=f7e157]: Emeka Fix-It, Surulere
+            - article [ref=f7e158]:
+              - generic [ref=f7e159]:
+                - generic [ref=f7e160]: "[photo]"
+                - generic [ref=f7e165]: Live
+              - generic [ref=f7e167]:
+                - paragraph [ref=f7e168]: ₦22,000
+                - heading "Bead necklace set" [level=3] [ref=f7e169]
+                - paragraph [ref=f7e170]:
+                  - generic [ref=f7e174]: Beads by Funke, Lekki
+          - generic [ref=f7e175]:
+            - article [ref=f7e176]:
+              - generic [ref=f7e177]:
+                - generic [ref=f7e178]: "[photo]"
+                - generic [ref=f7e187]: Shop now
+              - generic [ref=f7e188]:
+                - paragraph [ref=f7e189]: ₦6,500
+                - heading "Shea butter body cream" [level=3] [ref=f7e190]
+                - paragraph [ref=f7e191]:
+                  - generic [ref=f7e195]: Naturally Kemi, Ikeja
+            - article [ref=f7e196]:
+              - generic [ref=f7e197]: "[photo]"
+              - generic [ref=f7e203]:
+                - paragraph [ref=f7e204]: ₦14,000
+                - heading "Perfume oil set" [level=3] [ref=f7e205]
+                - paragraph [ref=f7e206]:
+                  - generic [ref=f7e210]: Scent Hub, Victoria Island
+    - region "Three ways to use Depot" [ref=f7e211]:
+      - heading "Three ways to use Depot" [level=2] [ref=f7e212]
+      - list [ref=f7e213]:
+        - listitem [ref=f7e214]:
+          - article [ref=f7e215]:
+            - img "A street vendor in a Lagos market displaying accessories" [ref=f7e216]
+            - heading "Products" [level=3] [ref=f7e218]
+            - paragraph [ref=f7e219]: From fabrics to phone accessories, sold by merchants you can message first.
+            - paragraph [ref=f7e220]: "Photo: Ademola Adeola, Pexels"
+        - listitem [ref=f7e221]:
+          - article [ref=f7e222]:
+            - generic [ref=f7e223]: "[photo pending]"
+            - heading "Housing" [level=3] [ref=f7e229]
+            - paragraph [ref=f7e230]: Flats and rooms listed by landlords. Ask questions in chat before you visit.
+        - listitem [ref=f7e231]:
+          - article [ref=f7e232]:
+            - generic [ref=f7e233]: "[photo pending]"
+            - heading "Handymen" [level=3] [ref=f7e239]
+            - paragraph [ref=f7e240]: Electricians, plumbers and more, with prices shown up front.
+    - region "Built so you don't get scammed" [ref=f7e241]:
+      - generic [ref=f7e242]:
+        - heading "Built so you don't get scammed" [level=2] [ref=f7e243]
+        - list [ref=f7e244]:
+          - listitem [ref=f7e245]:
+            - heading "Your money waits in escrow" [level=3] [ref=f7e246]
+            - paragraph [ref=f7e247]: SunPay holds your payment until you confirm the order arrived, or releases it after 5 days unless you open a dispute.
+            - link "How payments work" [ref=f7e248] [cursor=pointer]:
+              - /url: /payments
+          - listitem [ref=f7e249]:
+            - heading "Chat before you pay" [level=3] [ref=f7e250]
+            - paragraph [ref=f7e251]: Every listing opens a chat with the seller, so you can ask questions or for more photos first.
+          - listitem [ref=f7e252]:
+            - heading "Search that fits how you shop" [level=3] [ref=f7e253]
+            - paragraph [ref=f7e254]: Filter by location, price and category. Prices can show in your local currency.
+          - listitem [ref=f7e255]:
+            - heading "Delivery by Buzz Logistics" [level=3] [ref=f7e256]
+            - paragraph [ref=f7e257]: Depot orders can be delivered by Buzz Logistics partners, with a tracking ID and a delivery code.
+            - link "About Buzz Logistics" [ref=f7e258] [cursor=pointer]:
+              - /url: /logistics
+              - text: About Buzz Logistics
+              - generic [aria-hidden] [ref=f7e259]: ↗
+    - region "Shop and sell on Depot when Buzz launches." [ref=f7e260]:
+      - generic [ref=f7e261]:
+        - generic [ref=f7e262]:
+          - heading "Shop and sell on Depot when Buzz launches." [level=2] [ref=f7e263]
+          - paragraph [ref=f7e264]: Join the waitlist to hear first.
+        - link "Join the waitlist" [ref=f7e266] [cursor=pointer]:
+          - /url: /waitlist
+  - contentinfo [ref=f7e268]:
+    - generic [ref=f7e269]:
+      - generic [ref=f7e270]:
+        - generic [ref=f7e271]:
+          - img "Buzz" [ref=f7e272]
+          - paragraph [ref=f7e273]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f7e274] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f7e276]:
+          - navigation "Product" [ref=f7e277]:
+            - heading "Product" [level=2] [ref=f7e278]
+            - list [ref=f7e279]:
+              - listitem [ref=f7e280]:
+                - link "The App" [ref=f7e281] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f7e282]:
+                - link "Buzz Pro" [ref=f7e283] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f7e284]:
+                - link "Depot" [ref=f7e285] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f7e286]:
+                - link "Payments" [ref=f7e287] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f7e288]:
+                - link "Safety" [ref=f7e289] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f7e290]:
+            - heading "Company" [level=2] [ref=f7e291]
+            - list [ref=f7e292]:
+              - listitem [ref=f7e293]:
+                - link "About" [ref=f7e294] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f7e295]:
+                - link "Careers" [ref=f7e296] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f7e297]:
+                - link "Contact" [ref=f7e298] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f7e299]:
+            - heading "Help" [level=2] [ref=f7e300]
+            - list [ref=f7e301]:
+              - listitem [ref=f7e302]:
+                - link "Help Centre" [ref=f7e303] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f7e304]:
+                - link "Community guidelines" [ref=f7e305] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f7e306]:
+                - link "Safety guidelines" [ref=f7e307] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f7e308]:
+            - heading "Also from Buzz" [level=2] [ref=f7e309]
+            - list [ref=f7e310]:
+              - listitem [ref=f7e311]:
+                - link "Buzz Web" [ref=f7e312] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f7e313]: ↗
+              - listitem [ref=f7e314]:
+                - link "Buzz Logistics" [ref=f7e315] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f7e316]: ↗
+              - listitem [ref=f7e317]:
+                - link "Track a package" [ref=f7e318] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f7e319]: ↗
+      - generic [ref=f7e320]:
+        - paragraph [ref=f7e321]: © 2026 Aether Jade Innovation
+        - list [ref=f7e322]:
+          - listitem [ref=f7e323]:
+            - link "Privacy" [ref=f7e324] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f7e325]:
+            - link "Terms" [ref=f7e326] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f7e327]:
+            - link "Cookie policy" [ref=f7e328] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f7e329]:
+          - listitem "Social account to be confirmed" [ref=f7e330]:
+            - generic [aria-hidden] [ref=f7e331]: "[ ]"
+            - generic [ref=f7e332]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f7e333]:
+            - generic [aria-hidden] [ref=f7e334]: "[ ]"
+            - generic [ref=f7e335]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f7e336]:
+            - generic [aria-hidden] [ref=f7e337]: "[ ]"
+            - generic [ref=f7e338]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f7e344] [cursor=pointer]
+  - alert [ref=f7e348]

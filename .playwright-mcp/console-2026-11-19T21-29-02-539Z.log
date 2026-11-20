@@ -1,0 +1,59 @@
+[    1435ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[    1513ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[    6506ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[    6798ms] [LOG] [Fast Refresh] done in 403ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   17727ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   17861ms] [LOG] [Fast Refresh] done in 238ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   26238ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   26518ms] [LOG] [Fast Refresh] done in 329ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   45242ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   46249ms] [LOG] [Fast Refresh] done in 1085ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   46254ms] [LOG] [Fast Refresh] done in 1085ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   46489ms] [LOG] [Fast Refresh] done in 1085ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   46677ms] [LOG] [Fast Refresh] done in 1085ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   46690ms] [LOG] [Fast Refresh] done in 1085ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   47483ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   47751ms] [LOG] [Fast Refresh] done in 374ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   50467ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   50531ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   53328ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   55310ms] [LOG] [Fast Refresh] done in 2083ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  102072ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ :11
+[  143357ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  143503ms] [LOG] [Fast Refresh] done in 253ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  143805ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  144699ms] [LOG] [Fast Refresh] done in 998ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  146615ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  146660ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  147505ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  148111ms] [LOG] [Fast Refresh] done in 723ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  151434ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  156388ms] [LOG] [Fast Refresh] done in 5065ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  157065ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  157526ms] [LOG] [Fast Refresh] done in 570ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  178042ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  178227ms] [LOG] [Fast Refresh] done in 290ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  205913ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  206137ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  208000ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  208097ms] [LOG] [Fast Refresh] done in 275ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  258483ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  258513ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  258672ms] [WARNING] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  269286ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  269518ms] [LOG] [Fast Refresh] done in 337ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  289710ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  289742ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  289873ms] [WARNING] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  304082ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  305095ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  306115ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  307129ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  308165ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  313175ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  318217ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  323229ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  328245ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  333255ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  338290ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430
+[  343321ms] [ERROR] WebSocket connection to 'ws://localhost:3100/_next/hmr?id=9jXoxR22NQEPsW_ulAOHn' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_client_1bknzgo96mkng._.js:16430

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Check, CheckCheck, TriangleAlert } from "lucide-react";
+import { Check, CheckCheck, Clock3, TriangleAlert } from "lucide-react";
 import type { MessageStatus } from "@/lib/data/types";
 import { cn } from "@/lib/cn";
 import { Avatar, type Sender } from "./Avatar";
@@ -23,27 +23,39 @@ export interface BubbleProps {
   /** Show the sender's name above the text (groups, system, alert) */
   showName?: boolean;
   time?: string;
-  /** Outgoing only */
-  status?: MessageStatus;
+  /** Outgoing only. "pending" = queued while the phone is offline (Buzz Web). */
+  status?: MessageStatus | "pending";
   /** Incoming over a photo: liquid glass instead of white */
   glass?: boolean;
   /** On a tinted panel, incoming bubbles get the hairline shadow (§4) */
   onTint?: boolean;
   theme?: ChatTheme;
+  /**
+   * Which corner is the tail. Defaults to bottom-left (in, system, alert) or
+   * bottom-right (out). "top" (top-left) is for a bubble hanging below the
+   * thing it points at, e.g. scan points on the logistics journey line.
+   */
+  tail?: "start" | "end" | "top";
   children: ReactNode;
   className?: string;
 }
 
-const statusText: Record<MessageStatus, string> = { sent: "Sent", delivered: "Delivered", read: "Read" };
+const statusText: Record<MessageStatus | "pending", string> = {
+  pending: "Waiting to send",
+  sent: "Sent",
+  delivered: "Delivered",
+  read: "Read",
+};
 
 /**
  * Message receipts. They differ by shape and lightness, not only hue (§2.2):
  * sent = one tick, delivered = two ticks, read = two ticks on a filled
  * --tick badge. All white on --blue-600 pass contrast.
  */
-export function Ticks({ status }: { status: MessageStatus }) {
+export function Ticks({ status }: { status: MessageStatus | "pending" }) {
   return (
     <>
+      {status === "pending" && <Clock3 aria-hidden="true" className="size-3.5 text-white" strokeWidth={2} />}
       {status === "sent" && <Check aria-hidden="true" className="size-4 text-white" strokeWidth={2} />}
       {status === "delivered" && <CheckCheck aria-hidden="true" className="size-4 text-white" strokeWidth={2} />}
       {status === "read" && (
@@ -65,10 +77,12 @@ export function Bubble({
   glass,
   onTint,
   theme = "light",
+  tail,
   children,
   className,
 }: BubbleProps) {
   const isOut = variant === "out";
+  const corner = tail ?? (isOut ? "end" : "start");
   const dark = theme === "dark";
   const nameShown = showName ?? (variant === "system" || variant === "alert");
 
@@ -98,12 +112,12 @@ export function Bubble({
         : "text-blue-600";
 
   return (
-    <div className={cn("flex w-full items-end gap-2", isOut ? "justify-end" : "justify-start", className)}>
+    <div className={cn("flex w-full items-end gap-2", corner === "end" ? "justify-end" : "justify-start", className)}>
       {!isOut && sender && <Avatar sender={sender} size="md" decorative />}
       <div
         className={cn(
           "max-w-[82%] min-w-0 rounded-card px-[15px] pt-[11px] pb-[9px]",
-          isOut ? "rounded-br-tag" : "rounded-bl-tag",
+          { start: "rounded-bl-tag", end: "rounded-br-tag", top: "rounded-tl-tag" }[corner],
           surface,
         )}
       >

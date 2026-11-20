@@ -1,0 +1,199 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main" [ref=e4]:
+      - link "Buzz home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=e6]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "The App" [ref=e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e10]:
+          - link "Buzz Pro" [ref=e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=e12]:
+          - link "Depot" [ref=e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=e14]:
+          - link "Payments" [ref=e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=e16]:
+          - link "Safety" [ref=e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=e18]:
+          - link "About" [ref=e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=e20]:
+        - link "Buzz Web" [ref=e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=e23]: ↗
+        - link "Join the waitlist" [ref=e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=e26]:
+    - region "[Safety headline]" [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "[Safety headline]" [level=1] [ref=e30]
+          - paragraph [ref=e31]: Buzz works with verified police and security agencies, and with people near you, to share safety alerts for the places you care about. You choose to turn alerts on, and you choose the areas.
+          - link "Join the waitlist" [ref=e33] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=e36]:
+          - article "Example EMBA alert" [ref=e37]:
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Security update, from [Verified agency]
+              - paragraph [ref=e44]: Road blocked at [location]. Avoid the area and use another route.
+              - paragraph [ref=e45]:
+                - text: Within [radius] of [location],
+                - time [ref=e46]: 10:30
+          - paragraph [ref=e47]: Estate Residents (Block C)
+          - generic [ref=e48]:
+            - generic [aria-hidden] [ref=e49]: MB
+            - generic [ref=e50]:
+              - paragraph [ref=e51]: Mr Bello
+              - generic [ref=e52]: Thank you. Everybody please stay inside for now
+              - paragraph [ref=e53]:
+                - time [ref=e54]: 10:32
+          - generic [ref=e56]:
+            - generic [ref=e57]: "You:"
+            - generic [ref=e58]: Noted. I'll check on Mama Ngozi next door
+            - paragraph [ref=e59]:
+              - time [ref=e60]: 10:33
+              - generic [ref=e64]: Delivered
+    - region "Only the people who need to know" [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - heading "Only the people who need to know" [level=2] [ref=e68]
+          - paragraph [ref=e69]: An alert goes to phones within the affected area. Everyone else carries on without the noise.
+        - 'figure "Inside the area: alert received Outside the area: no alert Illustration. Not a real map or real locations." [ref=e70]':
+          - img "Illustration. Not a real map or real locations. A red ring marks the alert area; phones inside it receive the alert, phones outside do not." [ref=e72]
+          - generic [ref=e122]:
+            - generic [ref=e123]: "Inside the area: alert received"
+            - generic [ref=e125]: "Outside the area: no alert"
+            - generic [ref=e127]: Illustration. Not a real map or real locations.
+    - region "How alerts work" [ref=e128]:
+      - generic [ref=e129]:
+        - heading "How alerts work" [level=2] [ref=e130]
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - heading "Verified sources" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Alerts come from verified police and security agencies, and from real users near the event.
+          - listitem [ref=e135]:
+            - heading "Only where it matters" [level=3] [ref=e136]
+            - paragraph [ref=e137]: Alerts are tied to a location, so you only hear about what's happening in the areas you follow.
+          - listitem [ref=e138]:
+            - heading "Your choice" [level=3] [ref=e139]
+            - paragraph [ref=e140]: Alerts are opt-in. Turn them on, pick your areas, and turn them off whenever you like.
+          - listitem [ref=e141]:
+            - heading "Hard to miss" [level=3] [ref=e142]
+            - paragraph [ref=e143]: Security updates sit in their own row, in their own colour, so they never get lost among other updates.
+    - region "Buzz is not an emergency service." [ref=e144]:
+      - note [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Buzz is not an emergency service." [level=2] [ref=e147]
+          - paragraph [ref=e148]: In an emergency, call 112.
+        - link "Call 112" [ref=e149] [cursor=pointer]:
+          - /url: tel:112
+    - region "Stay in the know when Buzz launches." [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - heading "Stay in the know when Buzz launches." [level=2] [ref=e155]
+          - paragraph [ref=e156]: Join the waitlist and we'll tell you when alerts are live in your area.
+        - link "Join the waitlist" [ref=e158] [cursor=pointer]:
+          - /url: /waitlist
+  - contentinfo [ref=e160]:
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - img "Buzz" [ref=e164]
+          - paragraph [ref=e165]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=e166] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=e168]:
+          - navigation "Product" [ref=e169]:
+            - heading "Product" [level=2] [ref=e170]
+            - list [ref=e171]:
+              - listitem [ref=e172]:
+                - link "The App" [ref=e173] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=e174]:
+                - link "Buzz Pro" [ref=e175] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=e176]:
+                - link "Depot" [ref=e177] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=e178]:
+                - link "Payments" [ref=e179] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=e180]:
+                - link "Safety" [ref=e181] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=e182]:
+            - heading "Company" [level=2] [ref=e183]
+            - list [ref=e184]:
+              - listitem [ref=e185]:
+                - link "About" [ref=e186] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e187]:
+                - link "Careers" [ref=e188] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=e189]:
+                - link "Contact" [ref=e190] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=e191]:
+            - heading "Help" [level=2] [ref=e192]
+            - list [ref=e193]:
+              - listitem [ref=e194]:
+                - link "Help Centre" [ref=e195] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=e196]:
+                - link "Community guidelines" [ref=e197] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=e198]:
+                - link "Safety guidelines" [ref=e199] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=e200]:
+            - heading "Also from Buzz" [level=2] [ref=e201]
+            - list [ref=e202]:
+              - listitem [ref=e203]:
+                - link "Buzz Web" [ref=e204] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=e205]: ↗
+              - listitem [ref=e206]:
+                - link "Buzz Logistics" [ref=e207] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=e208]: ↗
+              - listitem [ref=e209]:
+                - link "Track a package" [ref=e210] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=e211]: ↗
+      - generic [ref=e212]:
+        - paragraph [ref=e213]: © 2026 Aether Jade Innovation
+        - list [ref=e214]:
+          - listitem [ref=e215]:
+            - link "Privacy" [ref=e216] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=e217]:
+            - link "Terms" [ref=e218] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=e219]:
+            - link "Cookie policy" [ref=e220] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=e221]:
+          - listitem "Social account to be confirmed" [ref=e222]:
+            - generic [aria-hidden] [ref=e223]: "[ ]"
+            - generic [ref=e224]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=e225]:
+            - generic [aria-hidden] [ref=e226]: "[ ]"
+            - generic [ref=e227]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=e228]:
+            - generic [aria-hidden] [ref=e229]: "[ ]"
+            - generic [ref=e230]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=e236] [cursor=pointer]
+  - alert [ref=e240]

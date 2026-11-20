@@ -18,12 +18,9 @@ import type {
   RiderStatus,
 } from "./types";
 
-/** Tracking IDs look like BZT-7Q4K-19XM. */
-export const TRACKING_ID_PATTERN = /^BZT-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
+import { normaliseTrackingId } from "./tracking-id";
 
-export function normaliseTrackingId(input: string): string {
-  return input.trim().toUpperCase().replace(/\s+/g, "");
-}
+export { normaliseTrackingId, TRACKING_ID_PATTERN } from "./tracking-id";
 
 /* ---------- Partners ---------- */
 

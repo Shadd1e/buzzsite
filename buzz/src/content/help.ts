@@ -150,6 +150,18 @@ export const helpPage = {
     empty: "No articles match that. Try another word, or browse the topics below.",
   },
   topicsTitle: "Browse by topic",
+  // Confirmed rules only (PRODUCT.md logistics + payments rules)
+  safe: {
+    title: "Staying safe on Buzz",
+    lede: "A few habits that protect your money and your parcels.",
+    rows: [
+      { title: "Pay through SunPay, inside Buzz", body: "Escrow only protects payments made through SunPay. If a seller asks you to pay another way, don't.", link: { label: "How escrow works", href: "/help/how-escrow-works" } },
+      { title: "Give your delivery code only at the door", body: "Share your 4-digit delivery code when the parcel is in your hands, not before." },
+      { title: "Sending someone to collect?", body: "Add their name in the app to get a new pickup code. Only the latest code works, and the hub checks their ID.", link: { label: "Tracking and pickup", href: "/help/track-a-parcel" } },
+      { title: "Never share passwords or codes", body: "Not in chats, and not with anyone who says they work for Buzz." },
+      { title: "In an emergency, call 112", body: "Buzz shares safety alerts, but it is not an emergency service.", link: { label: "How safety alerts work", href: "/help/how-safety-alerts-work" } },
+    ],
+  },
   faq: {
     title: "Common questions",
     items: [

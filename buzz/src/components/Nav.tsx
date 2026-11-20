@@ -23,11 +23,30 @@ export const brandLinks = [
   { href: "/about", label: "About" },
 ] as const;
 
+export type NavLink = { href: string; label: string };
+export type NavAction = { href: string; label: string; variant: "solid" | "outline"; external?: boolean };
+
+const brandActions: NavAction[] = [
+  { href: "/web", label: "Buzz Web", variant: "outline", external: true },
+  { href: "/waitlist", label: "Join the waitlist", variant: "solid" },
+];
+
 export function Nav({
   forceScrolled,
   position = "sticky",
   label = "Main",
+  links = brandLinks,
+  actions = brandActions,
+  home = { href: "/", label: "Buzz home" },
+  area,
 }: {
+  /** Area links. Defaults to the marketing site. */
+  links?: ReadonlyArray<NavLink>;
+  /** Right-hand pills, solid last (the mobile sheet shows the solid one first) */
+  actions?: NavAction[];
+  home?: { href: string; label: string };
+  /** Area name shown after the wordmark, e.g. "Logistics" */
+  area?: string;
   /** Render the scrolled (glass) state regardless of scroll, for docs */
   forceScrolled?: boolean;
   /** "static" for previews inside /dev/components */
@@ -49,6 +68,13 @@ export function Nav({
 
   const isGlass = forceScrolled ?? scrolled;
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const sheetActions = [...actions].sort((a, b) => (a.variant === "solid" ? -1 : b.variant === "solid" ? 1 : 0));
+  const wordmark = (
+    <span className="flex items-baseline gap-1.5">
+      <Logo size="sm" />
+      {area && <span className="text-[17px] font-medium tracking-[-0.01em] text-ink-700">{area}</span>}
+    </span>
+  );
 
   return (
     <header
@@ -59,12 +85,12 @@ export function Nav({
       )}
     >
       <nav aria-label={label} className="container-page flex h-[72px] items-center gap-4 xl:gap-6">
-        <Link href="/" aria-label="Buzz home" className="-mx-2 flex min-h-11 shrink-0 items-center rounded-tile px-2">
-          <Logo size="sm" />
+        <Link href={home.href} aria-label={home.label} className="-mx-2 flex min-h-11 shrink-0 items-center rounded-tile px-2">
+          {wordmark}
         </Link>
 
         <ul className="hidden flex-1 items-center justify-center gap-0.5 lg:flex xl:gap-1">
-          {brandLinks.map((l) => (
+          {links.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}
@@ -83,12 +109,11 @@ export function Nav({
         </ul>
 
         <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex">
-          <ButtonLink href="/web" variant="outline" size="sm" external>
-            Buzz Web
-          </ButtonLink>
-          <ButtonLink href="/waitlist" variant="solid" size="sm">
-            Join the waitlist
-          </ButtonLink>
+          {actions.map((a) => (
+            <ButtonLink key={a.href} href={a.href} variant={a.variant} size="sm" external={a.external}>
+              {a.label}
+            </ButtonLink>
+          ))}
         </div>
 
         <Dialog.Root open={open} onOpenChange={setOpen}>
@@ -106,7 +131,7 @@ export function Nav({
               )}
             >
               <div className="container-page flex h-[72px] shrink-0 items-center justify-between">
-                <Logo size="sm" />
+                {wordmark}
                 <Dialog.Close
                   className="grid size-11 place-items-center rounded-full text-ink-900 hover:bg-mist"
                   aria-label="Close menu"
@@ -115,9 +140,11 @@ export function Nav({
                 </Dialog.Close>
               </div>
               <Dialog.Title className="sr-only">Menu</Dialog.Title>
-              <Dialog.Description className="sr-only">Pages on the Buzz site</Dialog.Description>
+              <Dialog.Description className="sr-only">
+                {area ? `Pages on Buzz ${area}` : "Pages on the Buzz site"}
+              </Dialog.Description>
               <ul className="container-page flex flex-col pt-4 pb-8">
-                {brandLinks.map((l) => (
+                {links.map((l) => (
                   <li key={l.href} className="border-b border-line last:border-b-0">
                     <Link
                       href={l.href}
@@ -131,12 +158,18 @@ export function Nav({
                 ))}
               </ul>
               <div className="container-page mt-auto flex flex-col gap-3 pb-8">
-                <ButtonLink href="/waitlist" size="lg" onClick={() => setOpen(false)}>
-                  Join the waitlist
-                </ButtonLink>
-                <ButtonLink href="/web" variant="outline" size="lg" external onClick={() => setOpen(false)}>
-                  Buzz Web
-                </ButtonLink>
+                {sheetActions.map((a) => (
+                  <ButtonLink
+                    key={a.href}
+                    href={a.href}
+                    variant={a.variant}
+                    size="lg"
+                    external={a.external}
+                    onClick={() => setOpen(false)}
+                  >
+                    {a.label}
+                  </ButtonLink>
+                ))}
               </div>
             </Dialog.Content>
           </Dialog.Portal>

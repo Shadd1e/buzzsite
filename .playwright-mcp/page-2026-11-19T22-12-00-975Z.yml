@@ -1,0 +1,199 @@
+- generic [active] [ref=f24e1]:
+  - link "Skip to content" [ref=f24e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f24e3]:
+    - navigation "Main" [ref=f24e4]:
+      - link "Buzz home" [ref=f24e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f24e6]
+      - list [ref=f24e7]:
+        - listitem [ref=f24e8]:
+          - link "The App" [ref=f24e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f24e10]:
+          - link "Buzz Pro" [ref=f24e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=f24e12]:
+          - link "Depot" [ref=f24e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=f24e14]:
+          - link "Payments" [ref=f24e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=f24e16]:
+          - link "Safety" [ref=f24e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=f24e18]:
+          - link "About" [ref=f24e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f24e20]:
+        - link "Buzz Web" [ref=f24e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=f24e23]: ↗
+        - link "Join the waitlist" [ref=f24e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=f24e26]:
+    - region "How can we help?" [ref=f24e27]:
+      - generic [ref=f24e28]:
+        - heading "How can we help?" [level=1] [ref=f24e29]
+        - search [ref=f24e31]:
+          - generic [ref=f24e32]: Search help articles
+          - searchbox "Search help articles" [ref=f24e33]
+    - region "Browse by topic" [ref=f24e34]:
+      - heading "Browse by topic" [level=2] [ref=f24e35]
+      - list [ref=f24e36]:
+        - listitem [ref=f24e37]:
+          - link "Getting started Joining the waitlist, your account and your Buzz ID." [ref=f24e38] [cursor=pointer]:
+            - /url: /help/join-the-waitlist
+            - generic [ref=f24e43]:
+              - generic [ref=f24e44]: Getting started
+              - generic [ref=f24e45]: Joining the waitlist, your account and your Buzz ID.
+        - listitem [ref=f24e46]:
+          - link "Chats and privacy Messages, groups, BuzzDrop and who can reach you." [ref=f24e47] [cursor=pointer]:
+            - /url: /help/what-is-a-buzz-id
+            - generic [ref=f24e52]:
+              - generic [ref=f24e53]: Chats and privacy
+              - generic [ref=f24e54]: Messages, groups, BuzzDrop and who can reach you.
+        - listitem [ref=f24e55]:
+          - link "Depot Buying, renting and hiring on the marketplace." [ref=f24e56] [cursor=pointer]:
+            - /url: /help/buying-on-depot
+            - generic [ref=f24e62]:
+              - generic [ref=f24e63]: Depot
+              - generic [ref=f24e64]: Buying, renting and hiring on the marketplace.
+        - listitem [ref=f24e65]:
+          - link "Payments and escrow How SunPay holds your money and what happens in a dispute." [ref=f24e66] [cursor=pointer]:
+            - /url: /help/how-escrow-works
+            - generic [ref=f24e71]:
+              - generic [ref=f24e72]: Payments and escrow
+              - generic [ref=f24e73]: How SunPay holds your money and what happens in a dispute.
+        - listitem [ref=f24e74]:
+          - link "Pro Mode Storefront, Pro ID, Business Centre and Showcase." [ref=f24e75] [cursor=pointer]:
+            - /url: /help/what-is-pro-mode
+            - generic [ref=f24e80]:
+              - generic [ref=f24e81]: Pro Mode
+              - generic [ref=f24e82]: Storefront, Pro ID, Business Centre and Showcase.
+        - listitem [ref=f24e83]:
+          - link "Safety alerts EMBA alerts, security updates and your areas." [ref=f24e84] [cursor=pointer]:
+            - /url: /help/how-safety-alerts-work
+            - generic [ref=f24e88]:
+              - generic [ref=f24e89]: Safety alerts
+              - generic [ref=f24e90]: EMBA alerts, security updates and your areas.
+        - listitem [ref=f24e91]:
+          - link "Logistics and delivery Tracking a Depot parcel, delivery codes and pickup." [ref=f24e92] [cursor=pointer]:
+            - /url: /help/track-a-parcel
+            - generic [ref=f24e99]:
+              - generic [ref=f24e100]: Logistics and delivery
+              - generic [ref=f24e101]: Tracking a Depot parcel, delivery codes and pickup.
+    - region "Common questions" [ref=f24e102]:
+      - generic [ref=f24e103]:
+        - generic [ref=f24e104]:
+          - heading "Common questions" [level=2] [ref=f24e105]
+          - generic [ref=f24e106]:
+            - heading [level=3] [ref=f24e108]:
+              - button "When can I download Buzz?" [ref=f24e109]
+            - heading [level=3] [ref=f24e113]:
+              - button "Do people see my phone number?" [ref=f24e114]
+            - heading [level=3] [ref=f24e118]:
+              - button "When is the seller paid?" [ref=f24e119]
+            - heading [level=3] [ref=f24e123]:
+              - button "Is Buzz an emergency service?" [ref=f24e124]
+            - heading [level=3] [ref=f24e128]:
+              - button "Can I track a parcel without the app?" [ref=f24e129]
+        - complementary "Still stuck?" [ref=f24e132]:
+          - heading "Still stuck?" [level=2] [ref=f24e133]
+          - paragraph [ref=f24e134]: Send us a message and tell us what you were trying to do.
+          - link "Contact us" [ref=f24e135] [cursor=pointer]:
+            - /url: /contact
+  - contentinfo [ref=f24e137]:
+    - generic [ref=f24e138]:
+      - generic [ref=f24e139]:
+        - generic [ref=f24e140]:
+          - img "Buzz" [ref=f24e141]
+          - paragraph [ref=f24e142]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f24e143] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f24e145]:
+          - navigation "Product" [ref=f24e146]:
+            - heading "Product" [level=2] [ref=f24e147]
+            - list [ref=f24e148]:
+              - listitem [ref=f24e149]:
+                - link "The App" [ref=f24e150] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f24e151]:
+                - link "Buzz Pro" [ref=f24e152] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f24e153]:
+                - link "Depot" [ref=f24e154] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f24e155]:
+                - link "Payments" [ref=f24e156] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f24e157]:
+                - link "Safety" [ref=f24e158] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f24e159]:
+            - heading "Company" [level=2] [ref=f24e160]
+            - list [ref=f24e161]:
+              - listitem [ref=f24e162]:
+                - link "About" [ref=f24e163] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f24e164]:
+                - link "Careers" [ref=f24e165] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f24e166]:
+                - link "Contact" [ref=f24e167] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f24e168]:
+            - heading "Help" [level=2] [ref=f24e169]
+            - list [ref=f24e170]:
+              - listitem [ref=f24e171]:
+                - link "Help Centre" [ref=f24e172] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f24e173]:
+                - link "Community guidelines" [ref=f24e174] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f24e175]:
+                - link "Safety guidelines" [ref=f24e176] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f24e177]:
+            - heading "Also from Buzz" [level=2] [ref=f24e178]
+            - list [ref=f24e179]:
+              - listitem [ref=f24e180]:
+                - link "Buzz Web" [ref=f24e181] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f24e182]: ↗
+              - listitem [ref=f24e183]:
+                - link "Buzz Logistics" [ref=f24e184] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f24e185]: ↗
+              - listitem [ref=f24e186]:
+                - link "Track a package" [ref=f24e187] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f24e188]: ↗
+      - generic [ref=f24e189]:
+        - paragraph [ref=f24e190]: © 2026 Aether Jade Innovation
+        - list [ref=f24e191]:
+          - listitem [ref=f24e192]:
+            - link "Privacy" [ref=f24e193] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f24e194]:
+            - link "Terms" [ref=f24e195] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f24e196]:
+            - link "Cookie policy" [ref=f24e197] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f24e198]:
+          - listitem "Social account to be confirmed" [ref=f24e199]:
+            - generic [aria-hidden] [ref=f24e200]: "[ ]"
+            - generic [ref=f24e201]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f24e202]:
+            - generic [aria-hidden] [ref=f24e203]: "[ ]"
+            - generic [ref=f24e204]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f24e205]:
+            - generic [aria-hidden] [ref=f24e206]: "[ ]"
+            - generic [ref=f24e207]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f24e213] [cursor=pointer]

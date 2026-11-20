@@ -1,0 +1,17 @@
+[   10391ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   10486ms] [LOG] [HMR] connected @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   97379ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   97527ms] [LOG] [Fast Refresh] done in 251ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   97829ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[   98723ms] [LOG] [Fast Refresh] done in 1000ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  101527ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  102127ms] [LOG] [Fast Refresh] done in 716ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  105457ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  110409ms] [LOG] [Fast Refresh] done in 5064ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  111086ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  111548ms] [LOG] [Fast Refresh] done in 569ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  132064ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  132235ms] [LOG] [Fast Refresh] done in 276ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  156063ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ :15
+[  159931ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761
+[  160159ms] [LOG] [Fast Refresh] done in 276ms @ http://localhost:3100/_next/static/chunks/0bbx_next_dist_0_jy692pazudb._.js:761

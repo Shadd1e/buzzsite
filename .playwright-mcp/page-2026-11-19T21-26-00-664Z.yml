@@ -1,0 +1,357 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - navigation "Main" [ref=f1e4]:
+      - link "Buzz home" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - img "Buzz" [ref=f1e6]
+      - list [ref=f1e7]:
+        - listitem [ref=f1e8]:
+          - link "The App" [ref=f1e9] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=f1e10]:
+          - link "Buzz Pro" [ref=f1e11] [cursor=pointer]:
+            - /url: /pro
+        - listitem [ref=f1e12]:
+          - link "Depot" [ref=f1e13] [cursor=pointer]:
+            - /url: /marketplace
+        - listitem [ref=f1e14]:
+          - link "Payments" [ref=f1e15] [cursor=pointer]:
+            - /url: /payments
+        - listitem [ref=f1e16]:
+          - link "Safety" [ref=f1e17] [cursor=pointer]:
+            - /url: /safety
+        - listitem [ref=f1e18]:
+          - link "About" [ref=f1e19] [cursor=pointer]:
+            - /url: /about
+      - generic [ref=f1e20]:
+        - link "Buzz Web" [ref=f1e21] [cursor=pointer]:
+          - /url: /web
+          - generic [aria-hidden] [ref=f1e23]: ↗
+        - link "Join the waitlist" [ref=f1e24] [cursor=pointer]:
+          - /url: /waitlist
+  - main [ref=f1e26]:
+    - region "Chat like you always do. Share less of yourself." [ref=f1e27]:
+      - generic [ref=f1e28]:
+        - generic [ref=f1e29]:
+          - heading "Chat like you always do. Share less of yourself." [level=1] [ref=f1e30]
+          - paragraph [ref=f1e31]: Chats, voice notes, groups and Status, the way you already use them. People reach you through your Buzz ID, so your phone number stays yours.
+          - link "Join the waitlist" [ref=f1e33] [cursor=pointer]:
+            - /url: /waitlist
+        - log "Tobi tells his mum he has landed in Abuja" [ref=f1e36]:
+          - generic [ref=f1e39]:
+            - generic [aria-hidden] [ref=f1e40]: T
+            - generic [ref=f1e41]:
+              - generic [ref=f1e42]: "Tobi:"
+              - generic [ref=f1e43]: Mummy, I don land for Abuja
+              - paragraph [ref=f1e44]:
+                - time [ref=f1e45]: 18:42
+          - generic [ref=f1e49]:
+            - generic [ref=f1e50]: "You:"
+            - generic [ref=f1e51]: Thank God! Did you eat on the flight?
+            - paragraph [ref=f1e52]:
+              - time [ref=f1e53]: 18:43
+              - generic [ref=f1e58]: Read
+          - generic [ref=f1e61]:
+            - generic [aria-hidden] [ref=f1e62]: T
+            - generic [ref=f1e63]:
+              - generic [ref=f1e64]: "Tobi:"
+              - generic [ref=f1e91]:
+                - generic [ref=f1e92]: Voice note,
+                - text: 0:14
+              - paragraph [ref=f1e93]:
+                - time [ref=f1e94]: 18:44
+          - generic [ref=f1e95]:
+            - generic [ref=f1e97]:
+              - generic [aria-hidden] [ref=f1e98]: T
+              - generic [ref=f1e99]:
+                - generic [ref=f1e100]: "Tobi:"
+                - generic [ref=f1e101]: Driver is here. I'll call you when I reach
+                - paragraph [ref=f1e102]:
+                  - time [ref=f1e103]: 18:45
+            - generic [aria-hidden]:
+              - generic:
+                - generic [aria-hidden]: T
+                - status
+    - region "One app, four things you'll use every day" [ref=f1e104]:
+      - heading "One app, four things you'll use every day" [level=2] [ref=f1e105]
+      - generic [ref=f1e107]:
+        - list [ref=f1e108]:
+          - listitem [ref=f1e109]:
+            - generic [ref=f1e110]:
+              - heading "Chats that feel like texting a friend." [level=3] [ref=f1e111]
+              - paragraph [ref=f1e112]: One-to-one and group chats with voice notes, photos, video, stickers and GIFs. Every chat is end-to-end encrypted.
+          - listitem [ref=f1e113]:
+            - generic [ref=f1e114]:
+              - heading "A handle people can find you by." [level=3] [ref=f1e115]
+              - paragraph [ref=f1e116]: Your Buzz ID, like @adaeze.buzz, is what you share instead of your phone number. Give it out freely and keep your number private.
+          - listitem [ref=f1e117]:
+            - generic [ref=f1e118]:
+              - heading "Swap contacts in person, number-free." [level=3] [ref=f1e119]
+              - paragraph [ref=f1e120]: Meet someone, scan each other's code and you're connected. Neither of you sees the other's phone number.
+          - listitem [ref=f1e121]:
+            - generic [ref=f1e122]:
+              - heading "Updates that disappear after 24 hours." [level=3] [ref=f1e123]
+              - paragraph [ref=f1e124]: Share a moment that's gone tomorrow. Security updates from verified sources sit in their own row, in their own colour, so they're never lost among the rest.
+        - figure "Chats screen" [ref=f1e127]:
+          - generic [ref=f1e128]:
+            - generic [ref=f1e130]:
+              - paragraph [ref=f1e132]: Chats
+              - generic [ref=f1e133]: Search
+              - list [ref=f1e137]:
+                - listitem [ref=f1e138]:
+                  - generic [aria-hidden] [ref=f1e139]: M
+                  - generic [ref=f1e140]:
+                    - generic [ref=f1e141]:
+                      - paragraph [ref=f1e142]: Mum
+                      - generic [ref=f1e143]: 12:22
+                    - generic [ref=f1e144]:
+                      - paragraph [ref=f1e145]: Call me when you're free
+                      - generic [ref=f1e146]: "2"
+                - listitem [ref=f1e147]:
+                  - generic [aria-hidden] [ref=f1e148]: OF
+                  - generic [ref=f1e149]:
+                    - generic [ref=f1e150]:
+                      - paragraph [ref=f1e151]: Okeke Family
+                      - generic [ref=f1e152]: 12:48
+                    - generic [ref=f1e153]:
+                      - paragraph [ref=f1e154]: Don't forget the rice o
+                      - generic [ref=f1e155]: "5"
+                - listitem [ref=f1e156]:
+                  - generic [aria-hidden] [ref=f1e157]: AF
+                  - generic [ref=f1e158]:
+                    - generic [ref=f1e159]:
+                      - paragraph [ref=f1e160]: Ada's Fabrics
+                      - generic [ref=f1e161]: 12:02
+                    - generic [ref=f1e162]:
+                      - paragraph [ref=f1e163]: Your rider is on the way. Have your delivery code ready
+                      - generic [ref=f1e164]: "1"
+                - listitem [ref=f1e165]:
+                  - generic [aria-hidden] [ref=f1e166]: EC
+                  - generic [ref=f1e167]:
+                    - generic [ref=f1e168]:
+                      - paragraph [ref=f1e169]: Estate Residents (Block C)
+                      - generic [ref=f1e170]: 10:40
+                    - generic [ref=f1e171]:
+                      - paragraph [ref=f1e172]: Seen it. Everyone stay indoors for now
+                      - generic [ref=f1e173]: "12"
+                - listitem [ref=f1e174]:
+                  - generic [aria-hidden] [ref=f1e175]: EF
+                  - generic [ref=f1e176]:
+                    - generic [ref=f1e177]:
+                      - paragraph [ref=f1e178]: Emeka Fix-It
+                      - generic [ref=f1e179]: 12:11
+                    - paragraph [ref=f1e181]: Booking
+                - listitem [ref=f1e182]:
+                  - generic [aria-hidden] [ref=f1e183]: T
+                  - generic [ref=f1e184]:
+                    - generic [ref=f1e185]:
+                      - paragraph [ref=f1e186]: Tobi
+                      - generic [ref=f1e187]: 11:05
+                    - paragraph [ref=f1e189]: Thank God. Call me when you settle
+            - generic [aria-hidden]:
+              - generic:
+                - generic [aria-hidden]: AO
+                - paragraph: Adaeze Okeke
+                - paragraph: "@adaeze.buzz"
+                - paragraph: People who have your Buzz ID can message you. Your phone number is never shown.
+                - generic:
+                  - paragraph: Phone number
+                  - paragraph: Hidden from everyone
+            - generic [aria-hidden]:
+              - generic:
+                - paragraph: BuzzDrop
+                - paragraph: Let them scan your code
+                - paragraph: "@adaeze.buzz"
+                - generic: Scan their code
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - paragraph: Updates
+                - paragraph: Security updates
+                - generic:
+                  - generic:
+                    - paragraph: "[Verified agency]"
+                    - paragraph: Road blocked at [location]
+                - paragraph: Recent
+                - list:
+                  - listitem:
+                    - generic:
+                      - generic [aria-hidden]: T
+                    - generic:
+                      - paragraph: Tobi
+                      - paragraph: 12 minutes ago
+                  - listitem:
+                    - generic:
+                      - generic [aria-hidden]: NK
+                    - generic:
+                      - paragraph: Naturally Kemi
+                      - paragraph: 1 hour ago
+                  - listitem:
+                    - generic:
+                      - generic [aria-hidden]: C
+                    - generic:
+                      - paragraph: Chidi
+                      - paragraph: This morning
+                  - listitem:
+                    - generic:
+                      - generic [aria-hidden]: AR
+                    - generic:
+                      - paragraph: Auntie Rose
+                      - paragraph: Yesterday, 21:40
+    - region "The small things, done properly" [ref=f1e190]:
+      - heading "The small things, done properly" [level=2] [ref=f1e191]
+      - generic [ref=f1e192]:
+        - article [ref=f1e193]:
+          - generic [ref=f1e195]:
+            - generic [aria-hidden] [ref=f1e196]:
+              - generic [aria-hidden] [ref=f1e198]: C
+              - generic [aria-hidden] [ref=f1e200]: AR
+              - generic [aria-hidden] [ref=f1e202]: UB
+              - generic [aria-hidden] [ref=f1e204]: "N"
+            - generic [ref=f1e205]:
+              - paragraph [ref=f1e206]: Okeke Family
+              - paragraph [ref=f1e207]: "[members] members"
+          - generic [ref=f1e208]:
+            - heading "Groups" [level=3] [ref=f1e209]
+            - paragraph [ref=f1e210]: "Family, estate, class or church: one place for everyone, with voice notes and photos."
+        - article [ref=f1e211]:
+          - generic [aria-hidden] [ref=f1e213]:
+            - generic [aria-hidden] [ref=f1e215]: T
+            - generic [aria-hidden] [ref=f1e217]: K
+          - generic [ref=f1e222]:
+            - heading "Status" [level=3] [ref=f1e223]
+            - paragraph [ref=f1e224]: Gone after 24 hours. Security updates get their own red ring.
+        - article [ref=f1e225]:
+          - list "Sticker placeholders" [ref=f1e227]:
+            - listitem [ref=f1e228]: "[sticker]"
+            - listitem [ref=f1e229]: "[sticker]"
+            - listitem [ref=f1e230]: "[sticker]"
+          - generic [ref=f1e231]:
+            - heading "Stickers and GIFs" [level=3] [ref=f1e232]
+            - paragraph [ref=f1e233]: Say it the way you'd say it in person.
+        - article [ref=f1e234]:
+          - generic [ref=f1e240]:
+            - heading "Encryption" [level=3] [ref=f1e241]
+            - paragraph [ref=f1e242]: Chats are end-to-end encrypted. Not even Buzz can read them.
+        - article [ref=f1e243]:
+          - link "Open Buzz Web" [ref=f1e252] [cursor=pointer]:
+            - /url: /web
+            - text: Open Buzz Web
+            - generic [aria-hidden] [ref=f1e253]: ↗
+          - generic [ref=f1e254]:
+            - heading "Buzz Web" [level=3] [ref=f1e255]
+            - paragraph [ref=f1e256]: Chat on a computer. Scan a code with your phone to link it.
+    - region "Your Buzz ID is the only number people need." [ref=f1e257]:
+      - generic [ref=f1e258]:
+        - generic [ref=f1e259]:
+          - heading "Your Buzz ID is the only number people need." [level=2] [ref=f1e260]
+          - paragraph [ref=f1e261]: Share your handle on flyers, your shop sign or your socials. People can message you, and your phone number never leaves your phone.
+        - generic [ref=f1e262]:
+          - paragraph [ref=f1e263]: "@adaeze.buzz"
+          - paragraph [ref=f1e264]:
+            - generic [ref=f1e265]: "Not your phone number:"
+            - text: +234 800 000 4417
+    - region "Be ready when Buzz arrives." [ref=f1e266]:
+      - generic [ref=f1e267]:
+        - generic [ref=f1e268]:
+          - heading "Be ready when Buzz arrives." [level=2] [ref=f1e269]
+          - paragraph [ref=f1e270]: Join the waitlist and we'll tell you when the app is in the stores.
+        - link "Join the waitlist" [ref=f1e272] [cursor=pointer]:
+          - /url: /waitlist
+  - contentinfo [ref=f1e274]:
+    - generic [ref=f1e275]:
+      - generic [ref=f1e276]:
+        - generic [ref=f1e277]:
+          - img "Buzz" [ref=f1e278]
+          - paragraph [ref=f1e279]: One HUB that plugs you to everything.
+          - link "Join the waitlist" [ref=f1e280] [cursor=pointer]:
+            - /url: /waitlist
+        - generic [ref=f1e282]:
+          - navigation "Product" [ref=f1e283]:
+            - heading "Product" [level=2] [ref=f1e284]
+            - list [ref=f1e285]:
+              - listitem [ref=f1e286]:
+                - link "The App" [ref=f1e287] [cursor=pointer]:
+                  - /url: /app
+              - listitem [ref=f1e288]:
+                - link "Buzz Pro" [ref=f1e289] [cursor=pointer]:
+                  - /url: /pro
+              - listitem [ref=f1e290]:
+                - link "Depot" [ref=f1e291] [cursor=pointer]:
+                  - /url: /marketplace
+              - listitem [ref=f1e292]:
+                - link "Payments" [ref=f1e293] [cursor=pointer]:
+                  - /url: /payments
+              - listitem [ref=f1e294]:
+                - link "Safety" [ref=f1e295] [cursor=pointer]:
+                  - /url: /safety
+          - navigation "Company" [ref=f1e296]:
+            - heading "Company" [level=2] [ref=f1e297]
+            - list [ref=f1e298]:
+              - listitem [ref=f1e299]:
+                - link "About" [ref=f1e300] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f1e301]:
+                - link "Careers" [ref=f1e302] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f1e303]:
+                - link "Contact" [ref=f1e304] [cursor=pointer]:
+                  - /url: /contact
+          - navigation "Help" [ref=f1e305]:
+            - heading "Help" [level=2] [ref=f1e306]
+            - list [ref=f1e307]:
+              - listitem [ref=f1e308]:
+                - link "Help Centre" [ref=f1e309] [cursor=pointer]:
+                  - /url: /help
+              - listitem [ref=f1e310]:
+                - link "Community guidelines" [ref=f1e311] [cursor=pointer]:
+                  - /url: /legal/community-guidelines
+              - listitem [ref=f1e312]:
+                - link "Safety guidelines" [ref=f1e313] [cursor=pointer]:
+                  - /url: /legal/safety-guidelines
+          - navigation "Also from Buzz" [ref=f1e314]:
+            - heading "Also from Buzz" [level=2] [ref=f1e315]
+            - list [ref=f1e316]:
+              - listitem [ref=f1e317]:
+                - link "Buzz Web" [ref=f1e318] [cursor=pointer]:
+                  - /url: /web
+                  - text: Buzz Web
+                  - generic [aria-hidden] [ref=f1e319]: ↗
+              - listitem [ref=f1e320]:
+                - link "Buzz Logistics" [ref=f1e321] [cursor=pointer]:
+                  - /url: /logistics
+                  - text: Buzz Logistics
+                  - generic [aria-hidden] [ref=f1e322]: ↗
+              - listitem [ref=f1e323]:
+                - link "Track a package" [ref=f1e324] [cursor=pointer]:
+                  - /url: /logistics/track
+                  - text: Track a package
+                  - generic [aria-hidden] [ref=f1e325]: ↗
+      - generic [ref=f1e326]:
+        - paragraph [ref=f1e327]: © 2026 Aether Jade Innovation
+        - list [ref=f1e328]:
+          - listitem [ref=f1e329]:
+            - link "Privacy" [ref=f1e330] [cursor=pointer]:
+              - /url: /legal/privacy
+          - listitem [ref=f1e331]:
+            - link "Terms" [ref=f1e332] [cursor=pointer]:
+              - /url: /legal/terms
+          - listitem [ref=f1e333]:
+            - link "Cookie policy" [ref=f1e334] [cursor=pointer]:
+              - /url: /legal/cookies
+        - list "Social accounts (to be confirmed)" [ref=f1e335]:
+          - listitem "Social account to be confirmed" [ref=f1e336]:
+            - generic [aria-hidden] [ref=f1e337]: "[ ]"
+            - generic [ref=f1e338]: "[social 1: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f1e339]:
+            - generic [aria-hidden] [ref=f1e340]: "[ ]"
+            - generic [ref=f1e341]: "[social 2: to be confirmed]"
+          - listitem "Social account to be confirmed" [ref=f1e342]:
+            - generic [aria-hidden] [ref=f1e343]: "[ ]"
+            - generic [ref=f1e344]: "[social 3: to be confirmed]"
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f1e350] [cursor=pointer]
+  - alert [ref=f1e354]

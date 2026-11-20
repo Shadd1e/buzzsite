@@ -4,7 +4,7 @@
  * opt-in, push; security updates have their own row and colour.
  * Truth rules: cooperative with agencies, never against the government;
  * Buzz is not an emergency service ("call 112"); do NOT claim alerts ring on
- * silent (unconfirmed). The headline is pending (§13).
+ * silent (unconfirmed).
  */
 
 export const safetyPage = {
@@ -15,7 +15,7 @@ export const safetyPage = {
   },
 
   hero: {
-    title: "[Safety headline]",
+    title: "Know what's happening on your street.",
     lede: "Buzz works with verified police and security agencies, and with people near you, to share safety alerts for the places you care about. You choose to turn alerts on, and you choose the areas.",
     cta: { label: "Join the waitlist", href: "/waitlist" },
     alert: {

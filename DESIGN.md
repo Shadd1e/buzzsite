@@ -164,7 +164,7 @@ One family. Personality comes from **weight contrast** (300 headlines against 50
 - Radius 20px, with the tail corner at 6px. Padding 11px 15px 9px. Max width 82% of the panel.
 - **Avatars are always shown on incoming messages.** Use real photos when available, otherwise initials on a colour picked from the person's name: `#F79009` (amber), `#0BA5EC` (sky), `#EE46BC` (pink), `#15B79E` (teal), `#6172F3` (indigo), `#DD6B20` (burnt orange). No red or green, because those mean safety and success (§2.2). Initials are `--ink-900` on all six (each passes 4.5:1). System senders (SunPay, Buzz, EMBA) use their own marks.
 - Variants: `in`, `out`, `system` (white with a 1.5px `--blue-600` border, e.g. SunPay escrow notices), `alert` (2px `--alert-600` border plus warning icon, for EMBA), `typing` (three dots).
-- Copy in bubbles sounds like real Nigerians texting. Light Pidgin is fine. Never use marketing language inside a bubble.
+- Copy in bubbles sounds like real Nigerians texting, in plain English. No Pidgin. Never use marketing language inside a bubble.
 
 ### Where bubbles appear (§5.2)
 
@@ -276,13 +276,13 @@ Follow `reference/homepage-template.png` closely.
 4. **Blue band:** "Finding professionals and handymen hasn't been any easier." + "Explore Pro Mode" light pill.
 5. **Feature rows** (alternating):
    - Lock illustration · "You control what you share." · Buzz ID copy · link
-   - **Phone mockup** showing an estate group chat, where an **EMBA alert drops in** from the top and loops · `[Safety headline: to be written]` · alert copy · link
+   - **Phone mockup** showing an estate group chat, where an **EMBA alert drops in** from the top and loops · "Know what's happening on your street." · alert copy · link
 6. **Full-bleed flowers photo** with "More people. Even less noise." rising on scroll.
 7. **Connections:** "All the right connections, from payments to delivery." SunPay + Buzz Logistics + dashed partner slots.
 8. Footer.
 
 ### The App `/app` (§9.2)
-- **Hero:** H1 "Chat like you always do. Share less of yourself." · convo: Tobi's "Mummy, I don land for Abuja" plus a voice note and a typing indicator.
+- **Hero:** H1 "Chat like you always do. Share less of yourself." · convo: Tobi's "Mum, I've landed in Abuja" plus a voice note and a typing indicator.
 - **Signature, a feature stage:** a sticky phone on the right while the left column scrolls through Chats → Buzz ID → BuzzDrop → Status. The phone screen **swaps to match each feature**. *Moment.*
 - **Bento** (cards allowed, each holds a live mini-UI): Groups (avatar stack), Status (24h ring with a red security-update ring beside it), Stickers & GIFs (sticker placeholders), Encryption (lock + "Not even Buzz can read them"), Buzz Web (QR + laptop).
 - **Buzz ID block:** `@adaeze.buzz` pill vs a struck-through phone number.
@@ -307,7 +307,7 @@ Follow `reference/homepage-template.png` closely.
 - `[Fees, currencies]` placeholder row. CTA band.
 
 ### Safety `/safety` (§9.6)
-- **Hero:** `[Safety headline]` · cooperative copy · an EMBA alert card + estate group reply.
+- **Hero:** "Know what's happening on your street." · cooperative copy · an EMBA alert card + estate group reply.
 - **Signature, an alert radius map:** an abstract street grid (SVG, city-like, not a real map). A pin drops, a **red radius ring expands**, and phone dots inside the ring light up with a mini alert while dots outside stay grey. *Moment.*
 - **How alerts work** as list rows: verified sources, only where it matters, your choice (opt-in), hard to miss (security updates have their own colour).
 - **Emergency band:** red-bordered "Buzz is not an emergency service. In an emergency, call 112."
@@ -481,7 +481,6 @@ From Impeccable, the frontend-design skill and Buzz's own rules. **Every item mu
 ## Open items (placeholders until confirmed) (§13)
 
 - Official logo and icon variants
-- Safety headline
 - Partner logos (Paystack etc.)
 - SunPay fees, currencies, dispute details beyond the 5-day window
 - Whether red EMBA alerts sound on silent

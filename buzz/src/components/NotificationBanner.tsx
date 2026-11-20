@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShieldAlert, Truck, WifiOff, type LucideIcon } from "lucide-react";
+import { ShieldAlert, Truck, WifiOff, X, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 /**
@@ -16,17 +16,24 @@ const tones: Record<BannerTone, { icon: LucideIcon; wrap: string; tile: string; 
   offline: { icon: WifiOff, wrap: "bg-warn-50 border-warn-700/20", tile: "bg-white text-warn-700", role: "status" },
 };
 
+const actionClass =
+  "inline-flex min-h-11 shrink-0 items-center rounded-full px-3 text-[14px] font-semibold text-blue-600 hover:bg-blue-50";
+
 export function NotificationBanner({
   tone,
   title,
   body,
   action,
+  onDismiss,
   className,
 }: {
   tone: BannerTone;
   title: string;
   body?: string;
-  action?: { label: string; href: string };
+  /** A link (href) or, inside an app shell like Buzz Web, a button (onClick) */
+  action?: { label: string; href?: string; onClick?: () => void };
+  /** Shows a close button */
+  onDismiss?: () => void;
   className?: string;
 }) {
   const t = tones[tone];
@@ -40,13 +47,25 @@ export function NotificationBanner({
         <p className={cn("text-[15px] font-semibold", tone === "offline" ? "text-warn-700" : "text-ink-900")}>{title}</p>
         {body && <p className={cn("text-[13px] leading-snug", tone === "offline" ? "text-warn-700" : "text-ink-700")}>{body}</p>}
       </div>
-      {action && (
-        <Link
-          href={action.href}
-          className="inline-flex min-h-11 shrink-0 items-center rounded-full px-3 text-[14px] font-semibold text-blue-600 hover:bg-blue-50"
-        >
+      {action?.href && (
+        <Link href={action.href} className={actionClass}>
           {action.label}
         </Link>
+      )}
+      {action?.onClick && !action.href && (
+        <button type="button" onClick={action.onClick} className={actionClass}>
+          {action.label}
+        </button>
+      )}
+      {onDismiss && (
+        <button
+          type="button"
+          onClick={onDismiss}
+          aria-label="Dismiss"
+          className="-mr-1 grid size-11 shrink-0 place-items-center rounded-full text-ink-500 hover:bg-ink-900/5 hover:text-ink-900"
+        >
+          <X aria-hidden="true" className="size-[18px]" strokeWidth={1.8} />
+        </button>
       )}
     </div>
   );

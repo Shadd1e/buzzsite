@@ -45,8 +45,9 @@ export function initials(name: string): string {
     .filter(Boolean);
   if (words.length === 0) return "?";
   // One word ("Mum", "Tobi") gets one initial, as chat apps do.
-  if (words.length === 1) return words[0][0].toUpperCase();
-  return (words[0][0] + words[words.length - 1][0]).toUpperCase();
+  const first = (w: string) => w.match(/[\p{L}\p{N}]/u)?.[0] ?? "";
+  if (words.length === 1) return first(words[0]).toUpperCase() || "?";
+  return (first(words[0]) + first(words[words.length - 1])).toUpperCase();
 }
 
 const sizeClass = {
