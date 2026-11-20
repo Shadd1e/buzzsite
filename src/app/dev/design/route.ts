@@ -6,7 +6,7 @@ import path from "node:path";
  * its section with a text fragment (#:~:text=…). Dev tooling only.
  */
 export async function GET() {
-  const text = await readFile(path.join(process.cwd(), "..", "DESIGN.md"), "utf8");
+  const text = await readFile(path.join(process.cwd(), "DESIGN.md"), "utf8");
   return new Response(text, {
     headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" },
   });

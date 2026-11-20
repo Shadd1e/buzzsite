@@ -1,9 +1,0 @@
-{
-  "name": "Buzz",
-  "short_name": "Buzz",
-  "description": "A connected ecosystem for everyday life.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#0B1D42"
-}

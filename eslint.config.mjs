@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Tooling and fixtures, not app code
+    ".claude/**",
+    ".impeccable/**",
+    ".playwright-mcp/**",
+    "test-data/**",
   ]),
 ]);
 

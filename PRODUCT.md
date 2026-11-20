@@ -47,7 +47,7 @@ Neighbouring products each hold one piece (WhatsApp has chat, Jiji and Jumia hav
 | Buzz admin console | `/admin` | admin.buzz.com (internal) | **Product** |
 | Buzz Web (chat) | `/web` | web.buzz.com | **Product** |
 
-Everything is **front end only** right now. Data comes from `/test-data` through a mock data layer that a real backend replaces later. The Next.js app lives in `buzz/`. The static HTML/JS site at the repo root (`index.html`, `app.js`, `*-pages.js`, `styles.css`) is the earlier review build, which the Next.js app replaces.
+Everything is **front end only** right now. Data comes from `/test-data` through a mock data layer that a real backend replaces later. The Next.js app lives at the repo root (`src/`, `public/`) and deploys to Vercel as a Next.js project. The earlier static HTML/JS review build was removed on 2026-11-20.
 
 ## Audience
 
