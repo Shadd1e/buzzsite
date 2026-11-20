@@ -27,50 +27,54 @@ export default function HomePage() {
 
   return (
     <>
-      {/* 1. Hero: inset photo, headline bottom-left, bubbles top-right */}
-      <section aria-labelledby="hero-title" className="container-page pt-2 md:pt-4">
-        <div className="relative isolate flex h-[calc(100svh-96px)] min-h-[600px] max-h-[760px] flex-col justify-end overflow-hidden rounded-panel md:h-[min(82vh,760px)] md:min-h-[600px]">
+      {/* 1. Hero: full-bleed photo, headline bottom-left, bubbles top-right.
+          The photo runs edge to edge (no radius, DESIGN.md §7 full-bleed);
+          the text and bubbles stay on the page container. */}
+      <section aria-labelledby="hero-title">
+        <div className="relative isolate h-[calc(100svh-72px)] min-h-[600px] max-h-[820px] overflow-hidden md:h-[min(86vh,820px)]">
           <Image
             src={hero.image.src}
             alt={hero.image.alt}
             fill
             priority
-            sizes="(min-width: 1240px) 1160px, calc(100vw - 40px)"
+            sizes="100vw"
             className="-z-10 object-cover object-[68%_0%] md:object-[70%_35%]"
           />
           <div aria-hidden="true" className="scrim absolute inset-0 -z-10" />
           {/* Extra bottom-up shade so the headline holds 3:1 over bright patches */}
           <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-3/5 bg-linear-to-t from-navy/55 to-transparent md:h-2/3 md:from-navy/50" />
 
-          {/* Phones: bubbles sit above the headline so the face stays clear.
-              Tablet and up: top-right, as in the template. */}
-          <div className="px-4 pb-2 max-sm:[&_[role=log]>div:nth-child(3)]:hidden sm:ml-auto sm:w-[340px] md:absolute md:top-8 md:right-8 md:w-[300px] md:p-0">
-            <Convo
-              messages={heroMessages}
-              panel={false}
-              glass
-              start="mount"
-              delay={950}
-              label={hero.convo.label}
-            />
-          </div>
+          <div className="container-page relative flex h-full flex-col justify-end">
+            {/* Phones: bubbles sit above the headline so the face stays clear.
+                Tablet and up: top-right, as in the template. */}
+            <div className="pb-2 max-sm:[&_[role=log]>div:nth-child(3)]:hidden sm:ml-auto sm:w-[340px] md:absolute md:top-10 md:right-10 md:w-[300px] md:p-0">
+              <Convo
+                messages={heroMessages}
+                panel={false}
+                glass
+                start="mount"
+                delay={950}
+                label={hero.convo.label}
+              />
+            </div>
 
-          <div className="p-6 pt-4 md:p-12">
-            <h1 id="hero-title" className="rise max-w-[11em] text-h1 text-white">
-              {hero.title}
-            </h1>
-            <p className="rise mt-4 max-w-[26em] text-lede text-white [--rise-delay:120ms]">
-              {hero.subline}*
-            </p>
-            <div className="rise mt-7 [--rise-delay:220ms]">
-              <ButtonLink href={hero.cta.href} variant="sky" size="lg">
-                {hero.cta.label}
-              </ButtonLink>
+            <div className="pt-4 pb-8 md:pb-14">
+              <h1 id="hero-title" className="rise max-w-[11em] text-h1 text-white">
+                {hero.title}
+              </h1>
+              <p className="rise mt-4 max-w-[26em] text-lede text-white [--rise-delay:120ms]">
+                {hero.subline}*
+              </p>
+              <div className="rise mt-7 [--rise-delay:220ms]">
+                <ButtonLink href={hero.cta.href} variant="sky" size="lg">
+                  {hero.cta.label}
+                </ButtonLink>
+              </div>
             </div>
           </div>
         </div>
         {/* 2. Disclaimer */}
-        <p className="mt-3 text-right text-small text-ink-500">* {home.disclaimer}</p>
+        <p className="container-page mt-3 text-right text-small text-ink-500">* {home.disclaimer}</p>
       </section>
 
       {/* 3. Connect: mist + live gradient, hands meet on scroll */}
