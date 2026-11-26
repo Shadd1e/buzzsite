@@ -145,12 +145,12 @@ export const logisticsPartners = {
   meta: {
     title: "Partner with Buzz Logistics",
     description:
-      "Deliver Depot orders with your own riders and your own per-km rates, and get paid as soon as each delivery is done. Apply online.",
+      "Deliver the orders Depot sellers and Buzz buyers place, as a logistics company or an individual rider. Your rates, paid after every delivery. Apply online.",
   },
 
   hero: {
-    title: "Deliver Depot orders with your riders and your rates.",
-    lede: "Buzz Logistics is run by partner companies. You set your price per km, register your own riders and get paid as soon as each delivery is done.",
+    title: "Deliver Depot orders on your terms.",
+    lede: "Businesses and sellers on Depot sell to buyers who chat, shop and pay in Buzz, and every order needs carrying. Logistics companies and individual riders take those deliveries, set their own price per km and get paid as soon as each one is done.",
     cta: { label: "Apply to partner", href: "/logistics/partners/apply" },
     convo: {
       label: "A logistics company owner asks Buzz Logistics about partnering",
@@ -165,12 +165,15 @@ export const logisticsPartners = {
   },
 
   why: {
-    title: "Why partner with Buzz",
+    title: "Why deliver with Buzz",
     rows: [
-      { title: "Orders from Depot", body: "People buy from sellers on Depot and choose delivery in the same app. Those orders go to partner companies like yours." },
+      { title: "A ready pool of orders", body: "Merchants, shops and businesses sell on Depot, and buyers check out right inside their chats. When a buyer picks delivery, the order goes to a partner or rider who covers that route. [Depot sellers, users and order volume: figures to be confirmed]" },
       { title: "Paid immediately", body: "Your share of each delivery is paid as soon as it's delivered. Buzz's share settles separately, immediately or two days later." },
       { title: "Your own rates", body: "You set your price per km. You can add charges for high-value, fragile or large parcels." },
-      { title: "Your own riders", body: "Register your riders in the partner portal and check them your way. Each one gets a rider code to sign in in the Buzz app." },
+      { title: "Batching built in", body: "Scan a second parcel while one is in hand and the Buzz app links them under one mother QR. One scan updates the whole batch, and you unlink each parcel as it's dropped." },
+      { title: "Scanning in the Buzz app", body: "Riders scan at pickup, checkpoints and delivery on their phone. No extra scanner to buy, and every scan updates the buyer's tracking page." },
+      { title: "Chat without swapping numbers", body: "Reach a receiver on Buzz when that's how they like to be contacted, so neither side gives out a phone number. Customer care handles everything else." },
+      { title: "One portal for the whole operation", body: "Register your riders and check them your way, then follow parcels, batches, rates, payouts and flags on your phone or computer. Individual riders get the same view of their own deliveries." },
     ],
     price: {
       title: "How a delivery is priced",

@@ -3,8 +3,10 @@
 import { createContext, useContext, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { DropdownMenu } from "radix-ui";
 import {
   Calculator,
+  ChevronDown,
   Flag,
   Layers,
   LayoutDashboard,
@@ -144,6 +146,7 @@ export function RiderShell({ children }: { children: ReactNode }) {
               {me.company && <span className="hidden truncate text-meta text-ink-500 lg:block">{me.company}</span>}
             </div>
             <TestDataRibbon placement="docked" />
+            <AccountMenu me={me} />
           </header>
 
           <main id="rider-main" className="flex-1 px-4 pt-6 pb-28 md:px-8 md:pt-8 md:pb-16">
@@ -206,6 +209,47 @@ function SidebarAccount({ me }: { me: RiderHome }) {
         Sign out
       </button>
     </div>
+  );
+}
+
+/** Phones: the sidebar is hidden and company riders have no More tab, so Sign out lives here */
+function AccountMenu({ me }: { me: RiderHome }) {
+  const { signOut } = useAccount();
+  return (
+    <DropdownMenu.Root>
+      <DropdownMenu.Trigger
+        aria-label={`Account: ${me.name}`}
+        className="flex h-11 items-center gap-1.5 rounded-full pr-2 pl-1 hover:bg-mist md:hidden"
+      >
+        <Avatar sender={{ name: me.name }} size="md" decorative />
+        <ChevronDown aria-hidden="true" className="size-4 text-ink-500" strokeWidth={1.8} />
+      </DropdownMenu.Trigger>
+      <DropdownMenu.Portal>
+        <DropdownMenu.Content
+          align="end"
+          sideOffset={8}
+          className="z-50 w-64 rounded-field border border-line bg-white p-1.5 shadow-float data-[state=open]:animate-dialog-in"
+        >
+          <div className="px-3 py-2.5">
+            <p className="text-[14px] font-semibold text-ink-900">{me.name}</p>
+            <p className="truncate text-meta text-ink-500">{me.kind === "individual" ? "Individual rider" : `Rider, ${me.company}`}</p>
+            {me.riderCode && (
+              <div className="mt-3 sm:hidden">
+                <Code value={me.riderCode} label="Rider code" size="sm" showLabel />
+              </div>
+            )}
+          </div>
+          <DropdownMenu.Separator className="my-1 h-px bg-line" />
+          <DropdownMenu.Item
+            onSelect={() => signOut()}
+            className="flex min-h-11 cursor-pointer items-center gap-2 rounded-tile px-3 text-[15px] text-ink-900 outline-none data-[highlighted]:bg-blue-50"
+          >
+            <LogOut aria-hidden="true" className="size-4" strokeWidth={1.8} />
+            Sign out
+          </DropdownMenu.Item>
+        </DropdownMenu.Content>
+      </DropdownMenu.Portal>
+    </DropdownMenu.Root>
   );
 }
 
