@@ -1,0 +1,1006 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "profiles": [
+    {
+      "accountId": "a2",
+      "phone": "+234 800 000 4521",
+      "area": "Lagos (Yaba and nearby)",
+      "vehicle": {
+        "type": "Motorbike",
+        "model": "Bajaj Boxer 150",
+        "year": 2022,
+        "plate": "TEST-482-KJA"
+      },
+      "documents": [
+        {
+          "name": "Vehicle licence",
+          "status": "approved",
+          "uploadedAt": "2026-10-09T10:00:00+01:00"
+        },
+        {
+          "name": "Proof of ownership",
+          "status": "approved",
+          "uploadedAt": "2026-10-09T10:05:00+01:00"
+        },
+        {
+          "name": "Rider's permit",
+          "status": "approved",
+          "uploadedAt": "2026-10-09T10:08:00+01:00"
+        },
+        {
+          "name": "Rider agreement (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-10-09T10:12:00+01:00"
+        },
+        {
+          "name": "Data protection addendum (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-10-09T10:13:00+01:00"
+        }
+      ],
+      "inspection": {
+        "at": "2026-10-16T11:00:00+01:00",
+        "score": 86,
+        "breakdown": [
+          {
+            "label": "Vehicle condition",
+            "score": 88
+          },
+          {
+            "label": "Papers",
+            "score": 92
+          },
+          {
+            "label": "Safety gear",
+            "score": 78
+          }
+        ]
+      },
+      "rating": 4.7,
+      "joined": "2026-10-17"
+    }
+  ],
+  "rates": [
+    {
+      "accountId": "a2",
+      "perKm": 160,
+      "buzzPercent": 3.0,
+      "modifiers": {
+        "fragile": 10,
+        "highValueOver500k": 5,
+        "oversize": 15
+      },
+      "agreedAt": "2026-10-17"
+    }
+  ],
+  "parcels": [
+    {
+      "trackingId": "BZT-KN2A-7Q4M",
+      "orderId": "DPT-640112",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "booked",
+      "deliveryType": "home",
+      "item": "Leather sandals",
+      "declaredValue": 18500,
+      "seller": "Steps by Ada",
+      "receiver": {
+        "name": "Bisi O.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Lekki)"
+      ],
+      "distanceKm": 21,
+      "pricing": {
+        "base": 3360,
+        "buzzPercent": 3.0,
+        "total": 3461
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T09:10:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN3B-8R5P",
+      "orderId": "DPT-640187",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "booked",
+      "deliveryType": "home",
+      "item": "Ceramic plates (set of 6)",
+      "declaredValue": 42000,
+      "seller": "Clay & Co.",
+      "receiver": {
+        "name": "Emeka U.",
+        "preferredContact": "phone",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Ikeja)",
+        "Lagos (Surulere)"
+      ],
+      "distanceKm": 17,
+      "pricing": {
+        "base": 2992,
+        "buzzPercent": 3.0,
+        "total": 3082
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-19T10:25:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN4C-9S6Q",
+      "orderId": "DPT-639904",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "in_transit",
+      "deliveryType": "home",
+      "item": "Phone case and charger",
+      "declaredValue": 9500,
+      "seller": "Gadget Hub NG",
+      "receiver": {
+        "name": "Tola A.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Ikoyi)"
+      ],
+      "distanceKm": 14,
+      "pricing": {
+        "base": 2240,
+        "buzzPercent": 3.0,
+        "total": 2307
+      },
+      "batchId": "MQ-KN7TR",
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T07:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:05:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "in_transit",
+          "label": "Linked to batch MQ-KN7TR",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:21:00+01:00",
+          "by": "rider",
+          "viaBatch": true,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN5D-2T7R",
+      "orderId": "DPT-639951",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "in_transit",
+      "deliveryType": "home",
+      "item": "Hair products bundle",
+      "declaredValue": 26000,
+      "seller": "Crown Beauty",
+      "receiver": {
+        "name": "Ngozi E.",
+        "preferredContact": "phone",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Lekki)"
+      ],
+      "distanceKm": 23,
+      "pricing": {
+        "base": 3680,
+        "buzzPercent": 3.0,
+        "total": 3790
+      },
+      "batchId": "MQ-KN7TR",
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T07:20:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:12:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "in_transit",
+          "label": "Batch MQ-KN7TR created on second scan",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:21:00+01:00",
+          "by": "rider",
+          "viaBatch": true,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN6E-3U8S",
+      "orderId": "DPT-639977",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "at_pickup_point",
+      "deliveryType": "pickup",
+      "item": "Kids' school bag",
+      "declaredValue": 15500,
+      "seller": "Little Steps",
+      "receiver": {
+        "name": "Femi K.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Surulere)"
+      ],
+      "distanceKm": 9,
+      "pricing": {
+        "base": 1440,
+        "buzzPercent": 3.0,
+        "total": 1483
+      },
+      "batchId": "MQ-KN7TR",
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T07:40:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:15:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "in_transit",
+          "label": "Linked to batch MQ-KN7TR",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:21:00+01:00",
+          "by": "rider",
+          "viaBatch": true,
+          "manualEntry": false
+        },
+        {
+          "status": "at_pickup_point",
+          "label": "Unlinked from MQ-KN7TR at the Surulere pickup point",
+          "city": "Lagos (Surulere)",
+          "at": "2026-11-19T10:02:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN7F-4V9T",
+      "orderId": "DPT-639812",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "out_for_delivery",
+      "deliveryType": "home",
+      "item": "Wireless earbuds",
+      "declaredValue": 38000,
+      "seller": "Gadget Hub NG",
+      "receiver": {
+        "name": "Ifeoma C.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Ikeja)",
+        "Lagos (Ajah)"
+      ],
+      "distanceKm": 31,
+      "pricing": {
+        "base": 4960,
+        "buzzPercent": 3.0,
+        "total": 5109
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-18T16:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-19T07:30:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "out_for_delivery",
+          "label": "Out for delivery",
+          "city": "Lagos (Ajah)",
+          "at": "2026-11-19T11:40:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ]
+    },
+    {
+      "trackingId": "BZT-KN8G-5W2U",
+      "orderId": "DPT-639701",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "delivered",
+      "deliveryType": "home",
+      "item": "Ankara fabric (6 yards)",
+      "declaredValue": 22000,
+      "seller": "Stitch by Tobi",
+      "receiver": {
+        "name": "Halima S.",
+        "preferredContact": "phone",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Surulere)"
+      ],
+      "distanceKm": 9,
+      "pricing": {
+        "base": 1440,
+        "buzzPercent": 3.0,
+        "total": 1483
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-18T15:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T07:05:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered. Delivery code verified",
+          "city": "Lagos (Surulere)",
+          "at": "2026-11-19T09:12:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ],
+      "proof": {
+        "photo": true,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "trackingId": "BZT-KN9H-6X3V",
+      "orderId": "DPT-639744",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "delivered",
+      "deliveryType": "home",
+      "item": "Rice cooker",
+      "declaredValue": 54000,
+      "seller": "HomeBase",
+      "receiver": {
+        "name": "Uche N.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Ikeja)",
+        "Lagos (Ikoyi)"
+      ],
+      "distanceKm": 24,
+      "pricing": {
+        "base": 3840,
+        "buzzPercent": 3.0,
+        "total": 3955
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-18T17:30:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-19T07:45:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered. Delivery code verified",
+          "city": "Lagos (Ikoyi)",
+          "at": "2026-11-19T11:05:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ],
+      "proof": {
+        "photo": true,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "trackingId": "BZT-KM2J-7Y4W",
+      "orderId": "DPT-639390",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "failed_attempt",
+      "deliveryType": "home",
+      "item": "Office chair",
+      "declaredValue": 89000,
+      "seller": "WorkWell",
+      "receiver": {
+        "name": "Segun A.",
+        "preferredContact": "phone",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Ikeja)",
+        "Lagos (Lekki)"
+      ],
+      "distanceKm": 29,
+      "pricing": {
+        "base": 5336,
+        "buzzPercent": 3.0,
+        "total": 5496
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-17T12:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-18T08:30:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "failed_attempt",
+          "label": "Attempt 1: nobody home. Buyer asked to reschedule",
+          "city": "Lagos (Lekki)",
+          "at": "2026-11-18T14:10:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ],
+      "attempts": 1,
+      "nextStep": "Second attempt booked for 20 Nov"
+    },
+    {
+      "trackingId": "BZT-KM3K-8Z5X",
+      "orderId": "DPT-638902",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "delivered",
+      "deliveryType": "home",
+      "item": "Perfume gift set",
+      "declaredValue": 31000,
+      "seller": "Crown Beauty",
+      "receiver": {
+        "name": "Amaka P.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Lekki)"
+      ],
+      "distanceKm": 22,
+      "pricing": {
+        "base": 3520,
+        "buzzPercent": 3.0,
+        "total": 3626
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-17T09:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-17T11:00:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered. Delivery code verified",
+          "city": "Lagos (Lekki)",
+          "at": "2026-11-17T13:40:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ],
+      "proof": {
+        "photo": true,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "trackingId": "BZT-KM4L-9A6Y",
+      "orderId": "DPT-638877",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "disputed",
+      "deliveryType": "home",
+      "item": "Smart watch",
+      "declaredValue": 61000,
+      "seller": "Gadget Hub NG",
+      "receiver": {
+        "name": "Dayo F.",
+        "preferredContact": "phone",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Ikeja)",
+        "Lagos (Surulere)"
+      ],
+      "distanceKm": 16,
+      "pricing": {
+        "base": 2560,
+        "buzzPercent": 3.0,
+        "total": 2637
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-16T10:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-16T13:00:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered. Delivery code verified",
+          "city": "Lagos (Surulere)",
+          "at": "2026-11-16T15:20:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "disputed",
+          "label": "Buyer opened a dispute",
+          "city": "Lagos (Surulere)",
+          "at": "2026-11-17T09:30:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        }
+      ],
+      "proof": {
+        "photo": true,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "trackingId": "BZT-KM5M-2B7Z",
+      "orderId": "DPT-638650",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "status": "delivered",
+      "deliveryType": "home",
+      "item": "Bluetooth speaker",
+      "declaredValue": 27500,
+      "seller": "Gadget Hub NG",
+      "receiver": {
+        "name": "Kemi L.",
+        "preferredContact": "buzz",
+        "verificationQuestion": "Last two digits of your order ID"
+      },
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Ikeja)"
+      ],
+      "distanceKm": 12,
+      "pricing": {
+        "base": 1920,
+        "buzzPercent": 3.0,
+        "total": 1978
+      },
+      "batchId": null,
+      "timeline": [
+        {
+          "status": "booked",
+          "label": "Order placed on Depot",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-15T09:00:00+01:00",
+          "by": "Buzz",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "picked_up",
+          "label": "Collected from seller",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-15T10:30:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered. Typed in by hand: QR label torn",
+          "city": "Lagos (Ikeja)",
+          "at": "2026-11-15T12:15:00+01:00",
+          "by": "rider",
+          "viaBatch": false,
+          "manualEntry": true
+        }
+      ],
+      "proof": {
+        "photo": true,
+        "deliveryCodeVerified": true
+      }
+    }
+  ],
+  "batches": [
+    {
+      "id": "MQ-KN7TR",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Surulere)",
+        "Lagos (Ikoyi)",
+        "Lagos (Lekki)"
+      ],
+      "autoLinked": true,
+      "status": "in_transit",
+      "lastScan": {
+        "city": "Lagos (Yaba)",
+        "at": "2026-11-19T08:21:00+01:00"
+      },
+      "openedAt": "2026-11-19T08:21:00+01:00",
+      "children": [
+        {
+          "trackingId": "BZT-KN4C-9S6Q",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-KN5D-2T7R",
+          "status": "in_transit",
+          "unlinkedAt": null
+        },
+        {
+          "trackingId": "BZT-KN6E-3U8S",
+          "status": "at_pickup_point",
+          "unlinkedAt": "Lagos (Surulere)",
+          "unlinkedTime": "2026-11-19T10:02:00+01:00"
+        }
+      ],
+      "history": [
+        {
+          "event": "Mother QR MQ-KN7TR created on the second scan (BZT-KN5D-2T7R)",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:21:00+01:00"
+        },
+        {
+          "event": "BZT-KN4C-9S6Q linked",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:21:00+01:00"
+        },
+        {
+          "event": "BZT-KN6E-3U8S linked",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:24:00+01:00"
+        },
+        {
+          "event": "Mother scanned: 3 parcels updated to In transit",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-19T08:40:00+01:00"
+        },
+        {
+          "event": "BZT-KN6E-3U8S unlinked: available for pickup",
+          "city": "Lagos (Surulere)",
+          "at": "2026-11-19T10:02:00+01:00"
+        }
+      ]
+    },
+    {
+      "id": "MQ-KM4QX",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "route": [
+        "Lagos (Yaba)",
+        "Lagos (Lekki)"
+      ],
+      "autoLinked": true,
+      "status": "delivered",
+      "lastScan": {
+        "city": "Lagos (Lekki)",
+        "at": "2026-11-17T13:40:00+01:00"
+      },
+      "openedAt": "2026-11-17T11:00:00+01:00",
+      "closedAt": "2026-11-17T13:40:00+01:00",
+      "children": [
+        {
+          "trackingId": "BZT-KM3K-8Z5X",
+          "status": "delivered",
+          "unlinkedAt": "Lagos (Lekki)",
+          "unlinkedTime": "2026-11-17T13:40:00+01:00"
+        }
+      ],
+      "history": [
+        {
+          "event": "Mother QR MQ-KM4QX created on the second scan",
+          "city": "Lagos (Yaba)",
+          "at": "2026-11-17T11:00:00+01:00"
+        },
+        {
+          "event": "BZT-KM3K-8Z5X unlinked: delivered",
+          "city": "Lagos (Lekki)",
+          "at": "2026-11-17T13:40:00+01:00"
+        },
+        {
+          "event": "Batch closed: no parcels left",
+          "city": "Lagos (Lekki)",
+          "at": "2026-11-17T13:40:00+01:00"
+        }
+      ]
+    }
+  ],
+  "payouts": [
+    {
+      "accountId": "a2",
+      "trackingId": "BZT-KN9H-6X3V",
+      "deliveredAt": "2026-11-19T11:05:00+01:00",
+      "distanceKm": 24,
+      "earnings": 3840,
+      "buzzShare": 115,
+      "status": "paid",
+      "paidAt": "2026-11-19T11:05:00+01:00"
+    },
+    {
+      "accountId": "a2",
+      "trackingId": "BZT-KN8G-5W2U",
+      "deliveredAt": "2026-11-19T09:12:00+01:00",
+      "distanceKm": 9,
+      "earnings": 1440,
+      "buzzShare": 43,
+      "status": "paid",
+      "paidAt": "2026-11-19T09:12:00+01:00"
+    },
+    {
+      "accountId": "a2",
+      "trackingId": "BZT-KM3K-8Z5X",
+      "deliveredAt": "2026-11-17T13:40:00+01:00",
+      "distanceKm": 22,
+      "earnings": 3520,
+      "buzzShare": 106,
+      "status": "paid",
+      "paidAt": "2026-11-17T13:40:00+01:00"
+    },
+    {
+      "accountId": "a2",
+      "trackingId": "BZT-KM4L-9A6Y",
+      "deliveredAt": "2026-11-16T15:20:00+01:00",
+      "distanceKm": 16,
+      "earnings": 2560,
+      "buzzShare": 77,
+      "status": "held",
+      "paidAt": null
+    },
+    {
+      "accountId": "a2",
+      "trackingId": "BZT-KM5M-2B7Z",
+      "deliveredAt": "2026-11-15T12:15:00+01:00",
+      "distanceKm": 12,
+      "earnings": 1920,
+      "buzzShare": 58,
+      "status": "paid",
+      "paidAt": "2026-11-15T12:15:00+01:00"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "DSP-3112",
+      "trackingId": "BZT-KM4L-9A6Y",
+      "orderId": "DPT-638877",
+      "partnerId": "a2",
+      "reason": "Buyer says the watch box was crushed",
+      "openedAt": "2026-11-17T09:30:00+01:00",
+      "windowEndsAt": "2026-11-22T09:30:00+01:00",
+      "status": "awaiting_partner",
+      "amount": 61000,
+      "faultAssigned": null,
+      "decision": null,
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Dayo F.",
+            "text": "The box was crushed on one side when it arrived",
+            "at": "2026-11-17T09:30:00+01:00"
+          },
+          {
+            "from": "seller",
+            "name": "Gadget Hub NG",
+            "text": "It left our shop in perfect condition, we have photos",
+            "at": "2026-11-17T11:10:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Payment is held while this dispute is reviewed.",
+            "at": "2026-11-17T11:12:00+01:00"
+          }
+        ],
+        "photos": 3,
+        "deliveryCodeVerified": true
+      }
+    },
+    {
+      "id": "DSP-3071",
+      "trackingId": "BZT-KM5M-2B7Z",
+      "orderId": "DPT-638650",
+      "partnerId": "a2",
+      "reason": "Buyer says it arrived late",
+      "openedAt": "2026-11-15T16:00:00+01:00",
+      "windowEndsAt": "2026-11-20T16:00:00+01:00",
+      "status": "resolved",
+      "amount": 27500,
+      "faultAssigned": null,
+      "decision": "release",
+      "evidence": {
+        "chat": [
+          {
+            "from": "buyer",
+            "name": "Kemi L.",
+            "text": "It came two hours after the time I was told",
+            "at": "2026-11-15T16:00:00+01:00"
+          },
+          {
+            "from": "system",
+            "name": "SunPay",
+            "text": "Released to the seller: delivered within the booked day.",
+            "at": "2026-11-16T10:00:00+01:00"
+          }
+        ],
+        "photos": 0,
+        "deliveryCodeVerified": true
+      }
+    }
+  ],
+  "flags": [
+    {
+      "id": "FLG-310",
+      "type": "manual_entry",
+      "label": "Tracking ID typed in by hand at delivery (QR label torn)",
+      "trackingId": "BZT-KM5M-2B7Z",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "raisedAt": "2026-11-15T12:15:00+01:00",
+      "status": "open"
+    },
+    {
+      "id": "FLG-302",
+      "type": "off_route",
+      "label": "Scan 9 km off the expected route",
+      "trackingId": "BZT-KM3K-8Z5X",
+      "partnerId": "a2",
+      "riderId": "a2",
+      "raisedAt": "2026-11-17T12:30:00+01:00",
+      "status": "reviewed"
+    }
+  ]
+}

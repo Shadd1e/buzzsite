@@ -14,9 +14,10 @@ export const logisticsNav = {
     { href: "/logistics/how-it-works", label: "How it works" },
     { href: "/logistics/coverage", label: "Coverage" },
     { href: "/logistics/partners", label: "Partners" },
+    { href: "/logistics/signup", label: "Deliver with us" },
   ],
   actions: [
-    { href: "/logistics/portal/login", label: "Partner sign in", variant: "outline" as const },
+    { href: "/logistics/portal/login", label: "Sign in", variant: "outline" as const },
     { href: "/waitlist", label: "Join the waitlist", variant: "solid" as const, external: true },
   ],
 };
@@ -79,9 +80,23 @@ export const logisticsHome = {
     },
     partner: {
       title: "I run a logistics company",
-      body: "Deliver Depot orders, set your own per-km rates and get paid as soon as each delivery is done.",
-      action: { label: "Partner with Buzz", href: "/logistics/partners" },
+      body: "Deliver Depot orders with your riders, set your own per-km rates and get paid as soon as each delivery is done.",
+      action: { label: "Apply to partner", href: "/logistics/partners/apply" },
+      more: { label: "How partnering works", href: "/logistics/partners" },
       points: ["Depot delivery volume", "Paid immediately per delivery", "Your own rates"],
+    },
+    rider: {
+      title: "I ride on my own",
+      body: "Deliver with your own vehicle, set your own per-km rate and get paid after each delivery. We inspect your vehicle before you start.",
+      action: { label: "Sign up as a rider", href: "/logistics/riders/apply" },
+      signIn: { label: "Rider sign in", href: "/logistics/portal/login?rider=individual" },
+      points: ["Your own rate per km", "Paid after each delivery", "Scan in the Buzz app"],
+    },
+    // Company riders never sign up: their company registers them
+    companyRider: {
+      before: "Ride for a logistics company? Your company registers you and gives you your codes.",
+      label: "What to ask your company",
+      href: "/logistics/signup?as=company-rider",
     },
   },
 
@@ -200,7 +215,12 @@ export const logisticsPartners = {
     title: "Ready to deliver for Depot?",
     body: "The application takes you through each step and explains why we ask.",
     action: { label: "Apply to partner", href: "/logistics/partners/apply" },
-    secondary: { label: "Partner sign in", href: "/logistics/portal/login" },
+    secondary: { label: "Partner sign in", href: "/logistics/portal/login?as=partner#partner" },
+  },
+  // Not a company? Other ways in (one ecosystem: every path is linked)
+  otherPaths: {
+    rider: { before: "Riding on your own instead?", label: "Sign up as an individual rider", href: "/logistics/riders/apply" },
+    companyRider: { before: "Ride for a partner company?", label: "Your company registers you", href: "/logistics/signup?as=company-rider" },
   },
 } as const;
 
@@ -263,17 +283,117 @@ export const logisticsTrack = {
 };
 
 /**
- * Partner sign in copy (DESIGN.md §10.1): email + password + 2FA code, with
- * a side note that riders sign in in the Buzz app. Front end only: there is
+ * Sign in copy (DESIGN.md §10.1). Riders first: a rider with a partner
+ * company (company code + rider code) or an individual rider (rider code +
+ * password, or Buzz ID confirmed in the Buzz app). Partner staff sign in
+ * lower down the page with email + password + 2FA. Front end only: there is
  * no auth service yet, so sign-in is simulated and says so.
  */
 export const logisticsLogin = {
   meta: {
-    title: "Partner sign in",
-    description: "Sign in to the Buzz Logistics partner portal to manage riders, parcels, batches and payouts.",
+    title: "Sign in",
+    description: "Riders and logistics partners sign in to Buzz Logistics here.",
   },
-  title: "Partner sign in",
-  lede: "For approved logistics partners. Manage your riders, parcels, batches and payouts.",
+  title: "Rider sign in",
+  lede: "See your deliveries, batches and earnings.",
+  partnerJump: { prompt: "Partner staff?", label: "Sign in here" },
+  // Sign up lives on its own page; company riders never sign up (their company registers them)
+  riderSignup: { prompt: "New rider on your own?", label: "Sign up", href: "/logistics/riders/apply" },
+  companyRiderHelp: { prompt: "Ride for a company and don't have codes?", label: "Ask your company", href: "/logistics/signup?as=company-rider" },
+  partnerSignup: { prompt: "New logistics company?", label: "Apply to partner", href: "/logistics/partners/apply" },
+  // Drop the photo at this path (public/). The panel stays Buzz blue until it exists.
+  photo: {
+    src: "/images/logistics/rider-sign-in.jpg",
+    alt: "A dispatch rider in a helmet and riding gloves on his motorbike in Abuja",
+    pill: "Ride on your own schedule",
+  },
+  riderKinds: {
+    legend: "How do you ride?",
+    company: "I ride with a partner",
+    individual: "I ride on my own",
+  },
+  company: {
+    intro: "Use the codes your company gave you when they registered you.",
+    companyCode: { label: "Company code", help: "Starts with BZL-C-" },
+    riderCode: { label: "Rider code", help: "Starts with R-" },
+    submit: "Sign in",
+    errors: {
+      companyCode: "Enter your company code. It starts with BZL-C.",
+      riderCode: "Enter your rider code. It starts with R-.",
+    },
+  },
+  individual: {
+    methods: { label: "Sign in with", code: "Rider code", buzz: "Buzz ID" },
+    riderCode: { label: "Rider code", help: "Starts with BZL-I-" },
+    password: { label: "Password" },
+    submit: "Sign in",
+    or: "or",
+    buzzButton: "Sign in with Buzz ID",
+    useCode: "Use your rider code instead",
+    forgot: {
+      label: "Forgot your password?",
+      body: "You can sign in with your Buzz ID instead. To reset your password, contact the Buzz partner team.",
+      useBuzz: "Sign in with Buzz ID",
+      contact: { label: "Contact the partner team", href: "/contact" },
+    },
+    pendingHint: "Still waiting for your inspection? You don't have a rider code yet. Sign in with your Buzz ID.",
+    errors: {
+      riderCode: "Enter your rider code. It starts with BZL-I.",
+      password: "Enter your password.",
+    },
+    buzz: {
+      label: "Buzz ID",
+      placeholder: "@yourname",
+      help: "We'll send a sign-in request to the Buzz app on your phone.",
+      submit: "Send request to my phone",
+      format: "A Buzz ID is @ followed by 3 to 30 letters, numbers, dots or underscores, like @kelechi.rides.",
+      waitingTitle: "Check your phone",
+      waitingBody: "Open the Buzz app and tap Yes, it's me. If {id} has a rider account, the request is waiting there.",
+      expiresIn: "The request ends in {time}.",
+      expired: "The request ended before it was confirmed. Send a new one.",
+      resend: "Send a new request",
+      cancel: "Use a different Buzz ID",
+      // Bubbles that stand in for the app's prompt
+      promptFrom: "Buzz",
+      prompt: "Sign-in request for Buzz Logistics on a web browser. Is this you?",
+      promptYes: "Yes, it's me",
+      promptNo: "No",
+      simulate: "Simulate tapping Yes in the app (test)",
+      noAccount: "Test build: no rider account uses this Buzz ID, so no phone would get the request.",
+    },
+  },
+  riderOutcomes: {
+    invalid: "Those codes don't match a rider. Check both and try again.",
+    invalidIndividual: "That rider code and password don't match. Check both and try again.",
+    attemptsLeft: "{n} tries left before sign in locks for 15 minutes.",
+    attemptsLeftOne: "1 try left before sign in locks for 15 minutes.",
+    locked: "Too many wrong tries. For your security, sign in with this rider code is locked until {time} WAT.",
+    notVerified: "Your company registered you but hasn't finished verifying you. Ask them to complete it, then sign in.",
+    inactive: "This rider code isn't active. Your company may have deactivated it. Contact them.",
+    otherKind: {
+      individual: "That's an individual rider code.",
+      company_rider: "That's a company rider code.",
+    },
+    switchTo: {
+      individual: "Sign in as a rider on your own",
+      company_rider: "Sign in as a rider with a partner company",
+    },
+  },
+  chat: {
+    label: "Example conversation between a rider and Buzz",
+    rider: "Morning. Signed in, heading to the Ikeja hub now.",
+    buzz: "You have 6 parcels to collect there today.",
+    batch: "Mother QR created. 2 parcels linked.",
+    riderLater: "Scanning the rest as I pick them up.",
+  },
+  partner: {
+    title: "Partner sign in",
+    body: "For staff who manage a logistics company's riders, parcels and payouts.",
+    open: "Sign in as partner staff",
+    // A static Buzz note beside the form (the page's one motion moment is the rider chat above)
+    note: "Partner accounts sign in in two steps: your password, then a 6-digit code from your authenticator app.",
+    noteFrom: "Buzz Logistics",
+  },
   fields: {
     email: { label: "Work email", placeholder: "you@company.com" },
     password: { label: "Password" },
@@ -283,24 +403,98 @@ export const logisticsLogin = {
     signIn: "Continue",
     verify: "Sign in",
     back: "Use a different email",
-    codeIntro: "Enter the 6-digit code from your authenticator app for",
+    codeTitle: "Enter your 6-digit code",
+    codeIntro: "Open your authenticator app and enter the code for",
+    lostDevice: "Lost your authenticator? Ask your company's super admin, or contact the Buzz partner team.",
+    testCode: "Test build: every 2FA code is 123456. A test account fills it in for you.",
   },
   errors: {
     email: "Enter your work email, like you@company.com.",
     password: "Enter your password.",
     code: "Enter the 6 digits from your authenticator app. Codes change every 30 seconds.",
   },
-  forgot: { label: "Forgot your password?", href: "/contact" },
-  test: "Test build: there's no sign-in service yet. Any email and password work, and the code is 123456.",
+  forgot: {
+    label: "Forgot your password?",
+    body: "Ask your company's super admin to help you reset it. If you're the super admin, contact the Buzz partner team.",
+    contact: { label: "Contact the partner team", href: "/contact" },
+  },
+  test: "Test build: there's no sign-in service yet. Every test password is Buzz-test-2026 and every 2FA code is 123456.",
   wrongCode: "That code didn't work. Check your authenticator app and enter the newest code.",
-  success: {
-    title: "You're signed in",
-    body: "The partner portal is still being built. When it's ready, you'll land on your overview here.",
-    action: { label: "Back to Buzz Logistics", href: "/logistics" },
+  outcomes: {
+    invalid: "That email and password don't match an account. Check both and try again.",
+    // {n} and {time} are filled in by the form (copy crosses to a client component, so no functions)
+    attemptsLeft: "{n} tries left before the account locks for 15 minutes.",
+    attemptsLeftOne: "1 try left before the account locks for 15 minutes.",
+    locked: "Too many wrong passwords. For your security this account is locked until {time} WAT. Ask your super admin if you're stuck.",
+    noAccess: "This account can't sign in. It was removed, or the invite hasn't been accepted yet. Ask your company's super admin.",
+    codeExpired: "That sign-in attempt has ended (too many wrong codes, or more than 5 minutes passed). Enter your password again.",
+    codeLeft: "{n} tries left.",
+    codeLeftOne: "1 try left.",
+    individualEmail: "This email belongs to an individual rider. Sign in as a rider at the top of this page.",
   },
-  riders: {
-    title: "Are you a rider?",
-    body: "Riders sign in in the Buzz app with their company code and rider code: open Buzz, go to Me, then Logistics partners.",
+  // Riders and pending accounts coming back from the rider area or review page
+  riderNotices: {
+    account_signed_out: "You've signed out.",
+    account_expired: "You were signed out after 30 minutes without activity. Sign in again to carry on.",
+    account_changed:
+      "Your account changed since you signed in, so we signed you out. Sign in again. If your rider code was deactivated, contact your company.",
   },
-  apply: { text: "Not a partner yet?", label: "See how to become a partner", href: "/logistics/partners" },
+  notices: {
+    expired: "You were signed out after 30 minutes without activity. Sign in to carry on where you were.",
+    signed_out: "You've signed out.",
+    no_access: "Your account no longer has access to this portal. Ask your company's super admin.",
+  },
+  accounts: {
+    title: "Test build: use a test account",
+    use: "Use",
+    // Partner list: one click checks the password and fills in the 2FA code
+    signIn: "Sign in",
+  },
+};
+
+/** Riders and pending accounts after sign in: review status page and rider area */
+export const logisticsAccount = {
+  review: {
+    meta: { title: "Account review" },
+    title: "Your account is being reviewed",
+    intro: {
+      company: "{company} is applying to be a Buzz Logistics partner. The full portal opens once your inspection passes.",
+      individual: "Your rider dashboard opens once the inspection of your vehicle and papers passes.",
+    },
+    stepsLabel: "Where your review is",
+    steps: {
+      received: "Application received",
+      documents: "Documents checked",
+      booked: "Inspection booked",
+      passed: "Inspection passed",
+      live: "Account live",
+    },
+    receivedOn: "Received {date}.",
+    checkedOn: "Checked {date}.",
+    checking: "We're checking the documents you uploaded.",
+    notBooked: "No inspection booked yet. The partner team will contact you.",
+    reschedule: "Reschedule",
+    score: "Score: {score} out of 100.",
+    scoreLater: "Your score shows here after the inspection.",
+    live: {
+      company: "Once it passes, your company code arrives by email and the full portal opens.",
+      individual: "Once it passes, you get your individual rider code and password for the Buzz app.",
+    },
+    inspectedTitle: "What we inspect",
+    inspected: {
+      company: ["Your offices", "Your hubs", "Your fleet"],
+      individual: ["Your vehicle", "The vehicle papers you uploaded"],
+    },
+    contact: { before: "Questions about your review?", label: "Contact the Buzz partner team", href: "/contact" },
+    dialog: {
+      title: "Move your inspection?",
+      description: "Pick a new time. Times are WAT.",
+      slotsLabel: "Available times",
+      confirm: "Move inspection",
+      cancel: "Keep current time",
+      pick: "Pick a time first.",
+    },
+    moved: "Inspection moved to {date}.",
+    error: "We couldn't load your review. Refresh the page to try again.",
+  },
 };

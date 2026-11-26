@@ -16,9 +16,10 @@ export function Input({
       className={cn(
         "block h-13 w-full rounded-field border-[1.5px] bg-white px-4 text-[16px] text-ink-900",
         "placeholder:text-ink-500 transition-[border-color,box-shadow] duration-(--dur-1) ease-out",
-        // Keyboard and mouse focus both get the global 3px sky ring (§12); the
-        // border also turns blue so the active field reads at a glance.
-        "hover:border-ink-500 focus:border-blue-600 focus:outline-3 focus:outline-offset-3 focus:outline-sky-400",
+        // Keyboard and mouse focus both get the global 3px sky ring (§12). The
+        // border keeps its colour: a blue border inside the ring read as a
+        // heavy double outline.
+        "hover:border-ink-500 focus:outline-3 focus:outline-offset-3 focus:outline-sky-400",
         "disabled:cursor-not-allowed disabled:bg-mist disabled:text-ink-500 disabled:hover:border-line-strong",
         // Read-only: white with a dashed border (you can select and copy it).
         // Disabled: grey fill, muted text (not available right now).

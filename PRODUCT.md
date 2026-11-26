@@ -43,7 +43,7 @@ Neighbouring products each hold one piece (WhatsApp has chat, Jiji and Jumia hav
 |---|---|---|---|
 | Marketing site | `/` | buzz.com | **Brand** |
 | Logistics public site | `/logistics` | logistics.buzz.com | **Brand** (lighter) |
-| Logistics partner portal | `/logistics/portal` | logistics.buzz.com/portal | **Product** |
+| Logistics portal (partners and individual riders) | `/logistics/portal` | logistics.buzz.com/portal | **Product** |
 | Buzz admin console | `/admin` | admin.buzz.com (internal) | **Product** |
 | Buzz Web (chat) | `/web` | web.buzz.com | **Product** |
 
@@ -54,6 +54,7 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 - **Everyday Nigerians**, mostly on **Android phones**, often on slow or metered data. Ages 18–45. Comfortable with WhatsApp, Instagram and TikTok.
 - **Sellers, landlords, handymen and professionals** who want customers without giving out their personal number.
 - **Logistics companies** (domestic and international within Africa) that want Depot delivery volume.
+- **Individual riders** who own a vehicle and want to deliver Depot orders on their own, without a company.
 - **Buzz staff** (support, finance, partner managers) using the admin console.
 - **Potential partners, investors and press**, who visit to understand who Buzz is.
 
@@ -61,7 +62,8 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 
 - **Consumers** reach the marketing site mostly on Android phones, often on slow or metered mobile data. They already know WhatsApp, Instagram and TikTok. The app isn't in the stores yet, so their only action is to join the waitlist.
 - **Buyers tracking a parcel** use the logistics public site without the app. They come with a tracking ID, or scan a QR code with the camera.
-- **Logistics partners** use the portal to onboard (a guided flow ending in a booked virtual meeting), register riders, print thermal QR labels, batch parcels under a mother QR and track payouts. Their riders scan in the Buzz app, not on the website.
+- **Logistics partners** use the portal to onboard (a guided flow ending in a booked virtual meeting), register riders, print thermal QR labels, follow batches (mother QR) and track payouts. Their riders scan in the Buzz app, not on the website.
+- **Individual riders** apply on the website, pass a vehicle inspection, then scan in the Buzz app. They use the portal on their phone or a computer to see their deliveries, batches, rates and payouts. The phone view is the main view for them; the computer view shows more detail.
 - **Buzz staff** (support, finance, partner managers) use the admin console to approve partners, settle disputes and act on audit flags.
 - **Buzz Web users** pair a computer by scanning a QR code with their phone, then chat on a larger screen.
 - **Partners, investors and press** visit to understand who Buzz is.
@@ -70,7 +72,7 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 
 - **Marketing site:** explain Buzz in under a minute, earn trust, get people onto the waitlist.
 - **Logistics public:** let anyone track a parcel without the app, and show partners how to join.
-- **Partner portal:** let a logistics company manage riders, parcels, batches, rates and payouts quickly.
+- **Logistics portal:** let a logistics company manage riders, parcels, batches, rates and payouts quickly, and let an individual rider see their own deliveries, batches, rates and payouts.
 - **Admin console:** let Buzz staff approve partners, resolve disputes and watch for problems.
 - **Buzz Web:** chat on a computer like on the phone, with delivery updates surfacing as priority.
 
@@ -131,14 +133,19 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 
 ## Key terminology (use exactly)
 
-Buzz, Buzz ID, BuzzDrop, Depot (not "shop"), Pro Mode, Pro ID, Storefront, Business Centre, Showcase, Creator Toolbox, SunPay, escrow, EMBA alert, security update, Buzz Logistics, logistics partner, rider, company code, rider code, tracking ID, pickup code, delivery code, mother QR (batch), Buzz Web, Lite view, Creator view, Me tab.
+Buzz, Buzz ID, BuzzDrop, Depot (not "shop"), Pro Mode, Pro ID, Storefront, Business Centre, Showcase, Creator Toolbox, SunPay, escrow, EMBA alert, security update, Buzz Logistics, logistics partner, individual rider, rider, company code, rider code, individual rider code, tracking ID, pickup code, delivery code, mother QR (batch), Buzz Web, Lite view, Creator view, Me tab.
 
 ## Logistics rules (confirmed)
 
 - **Depot-only at launch.** Coverage: intrastate, interstate, international (Africa).
-- **Partner onboarding:** a guided flow, one step at a time, each step explained: company details plus confirmation they're registered and verified → download documents, sign, upload → more details (coverage, capacity, services) → **pick a date for a virtual meeting**. Then inspection with a **score** → approval → the partner receives a **company code**.
-- **Riders:** partners register their own riders on the website and set their own verification steps. Buzz only requires the company to confirm each rider is verified. Each rider gets a **rider code**. Riders sign in **in the Buzz app** (a "Logistics partners" entry at the bottom of the menu) with **company code + rider code**. Riders can't self-register. After sign-in, a **rider view** appears at the top of their Me tab and a **scanner icon** on their main screen. Partners can **deactivate** riders, and history is kept.
-- **Parcel flow:** Depot order ID → partner enters the ID at pickup, which generates a QR label (thermal sticker) → pickup scan (GPS, "In transit") → checkpoint scans → **mother QR batching** (auto-linked; scan the mother to update all children; unlink a child at its stop → "Available for pickup") → buyer chooses **home delivery or pickup** → proof of delivery.
+- **Three ways to sign in on the website.** Riders come first: a **rider with a partner company** signs in with **company code + rider code**; an **individual rider** signs in with **rider code + password**, or with their **Buzz ID** (Buzz sends a request to the Buzz app and they confirm it there). **Partner sign in** (company staff: email + password + 2FA) sits lower on the page. Never describe a partner as "running hubs": a partner is a registered logistics company, and a company rider is affiliated with one.
+- **Partner onboarding:** a guided flow, one step at a time, each step explained: company details plus confirmation they're registered and verified → download documents, sign, upload → more details (coverage, capacity, services) → **pick a date for a virtual meeting**. Then a **physical inspection** of offices, hubs and fleet with a **score** → approval → the partner receives a **company code**.
+- **Individual rider onboarding:** the same guided style: personal details and ID → vehicle details and papers (the rider chooses which papers to upload; no fixed list) → documents (download, sign, upload) → own per-km rate → **pick a date for a vehicle inspection**. Then the inspection with a **score** → approval → the rider receives an **individual rider code**. An individual rider works like a one-person partner: own rates, paid directly after each delivery, Buzz takes its percentage.
+- **Pending review:** every new account (company or individual) stays **pending** until the physical inspection passes. While pending, signing in shows only a **review status page**: documents received, inspection booked (date, reschedule), inspection passed, account live. The full dashboard opens after approval. Nothing pending can scan or take parcels.
+- **Riders:** partners register their own riders on the website and set their own verification steps. Buzz only requires the company to confirm each rider is verified. Each rider gets a **rider code**. Riders scan **in the Buzz app** (a "Logistics partners" entry at the bottom of the menu) and can also sign in on the website (above) to see their deliveries, batches and earnings. Company riders sign in with the **company code + rider code** their company gives them, and can't self-register: anyone who tries to sign up as a rider with a company is told to ask their company to register them. Individual riders apply through their own flow above, and are given their own **individual rider code and password**; they can also sign in with their **Buzz ID**. A company rider whose company hasn't finished verifying them, or who was deactivated, can't sign in and is told to contact their company. After sign-in, a **rider view** appears at the top of their Me tab and a **scanner icon** on their main screen. Partners can **deactivate** riders, and history is kept.
+- **Parcel flow:** Depot order ID → partner enters the ID at pickup, which generates a QR label (thermal sticker) → pickup scan (GPS, "In transit") → checkpoint scans → **mother QR batching** → buyer chooses **home delivery or pickup** → proof of delivery.
+- **Mother QR (parent and child):** every parcel keeps its own tracking ID. When a rider scans a second parcel while one is already in hand, Buzz creates a **new mother code** and links both; every parcel scanned after that joins the same mother. Scanning the mother updates every linked child. The rider **removes (unlinks) each child** in the app when it's delivered or dropped at its stop (→ "Available for pickup"). A mother with no children left closes. Batches change **only in the rider's app**; the website shows them read-only, with a full history of every link and unlink (who, when, where).
+- **History:** the portal keeps a detailed history of every parcel, batched or not: each scan, link, unlink, status change and location, with time and device. Goods in transit show their last known location, status and the batch they're in.
 - **Codes:** home delivery needs a **4-digit delivery code** from the buyer. For pickup by someone else, the buyer enters that person's name, which **generates a new one-time pickup code**. The name shown must match the person collecting, and the hub checks ID. Only the latest code works, and it expires with the storage window.
 - **Failed delivery:** up to 2 attempts, each with a reason → buyer gets options (reschedule, change address, switch to pickup) → then nearest pickup point.
 - **Pickup storage:** free for 5 days (reminders on day 1, 3, 5) → partner-set daily fee → return to seller after 10 days.

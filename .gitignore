@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# tool output: browser screenshots and logs, design-tool caches
+/.playwright-mcp/
+/.impeccable/*
+!/.impeccable/config.json

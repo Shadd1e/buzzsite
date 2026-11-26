@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "rider-sign-in.html"
+        ],
+        "createdAt": "2026-11-25T20:55:52.442Z",
+        "reason": "Reference mock supplied by the user; the app keeps the Buzz system font stack (user chose 'Keep Buzz fonts + blue')"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "rider-sign-in.html"
+        ],
+        "createdAt": "2026-11-25T20:55:52.846Z",
+        "reason": "Reference mock supplied by the user; the app keeps the Buzz system font stack (user chose 'Keep Buzz fonts + blue')"
+      }
+    ]
+  }
+}

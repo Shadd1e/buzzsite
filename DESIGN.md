@@ -374,7 +374,24 @@ Privacy, Terms, Community guidelines, Safety guidelines, Marketplace terms, Paym
 7. **Review and submit**, then a success screen: what happens next (inspection, score, company code by email).
 Save and continue later. Errors are inline per field.
 
-**Partner sign in `/logistics/portal/login`**: email + password + 2FA code. A side note says: "Riders sign in in the Buzz app with their company code and rider code."
+**Sign up `/logistics/signup`** starts with a choice: apply as a **logistics company** or as an **individual rider** (two plain paths, no claims about hubs or fleets). A third option, **"I ride for a logistics company"**, has no form: it explains that the company registers its riders in the partner portal and gives them a company code and rider code, links to rider sign in, and offers the partner application to share with a company that isn't a partner yet. The individual rider form repeats this in a short note before step 1. The sign-in page links to both sign-up paths.
+
+**Individual rider apply `/logistics/riders/apply`**: same guided pattern as Apply (one step per screen, progress bar, a "why we ask" line, save and continue later):
+1. **About you:** full name, phone, email, home address, ID type and number.
+2. **Your vehicle:** type (motorbike, car, van, bicycle), plate number, model and year, papers the rider chooses to upload (add a paper: name it, e.g. "Vehicle licence", then upload; add as many as they like), photo upload slots.
+3. **Documents:** download (Rider agreement, Data protection addendum) → sign → upload slots with file state.
+4. **Rates:** your per-km rate, "Buzz adds 3% (adjustable per agreement)".
+5. **Book your vehicle inspection:** date and time picker (WAT) with the inspection address `[placeholder]`.
+6. **Review and submit**, then success: what happens next (inspection, score, then your individual rider code and password for the Buzz app).
+
+**Sign in `/logistics/portal/login`** (layout from `rider-sign-in.html`, 2026-11-25, in Buzz type and blue): a mist page with a **white rider card** (28px panel radius, 1px --line, 48px padding) beside a **photo panel** of the same height. Allowed under §8.2 rule 3: the form stands apart from the page.
+- Card: headline "Rider sign in" (light, 38–48px) and "See your deliveries, batches and earnings." Under it, the two kinds of rider are a **segmented control** (radio group on a --mist track, the chosen side raised in white): "I ride with a partner" / "I ride on my own". Kept in `?rider=company|individual`.
+- **Partner:** company code + rider code, stacked, with "Starts with…" help text. **On my own:** rider code + password (show/hide), Sign in with "Forgot your password?" on the right, an "or" rule, then a full-width outlined **"Sign in with Buzz ID"** button that switches to the Buzz ID step → "Check your phone" with the app's prompt drawn as Buzz bubbles, a 2-minute countdown, and (test build) a "Simulate tapping Yes in the app (test)" button. The Buzz ID step never reveals whether a Buzz ID has an account.
+- The card ends with a ruled line: "Partner staff? **Sign in here**", which opens the partner card and focuses its email field.
+- Photo panel: a plain `<img>` (`/images/logistics/rider-sign-in.jpg`), navy until it loads, a white "Ride on your own schedule" pill bottom-left. The orchestrated moment: a short rider conversation (glass bubbles) pops in over the photo, top-right.
+- **Partner sign in** is a matching white card below, with a still Buzz note bubble beside it: "Sign in as partner staff" opens email + password + 2FA in place. It opens by itself for visitors coming from the portal (`?next=`, `?reason=`) or links with `?as=partner#partner`.
+
+**Review status `/logistics/portal/review`**: what a pending account sees after sign in. A short headline ("Your account is being reviewed"), a vertical checklist (Application received ✓ · Documents checked · Inspection booked, with date and **Reschedule** · Inspection passed, with score · Account live), what's being inspected (company: offices, hubs, fleet; individual: your vehicle and papers), and a contact line for the partner team. No other navigation. Works well at 390px.
 
 ### Partner portal (`/logistics/portal`, product register) (§10.2)
 
@@ -383,9 +400,9 @@ Layout: left sidebar (collapsible; becomes a bottom bar on mobile) + top bar (co
 | Screen | Contents |
 |---|---|
 | **Overview** | Today tiles (To collect · In transit · At pickup points · Failed attempts · Flags), payouts today (immediate) and pending Buzz share (T+2), a "Needs attention" list (flags, storage windows ending, disputes), recent scan feed as small system bubbles |
-| **Parcels** | Table: tracking ID, order ID, status pill, route, rider, batch, last scan, delivery type. Filters as chips, search by any code. Row → **detail drawer**: timeline, city map, codes (masked pickup/delivery codes: "Code verified ✓", never the code itself), receiver (name + preferred contact only), proof of delivery, actions: reprint label, assign rider, **Call receiver** (final step only) |
+| **Parcels** | Table (cards on mobile): tracking ID, order ID, status pill, route, rider, batch, last scan, delivery type. Filters as chips, search by any code. Row → **detail drawer** (full screen on mobile): full history (every scan, link to/unlink from a mother, status change, with time, place and device), current location and status while in transit, timeline, city map, codes (masked pickup/delivery codes: "Code verified ✓", never the code itself), receiver (name + preferred contact only), proof of delivery, actions: reprint label, assign rider, **Call receiver** (final step only) |
 | **Generate label** | Enter Depot order ID → preview the thermal label (4×6 and 3×2 toggle) with QR, tracking ID and destination city → Print |
-| **Batches (mother QR)** | List of batches: mother code, rider, route, child count, status. Detail: **mother card** with child parcels listed below (each with status). Unlinked children show "Available for pickup at [stop]". Auto-link is explained in one line. |
+| **Batches (mother QR)** | List of batches: mother code, rider, route, child count (linked / total), status, opened, last scan. Filters: open / closed. Detail: **mother card** (code, rider, route, last location and time) with child parcels below (each with its own tracking ID and status; unlinked ones show where and when, e.g. "Unlinked at Ibadan, 14:20 · Available for pickup"), and a **history** timeline of every event: mother created (second scan), child linked, mother scanned (children updated), child unlinked, batch closed, each with who, time and place. Read-only: batches change only in the rider's app, and one line explains how auto-linking works. |
 | **Riders** | Tabs: Active / Pending verification / Deactivated. Table: name, rider code (copy), phone (masked), vehicle, today's scans, rating, status |
 | **Add rider** | Steps: rider details → **your company's verification checklist** (configurable: the company adds its own checks, e.g. ID, guarantor, licence) → confirm "We have verified this rider" → rider code generated, with instructions to send: "Open Buzz → Me → Logistics partners → enter company code + rider code" |
 | **Rider profile** | Details, verification record, recent scans map, ratings, **Deactivate rider** (danger, with a confirm dialog; history is kept) |
@@ -396,6 +413,14 @@ Layout: left sidebar (collapsible; becomes a bottom bar on mobile) + top bar (co
 | **Flags** | Off-route, wrong-company scan, 48h silence, delivered without code, manual entry, each with a review action |
 | **Team** | Staff accounts with roles (owner, dispatcher, finance, viewer) |
 | **Company** | Profile, company code, documents, inspection score with breakdown |
+
+**Who sees what (built).** Both staff levels run the day: parcels (assign rider, reprint label, call receiver at the final step), Generate label, batches, riders, stops, hubs, rates, disputes (respond), flags (review with a note) and Company. **Payouts and statements, Team and the activity log are super admin only.** On phones the bottom bar holds Overview, Parcels, Batches, Riders and More (the rest). Hubs & pickup points is a list grouped by city for now; the map is still to come.
+
+**Individual rider portal.** Same shell and register, with a smaller menu: **Overview** (today: to collect, in transit, delivered, earnings today; my active batch; recent scans) · **Parcels** (only theirs) · **Batches** (only theirs) · **Rates** · **Payouts** · **Disputes & claims** · **Flags** (about them) · **Profile** (details, individual rider code, vehicle, documents, inspection score). No Riders, Add rider, Team or Generate label. The top bar shows the rider's name and individual rider code instead of company. Designed phone-first: on 390px the bottom bar holds Overview, Parcels, Batches, Payouts and More. Lives at `/logistics/rider`.
+
+**Company riders** use the same rider portal with the screens about them only: Overview (no earnings tile), Parcels, Batches, Flags and Profile (their company, rider code and the checks the company completed). Their company handles rates, pay and disputes, so those screens explain that instead.
+
+**Mobile and desktop.** Every portal screen works at 390px. Desktop shows more columns and detail (tables, drawers, maps beside lists); mobile shows the same facts as cards with the most important first, and full-screen detail views.
 
 ### Buzz admin console (`/admin`, internal, product register) (§10.3)
 

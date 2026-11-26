@@ -32,7 +32,7 @@ export function ConfirmDialog({
   confirmLabel: string;
   cancelLabel?: string;
   tone?: "danger" | "default";
-  /** May return a promise; the button shows loading until it settles */
+  /** May return a promise; the button shows loading until it settles. Throw to keep the dialog open. */
   onConfirm: () => void | Promise<void>;
   /** Extra fields, e.g. a reason select */
   children?: ReactNode;
@@ -44,6 +44,9 @@ export function ConfirmDialog({
     try {
       await onConfirm();
       onOpenChange(false);
+    } catch {
+      // The action failed (e.g. a required reason is missing). Stay open so
+      // the person can fix it; the caller shows the error.
     } finally {
       setBusy(false);
     }

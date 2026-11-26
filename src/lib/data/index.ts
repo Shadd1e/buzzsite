@@ -4,5 +4,8 @@
  */
 export * from "./logistics";
 export * from "./web";
+export * from "./portal";
+export * from "./rider";
+export * from "./onboarding";
 export * from "./format";
 export type * from "./types";

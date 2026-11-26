@@ -25,7 +25,7 @@ export function Typing({
         aria-label={`${sender.name} is typing`}
         className={cn(
           "flex h-10 items-center gap-1 rounded-card rounded-bl-tag px-4",
-          dark ? "bg-dark-bubble-in" : glass ? "glass" : "bg-white",
+          dark ? "bg-dark-bubble-in" : glass ? "glass border border-line shadow-hair" : "bg-white",
           onTint && !glass && !dark && "shadow-hair",
         )}
       >

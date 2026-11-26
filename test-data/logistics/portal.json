@@ -1,0 +1,1924 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "now": "2026-11-19T13:00:00+01:00",
+  "testCredentials": {
+    "password": "Buzz-test-2026",
+    "code": "123456"
+  },
+  "staff": [
+    {
+      "id": "u1",
+      "partnerId": "p1",
+      "name": "Babatunde Adeyemi",
+      "email": "ops@swiftline.test",
+      "role": "super_admin",
+      "status": "active",
+      "addedAt": "2026-10-02",
+      "lastSignInAt": "2026-11-19T08:02:00+01:00"
+    },
+    {
+      "id": "u2",
+      "partnerId": "p1",
+      "name": "Chiamaka Obi",
+      "email": "chiamaka.obi@swiftline.test",
+      "role": "manager",
+      "status": "active",
+      "addedAt": "2026-10-04",
+      "lastSignInAt": "2026-11-19T07:41:00+01:00"
+    },
+    {
+      "id": "u3",
+      "partnerId": "p1",
+      "name": "Ifeanyi Uzor",
+      "email": "ifeanyi.uzor@swiftline.test",
+      "role": "manager",
+      "status": "active",
+      "addedAt": "2026-10-20",
+      "lastSignInAt": "2026-11-18T18:15:00+01:00"
+    },
+    {
+      "id": "u4",
+      "partnerId": "p1",
+      "name": "Grace Akpan",
+      "email": "grace.akpan@swiftline.test",
+      "role": "manager",
+      "status": "invited",
+      "addedAt": "2026-11-18",
+      "lastSignInAt": null
+    },
+    {
+      "id": "u5",
+      "partnerId": "p1",
+      "name": "Femi Ojo",
+      "email": "femi.ojo@swiftline.test",
+      "role": "manager",
+      "status": "removed",
+      "addedAt": "2026-10-05",
+      "lastSignInAt": "2026-11-10T16:30:00+01:00",
+      "removedAt": "2026-11-11T10:05:00+01:00"
+    },
+    {
+      "id": "u6",
+      "partnerId": "p2",
+      "name": "Halima Yusuf",
+      "email": "admin@kwikhaul.test",
+      "role": "super_admin",
+      "status": "active",
+      "addedAt": "2026-10-11",
+      "lastSignInAt": "2026-11-19T09:12:00+01:00"
+    },
+    {
+      "id": "u7",
+      "partnerId": "p2",
+      "name": "Tobi Martins",
+      "email": "tobi.martins@kwikhaul.test",
+      "role": "manager",
+      "status": "active",
+      "addedAt": "2026-10-12",
+      "lastSignInAt": "2026-11-19T08:55:00+01:00"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "a1",
+      "accountType": "company",
+      "name": "Musa Garba",
+      "email": "ops@greenline.test",
+      "company": "Greenline Dispatch",
+      "applicationId": "APP-295",
+      "status": "pending_review",
+      "riderCode": null,
+      "buzzId": null,
+      "createdAt": "2026-11-12",
+      "review": {
+        "receivedAt": "2026-11-15T13:00:00+01:00",
+        "documents": "checked",
+        "documentsCheckedAt": "2026-11-18T10:00:00+01:00",
+        "inspection": {
+          "at": "2026-11-24T10:00:00+01:00",
+          "place": "Your offices, hubs and fleet, at the address on your application"
+        },
+        "score": null
+      }
+    },
+    {
+      "id": "a2",
+      "accountType": "individual",
+      "name": "Kelechi Nwosu",
+      "email": "kelechi.nwosu@rider.test",
+      "company": null,
+      "applicationId": null,
+      "status": "active",
+      "riderCode": "BZL-I-2087",
+      "buzzId": "@kelechi.rides",
+      "createdAt": "2026-10-09"
+    },
+    {
+      "id": "a3",
+      "accountType": "individual",
+      "name": "Aisha Bello",
+      "email": "aisha.bello@rider.test",
+      "company": null,
+      "applicationId": null,
+      "status": "pending_review",
+      "riderCode": null,
+      "buzzId": "@aisha.bello",
+      "createdAt": "2026-11-17",
+      "review": {
+        "receivedAt": "2026-11-17T09:30:00+01:00",
+        "documents": "received",
+        "documentsCheckedAt": null,
+        "inspection": {
+          "at": "2026-11-26T14:00:00+01:00",
+          "place": "[Inspection address]"
+        },
+        "score": null
+      }
+    }
+  ],
+  "riderActivity": [
+    {
+      "riderId": "r1",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 2,
+          "failed": 2,
+          "onTime": 2,
+          "scans": 9,
+          "km": 36,
+          "hoursOnline": 6.4
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 11,
+          "km": 36,
+          "hoursOnline": 9.3
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 0,
+          "failed": 0,
+          "onTime": 0,
+          "scans": 3,
+          "km": 0,
+          "hoursOnline": 0
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 3,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 10,
+          "km": 26,
+          "hoursOnline": 5.6
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 3,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 7,
+          "km": 22,
+          "hoursOnline": 9.0
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 3,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 7,
+          "km": 27,
+          "hoursOnline": 9.1
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 3,
+          "failed": 1,
+          "onTime": 3,
+          "scans": 10,
+          "km": 39,
+          "hoursOnline": 9.6
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 7,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 16,
+          "km": 52,
+          "hoursOnline": 6.7
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 5,
+          "failed": 1,
+          "onTime": 4,
+          "scans": 12,
+          "km": 48,
+          "hoursOnline": 7.2
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 4,
+          "km": 8,
+          "hoursOnline": 6.9
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 3,
+          "failed": 2,
+          "onTime": 2,
+          "scans": 12,
+          "km": 52,
+          "hoursOnline": 8.9
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 12,
+          "km": 53,
+          "hoursOnline": 6.6
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 3,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 10,
+          "km": 27,
+          "hoursOnline": 6.1
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 3,
+          "km": 10,
+          "hoursOnline": 7.5
+        }
+      ]
+    },
+    {
+      "riderId": "r2",
+      "days": [
+        {
+          "date": "2026-11-11",
+          "delivered": 9,
+          "failed": 1,
+          "onTime": 8,
+          "scans": 20,
+          "km": 70,
+          "hoursOnline": 6.5
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 14,
+          "failed": 1,
+          "onTime": 12,
+          "scans": 30,
+          "km": 117,
+          "hoursOnline": 8.6
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 9,
+          "failed": 0,
+          "onTime": 9,
+          "scans": 20,
+          "km": 57,
+          "hoursOnline": 8.2
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 12,
+          "failed": 2,
+          "onTime": 10,
+          "scans": 28,
+          "km": 81,
+          "hoursOnline": 6.7
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 6,
+          "failed": 0,
+          "onTime": 6,
+          "scans": 16,
+          "km": 46,
+          "hoursOnline": 7.0
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 10,
+          "failed": 0,
+          "onTime": 10,
+          "scans": 24,
+          "km": 63,
+          "hoursOnline": 8.4
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 11,
+          "failed": 1,
+          "onTime": 10,
+          "scans": 24,
+          "km": 80,
+          "hoursOnline": 10.2
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 13,
+          "failed": 0,
+          "onTime": 13,
+          "scans": 28,
+          "km": 100,
+          "hoursOnline": 6.3
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 27,
+          "km": 39,
+          "hoursOnline": 7.1
+        }
+      ]
+    },
+    {
+      "riderId": "r3",
+      "days": [
+        {
+          "date": "2026-11-09",
+          "delivered": 4,
+          "failed": 1,
+          "onTime": 4,
+          "scans": 12,
+          "km": 58,
+          "hoursOnline": 6.0
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 8,
+          "km": 51,
+          "hoursOnline": 7.0
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 3,
+          "scans": 8,
+          "km": 54,
+          "hoursOnline": 8.3
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 10,
+          "km": 73,
+          "hoursOnline": 5.5
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 6,
+          "failed": 0,
+          "onTime": 3,
+          "scans": 14,
+          "km": 97,
+          "hoursOnline": 8.7
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 3,
+          "failed": 2,
+          "onTime": 2,
+          "scans": 12,
+          "km": 70,
+          "hoursOnline": 7.4
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 5,
+          "km": 12,
+          "hoursOnline": 6.3
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 2,
+          "failed": 2,
+          "onTime": 2,
+          "scans": 9,
+          "km": 62,
+          "hoursOnline": 8.3
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 4,
+          "failed": 3,
+          "onTime": 3,
+          "scans": 14,
+          "km": 84,
+          "hoursOnline": 10.0
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 8,
+          "failed": 0,
+          "onTime": 8,
+          "scans": 18,
+          "km": 127,
+          "hoursOnline": 7.3
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 6,
+          "km": 51,
+          "hoursOnline": 8.5
+        }
+      ]
+    },
+    {
+      "riderId": "r4",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 8,
+          "km": 180,
+          "hoursOnline": 9.0
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 8,
+          "km": 186,
+          "hoursOnline": 9.7
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 0,
+          "failed": 0,
+          "onTime": 0,
+          "scans": 2,
+          "km": 0,
+          "hoursOnline": 0
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 7,
+          "km": 257,
+          "hoursOnline": 6.7
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 5,
+          "km": 218,
+          "hoursOnline": 7.3
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 5,
+          "km": 200,
+          "hoursOnline": 9.0
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 1,
+          "failed": 1,
+          "onTime": 1,
+          "scans": 7,
+          "km": 235,
+          "hoursOnline": 8.6
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 3,
+          "scans": 11,
+          "km": 431,
+          "hoursOnline": 10.1
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 0,
+          "scans": 5,
+          "km": 110,
+          "hoursOnline": 6.1
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 0,
+          "failed": 0,
+          "onTime": 0,
+          "scans": 1,
+          "km": 0,
+          "hoursOnline": 0
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 10,
+          "km": 441,
+          "hoursOnline": 6.1
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 4,
+          "km": 254,
+          "hoursOnline": 7.1
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 2,
+          "failed": 0,
+          "onTime": 2,
+          "scans": 4,
+          "km": 238,
+          "hoursOnline": 8.9
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 14,
+          "km": 124,
+          "hoursOnline": 6.7
+        }
+      ]
+    },
+    {
+      "riderId": "r6",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 4,
+          "failed": 1,
+          "onTime": 3,
+          "scans": 14,
+          "km": 43,
+          "hoursOnline": 8.4
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 2,
+          "failed": 1,
+          "onTime": 2,
+          "scans": 9,
+          "km": 29,
+          "hoursOnline": 8.8
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 1,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 5,
+          "km": 12,
+          "hoursOnline": 6.3
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 12,
+          "km": 51,
+          "hoursOnline": 7.5
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 6,
+          "failed": 0,
+          "onTime": 6,
+          "scans": 16,
+          "km": 69,
+          "hoursOnline": 5.9
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 5,
+          "failed": 3,
+          "onTime": 4,
+          "scans": 20,
+          "km": 66,
+          "hoursOnline": 9.7
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 13,
+          "km": 49,
+          "hoursOnline": 8.1
+        }
+      ]
+    },
+    {
+      "riderId": "r7",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 6,
+          "failed": 4,
+          "onTime": 5,
+          "scans": 20,
+          "km": 93,
+          "hoursOnline": 5.9
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 7,
+          "failed": 1,
+          "onTime": 6,
+          "scans": 19,
+          "km": 65,
+          "hoursOnline": 8.5
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 8,
+          "failed": 0,
+          "onTime": 8,
+          "scans": 17,
+          "km": 69,
+          "hoursOnline": 6.1
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 10,
+          "failed": 0,
+          "onTime": 10,
+          "scans": 21,
+          "km": 67,
+          "hoursOnline": 5.8
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 10,
+          "failed": 1,
+          "onTime": 10,
+          "scans": 26,
+          "km": 75,
+          "hoursOnline": 9.5
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 9,
+          "failed": 2,
+          "onTime": 7,
+          "scans": 25,
+          "km": 75,
+          "hoursOnline": 6.6
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 10,
+          "failed": 1,
+          "onTime": 9,
+          "scans": 24,
+          "km": 78,
+          "hoursOnline": 9.1
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 7,
+          "failed": 3,
+          "onTime": 7,
+          "scans": 23,
+          "km": 83,
+          "hoursOnline": 5.7
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 6,
+          "failed": 2,
+          "onTime": 5,
+          "scans": 18,
+          "km": 71,
+          "hoursOnline": 8.3
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 4,
+          "failed": 1,
+          "onTime": 4,
+          "scans": 13,
+          "km": 46,
+          "hoursOnline": 6.9
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 8,
+          "failed": 0,
+          "onTime": 8,
+          "scans": 16,
+          "km": 73,
+          "hoursOnline": 7.6
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 8,
+          "failed": 2,
+          "onTime": 8,
+          "scans": 22,
+          "km": 87,
+          "hoursOnline": 7.4
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 7,
+          "failed": 1,
+          "onTime": 7,
+          "scans": 18,
+          "km": 70,
+          "hoursOnline": 8.5
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 27,
+          "km": 34,
+          "hoursOnline": 7.0
+        }
+      ]
+    },
+    {
+      "riderId": "r8",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 10,
+          "failed": 0,
+          "onTime": 8,
+          "scans": 22,
+          "km": 94,
+          "hoursOnline": 9.8
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 7,
+          "failed": 0,
+          "onTime": 6,
+          "scans": 16,
+          "km": 63,
+          "hoursOnline": 6.3
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 3,
+          "failed": 2,
+          "onTime": 3,
+          "scans": 14,
+          "km": 35,
+          "hoursOnline": 9.5
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 9,
+          "failed": 0,
+          "onTime": 9,
+          "scans": 19,
+          "km": 64,
+          "hoursOnline": 8.1
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 10,
+          "failed": 1,
+          "onTime": 8,
+          "scans": 23,
+          "km": 83,
+          "hoursOnline": 10.3
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 6,
+          "failed": 1,
+          "onTime": 6,
+          "scans": 17,
+          "km": 59,
+          "hoursOnline": 6.2
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 8,
+          "failed": 3,
+          "onTime": 7,
+          "scans": 23,
+          "km": 105,
+          "hoursOnline": 6.2
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 7,
+          "failed": 2,
+          "onTime": 6,
+          "scans": 19,
+          "km": 71,
+          "hoursOnline": 5.7
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 8,
+          "failed": 0,
+          "onTime": 8,
+          "scans": 20,
+          "km": 61,
+          "hoursOnline": 8.3
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 1,
+          "scans": 9,
+          "km": 34,
+          "hoursOnline": 9.2
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 11,
+          "failed": 0,
+          "onTime": 9,
+          "scans": 22,
+          "km": 99,
+          "hoursOnline": 8.2
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 10,
+          "failed": 2,
+          "onTime": 10,
+          "scans": 25,
+          "km": 107,
+          "hoursOnline": 10.0
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 11,
+          "failed": 0,
+          "onTime": 10,
+          "scans": 26,
+          "km": 104,
+          "hoursOnline": 8.8
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 4,
+          "failed": 0,
+          "onTime": 4,
+          "scans": 23,
+          "km": 28,
+          "hoursOnline": 9.3
+        }
+      ]
+    },
+    {
+      "riderId": "r9",
+      "days": [
+        {
+          "date": "2026-11-06",
+          "delivered": 7,
+          "failed": 0,
+          "onTime": 6,
+          "scans": 16,
+          "km": 72,
+          "hoursOnline": 6.8
+        },
+        {
+          "date": "2026-11-07",
+          "delivered": 7,
+          "failed": 1,
+          "onTime": 6,
+          "scans": 19,
+          "km": 78,
+          "hoursOnline": 7.8
+        },
+        {
+          "date": "2026-11-08",
+          "delivered": 4,
+          "failed": 1,
+          "onTime": 3,
+          "scans": 14,
+          "km": 36,
+          "hoursOnline": 8.1
+        },
+        {
+          "date": "2026-11-09",
+          "delivered": 4,
+          "failed": 1,
+          "onTime": 4,
+          "scans": 13,
+          "km": 40,
+          "hoursOnline": 8.4
+        },
+        {
+          "date": "2026-11-10",
+          "delivered": 3,
+          "failed": 2,
+          "onTime": 2,
+          "scans": 14,
+          "km": 46,
+          "hoursOnline": 7.6
+        },
+        {
+          "date": "2026-11-11",
+          "delivered": 8,
+          "failed": 0,
+          "onTime": 7,
+          "scans": 20,
+          "km": 60,
+          "hoursOnline": 5.6
+        },
+        {
+          "date": "2026-11-12",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 14,
+          "km": 50,
+          "hoursOnline": 8.5
+        },
+        {
+          "date": "2026-11-13",
+          "delivered": 8,
+          "failed": 1,
+          "onTime": 6,
+          "scans": 20,
+          "km": 79,
+          "hoursOnline": 7.6
+        },
+        {
+          "date": "2026-11-14",
+          "delivered": 7,
+          "failed": 1,
+          "onTime": 5,
+          "scans": 16,
+          "km": 83,
+          "hoursOnline": 7.6
+        },
+        {
+          "date": "2026-11-15",
+          "delivered": 3,
+          "failed": 0,
+          "onTime": 3,
+          "scans": 8,
+          "km": 31,
+          "hoursOnline": 5.7
+        },
+        {
+          "date": "2026-11-16",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 12,
+          "km": 38,
+          "hoursOnline": 7.5
+        },
+        {
+          "date": "2026-11-17",
+          "delivered": 7,
+          "failed": 3,
+          "onTime": 5,
+          "scans": 22,
+          "km": 86,
+          "hoursOnline": 8.5
+        },
+        {
+          "date": "2026-11-18",
+          "delivered": 7,
+          "failed": 0,
+          "onTime": 6,
+          "scans": 17,
+          "km": 55,
+          "hoursOnline": 5.7
+        },
+        {
+          "date": "2026-11-19",
+          "delivered": 5,
+          "failed": 0,
+          "onTime": 5,
+          "scans": 15,
+          "km": 42,
+          "hoursOnline": 6.2
+        }
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "id": "s-r1-1",
+      "riderId": "r1",
+      "seq": 1,
+      "kind": "hub",
+      "place": "Swiftline Ikeja Hub",
+      "city": "Lagos (Ikeja)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T07:59:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r1-2",
+      "riderId": "r1",
+      "seq": 2,
+      "kind": "pickup",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-J5MT-7RE6",
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T08:30:00+01:00",
+      "doneAt": "2026-11-19T08:35:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r1-3",
+      "riderId": "r1",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Oke-Ilewo",
+      "city": "Abeokuta",
+      "trackingId": "BZT-AXJS-L65A",
+      "receiverName": "Ngozi A.",
+      "status": "current",
+      "plannedAt": "2026-11-19T09:05:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r1-4",
+      "riderId": "r1",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-AT5Y-QFZM",
+      "receiverName": "Nkechi I.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T09:39:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r1-5",
+      "riderId": "r1",
+      "seq": 5,
+      "kind": "pickup",
+      "place": "Oregun",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-XUG6-6TX8",
+      "receiverName": null,
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T10:19:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r1-6",
+      "riderId": "r1",
+      "seq": 6,
+      "kind": "drop",
+      "place": "GRA Ikeja",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-KF53-BHT9",
+      "receiverName": "Chuka E.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T11:14:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r2-1",
+      "riderId": "r2",
+      "seq": 1,
+      "kind": "hub",
+      "place": "Swiftline Ikeja Hub",
+      "city": "Lagos (Ikeja)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T08:04:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-2",
+      "riderId": "r2",
+      "seq": 2,
+      "kind": "drop",
+      "place": "Kuto",
+      "city": "Abeokuta",
+      "trackingId": "BZT-T4SF-8BDY",
+      "receiverName": "Ola S.",
+      "status": "failed",
+      "plannedAt": "2026-11-19T08:29:00+01:00",
+      "doneAt": "2026-11-19T08:25:00+01:00",
+      "note": "Gate locked, no answer"
+    },
+    {
+      "id": "s-r2-3",
+      "riderId": "r2",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-PE44-X74D",
+      "receiverName": "Bisi F.",
+      "status": "failed",
+      "plannedAt": "2026-11-19T09:13:00+01:00",
+      "doneAt": "2026-11-19T09:18:00+01:00",
+      "note": "Receiver not at address"
+    },
+    {
+      "id": "s-r2-4",
+      "riderId": "r2",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-SSMH-4UW7",
+      "receiverName": "Kemi D.",
+      "status": "done",
+      "plannedAt": "2026-11-19T09:46:00+01:00",
+      "doneAt": "2026-11-19T09:40:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-5",
+      "riderId": "r2",
+      "seq": 5,
+      "kind": "drop",
+      "place": "Opebi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-D89V-F23V",
+      "receiverName": "Tolu A.",
+      "status": "done",
+      "plannedAt": "2026-11-19T10:32:00+01:00",
+      "doneAt": "2026-11-19T10:32:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-6",
+      "riderId": "r2",
+      "seq": 6,
+      "kind": "drop",
+      "place": "Opebi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-3KK3-V68G",
+      "receiverName": "Zainab Y.",
+      "status": "done",
+      "plannedAt": "2026-11-19T11:04:00+01:00",
+      "doneAt": "2026-11-19T11:09:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-7",
+      "riderId": "r2",
+      "seq": 7,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-856V-JDF7",
+      "receiverName": "Chuka E.",
+      "status": "done",
+      "plannedAt": "2026-11-19T11:38:00+01:00",
+      "doneAt": "2026-11-19T11:39:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-8",
+      "riderId": "r2",
+      "seq": 8,
+      "kind": "drop",
+      "place": "GRA Ikeja",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-2DZZ-MPCT",
+      "receiverName": "Kemi D.",
+      "status": "done",
+      "plannedAt": "2026-11-19T12:05:00+01:00",
+      "doneAt": "2026-11-19T12:00:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r2-9",
+      "riderId": "r2",
+      "seq": 9,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-2GYH-RDMX",
+      "receiverName": "Nkechi I.",
+      "status": "current",
+      "plannedAt": "2026-11-19T12:45:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r2-10",
+      "riderId": "r2",
+      "seq": 10,
+      "kind": "drop",
+      "place": "Allen Avenue",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-ANE4-FPL6",
+      "receiverName": "Seyi F.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T13:34:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r2-11",
+      "riderId": "r2",
+      "seq": 11,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-WLGS-6YN5",
+      "receiverName": "Uche N.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T14:05:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r2-12",
+      "riderId": "r2",
+      "seq": 12,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-QKLW-7ZGL",
+      "receiverName": "Nkechi I.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T14:37:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r3-1",
+      "riderId": "r3",
+      "seq": 1,
+      "kind": "hub",
+      "place": "Swiftline Ikeja Hub",
+      "city": "Lagos (Ikeja)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T07:56:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r3-2",
+      "riderId": "r3",
+      "seq": 2,
+      "kind": "pickup",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-ARN4-CPMG",
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T08:25:00+01:00",
+      "doneAt": "2026-11-19T08:39:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r3-3",
+      "riderId": "r3",
+      "seq": 3,
+      "kind": "drop",
+      "place": "GRA Ikeja",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-EDGK-QC5Y",
+      "receiverName": "Seyi F.",
+      "status": "done",
+      "plannedAt": "2026-11-19T09:08:00+01:00",
+      "doneAt": "2026-11-19T09:19:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r3-4",
+      "riderId": "r3",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-HW98-X3BW",
+      "receiverName": "Kemi D.",
+      "status": "current",
+      "plannedAt": "2026-11-19T09:54:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r3-5",
+      "riderId": "r3",
+      "seq": 5,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-UXJ7-EKBT",
+      "receiverName": "Kemi D.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T10:25:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r3-6",
+      "riderId": "r3",
+      "seq": 6,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-EY7Q-RWGA",
+      "receiverName": "Seyi F.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T11:18:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r3-7",
+      "riderId": "r3",
+      "seq": 7,
+      "kind": "drop",
+      "place": "Alausa",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-DA5K-ALNN",
+      "receiverName": "Kemi D.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T11:45:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r4-1",
+      "riderId": "r4",
+      "seq": 1,
+      "kind": "hub",
+      "place": "Swiftline Ikeja Hub",
+      "city": "Lagos (Ikeja)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T07:56:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r4-2",
+      "riderId": "r4",
+      "seq": 2,
+      "kind": "hub",
+      "place": "Swiftline Ikeja Hub",
+      "city": "Ibadan",
+      "trackingId": "BZT-SCG5-YW5H",
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T08:10:00+01:00",
+      "doneAt": "2026-11-19T08:16:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r4-3",
+      "riderId": "r4",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Dugbe",
+      "city": "Ibadan",
+      "trackingId": "BZT-F4N8-7WX5",
+      "receiverName": "Ola S.",
+      "status": "current",
+      "plannedAt": "2026-11-19T08:56:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r4-4",
+      "riderId": "r4",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Ring Road",
+      "city": "Ibadan",
+      "trackingId": "BZT-F93B-JDBP",
+      "receiverName": "Efe I.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T09:25:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r7-1",
+      "riderId": "r7",
+      "seq": 1,
+      "kind": "hub",
+      "place": "KwikHaul Yaba",
+      "city": "Lagos (Yaba)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T08:03:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-2",
+      "riderId": "r7",
+      "seq": 2,
+      "kind": "drop",
+      "place": "Akoka",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-CPK2-HQAH",
+      "receiverName": "Bisi F.",
+      "status": "done",
+      "plannedAt": "2026-11-19T08:37:00+01:00",
+      "doneAt": "2026-11-19T08:50:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-3",
+      "riderId": "r7",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Sabo",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-X3YU-ARC7",
+      "receiverName": "Efe I.",
+      "status": "done",
+      "plannedAt": "2026-11-19T09:16:00+01:00",
+      "doneAt": "2026-11-19T09:20:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-4",
+      "riderId": "r7",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Herbert Macaulay Way",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-R379-HPZA",
+      "receiverName": "Zainab Y.",
+      "status": "done",
+      "plannedAt": "2026-11-19T10:00:00+01:00",
+      "doneAt": "2026-11-19T10:04:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-5",
+      "riderId": "r7",
+      "seq": 5,
+      "kind": "drop",
+      "place": "Sabo",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-BME4-U826",
+      "receiverName": "Ngozi A.",
+      "status": "done",
+      "plannedAt": "2026-11-19T10:53:00+01:00",
+      "doneAt": "2026-11-19T10:51:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-6",
+      "riderId": "r7",
+      "seq": 6,
+      "kind": "drop",
+      "place": "Akoka",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-M7XW-WN4P",
+      "receiverName": "Bola S.",
+      "status": "done",
+      "plannedAt": "2026-11-19T11:28:00+01:00",
+      "doneAt": "2026-11-19T11:32:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-7",
+      "riderId": "r7",
+      "seq": 7,
+      "kind": "drop",
+      "place": "Onike",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-4PTN-K2J5",
+      "receiverName": "Seyi F.",
+      "status": "done",
+      "plannedAt": "2026-11-19T11:57:00+01:00",
+      "doneAt": "2026-11-19T12:08:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r7-8",
+      "riderId": "r7",
+      "seq": 8,
+      "kind": "drop",
+      "place": "Herbert Macaulay Way",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-G4RE-7YVV",
+      "receiverName": "Bola S.",
+      "status": "current",
+      "plannedAt": "2026-11-19T12:46:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r7-9",
+      "riderId": "r7",
+      "seq": 9,
+      "kind": "drop",
+      "place": "Akoka",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-5TEJ-UR24",
+      "receiverName": "Efe I.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T13:22:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r7-10",
+      "riderId": "r7",
+      "seq": 10,
+      "kind": "drop",
+      "place": "Sabo",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-ELYC-9RYZ",
+      "receiverName": "Zainab Y.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T14:01:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r7-11",
+      "riderId": "r7",
+      "seq": 11,
+      "kind": "drop",
+      "place": "Sabo",
+      "city": "Lagos (Yaba)",
+      "trackingId": "BZT-GX5Z-NXKJ",
+      "receiverName": "Chuka E.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T14:54:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r8-1",
+      "riderId": "r8",
+      "seq": 1,
+      "kind": "hub",
+      "place": "KwikHaul Yaba",
+      "city": "Lagos (Yaba)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T07:50:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r8-2",
+      "riderId": "r8",
+      "seq": 2,
+      "kind": "hub",
+      "place": "KwikHaul Yaba",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-W766-P8LF",
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T08:10:00+01:00",
+      "doneAt": "2026-11-19T08:05:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r8-3",
+      "riderId": "r8",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Ikate",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-FHN8-DC99",
+      "receiverName": "Ngozi A.",
+      "status": "failed",
+      "plannedAt": "2026-11-19T08:53:00+01:00",
+      "doneAt": "2026-11-19T08:57:00+01:00",
+      "note": "Receiver not at address"
+    },
+    {
+      "id": "s-r8-4",
+      "riderId": "r8",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Admiralty Way",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-XZV8-96P9",
+      "receiverName": "Chuka E.",
+      "status": "failed",
+      "plannedAt": "2026-11-19T09:27:00+01:00",
+      "doneAt": "2026-11-19T09:35:00+01:00",
+      "note": "Receiver asked to come back tomorrow"
+    },
+    {
+      "id": "s-r8-5",
+      "riderId": "r8",
+      "seq": 5,
+      "kind": "drop",
+      "place": "Chevron Drive",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-RFNB-3T36",
+      "receiverName": "Zainab Y.",
+      "status": "done",
+      "plannedAt": "2026-11-19T10:13:00+01:00",
+      "doneAt": "2026-11-19T10:10:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r8-6",
+      "riderId": "r8",
+      "seq": 6,
+      "kind": "pickup",
+      "place": "Chevron Drive",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-2WLT-DG5C",
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T10:57:00+01:00",
+      "doneAt": "2026-11-19T11:11:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r8-7",
+      "riderId": "r8",
+      "seq": 7,
+      "kind": "drop",
+      "place": "Ikate",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-3M9D-G9BM",
+      "receiverName": "Uche N.",
+      "status": "current",
+      "plannedAt": "2026-11-19T11:22:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r8-8",
+      "riderId": "r8",
+      "seq": 8,
+      "kind": "drop",
+      "place": "Chevron Drive",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-SWTF-HW42",
+      "receiverName": "Tolu A.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T12:05:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r8-9",
+      "riderId": "r8",
+      "seq": 9,
+      "kind": "pickup",
+      "place": "Admiralty Way",
+      "city": "Lagos (Lekki)",
+      "trackingId": "BZT-FCJM-M9AX",
+      "receiverName": null,
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T12:55:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r9-1",
+      "riderId": "r9",
+      "seq": 1,
+      "kind": "hub",
+      "place": "KwikHaul Yaba",
+      "city": "Lagos (Yaba)",
+      "trackingId": null,
+      "receiverName": null,
+      "status": "done",
+      "plannedAt": "2026-11-19T07:50:00+01:00",
+      "doneAt": "2026-11-19T07:46:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r9-2",
+      "riderId": "r9",
+      "seq": 2,
+      "kind": "drop",
+      "place": "GRA Ikeja",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-56L8-6SRT",
+      "receiverName": "Ifeanyi N.",
+      "status": "done",
+      "plannedAt": "2026-11-19T08:15:00+01:00",
+      "doneAt": "2026-11-19T08:11:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r9-3",
+      "riderId": "r9",
+      "seq": 3,
+      "kind": "drop",
+      "place": "Allen Avenue",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-GSM7-VHEL",
+      "receiverName": "Hauwa B.",
+      "status": "done",
+      "plannedAt": "2026-11-19T08:47:00+01:00",
+      "doneAt": "2026-11-19T08:52:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r9-4",
+      "riderId": "r9",
+      "seq": 4,
+      "kind": "drop",
+      "place": "Allen Avenue",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-TZGE-U6WG",
+      "receiverName": "Adaeze O.",
+      "status": "done",
+      "plannedAt": "2026-11-19T09:37:00+01:00",
+      "doneAt": "2026-11-19T09:43:00+01:00",
+      "note": null
+    },
+    {
+      "id": "s-r9-5",
+      "riderId": "r9",
+      "seq": 5,
+      "kind": "drop",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-G234-BDWY",
+      "receiverName": "Bisi F.",
+      "status": "current",
+      "plannedAt": "2026-11-19T10:09:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r9-6",
+      "riderId": "r9",
+      "seq": 6,
+      "kind": "drop",
+      "place": "Oregun",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-CHRA-BUPQ",
+      "receiverName": "Ola S.",
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T10:59:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r9-7",
+      "riderId": "r9",
+      "seq": 7,
+      "kind": "pickup",
+      "place": "Agidingbi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-3LLE-UW7V",
+      "receiverName": null,
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T11:49:00+01:00",
+      "doneAt": null,
+      "note": null
+    },
+    {
+      "id": "s-r9-8",
+      "riderId": "r9",
+      "seq": 8,
+      "kind": "pickup",
+      "place": "Opebi",
+      "city": "Lagos (Ikeja)",
+      "trackingId": "BZT-MFGU-HR4D",
+      "receiverName": null,
+      "status": "upcoming",
+      "plannedAt": "2026-11-19T12:23:00+01:00",
+      "doneAt": null,
+      "note": null
+    }
+  ],
+  "activityLog": [
+    {
+      "at": "2026-11-19T09:12:00+01:00",
+      "partnerId": "p2",
+      "actorId": "u6",
+      "action": "signed_in",
+      "summary": "Signed in",
+      "id": "act-001"
+    },
+    {
+      "at": "2026-11-19T08:02:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u1",
+      "action": "signed_in",
+      "summary": "Signed in",
+      "id": "act-002"
+    },
+    {
+      "at": "2026-11-19T07:41:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u2",
+      "action": "signed_in",
+      "summary": "Signed in",
+      "id": "act-003"
+    },
+    {
+      "at": "2026-11-18T16:10:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u1",
+      "action": "team_invited",
+      "summary": "Invited Grace Akpan as a manager",
+      "id": "act-004"
+    },
+    {
+      "at": "2026-11-12T11:20:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u2",
+      "action": "rider_registered",
+      "summary": "Registered rider Kelechi Nnaji (waiting for verification)",
+      "riderId": "r5",
+      "id": "act-005"
+    },
+    {
+      "at": "2026-11-12T09:48:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u1",
+      "action": "rider_deactivated",
+      "summary": "Deactivated rider Yusuf Lawal: Left the company",
+      "riderId": "r6",
+      "id": "act-006"
+    },
+    {
+      "at": "2026-11-11T10:05:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u1",
+      "action": "team_removed",
+      "summary": "Removed Femi Ojo from the team",
+      "id": "act-007"
+    },
+    {
+      "at": "2026-11-09T14:02:00+01:00",
+      "partnerId": "p1",
+      "actorId": "u3",
+      "action": "rider_registered",
+      "summary": "Registered rider Emeka Okoro",
+      "riderId": "r3",
+      "id": "act-008"
+    }
+  ]
+}

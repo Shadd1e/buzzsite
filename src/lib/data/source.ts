@@ -11,8 +11,11 @@ import disputes from "@test-data/logistics/disputes.json";
 import flags from "@test-data/logistics/flags.json";
 import hubs from "@test-data/logistics/hubs.json";
 import parcels from "@test-data/logistics/parcels.json";
+import partnerPortal from "@test-data/logistics/partner-portal.json";
 import partners from "@test-data/logistics/partners.json";
 import payouts from "@test-data/logistics/payouts.json";
+import portal from "@test-data/logistics/portal.json";
+import riderPortal from "@test-data/logistics/rider-portal.json";
 import riders from "@test-data/logistics/riders.json";
 import chats from "@test-data/web/chats.json";
 
@@ -22,13 +25,22 @@ import type {
   AuditEntry,
   Batch,
   Chat,
+  CompanyRecord,
   Dispute,
   Flag,
   Hub,
   Parcel,
   Partner,
   Payout,
+  PortalActivity,
+  PortalAccount,
+  PortalStaff,
   Rider,
+  RiderDay,
+  RiderPayout,
+  RiderProfileRecord,
+  RiderRates,
+  Stop,
   WebNotification,
   WebUpdate,
   WebUser,
@@ -48,6 +60,28 @@ export const db = {
   payouts: payouts.items as unknown as Payout[],
   adminUsers: adminUsers.items as unknown as AdminUser[],
   auditLog: adminAuditLog.items as unknown as AuditEntry[],
+  portal: {
+    /** The fixtures' "now". Test data is a snapshot of 19 Nov 2026, 13:00 WAT. */
+    now: portal.now,
+    testCredentials: portal.testCredentials,
+    staff: portal.staff as unknown as PortalStaff[],
+    accounts: portal.accounts as unknown as PortalAccount[],
+    riderActivity: portal.riderActivity as unknown as Array<{ riderId: string; days: RiderDay[] }>,
+    stops: portal.stops as unknown as Stop[],
+    activityLog: portal.activityLog as unknown as PortalActivity[],
+  },
+  /** Partner portal Company screen: documents and inspection breakdown */
+  companies: partnerPortal.companies as unknown as CompanyRecord[],
+  /** Individual riders' own data (they work like a one-person partner) */
+  riderPortal: {
+    profiles: riderPortal.profiles as unknown as RiderProfileRecord[],
+    rates: riderPortal.rates as unknown as RiderRates[],
+    parcels: riderPortal.parcels as unknown as Parcel[],
+    batches: riderPortal.batches as unknown as Batch[],
+    payouts: riderPortal.payouts as unknown as RiderPayout[],
+    disputes: riderPortal.disputes as unknown as Dispute[],
+    flags: riderPortal.flags as unknown as Flag[],
+  },
   web: {
     me: chats.me as unknown as WebUser,
     chats: chats.chats as unknown as Chat[],

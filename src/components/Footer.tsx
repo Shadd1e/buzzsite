@@ -42,6 +42,7 @@ const columns: Array<{ title: string; links: FooterLink[] }> = [
       { href: "/web", label: "Buzz Web", external: true },
       { href: "/logistics", label: "Buzz Logistics", external: true },
       { href: "/logistics/track", label: "Track a package", external: true },
+      { href: "/logistics/signup", label: "Deliver with Buzz", external: true },
     ],
   },
 ];

@@ -1,0 +1,239 @@
+{
+  "isTestData": true,
+  "generated": "2026-11-19T13:00:00+01:00",
+  "companies": [
+    {
+      "partnerId": "p1",
+      "cac": "RC-TEST-00142",
+      "address": "[Swiftline Logistics head office address]",
+      "documents": [
+        {
+          "name": "Partner agreement (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:00:00+01:00"
+        },
+        {
+          "name": "Data protection addendum (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:02:00+01:00"
+        },
+        {
+          "name": "Rider verification declaration (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:04:00+01:00"
+        },
+        {
+          "name": "CAC certificate",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:30:00+01:00"
+        },
+        {
+          "name": "Goods-in-transit insurance",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:34:00+01:00"
+        }
+      ],
+      "inspection": {
+        "at": "2026-07-14T10:00:00+01:00",
+        "score": 86,
+        "breakdown": [
+          {
+            "label": "Offices",
+            "weight": 20,
+            "score": 90
+          },
+          {
+            "label": "Hubs and pickup points",
+            "weight": 30,
+            "score": 84
+          },
+          {
+            "label": "Fleet",
+            "weight": 35,
+            "score": 87
+          },
+          {
+            "label": "Records and insurance",
+            "weight": 15,
+            "score": 82
+          }
+        ]
+      }
+    },
+    {
+      "partnerId": "p2",
+      "cac": "RC-TEST-00143",
+      "address": "[KwikHaul Couriers head office address]",
+      "documents": [
+        {
+          "name": "Partner agreement (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:00:00+01:00"
+        },
+        {
+          "name": "Data protection addendum (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:02:00+01:00"
+        },
+        {
+          "name": "Rider verification declaration (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:04:00+01:00"
+        },
+        {
+          "name": "CAC certificate",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:30:00+01:00"
+        },
+        {
+          "name": "Goods-in-transit insurance",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:34:00+01:00"
+        }
+      ],
+      "inspection": {
+        "at": "2026-08-02T11:00:00+01:00",
+        "score": 78,
+        "breakdown": [
+          {
+            "label": "Offices",
+            "weight": 20,
+            "score": 75
+          },
+          {
+            "label": "Hubs and pickup points",
+            "weight": 30,
+            "score": 83
+          },
+          {
+            "label": "Fleet",
+            "weight": 35,
+            "score": 75
+          },
+          {
+            "label": "Records and insurance",
+            "weight": 15,
+            "score": 79
+          }
+        ]
+      }
+    },
+    {
+      "partnerId": "p3",
+      "cac": "RC-TEST-00151",
+      "address": "[PanAfrica Express head office address]",
+      "documents": [
+        {
+          "name": "Partner agreement (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:00:00+01:00"
+        },
+        {
+          "name": "Data protection addendum (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:02:00+01:00"
+        },
+        {
+          "name": "Rider verification declaration (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:04:00+01:00"
+        },
+        {
+          "name": "CAC certificate",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:30:00+01:00"
+        },
+        {
+          "name": "Goods-in-transit insurance",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:34:00+01:00"
+        }
+      ],
+      "inspection": {
+        "at": "2026-08-20T10:30:00+01:00",
+        "score": 91,
+        "breakdown": [
+          {
+            "label": "Offices",
+            "weight": 20,
+            "score": 93
+          },
+          {
+            "label": "Hubs and pickup points",
+            "weight": 30,
+            "score": 92
+          },
+          {
+            "label": "Fleet",
+            "weight": 35,
+            "score": 87
+          },
+          {
+            "label": "Records and insurance",
+            "weight": 15,
+            "score": 95
+          }
+        ]
+      }
+    },
+    {
+      "partnerId": "p4",
+      "cac": "RC-TEST-00147",
+      "address": "[Eastgate Dispatch head office address]",
+      "documents": [
+        {
+          "name": "Partner agreement (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:00:00+01:00"
+        },
+        {
+          "name": "Data protection addendum (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:02:00+01:00"
+        },
+        {
+          "name": "Rider verification declaration (signed)",
+          "status": "approved",
+          "uploadedAt": "2026-06-20T10:04:00+01:00"
+        },
+        {
+          "name": "CAC certificate",
+          "status": "approved",
+          "uploadedAt": "2026-06-18T15:30:00+01:00"
+        },
+        {
+          "name": "Goods-in-transit insurance",
+          "status": "rejected",
+          "uploadedAt": "2026-06-18T15:34:00+01:00",
+          "note": "Expired on 30 Oct 2026. Upload the renewed policy."
+        }
+      ],
+      "inspection": {
+        "at": "2026-06-11T09:00:00+01:00",
+        "score": 57,
+        "breakdown": [
+          {
+            "label": "Offices",
+            "weight": 20,
+            "score": 51
+          },
+          {
+            "label": "Hubs and pickup points",
+            "weight": 30,
+            "score": 53
+          },
+          {
+            "label": "Fleet",
+            "weight": 35,
+            "score": 63
+          },
+          {
+            "label": "Records and insurance",
+            "weight": 15,
+            "score": 59
+          }
+        ]
+      }
+    }
+  ]
+}

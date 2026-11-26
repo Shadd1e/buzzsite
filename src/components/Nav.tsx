@@ -110,7 +110,16 @@ export function Nav({
 
         <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex">
           {actions.map((a) => (
-            <ButtonLink key={a.href} href={a.href} variant={a.variant} size="sm" external={a.external}>
+            <ButtonLink
+              key={a.href}
+              href={a.href}
+              variant={a.variant}
+              size="sm"
+              external={a.external}
+              // On its own page an action shows as current, like the links
+              aria-current={isCurrent(a.href) ? "page" : undefined}
+              className="aria-[current=page]:border-blue-100 aria-[current=page]:bg-blue-50"
+            >
               {a.label}
             </ButtonLink>
           ))}

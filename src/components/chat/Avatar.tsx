@@ -74,16 +74,17 @@ export function Avatar({
 }) {
   const a11y = decorative ? { "aria-hidden": true as const } : { role: "img", "aria-label": sender.name };
   const base = cn(
-    "inline-grid shrink-0 place-items-center overflow-hidden rounded-full font-semibold leading-none select-none",
+    "inline-grid shrink-0 place-items-center overflow-hidden font-semibold leading-none select-none",
     sizeClass[size],
     className,
   );
 
   if (sender.system) {
     const mark = {
-      sunpay: { cls: "bg-blue-600 text-white", node: <Wallet className={iconSize[size]} strokeWidth={1.8} /> },
-      buzz: { cls: "bg-blue-600 text-white font-extrabold tracking-[-0.04em]", node: "B" },
-      emba: { cls: "bg-alert-600 text-white", node: <ShieldAlert className={iconSize[size]} strokeWidth={1.8} /> },
+      sunpay: { cls: "rounded-full bg-blue-600 text-white", node: <Wallet className={iconSize[size]} strokeWidth={1.8} /> },
+      // App-icon tile, like <Logo variant="mark">, so it reads as the Buzz mark, not a person's initial
+      buzz: { cls: "rounded-[30%] bg-blue-600 text-white font-extrabold tracking-[-0.04em]", node: "B" },
+      emba: { cls: "rounded-full bg-alert-600 text-white", node: <ShieldAlert className={iconSize[size]} strokeWidth={1.8} /> },
     }[sender.system];
     return (
       <span {...a11y} data-placeholder="system-mark" className={cn(base, mark.cls)}>
@@ -94,14 +95,14 @@ export function Avatar({
 
   if (sender.src) {
     return (
-      <span {...a11y} className={cn(base, "bg-blue-50")}>
+      <span {...a11y} className={cn(base, "rounded-full bg-blue-50")}>
         <Image src={sender.src} alt="" width={px[size]} height={px[size]} className="size-full object-cover" />
       </span>
     );
   }
 
   return (
-    <span {...a11y} className={cn(base, "text-ink-900", avatarColour(sender.name))}>
+    <span {...a11y} className={cn(base, "rounded-full text-ink-900", avatarColour(sender.name))}>
       {initials(sender.name)}
     </span>
   );

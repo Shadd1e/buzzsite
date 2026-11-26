@@ -77,6 +77,9 @@
   --color-tick: #7cf5a8;
   --color-warn-700: #7a4b00;
   --color-warn-50: #fff6e5;
+  /* Chart mark for failed attempts (warn family). warn-700 reads grey as a fill;
+     this passes the dataviz palette checks next to blue-600. Marks only, never text. */
+  --color-chart-failed: #b07a1f;
 
   /* §2.2 Dark theme (Buzz Web only) */
   --color-dark-bg: #0b1220;
@@ -393,6 +396,9 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  /* clip, not just hidden: a hidden box can still be scrolled by focus or
+     scrollIntoView, which slid the sign-in page sideways */
+  overflow: clip;
 }
 
 .aurora::before,
@@ -667,4 +673,28 @@
 /* The QR countdown ring drains linearly: it's a clock, not an ease. */
 .qr-ring {
   transition: stroke-dashoffset 1s linear;
+}
+
+/* Fade the bottom-right blob out before the section ends, so the next
+   section starts on a soft edge instead of a hard cut through the glow. */
+.aurora-fade-bottom::after {
+  -webkit-mask-image: linear-gradient(to top, transparent 50%, #000 82%);
+  mask-image: linear-gradient(to top, transparent 50%, #000 82%);
+}
+
+/* Generate label: only the thermal label prints, at the top-left of the page */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-label,
+  .print-label * {
+    visibility: visible;
+  }
+  .print-label {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-width: 0;
+  }
 }

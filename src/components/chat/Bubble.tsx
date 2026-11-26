@@ -9,7 +9,7 @@ import { Avatar, type Sender } from "./Avatar";
  * - Radius 20px with the tail corner at 6px. Padding 11px 15px 9px. Max 82%.
  * - in:     white (or glass over images), tail bottom-left, avatar always shown
  * - out:    --blue-600, white text, tail bottom-right, read ticks in --tick
- * - system: white with a 1.5px --blue-600 border (SunPay escrow notices)
+ * - system: white (or glass) with a 1.5px --blue-600 border (SunPay escrow notices)
  * - alert:  2px --alert-600 border plus warning icon (EMBA)
  * - theme="dark": Buzz Web dark theme (§2.2). Outgoing stays --blue-600.
  */
@@ -94,9 +94,12 @@ export function Bubble({
         alert: "bg-dark-surface text-dark-text border-2 border-alert-600",
       }[variant]
     : {
-        in: cn(glass ? "glass" : "bg-white", onTint && !glass && "shadow-hair", "text-ink-900"),
+        // Glass gets a hairline edge so it still reads as a bubble over white
+        // or a pale gradient, not only over photos
+        in: cn(glass ? "glass border border-line shadow-hair" : "bg-white", onTint && !glass && "shadow-hair", "text-ink-900"),
         out: "bg-blue-600 text-white",
-        system: "bg-white text-ink-900 border-[1.5px] border-blue-600",
+        // Over glass, the system bubble shares the incoming surface; the blue border marks it
+        system: cn(glass ? "glass shadow-hair" : "bg-white", "text-ink-900 border-[1.5px] border-blue-600"),
         alert: "bg-white text-ink-900 border-2 border-alert-600",
       }[variant];
 

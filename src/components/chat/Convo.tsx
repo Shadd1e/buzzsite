@@ -129,7 +129,7 @@ export function Convo({
                 showName={m.showName}
                 time={m.time}
                 status={m.status}
-                glass={glass && m.variant === "in"}
+                glass={glass && (m.variant === "in" || m.variant === "system")}
                 onTint={onTint}
                 theme={theme}
               >

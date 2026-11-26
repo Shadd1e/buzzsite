@@ -121,6 +121,8 @@ npx impeccable detect src/app/[route]
 ### Phase C: logistics public site (brand)
 Build in this order: Logistics home → How it works → Track (all states) → Coverage → Partners → Apply (guided, 7 steps) → Partner sign in.
 
+Added 2026-11-25 (individual riders): Sign in with account type choice → Apply for both types (company 7 steps, individual rider 6 steps) → Review status page → Parcels → Batches → Individual rider portal. One screen per task.
+
 > Build **[PAGE]** from DESIGN.md §10.1. Data comes from the mock layer (`test-data/logistics`). For Track, make every state in the spec reachable with a real test tracking ID, and list those IDs on `/dev/test-ids`. Rider privacy rules in PRODUCT.md are strict: never show a rider's name, phone or live location on public pages.
 
 ### Phase D: partner portal (product)

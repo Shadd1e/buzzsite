@@ -54,3 +54,15 @@ export function formatDayTime(iso: string): string {
 export function formatTime(iso: string): string {
   return timePart.format(new Date(iso));
 }
+
+/** "+234 800 000 7912" → "+234 800 ••• ••12". Tables show riders' numbers masked (DESIGN.md §10.2). */
+export function maskPhone(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (digits.length < 6) return "••••";
+  return `+${digits.slice(0, 3)} ${digits.slice(3, 6)} ••• ••${digits.slice(-2)}`;
+}
+
+/** 0.873 → "87%". Null (no attempts yet) → "–". */
+export function formatPercent(rate: number | null): string {
+  return rate === null ? "–" : `${Math.round(rate * 100)}%`;
+}
