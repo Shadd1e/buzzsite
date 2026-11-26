@@ -4,7 +4,7 @@ import { cn } from "@/lib/cn";
 
 /**
  * DESIGN.md §5.1: real photos when available, otherwise initials on a colour
- * picked from the person's name. System senders (SunPay, Buzz, EMBA) use their
+ * picked from the person's name. System senders (SunPay, Buzz, Buzz Alert) use their
  * own marks (placeholders until the official marks arrive).
  *
  * Palette (DESIGN.md §5.1): amber, sky, pink, teal, indigo, burnt orange.

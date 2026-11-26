@@ -26,7 +26,7 @@ export default function SafetyPage() {
         cta={hero.cta}
         aside={
           <div className="flex flex-col gap-3 rounded-convo bg-blue-50/90 p-4 backdrop-blur-sm sm:p-6">
-            <article aria-label="Example EMBA alert" className="rounded-card border-2 border-alert-600 bg-white p-4">
+            <article aria-label="Example Buzz Alert" className="rounded-card border-2 border-alert-600 bg-white p-4">
               <div className="flex items-start gap-3">
                 <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-tile bg-alert-600 text-white">
                   <ShieldAlert className="size-5" strokeWidth={1.8} />

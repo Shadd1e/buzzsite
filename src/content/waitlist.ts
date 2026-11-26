@@ -46,7 +46,7 @@ export const waitlistPage = {
       { title: "SunPay escrow", body: "Your money is held until you confirm the order arrived, or released after 5 days unless you open a dispute.", link: { label: "How payments work", href: "/payments" } },
       { title: "Buzz Logistics", body: "Depot orders delivered by partner logistics companies, with a tracking ID for every parcel.", link: { label: "About delivery", href: "/logistics" } },
       { title: "Pro Mode", body: "A Storefront, a Pro ID and a Business Centre for sellers, landlords, handymen and professionals.", link: { label: "Explore Pro Mode", href: "/pro" } },
-      { title: "EMBA alerts", body: "Safety alerts for your area from verified police and security agencies and from people near you. Opt-in.", link: { label: "How alerts work", href: "/safety" } },
+      { title: "Buzz Alerts", body: "Safety alerts for your area from verified police and security agencies and from people near you. Opt-in.", link: { label: "How alerts work", href: "/safety" } },
     ],
   },
 

@@ -550,7 +550,7 @@
   animation-delay: calc(var(--col, 0) * 160ms + 150ms);
 }
 
-/* EMBA alert drops in from the top and loops, with a long rest (§9.1). */
+/* Buzz Alert drops in from the top and loops, with a long rest (§9.1). */
 /* Drops in 3 times, then drops in once more and stays (WCAG 2.2.2: motion
    stops within the loop budget instead of running forever). */
 .alert-drop {

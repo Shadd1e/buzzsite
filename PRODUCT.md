@@ -21,7 +21,7 @@ Buzz is a Nigerian super app made by **Aether Jade Innovation**. Tagline: **"One
 | **Depot** | Marketplace: merchants sell products, landlords list houses, handymen offer services. Search by location, price, category. Prices can show in local currency. |
 | **SunPay escrow** | Payments are held until the buyer confirms, or released automatically after **5 days** unless a dispute is opened. |
 | **Pro Mode** | A switch inside Buzz. It gives a business a **Storefront**, a separate **Pro ID**, a **Business Centre** and **Showcase / Creator Toolbox**. Features differ by profession (lawyer, landlord, merchant, handyman…). Pro can be paused or switched off. |
-| **EMBA alerts** | Safety alerts from verified police and security agencies and from real users. Location-based, opt-in, push. |
+| **Buzz Alerts** | Safety alerts from verified police and security agencies and from real users. Location-based, opt-in, push. |
 | **Buzz Logistics** | Delivery for goods bought on Depot (Depot-only at launch, built to expand later). Run by partner logistics companies. |
 | **Buzz Web** | Use Buzz chats on a computer by scanning a QR code with your phone. |
 
@@ -33,7 +33,7 @@ No single claim leads. Three claims carry equal weight, and the story is that on
 
 1. **Number-free identity.** Buzz ID, BuzzDrop and Pro ID let you deal with people, buyers and sellers without giving out your phone number.
 2. **Chat to checkout in one place.** The chat where people already talk is where they find things on Depot, pay through SunPay escrow and track delivery through Buzz Logistics.
-3. **A trust layer for dealing with strangers.** Escrow, verified sellers and logistics partners, and EMBA alerts from verified agencies.
+3. **A trust layer for dealing with strangers.** Escrow, verified sellers and logistics partners, and Buzz Alerts from verified agencies.
 
 Neighbouring products each hold one piece (WhatsApp has chat, Jiji and Jumia have listings, Instagram shops have discovery). None of them truthfully offers all three together. Surfaces should present the three as one connected system, not as a list of separate features.
 
@@ -133,7 +133,7 @@ Everything is **front end only** right now. Data comes from `/test-data` through
 
 ## Key terminology (use exactly)
 
-Buzz, Buzz ID, BuzzDrop, Depot (not "shop"), Pro Mode, Pro ID, Storefront, Business Centre, Showcase, Creator Toolbox, SunPay, escrow, EMBA alert, security update, Buzz Logistics, logistics partner, individual rider, rider, company code, rider code, individual rider code, tracking ID, pickup code, delivery code, mother QR (batch), Buzz Web, Lite view, Creator view, Me tab.
+Buzz, Buzz ID, BuzzDrop, Depot (not "shop"), Pro Mode, Pro ID, Storefront, Business Centre, Showcase, Creator Toolbox, SunPay, escrow, Buzz Alert, security update, Buzz Logistics, logistics partner, individual rider, rider, company code, rider code, individual rider code, tracking ID, pickup code, delivery code, mother QR (batch), Buzz Web, Lite view, Creator view, Me tab.
 
 ## Logistics rules (confirmed)
 

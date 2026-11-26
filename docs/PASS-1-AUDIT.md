@@ -78,7 +78,7 @@ Status meanings: **UI/local** = interface or workflow exists, but data is stored
 | Pro bookings | Booking screen contains hard-coded example bookings | Mock/sample UI. Do not imply live booking management. |
 | Pro payments | Payment destination screen says account linking is unavailable; planned label | Planned/unconnected. No payment processor integration found. |
 | SunPay | Brief defines partnership; app has payment destination placeholder (labelled “Naes Payments”) | Partnership and operational role not evidenced by source. Requires confirmation; do not describe processor, custody or escrow mechanics as live. |
-| Safety / EMBA | Safety hub and alert/incident screens | Partial UI. No verified incident ingestion, agency coordination, response SLA or emergency dispatch service found. |
+| Safety / Buzz Alert | Safety hub and alert/incident screens | Partial UI. No verified incident ingestion, agency coordination, response SLA or emergency dispatch service found. |
 | Stealth / Security Live | Routes/screens exist | UI presence only; operational behaviour and backend unverified. |
 | Notifications | Local notification scheduling helper | Partial/local. No authenticated realtime event source wired in helper. |
 | Logistics | No logistics module, partner onboarding, tracking, coverage or partner dashboard found | Not found. Build as a new website section with integration dependencies explicitly marked. |
@@ -128,7 +128,7 @@ All 27 routes below are in the agreed scope. None exists in the supplied source 
 | `/buzz-pro` | Buzz Pro | Optional mode in same app, business profiles, products/services, customer communication, implemented orders/bookings only, Showcase, Creator Tools and verified analytics. |
 | `/marketplace` | Marketplace | Products, property, services, merchants/professionals, location/price discovery, listing details, seller connection and property roles. |
 | `/payments` | Payments | Buzz–SunPay relationship and only verified payment/escrow roles, methods, currencies, custody, release and disputes. |
-| `/safety` | Safety | EMBA, Security Updates, location alerts, incident reporting/evidence and only verified community/agency workflows. |
+| `/safety` | Safety | Buzz Alert, Security Updates, location alerts, incident reporting/evidence and only verified community/agency workflows. |
 | `/about` | About | Origin, problem, mission, vision, values, company profile and African expansion ambition clearly labelled as ambition. |
 | `/careers` | Careers | Company/culture, open roles, job details, application route and talent contact. |
 | `/contact` | Contact | General, support, business/partnership, logistics, media and careers routing. |

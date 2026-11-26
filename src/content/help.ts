@@ -30,7 +30,7 @@ export const helpTopics: Array<{ id: HelpTopicId; title: string; body: string; i
   { id: "depot", title: "Depot", body: "Buying, renting and hiring on the marketplace.", icon: "Store" },
   { id: "payments", title: "Payments and escrow", body: "How SunPay holds your money and what happens in a dispute.", icon: "Wallet" },
   { id: "pro", title: "Pro Mode", body: "Storefront, Pro ID, Business Centre and Showcase.", icon: "Briefcase" },
-  { id: "safety", title: "Safety alerts", body: "EMBA alerts, security updates and your areas.", icon: "ShieldAlert" },
+  { id: "safety", title: "Safety alerts", body: "Buzz Alerts, security updates and your areas.", icon: "ShieldAlert" },
   { id: "logistics", title: "Logistics and delivery", body: "Tracking a Depot parcel, delivery codes and pickup.", icon: "Truck" },
 ];
 
@@ -112,10 +112,10 @@ export const helpArticles: HelpArticle[] = [
     slug: "how-safety-alerts-work",
     topic: "safety",
     title: "How safety alerts work",
-    summary: "EMBA alerts come from verified agencies and people near you. They're opt-in.",
+    summary: "Buzz Alerts come from verified agencies and people near you. They're opt-in.",
     updated: "19 Nov 2026",
     body: [
-      "EMBA alerts come from verified police and security agencies, and from real users near an event.",
+      "Buzz Alerts come from verified police and security agencies, and from real users near an event.",
       "Alerts are tied to a location. You turn them on and choose your areas.",
       "Security updates sit in their own row in Updates, in their own colour.",
       "Buzz is not an emergency service. In an emergency, call 112.",

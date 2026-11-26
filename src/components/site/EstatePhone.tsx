@@ -5,7 +5,7 @@ import type { MessageStatus } from "@/lib/data/types";
 
 /**
  * Phone mockup for the homepage safety row (DESIGN.md §9.1): an estate group
- * chat where an EMBA security update drops in from the top and loops.
+ * chat where a Buzz Alert drops in from the top and loops.
  * Real Buzz UI in HTML, no status bar.
  */
 export function EstatePhone({

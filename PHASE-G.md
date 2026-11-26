@@ -98,10 +98,10 @@ Added page by page below. P0 and P1 issues were fixed before each page was commi
 - **[P3] Gradient edge:** the live-gradient hero ends in a hard horizontal line at the section bottom (also on About). Mask the blob's fade-out, or let it bleed under the next section.
 - **[P3] Empty column:** the left column of "How alerts work" sits empty at desktop. Make the H2 sticky, or run the rows full width.
 - **[P3] "Call 112" on desktop:** `tel:112` does nothing on a computer. Consider showing the number as plain text there.
-- **[P3] EMBA explained:** "EMBA" is never explained on the page.
+- **[P3] Buzz Alert explained:** "Buzz Alert" is never explained on the page.
 
 ### About `/about` (critique 18/28 · audit 16/20)
-- **[P2] Problem/answer cards:** three identical two-tone slabs with a repeated "The problem" label. Give each answer half a mini vignette (Buzz ID pill vs struck-through number, ₦ token held by SunPay, EMBA alert chip), or drop the label repetition.
+- **[P2] Problem/answer cards:** three identical two-tone slabs with a repeated "The problem" label. Give each answer half a mini vignette (Buzz ID pill vs struck-through number, ₦ token held by SunPay, Buzz Alert chip), or drop the label repetition.
 - **[P2] Repeated problems:** the three problems are stated three times (H1, lede, then the pairs H2 with the cards). Reword the pairs H2 so the cards follow straight on from the hero.
 - **[P3] Belief rows:** five rows (over the four-item guideline). "Truth before polish" reads as an internal note to the team, not something visitors care about.
 - **[P3] No waitlist in the body:** apart from the nav and footer there's no waitlist path. The mobile H1 is 36px, against the 48–64px spec.

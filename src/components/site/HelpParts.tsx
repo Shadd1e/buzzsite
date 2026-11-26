@@ -27,7 +27,7 @@ const synonyms: Record<string, string> = {
   number: "buzz id phone",
   download: "waitlist launch",
   business: "pro mode storefront",
-  alert: "safety emba",
+  alert: "safety buzz alert emba",
 };
 
 export function HelpSearch({

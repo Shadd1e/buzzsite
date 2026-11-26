@@ -53,7 +53,7 @@ Everything else follows Impeccable's and the frontend-design skill's anti-slop r
   --navy-700:#26304A;    /* borders on navy */
 
   /* Signals: used ONLY for their meaning */
-  --alert-600: #D92D20;  /* EMBA alerts, security updates, destructive */
+  --alert-600: #D92D20;  /* Buzz Alerts, security updates, destructive */
   --alert-700: #B42318;  /* alert text on light */
   --alert-50:  #FFF1EF;
   --ok-600:    #12B76A;  /* delivered, verified, success */
@@ -162,8 +162,8 @@ One family. Personality comes from **weight contrast** (300 headlines against 50
 ```
 
 - Radius 20px, with the tail corner at 6px. Padding 11px 15px 9px. Max width 82% of the panel.
-- **Avatars are always shown on incoming messages.** Use real photos when available, otherwise initials on a colour picked from the person's name: `#F79009` (amber), `#0BA5EC` (sky), `#EE46BC` (pink), `#15B79E` (teal), `#6172F3` (indigo), `#DD6B20` (burnt orange). No red or green, because those mean safety and success (§2.2). Initials are `--ink-900` on all six (each passes 4.5:1). System senders (SunPay, Buzz, EMBA) use their own marks.
-- Variants: `in`, `out`, `system` (white with a 1.5px `--blue-600` border, e.g. SunPay escrow notices), `alert` (2px `--alert-600` border plus warning icon, for EMBA), `typing` (three dots).
+- **Avatars are always shown on incoming messages.** Use real photos when available, otherwise initials on a colour picked from the person's name: `#F79009` (amber), `#0BA5EC` (sky), `#EE46BC` (pink), `#15B79E` (teal), `#6172F3` (indigo), `#DD6B20` (burnt orange). No red or green, because those mean safety and success (§2.2). Initials are `--ink-900` on all six (each passes 4.5:1). System senders (SunPay, Buzz, Buzz Alert) use their own marks.
+- Variants: `in`, `out`, `system` (white with a 1.5px `--blue-600` border, e.g. SunPay escrow notices), `alert` (2px `--alert-600` border plus warning icon, for Buzz Alert), `typing` (three dots).
 - Copy in bubbles sounds like real Nigerians texting, in plain English. No Pidgin. Never use marketing language inside a bubble.
 
 ### Where bubbles appear (§5.2)
@@ -276,7 +276,7 @@ Follow `reference/homepage-template.png` closely.
 4. **Blue band:** "Finding professionals and handymen hasn't been any easier." + "Explore Pro Mode" light pill.
 5. **Feature rows** (alternating):
    - Lock illustration · "You control what you share." · Buzz ID copy · link
-   - **Phone mockup** showing an estate group chat, where an **EMBA alert drops in** from the top and loops · "Know what's happening on your street." · alert copy · link
+   - **Phone mockup** showing an estate group chat, where an **Buzz Alert drops in** from the top and loops · "Know what's happening on your street." · alert copy · link
 6. **Full-bleed flowers photo** with "More people. Even less noise." rising on scroll.
 7. **Connections:** "All the right connections, from payments to delivery." SunPay + Buzz Logistics + dashed partner slots.
 8. Footer.
@@ -307,14 +307,14 @@ Follow `reference/homepage-template.png` closely.
 - `[Fees, currencies]` placeholder row. CTA band.
 
 ### Safety `/safety` (§9.6)
-- **Hero:** "Know what's happening on your street." · cooperative copy · an EMBA alert card + estate group reply.
+- **Hero:** "Know what's happening on your street." · cooperative copy · a Buzz Alert card + estate group reply.
 - **Signature, an alert radius map:** an abstract street grid (SVG, city-like, not a real map). A pin drops, a **red radius ring expands**, and phone dots inside the ring light up with a mini alert while dots outside stay grey. *Moment.*
 - **How alerts work** as list rows: verified sources, only where it matters, your choice (opt-in), hard to miss (security updates have their own colour).
 - **Emergency band:** red-bordered "Buzz is not an emergency service. In an emergency, call 112."
 
 ### About `/about` (§9.7)
 - **Hero statement** (no convo here; the statement carries it): the three problems Buzz started with, in 48–64px light type.
-- **Problem → answer pairs** (3 cards, each split in two: the problem in muted ink, Buzz's answer in blue): private chats → Buzz ID & encryption; scams → escrow; late danger info → EMBA. *Moment:* each card flips from problem to answer as it enters view.
+- **Problem → answer pairs** (3 cards, each split in two: the problem in muted ink, Buzz's answer in blue): private chats → Buzz ID & encryption; scams → escrow; late danger info → Buzz Alert. *Moment:* each card flips from problem to answer as it enters view.
 - Beliefs as list rows. Team photo grid `[pending]`. Blue band with Contact + Careers.
 
 ### Careers `/careers` (§9.8)
@@ -508,7 +508,7 @@ From Impeccable, the frontend-design skill and Buzz's own rules. **Every item mu
 - Official logo and icon variants
 - Partner logos (Paystack etc.)
 - SunPay fees, currencies, dispute details beyond the 5-day window
-- Whether red EMBA alerts sound on silent
+- Whether red Buzz Alerts sound on silent
 - Exact app path for Linked devices (Buzz Web pairing)
 - Coverage city list, prohibited items list
 - Team photos and bios

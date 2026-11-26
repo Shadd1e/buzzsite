@@ -17,7 +17,7 @@ Orders,"Hard-coded sample rows in app/pro/orders.tsx",Mock UI,"Never publish sam
 Bookings,"Hard-coded example rows in app/pro/bookings.tsx",Mock UI,"Never claim live booking management"
 Payments,"Pro payment UI says account linking unavailable and planned",Planned/unconnected,"No payment processor, custody, escrow or settlement claims"
 SunPay,"Brief describes partnership; app has payment destination placeholder labelled Naes Payments",Needs confirmation,"Confirm partnership and exact roles before operational claims"
-Safety and EMBA,"Safety hub, alert and incident screens",Partial UI,"No emergency response, incident verification or agency response promises"
+Safety and Buzz Alert,"Safety hub, alert and incident screens",Partial UI,"No emergency response, incident verification or agency response promises"
 Stealth and Security Live,"Routes/screens exist",UI only/unverified,"Do not imply operational safety guarantees"
 Notifications,"Local notification scheduler; comment says realtime source still needs wiring",Partial/local,"No push delivery guarantees"
 Logistics,"No logistics module or partner/tracking UI found",Not found,"New section; real API and provider dependencies required"

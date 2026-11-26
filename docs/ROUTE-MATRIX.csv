@@ -4,7 +4,7 @@ route,section,page,required_scope,pass,status
 /buzz-pro,Core,Buzz Pro,"Optional same-app mode; profiles; products/services; customer communication; verified orders/bookings; Showcase; Creator Tools; analytics",3,Not started
 /marketplace,Core,Marketplace,"Products; property; services; merchants/professionals; discovery; listing details; seller connection; property roles",3,Not started
 /payments,Core,Payments,"Buzz-SunPay relationship; verified payment/escrow roles, methods, currencies, custody, release, disputes",3,Not started
-/safety,Core,Safety,"EMBA; Security Updates; location alerts; incident reporting/evidence; confirmed community/agency workflows",3,Not started
+/safety,Core,Safety,"Buzz Alert; Security Updates; location alerts; incident reporting/evidence; confirmed community/agency workflows",3,Not started
 /about,Company,About,"Origin; problem; mission; vision; values; company; African context and expansion ambition",5,Not started
 /careers,Company,Careers,"Culture; open roles; role details; application route; talent contact",5,Not started
 /contact,Company,Contact,"General; support; business/partnership; logistics; media; careers routing",5,Not started

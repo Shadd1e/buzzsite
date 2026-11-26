@@ -260,7 +260,7 @@ export default async function ComponentsPage() {
   const tobi: Sender = { name: "Tobi" };
   const mum: Sender = { name: chat?.name ?? "Mum" };
   const sunpay: Sender = { name: "SunPay", system: "sunpay" };
-  const emba: Sender = { name: "EMBA alert", system: "emba" };
+  const emba: Sender = { name: "Buzz Alert", system: "emba" };
   const buzzLogistics: Sender = { name: "Buzz Logistics", system: "buzz" };
 
   const landedConvo: ConvoMessage[] = [
@@ -891,7 +891,7 @@ export default async function ComponentsPage() {
                   </div>
                 </PhoneFrame>
 
-                <PhoneFrame label="Estate group chat with an EMBA alert">
+                <PhoneFrame label="Estate group chat with a Buzz Alert">
                   <div className="flex items-center gap-3 border-b border-line px-4 pt-5 pb-3">
                     <Avatar sender={{ name: "Estate Residents" }} size="lg" decorative />
                     <div className="min-w-0">

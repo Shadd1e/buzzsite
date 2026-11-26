@@ -1,5 +1,5 @@
 /**
- * Safety copy (DESIGN.md §9.6). Confirmed (PRODUCT.md): EMBA alerts come from
+ * Safety copy (DESIGN.md §9.6). Confirmed (PRODUCT.md): Buzz Alerts come from
  * verified police and security agencies and from real users; location-based,
  * opt-in, push; security updates have their own row and colour.
  * Truth rules: cooperative with agencies, never against the government;
@@ -11,7 +11,7 @@ export const safetyPage = {
   meta: {
     title: "Safety",
     description:
-      "EMBA alerts from verified police and security agencies and from people near you. Opt-in, location-based, and in their own colour. In an emergency, call 112.",
+      "Buzz Alerts from verified police and security agencies and from people near you. Opt-in, location-based, and in their own colour. In an emergency, call 112.",
   },
 
   hero: {
@@ -20,7 +20,7 @@ export const safetyPage = {
     cta: { label: "Join the waitlist", href: "/waitlist" },
     alert: {
       source: "[Verified agency]",
-      title: "EMBA alert",
+      title: "Buzz Alert",
       body: "Road blocked at [location]. Avoid the area and use another route.",
       area: "Within [radius] of [location]",
       time: "10:30",

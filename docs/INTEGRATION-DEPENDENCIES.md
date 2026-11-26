@@ -11,7 +11,7 @@ This website is built to keep the public experience separate from the mobile app
 | Partner login | Authentication provider | Validates fields; no sign-in attempt | Account provisioning, password recovery, session, MFA and access policy |
 | Partner dashboard | Partner data APIs and role/tenant authorization | Access-not-connected state; no data shown | Authenticated delivery/staff/status APIs and permission model |
 | Payments | SunPay partnership and integration documentation | Editorial explanation only; no transactions | Processor, custody, escrow eligibility/release, methods, currencies, fees, refunds, disputes and support roles |
-| Safety | Approved product and operational policy | Careful editorial content and limitations | EMBA definition, alert sources, incident/evidence handling, access rules, escalation and emergency disclaimer approval |
+| Safety | Approved product and operational policy | Careful editorial content and limitations | Buzz Alert definition, alert sources, incident/evidence handling, access rules, escalation and emergency disclaimer approval |
 | Analytics | Selected analytics provider and consent model | No analytics calls | Event plan, provider, consent configuration and privacy review |
 | Downloads | Official store listings | No app-store links invented | iOS/Android URLs and confirmed availability |
 | Legal | Approved policy documents | Eight draft routes | Legal review and approval for privacy, terms, community, safety, marketplace, logistics, payments and cookies |

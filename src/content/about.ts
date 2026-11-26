@@ -34,8 +34,8 @@ export const aboutPage = {
       {
         id: "alerts",
         problem: "News of danger nearby reached you late, if at all.",
-        answer: "EMBA alerts come from verified agencies and people near you, for the areas you choose.",
-        answerTitle: "EMBA alerts",
+        answer: "Buzz Alerts come from verified agencies and people near you, for the areas you choose.",
+        answerTitle: "Buzz Alerts",
       },
     ],
   },
